@@ -1,0 +1,30 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #5a4db2; /* Indigo Purple */
+  --ifm-color-primary-dark: #4e439c; /* Darker Indigo Purple */
+  --ifm-color-primary-darker: #453b8a; /* Even Darker Indigo */
+  --ifm-color-primary-darkest: #3b3176; /* Darkest Indigo */
+  --ifm-color-primary-light: #6b60c3; /* Lighter Indigo Purple */
+  --ifm-color-primary-lighter: #7e75d1; /* Even Lighter Indigo */
+  --ifm-color-primary-lightest: #9c92e2; /* Lightest Indigo */
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme="dark"] {
+  --ifm-color-primary: #8676d1; /* Softer Indigo for dark mode */
+  --ifm-color-primary-dark: #7869bd; /* Dark Mode Indigo */
+  --ifm-color-primary-darker: #6a5aa7; /* Darker */
+  --ifm-color-primary-darkest: #594a8c; /* Darkest Indigo for Dark Mode */
+  --ifm-color-primary-light: #9488e0; /* Lighter Indigo for Dark Mode */
+  --ifm-color-primary-lighter: #a798eb; /* Even Lighter Indigo for Dark Mode */
+  --ifm-color-primary-lightest: #c4b8f7; /* Lightest Indigo for Dark Mode */
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}

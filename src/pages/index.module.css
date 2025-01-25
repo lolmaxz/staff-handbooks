@@ -1,0 +1,46 @@
+.heroBanner {
+  padding: 4rem 0;
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  margin-top: 2rem;
+}
+
+.features {
+  padding: 4rem 0;
+}
+
+.feature {
+  margin-bottom: 2rem;
+}
+
+.featureIcon {
+  width: 100px;
+  height: 100px;
+}
+
+.section {
+  padding: 4rem 0;
+  background-color: var(--ifm-background-color-secondary);
+}
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sectionImage {
+  width: 100%;
+  height: auto;
+}

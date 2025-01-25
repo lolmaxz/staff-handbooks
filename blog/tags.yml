@@ -1,0 +1,14 @@
+eden apis:
+  label: Eden Apis
+  permalink: /eden-apis
+  description: Tag for posts related to The Eden Apis community, its events, and its journey.
+
+origins:
+  label: Origins
+  permalink: /origins
+  description: Posts discussing the history, beginnings, and growth of projects or communities.
+
+community:
+  label: Community
+  permalink: /community
+  description: Content related to fostering and managing communities, especially online spaces.

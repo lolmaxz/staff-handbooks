@@ -1,0 +1,10 @@
+{
+  "label": "Social Media Side",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "title": "Social Media Side Roles",
+    "description": "Roles and responsibilities on the social media side."
+  },
+  "collapsed": true
+}

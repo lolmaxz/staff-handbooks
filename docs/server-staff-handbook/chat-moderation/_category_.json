@@ -1,0 +1,10 @@
+{
+  "label": "Chat Moderation",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "title": "Chat Moderation",
+    "description": "Guidelines for moderating server chats."
+  },
+  "collapsed": true
+}

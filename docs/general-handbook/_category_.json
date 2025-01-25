@@ -1,0 +1,10 @@
+{
+  "label": "General Handbook",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "title": "General Handbook",
+    "description": "General guidelines and information for all staff members."
+  },
+  "collapsed": true
+}
