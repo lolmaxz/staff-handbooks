@@ -6,9 +6,8 @@ sidebar_position: 13
 
 # Host Discretion List
 
-:::danger IMPORTANT
-The **Host Discretion List** allows hosts to restrict certain members from attending their events, this is a serious list and requires some good reason(s) for adding a user to the list!
-:::
+The **Host Discretion List** allows hosts to restrict certain members from attending their events.
+
 ## Adding a Member to Your Discretion List
 
 - **Process**:
