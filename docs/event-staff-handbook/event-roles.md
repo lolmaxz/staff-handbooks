@@ -29,12 +29,8 @@ Individuals in charge of hosting events and ensuring they run smoothly.
 
 - **Conflict Resolution**: Avoid drama. If conflicts arise affecting the team, **HR** may intervene to help resolve issues.
 
-:::warning
-  If you become too inactive, the Event Committee will reach out to see if you need a break or if you wish to leave the team.
-  :::
-
-
 </details>
+
 
 <details>
 <summary>How to Host an Event</summary>

@@ -10,11 +10,14 @@ sidebar_position: 9
 
 ## Important Guidelines
 
-- **Punishment Tickets**:
+- **Punishment/Action Tickets**:
 
   - Must be opened by **Staff**.
   - Do **not** give out punishments in tickets started by a member.
   - **Never** start the ticket by stating the punishment.
+  :::note Reminder
+  While these tickets will be used to dish out a punishment, we still wanna treat the user nicely!
+  :::
 
 - **Opening a Ticket**:
 
