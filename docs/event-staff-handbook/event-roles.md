@@ -74,7 +74,7 @@ Be punctual with pings and event start times. We understand technical issues can
 ## Event Security
 ---
 
-Our team responsible for the safety and security of events.
+The team responsible for the safety and security of events!
 
 ### Security Responsibilities:
 
