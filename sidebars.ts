@@ -155,70 +155,46 @@ const sidebars: SidebarsConfig = {
         "server-staff-handbook/server-votes-explained",
       ],
     },
+
     {
       type: "category",
       label: "Event Staff Handbook",
       link: {
         type: "doc",
-        id: "event-staff-handbook/introduction",
+        id: 'event-staff-handbook/introduction'
       },
-      collapsed: true,
       items: [
-        "event-staff-handbook/event-team-channels",
-        "event-staff-handbook/event-rules",
-        "event-staff-handbook/event-trial-training",
-        "event-staff-handbook/senior-team-promotion",
-        "event-staff-handbook/how-to-host-an-event",
-        "event-staff-handbook/event-roles",
-        "event-staff-handbook/scheduling-procedures",
-        "event-staff-handbook/classic-event-types",
-       // "event-staff-handbook/special-planning-event-types",
-        "event-staff-handbook/hosting-requirements",
-        "event-staff-handbook/security-requirements",
-        "event-staff-handbook/incident-management-guidelines",
-        "event-staff-handbook/host-discretion-list",
-        "event-staff-handbook/github-records",
-        // Add other event staff handbook files here
+        "event-staff-handbook/Hosts/hosting-requirements",
+    "event-staff-handbook/event-rules",
+    "event-staff-handbook/event-team-channels",
+    "event-staff-handbook/event-roles",
+    {
+      type: "category",
+      label: "Event Hosts",
+      link: {
+        type: "generated-index",
+      },
+      items: [
+        "event-staff-handbook/Hosts/how-to-host-an-event",
+        "event-staff-handbook/Hosts/scheduling-procedures",
+        "event-staff-handbook/Hosts/host-discretion-list",
       ],
     },
     {
       type: "category",
-      label: "Social Media Handbook",
+      label: "Event Security",
       link: {
         type: "doc",
-        id: "social-media-handbook/introduction",
+        id:"event-staff-handbook/Security/Introduction"
       },
-      collapsed: true,
       items: [
-        "social-media-handbook/roles-and-responsibilities",
-        {
-          type: "category",
-          label: "Graphics Team",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: ["social-media-handbook/graphics-team/overview", "social-media-handbook/graphics-team/request-guidelines"],
-        },
-        {
-          type: "category",
-          label: "Social Media Team",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "social-media-handbook/social-media-team/general-requirements",
-            "social-media-handbook/social-media-team/media-content",
-            "social-media-handbook/social-media-team/posting-procedure",
-            "social-media-handbook/social-media-team/weekly-calendar",
-            "social-media-handbook/social-media-team/consent-procedure",
-          ],
-        },
-        "social-media-handbook/social-networks",
+        "event-staff-handbook/Security/how-to-be-security",
+        "event-staff-handbook/Security/incident-management-guidelines",
       ],
     },
+    "event-staff-handbook/github-records",
   ],
-};
+
+}]}
 
 export default sidebars;
