@@ -47,7 +47,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">Your guide to roles, responsibilities, and procedures for any staff position.</p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
-            Get Started
+            Get Started!
           </Link>
         </div>
       </div>
@@ -116,7 +116,7 @@ const handbooks = [
 
 export default function Home(): JSX.Element {
   return (
-    <Layout title="Home" description="Eden Apis Staff Handbook - Your guide to roles, responsibilities, and procedures">
+    <Layout title="Home" description="Eden Apis Staff Handbook - A comprehensive list!">
       <HomepageHeader />
       <main>
         <section className={styles.features}>
@@ -137,8 +137,8 @@ export default function Home(): JSX.Element {
                   <div className={styles.handbookCard}>
                     <h3>{handbook.title}</h3>
                     <p>{handbook.description}</p>
-                    <Link className="button button--secondary button--sm" to={handbook.link}>
-                      Read More
+                    <Link className="button button--secondary button--m" to={handbook.link}>
+                      Take Me Here!
                     </Link>
                   </div>
                 </div>

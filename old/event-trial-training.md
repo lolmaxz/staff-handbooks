@@ -8,7 +8,7 @@ sidebar_position: 4
 
 After acceptance as an Event Team member, you will receive the **Event Trial** role and access to event channels.
 
-:::note
+:::warning
 Your trial period requires you to actively staff a minimum of **6 events** in total.
 :::
 

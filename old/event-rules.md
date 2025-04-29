@@ -12,9 +12,7 @@ This section highlights important event rules and reminders for Hosts and Securi
 
 The **Clear "NO"** rule is signified by crossing your arms in an "X" shape. It means that any interaction must stop immediately. This applies to everyone, including staff. As Hosts or Security, you are responsible for watching out for this sign and ensuring others respect it.
 
-:::note
-As always, consent is our number one priority. For any Desktop users, they can use the emote '🚫'.
-:::
+Consent is our number one priority. Desktop users may use the emote '🚫'.
 
 ## The Eden Consent Badges
 

@@ -5,13 +5,15 @@ sidebar_position: 1
 slug: /event-staff-handbook
 ---
 
-# The Eden Apis Event Team Handbook
+# Welcome to the Eden Apis Event Team! 🎉
 
-Welcome to the Event Team! Thank you for your interest in helping shape our community and entertain our members. The Eden Apis tries its best to ensure a safe and fun environment for all community members. This handbook outlines everything you need to know as a Host, Security and more! You'll be guided through all the steps needed to ensure our events are as enjoyable as possible for all community members!
 
-:::note
-As part of Eden Apis staff, you are expected to maintain professionalism and courtesy with both staff and community members. While we understand not everyone will be best friends, you are expected to maintain respectful interactions and avoid unnecessary drama.
+Welcome aboard the Event Team! Thank you for stepping up to help shape this space and bring entertainment to our community. The Eden Apis strives to create a fun, inclusive, and safe environment for all, and as a member of the Event Team, you play a vital role in making that happen.
+
+:::tip A Quick Overview
+This handbook will guide you through everything you need to know about being a **Host** or **Security** for our events. From learning how to manage events smoothly to ensuring safety and enforcing rules, you'll find all the information you need right here.
 :::
+
 
 import DocCardList from '@theme/DocCardList';
 
@@ -72,10 +74,10 @@ This guide is structured to help you step into your role with confidence. Here's
 
 ## Expectations & Professionalism
 
-As part of the Eden Apis **staff**, you are expected to remain professional and courteous. While we understand that you have your own personality and style, treating all members with respect is a **must**.
+As part of the Eden Apis **staff**, you are expected to remain professional and courteous. While we understand that everyone has their own personality and style, treating all members with respect is a **must**.
 
 :::note
-Remember, you're not a customer service worker. You're not expected to put on a fake smile 24/7, but you should always handle situations with fairness and professionalism.
+Remember, we’re not customer service workers. You’re not expected to put on a fake smile 24/7, but you should always handle situations with fairness and professionalism.
 :::
 
 ## Keeping Up with Updates 🔄
@@ -84,10 +86,9 @@ The Event Team Handbook is a **living document**, meaning it will be updated as 
 
 ## Ready to Get Started? 🚀
 
-Once you're familiar with the **introduction**, feel free to move on to the next sections where you'll dive into the details of your role and responsibilities!
-
 ---
 
 :::tip Thank You!
 Thank you for taking the time to read through this introduction. We're excited to have you on the team and look forward to creating amazing experiences together! If you have any questions, don't hesitate to reach out to the Event Committee.
 :::
+

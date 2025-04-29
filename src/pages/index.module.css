@@ -29,18 +29,26 @@
   height: 100px;
 }
 
-.section {
-  padding: 4rem 0;
-  background-color: var(--ifm-background-color-secondary);
+
+[class='button button--secondary button--m']{
+  transform: translateX(38px);
+  background: var(--ifm-color-primary);
+  color: white !important;
+  border: 2px solid var(--accents);
 }
 
-.sectionContent {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+[class='button button--secondary button--m']:hover{
+  filter: brightness(1.2);
 }
 
-.sectionImage {
-  width: 100%;
-  height: auto;
+[class='button button--secondary button--lg']{
+  background: var(--bg-main);
+  color: white !important;
+  border: 2px solid var(--accents);
+}
+
+
+
+[class='button button--secondary button--lg']:hover{
+filter: brightness(1.5);
 }

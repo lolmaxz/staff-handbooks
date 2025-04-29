@@ -53,13 +53,13 @@ sidebar_position: 12
   - Involves speaking negatively about members or staff, spreading rumors, igniting debates, or discussing server tickets inappropriately.
   - **Action**: Verbal warning to cease immediately.
 
-:::tip Host Authority
-At any time, you have the right as the **Host** to remove any rule breaker from your ongoing event if you consider it to be appropriate, just make sure to communicate with security the issue, and write up a ticket for the incident!
+:::warning Host Authority
+At any time, you have the right as the host to remove any rule breaker from your ongoing event if you consider it the appropriate course of action. Coordinate with security to fill in the incident report on Discord.
 :::
 
 ## Record Keeping and Consequences
 
-- Make sure **all** incidents are recorded in **#events-incidents** and the Eden Apis Host Quick References.
+- All incidents are recorded in **#events-incidents** and the Eden Apis Host Quick References.
 - Multiple reports against a user within a certain time frame can lead to a ban from events.
 
 :::note
