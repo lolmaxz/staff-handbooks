@@ -54,7 +54,7 @@ Hosting an event involves several key steps:
 
 ### **Host the Event:**
 
-   :::tip
+   :::note info 
    Follow specific guidelines based on the event type (see [Event Types](classic-event-types.md)).
    :::
 
