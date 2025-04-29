@@ -72,16 +72,16 @@ const sidebars: SidebarsConfig = {
               //   "general-handbook/staff-roles/event-side/event-security",
               // ],
             },
-            {
-              type: "doc",
-              label: "Media Staff Roles",
-              id: "general-handbook/staff-roles/media-positions/media-positions",
-              // link: {
-              //   type: "doc",
-              //   id: "general-handbook/staff-roles/social-media-side/media-positions",
-              // },
-              // items: [{type: "doc", id: "general-handbook/staff-roles/social-media-side/social-media-team"}],
-            },
+            // {
+            //   type: "doc",
+            //   label: "Media Staff Roles",
+            //   id: "general-handbook/staff-roles/media-positions/media-positions",
+            //   // link: {
+            //   //   type: "doc",
+            //   //   id: "general-handbook/staff-roles/social-media-side/media-positions",
+            //   // },
+            //   // items: [{type: "doc", id: "general-handbook/staff-roles/social-media-side/social-media-team"}],
+            // },
           ],
         },
         "general-handbook/staff-channels",
@@ -194,7 +194,6 @@ const sidebars: SidebarsConfig = {
     },
     "event-staff-handbook/github-records",
   ],
-
 }]}
 
 export default sidebars;
