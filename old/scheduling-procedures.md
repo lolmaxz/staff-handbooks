@@ -5,9 +5,8 @@ sidebar_position: 7
 ---
 
 # Scheduling Procedures
-:::note
-Event schedules run from *Monday to Sunday!*
-:::
+
+Event schedules run from **Monday to Sunday**.
 
 ## Weekly Scheduling
 
@@ -24,7 +23,7 @@ Event schedules run from *Monday to Sunday!*
 
 ### Sunday
 
-- Final changes will be made to the schedule around this time.
+- Final changes will be made to the schedule.
 - The finalized schedule will be published in **#event-scheduling** (staff) and **#event-schedule** (public).
 
 ## Day of the Event
@@ -34,6 +33,6 @@ Event schedules run from *Monday to Sunday!*
 - Hosts without available security may request permission to proceed without one.
 - **Senior Hosts** or **Server Moderators** can act as security if needed.
 
-:::tip Don't Forget!
+:::tip
 Communication is key! Ensure you're proactive in coordinating with security and other staff members.
 :::
