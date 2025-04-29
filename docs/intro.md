@@ -20,7 +20,6 @@ Please refer to the specific handbook that corresponds to your role or area of i
 - [General Handbook](./general-handbook)
 - [Server Staff Handbook](./server-staff-handbook)
 - [Event Staff Handbook](./event-staff-handbook)
-- [Social Media Handbook](./social-media-handbook)
 
 ---
 

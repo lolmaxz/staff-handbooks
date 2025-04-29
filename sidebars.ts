@@ -76,11 +76,11 @@ const sidebars: SidebarsConfig = {
               type: "doc",
               label: "Media Staff Roles",
               id: "general-handbook/staff-roles/media-positions/media-positions",
-              // link: {
-              //   type: "doc",
-              //   id: "general-handbook/staff-roles/social-media-side/media-positions",
-              // },
-              // items: [{type: "doc", id: "general-handbook/staff-roles/social-media-side/social-media-team"}],
+              /* link: {
+                 type: "doc",
+                 id: "general-handbook/staff-roles/social-media-side/media-positions",
+               },
+               items: [{type: "doc", id: "general-handbook/staff-roles/social-media-side/social-media-team"}], */
             },
           ],
         },
