@@ -7,6 +7,7 @@ slug: /event-staff-handbook
 
 # Welcome to the Eden Apis Event Team! 🎉
 
+
 Welcome aboard the Event Team! Thank you for stepping up to help shape this space and bring entertainment to our community. The Eden Apis strives to create a fun, inclusive, and safe environment for all, and as a member of the Event Team, you play a vital role in making that happen.
 
 :::tip A Quick Overview
@@ -18,14 +19,21 @@ import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
 
+# Welcome to the Eden Apis Event Team! 🎉
 
-## What You’ll Find in This Handbook 📖
+Welcome aboard the Event Team! Thank you for stepping up to help shape this space and bring entertainment to our community. The Eden Apis strives to create a fun, inclusive, and safe environment for all, and as a member of the Event Team, you play a vital role in making that happen.
 
-This guide is structured to help you step into your role with confidence. Here’s what we’ll be covering:
+:::tip A Quick Overview
+This handbook will guide you through everything you need to know about being a **Host** or **Security** for our events. From learning how to manage events smoothly to ensuring safety and enforcing rules, you'll find all the information you need right here.
+:::
+
+## What You'll Find in This Handbook 📖
+
+This guide is structured to help you step into your role with confidence. Here's what you'll be covering:
 
 <details>
 <summary>📌 Event Team Roles</summary>
-  <p>Learn about the different roles within the event team, including **Hosts, Security, Senior Event Team, and the Event Committee**.</p>
+  <p>You'll learn about the different roles within the event team, including **Hosts, Security, Senior Event Team, and the Event Committee**.</p>
 </details>
 
 <details>
@@ -78,6 +86,9 @@ The Event Team Handbook is a **living document**, meaning it will be updated as 
 
 ## Ready to Get Started? 🚀
 
-Once you're familiar with the **introduction**, feel free to move on to the next sections where we’ll dive into the details of your role and responsibilities!
-
 ---
+
+:::tip Thank You!
+Thank you for taking the time to read through this introduction. We're excited to have you on the team and look forward to creating amazing experiences together! If you have any questions, don't hesitate to reach out to the Event Committee.
+:::
+

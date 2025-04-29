@@ -72,16 +72,16 @@ const sidebars: SidebarsConfig = {
               //   "general-handbook/staff-roles/event-side/event-security",
               // ],
             },
-            {
-              type: "doc",
-              label: "Media Staff Roles",
-              id: "general-handbook/staff-roles/media-positions/media-positions",
-              // link: {
-              //   type: "doc",
-              //   id: "general-handbook/staff-roles/social-media-side/media-positions",
-              // },
-              // items: [{type: "doc", id: "general-handbook/staff-roles/social-media-side/social-media-team"}],
-            },
+            // {
+            //   type: "doc",
+            //   label: "Media Staff Roles",
+            //   id: "general-handbook/staff-roles/media-positions/media-positions",
+            //   // link: {
+            //   //   type: "doc",
+            //   //   id: "general-handbook/staff-roles/social-media-side/media-positions",
+            //   // },
+            //   // items: [{type: "doc", id: "general-handbook/staff-roles/social-media-side/social-media-team"}],
+            // },
           ],
         },
         "general-handbook/staff-channels",
@@ -181,43 +181,43 @@ const sidebars: SidebarsConfig = {
         // Add other event staff handbook files here
       ],
     },
-    {
-      type: "category",
-      label: "Social Media Handbook",
-      link: {
-        type: "doc",
-        id: "social-media-handbook/introduction",
-      },
-      collapsed: true,
-      items: [
-        "social-media-handbook/roles-and-responsibilities",
-        {
-          type: "category",
-          label: "Graphics Team",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: ["social-media-handbook/graphics-team/overview", "social-media-handbook/graphics-team/request-guidelines"],
-        },
-        {
-          type: "category",
-          label: "Social Media Team",
-          link: {
-            type: "generated-index",
-          },
-          collapsed: true,
-          items: [
-            "social-media-handbook/social-media-team/general-requirements",
-            "social-media-handbook/social-media-team/media-content",
-            "social-media-handbook/social-media-team/posting-procedure",
-            "social-media-handbook/social-media-team/weekly-calendar",
-            "social-media-handbook/social-media-team/consent-procedure",
-          ],
-        },
-        "social-media-handbook/social-networks",
-      ],
-    },
+    // {
+    //   type: "category",
+    //   label: "Social Media Handbook",
+    //   link: {
+    //     type: "doc",
+    //     id: "social-media-handbook/introduction",
+    //   },
+    //   collapsed: true,
+    //   items: [
+    //     "social-media-handbook/roles-and-responsibilities",
+    //     {
+    //       type: "category",
+    //       label: "Graphics Team",
+    //       link: {
+    //         type: "generated-index",
+    //       },
+    //       collapsed: true,
+    //       items: ["social-media-handbook/graphics-team/overview", "social-media-handbook/graphics-team/request-guidelines"],
+    //     },
+    //     {
+    //       type: "category",
+    //       label: "Social Media Team",
+    //       link: {
+    //         type: "generated-index",
+    //       },
+    //       collapsed: true,
+    //       items: [
+    //         "social-media-handbook/social-media-team/general-requirements",
+    //         "social-media-handbook/social-media-team/media-content",
+    //         "social-media-handbook/social-media-team/posting-procedure",
+    //         "social-media-handbook/social-media-team/weekly-calendar",
+    //         "social-media-handbook/social-media-team/consent-procedure",
+    //       ],
+    //     },
+    //     "social-media-handbook/social-networks",
+    //   ],
+    // },
   ],
 };
 
