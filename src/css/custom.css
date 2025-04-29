@@ -14,24 +14,25 @@
   --ifm-color-primary-lighter: #7e75d1; /* Even Lighter Indigo */
   --ifm-color-primary-lightest: #9c92e2; /* Lightest Indigo */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: #0000001a;
+  
+
+  --primary: #7621dc;
+  --secondary: #000000;
+  --bg-main: #1a1825;
+  --text: #fff;
+  --accents: #e76bfa;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme="dark"] {
-  --ifm-color-primary: #8B5CF6; /* Softer Indigo for dark mode */
+  --ifm-color-primary: #7621dc; /* Softer Indigo for dark mode */
   --ifm-color-primary-dark: #8B5CF6; /* Dark Mode Indigo */
   --ifm-color-primary-darker: #6a5aa7; /* Darker */
   --ifm-color-primary-darkest: #594a8c; /* Darkest Indigo for Dark Mode */
   --ifm-color-primary-light: #9488e0; /* Lighter Indigo for Dark Mode */
   --ifm-color-primary-lighter: #a798eb; /* Even Lighter Indigo for Dark Mode */
   --ifm-color-primary-lightest: #c4b8f7; /* Lightest Indigo for Dark Mode */
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --docusaurus-highlighted-code-line-bg: #0000004d;
 
-
-  --primary: #8B5CF6;
-  --secondary: #EC4899;
-  --background: #13111C;
-  --text: rgba(255, 255, 255, 0.87);
-  --accent-glow: 0 0 20px rgba(139, 92, 246, 0.5);
 }

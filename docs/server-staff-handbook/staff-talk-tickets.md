@@ -55,5 +55,5 @@ While these tickets will be used to dish out a punishment, we still wanna treat 
 - The **Head Moderator** or **Head Moderator Assistant** will guide you on how to log the ticket into the **GitHub Warning Book**.
 
 :::info
-Properly handling tickets ensures transparency and fairness in moderation actions.
+Properly handling tickets ensures transparency and fairness for members involved!
 :::
