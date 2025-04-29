@@ -139,7 +139,6 @@ const sidebars: SidebarsConfig = {
         "server-staff-handbook/server-rule-violations",
         "server-staff-handbook/staff-talk-tickets",
         "server-staff-handbook/mod-on-call",
-        "server-staff-handbook/github-records",
         {
           type: "category",
           label: "Ban Procedures",
@@ -153,6 +152,7 @@ const sidebars: SidebarsConfig = {
           ],
         },
         "server-staff-handbook/server-votes-explained",
+        "server-staff-handbook/github-records",
       ],
     },
 
