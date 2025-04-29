@@ -42,11 +42,6 @@ Please, as a new staff member, make sure to read the General Handbook first befo
 - Instructions and guidelines for the team that manages events.
 - This handbook will cover event planning, hosting, and management, as well as the roles and responsibilities of event staff members.
 
-### Media Team
-
-- Guidelines and procedures for the Media Team.
-- This handbook will cover the responsibilities of the Media Team, including content creation, photo, video, social media management, and other related tasks.
-
 :::note
 **Note:** This documentation is a work in progress and will be updated regularly. If you have any questions or suggestions, please reach out to lolmaxz on Discord, or propose changes directly through GitHub.
 :::
