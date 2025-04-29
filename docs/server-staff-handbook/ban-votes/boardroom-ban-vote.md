@@ -19,7 +19,6 @@ A Commitee Ban Vote involves higher-level staff for severe cases.
 ## Voting Process
 
 - Involves:
-
   - **Event Manager**
   - **Head Moderator**
   - **Head Moderator Assistant**
