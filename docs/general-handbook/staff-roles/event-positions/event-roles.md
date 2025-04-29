@@ -80,7 +80,7 @@ A group that assists the Event Team Head in leading the event team and planning 
 :::tip
 The Event Committee plays a crucial role in maintaining event quality and team cohesion.
 
-Currently, the Event Committee is comprised of: **spiderella007**, **vervacious\_**, **nightmarediztydoo** and **defovr**.
+Currently, the Event Committee is comprised of: **vervacious\_**, **nightmarediztydoo** and **defovr**.
 :::
 
 ---

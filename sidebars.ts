@@ -194,7 +194,6 @@ const sidebars: SidebarsConfig = {
     },
     "event-staff-handbook/github-records",
   ],
-
 }]}
 
 export default sidebars;
