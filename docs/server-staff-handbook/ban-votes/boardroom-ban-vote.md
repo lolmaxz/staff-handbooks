@@ -19,10 +19,10 @@ An All Heads Ban Vote involves higher-level staff for severe cases.
 ## Voting Process
 
 - Involves:
+  - **HR**
   - **Event Head**
   - **Head Moderator**
   - **Server Committee**
- - **HR**
   - **Head of Security**
   - **Event Committee**
 
