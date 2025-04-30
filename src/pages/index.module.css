@@ -26,6 +26,7 @@
 
 .features {
   padding: 4rem 0;
+  font-weight: bold;
 }
 
 .feature {
@@ -61,12 +62,14 @@ filter: brightness(1.5);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-weight: bold;
 }
 
 .handbookCard:hover {
   border-color: var(--ifm-color-primary);
   box-shadow: 0 4px 12px var(--accents);
   transform: translateY(-4px);
+  font-weight: bold;
 }
 
 .handbookCard h3 {
@@ -81,6 +84,7 @@ filter: brightness(1.5);
 .handbookCard .button {
   align-self: center;
   margin-top: auto;
+
 }
 
 .handbooks {
