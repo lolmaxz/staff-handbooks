@@ -7,9 +7,11 @@ slug: /server-positions
 
 # Server Staff Positions
 
-❓ _Also called the <b>@Server Breed</b>_ <br/><br/>
+:::tip Also called the *@Server Breed*
 There is multiple staff positions within the Server Team, each with its own set of responsibilities. Below is a list of the Server Team positions and their respective duties.
 For a quick access to each of them:
+:::
+---
 
 - [Server Team Head](#server-team-head)
 - [Server Committee](#server-committee)
@@ -76,8 +78,8 @@ The **Server Committee** is a group of staff members that assist the Head Modera
 - Assist members when they have questions.
 - Enforce server rules.
 
-:::tip
-Cutie Helpers are often the first point of contact for new members, making their role crucial for a welcoming community.
+:::tip Our First Line
+Cutie Helpers are often the first point of contact for new members, making their role crucial for a welcoming community!
 :::
 
 ---

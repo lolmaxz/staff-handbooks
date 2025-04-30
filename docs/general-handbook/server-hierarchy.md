@@ -15,11 +15,8 @@ As you saw in the previous section, The Server Hierarchy is there to help things
 
 - We will also list the server's positions and a brief overview of their duties. This way, you know who is responsible for which tasks.
 
-- As a new staff member, you will need to familiarize yourself with these roles and duties, especially in the department you are part of.
+- As a new staff member, you will need to familiarize yourself with these roles and duties, especially in the department you are part of!
 
-:::warning
-
-### Reminder to check the department handbook too!
-
+:::warning check your departments handbook!
 ➡️ In addition to this document, you **need** to read the handbook related to the department you just joined!
 :::
