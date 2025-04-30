@@ -6,6 +6,7 @@
   color: var(--oppositeBGText);
   text-shadow: var(--title-shadow);
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 
