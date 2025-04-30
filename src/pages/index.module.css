@@ -2,7 +2,8 @@
   padding: 4rem 0;
   background: url('/img/banner-blur.png') no-repeat;
   background-size: cover;
-  background-position: 0rem -11vw;
+  background-position: 0rem -10.5vw;
+  color: var(--oppositeBG);
   text-shadow: var(--title-shadow);
 }
 
