@@ -1,7 +1,8 @@
 .heroBanner {
   padding: 4rem 0;
   background: url('/img/banner-blur.png') no-repeat;
-   background-size: cover;
+  background-size: cover;
+  background-position: 0rem -11vw;
   text-shadow: var(--title-shadow);
 }
 
