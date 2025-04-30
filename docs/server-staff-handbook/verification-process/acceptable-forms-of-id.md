@@ -11,7 +11,6 @@ sidebar_position: 2
 - **Driving Licenses**
 - **Identity Cards**
 - **Passports**
-- **Birth Certificates**
 - **Military IDs** (accepted but discouraged due to security concerns)
 
 ### Conditionals:
@@ -24,6 +23,7 @@ sidebar_position: 2
 - **Temporary Paper IDs**
 - **Private Organization IDs** (e.g., school IDs, bus IDs)
 - **IDs without online examples** (for verification)
+-birth certificates
 
 :::warning
 If you're uncertain about the validity of an ID, consult with fellow Moderators or verify through a Google search.

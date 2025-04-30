@@ -10,7 +10,7 @@ The **Mod on Call** is responsible for closing out tickets and updating the GitH
 
 ## Selection Process
 
-- **Every Friday**, a member of the **Server Committee** or the **Head Moderator** opens a thread in **#staff-talk**.
+- **Every Friday**, a member of the **Server Committee** or the **Head Moderator** opens a thread in **#helperchat**.
 - Moderators roll a die using `/roll sides20` with YAGPDB bot.
 - The Mod with the **lowest roll** becomes the Mod on Call until the next Friday.
 
