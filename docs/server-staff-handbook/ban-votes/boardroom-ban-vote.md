@@ -1,12 +1,13 @@
 ---
 id: boardroom-ban-vote
-title: Boardroom Ban Vote (Boardroom Only)
+title: Commitee Ban Votes
 sidebar_position: 2
 ---
 
-# Boardroom Ban Vote (Boardroom Only)
-
-A Boardroom Ban Vote involves higher-level staff for severe cases.
+# Man I Love Democracy
+:::tip Keep in mind
+A Commitee Ban Vote involves higher-level staff for severe cases.
+:::
 
 ## Criteria for Initiation
 
@@ -18,7 +19,6 @@ A Boardroom Ban Vote involves higher-level staff for severe cases.
 ## Voting Process
 
 - Involves:
-
   - **Event Manager**
   - **Head Moderator**
   - **Head Moderator Assistant**
@@ -27,8 +27,8 @@ A Boardroom Ban Vote involves higher-level staff for severe cases.
   - **Head of Security**
 
 - The ban vote lasts **12 hours** or until unanimous decision is reached.
-- All board members are required to vote or provide a reason for abstaining.
+- All Commitee Members are required to vote or provide a reason for abstaining.
 
-:::info
+:::note
 Once all votes are cast, the ban may be carried out without waiting for the full 12 hours.
 :::
