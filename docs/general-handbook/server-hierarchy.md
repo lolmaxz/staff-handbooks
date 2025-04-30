@@ -6,10 +6,10 @@ sidebar_position: 2
 
 # Server Hierarchy
 
-Below is our organizational chart, listing different positions, lines of command, and various additional information. If you ever wonder who you need to refer to for questions or issues, please consult this hierarchy.
+As you saw in the previous section, The Server Hierarchy is there to help things run smoothly while keeping a line of command for simplicity sake; This should help get information directly to who may need it when they need it, without much "telephoning" information!
 
 <details>
-  <summary>Click to see the Server Organization Diagram</summary>
+  <summary>Click to review the Server Organization Diagram again!</summary>
   <img src={require("../../static/img/organigram.png").default} alt="Example banner" />
 </details>
 

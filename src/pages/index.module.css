@@ -5,6 +5,7 @@
   background-position: 0rem -10.5vw;
   color: var(--oppositeBGText);
   text-shadow: var(--title-shadow);
+  font-weight: bold;
 }
 
 

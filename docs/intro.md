@@ -11,9 +11,10 @@ This documentation site contains various handbooks to guide our staff members in
 This is your starting point to learn about the different handbooks available and the information they contain.
 Please refer to the specific handbook that corresponds to your role or area of interest.
 
-### New Staff Members
+:::tip New Staff Members!
 
 ➡️ Please start with the [General Handbook](./general-handbook) to get an overview of the community and staff expectations FIRST.
+:::
 
 ## Handbooks
 
@@ -23,8 +24,8 @@ Please refer to the specific handbook that corresponds to your role or area of i
 
 ---
 
-:::note
-Please, as a new staff member, make sure to read the General Handbook first before diving into the specific department handbooks!
+:::note Please note
+As a new staff member, make sure to read the General Handbook first before diving into the specific department handbooks!
 :::
 
 ### General Handbook
@@ -42,6 +43,6 @@ Please, as a new staff member, make sure to read the General Handbook first befo
 - Instructions and guidelines for the team that manages events.
 - This handbook will cover event planning, hosting, and management, as well as the roles and responsibilities of event staff members.
 
-:::note
-**Note:** This documentation is a work in progress and will be updated regularly. If you have any questions or suggestions, please reach out to lolmaxz on Discord, or propose changes directly through GitHub.
+:::warning note
+This documentation is a work in progress and will be updated regularly. If you have any questions or suggestions, please reach out to **lolmaxz** on Discord, or propose changes directly through **[GitHub](https://github.com/lolmaxz/staff-handbooks)**.
 :::
