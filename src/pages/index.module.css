@@ -1,9 +1,12 @@
 .heroBanner {
   padding: 4rem 0;
+  background: url('/img/banner-blur.png') center;
+  text-shadow: var(--title-shadow);
 }
 
+
 .hero__title {
-  font-size: 3rem;
+  font-size: 3rem !important;
   font-weight: bold;
 }
 
@@ -31,15 +34,14 @@
 
 
 
-[class='button button--secondary button--lg']{
+[class^=button]:not(.buttons){
   background: var(--bg-main);
   color: white !important;
   border: 2px solid var(--accents);
 }
 
 
-
-[class='button button--secondary button--lg']:hover{
+[class^=button]:not(.buttons):hover{
 filter: brightness(1.5);
 }
 
@@ -69,7 +71,6 @@ filter: brightness(1.5);
 
 .handbookCard p {
   margin-bottom: 1.5rem;
-  color: var(--text);
 }
 
 .handbookCard .button {
