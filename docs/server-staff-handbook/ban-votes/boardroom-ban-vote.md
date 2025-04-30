@@ -21,10 +21,10 @@ An All Heads Ban Vote involves higher-level staff for severe cases.
 - Involves:
   - **Event Head**
   - **Head Moderator**
-  - **Server Committee*
+  - **Server Committee**
  - **HR**
   - **Head of Security**
-  - **Event Committee* 
+  - **Event Committee**
 
 - The ban vote lasts **12 hours** or until unanimous decision is reached.
 - All Commitee Members are required to vote or provide a reason for abstaining.
