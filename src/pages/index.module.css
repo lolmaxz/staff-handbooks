@@ -29,18 +29,54 @@
   height: 100px;
 }
 
-.section {
-  padding: 4rem 0;
-  background-color: var(--ifm-background-color-secondary);
+
+
+[class='button button--secondary button--lg']{
+  background: var(--bg-main);
+  color: white !important;
+  border: 2px solid var(--accents);
 }
 
-.sectionContent {
+
+
+[class='button button--secondary button--lg']:hover{
+filter: brightness(1.5);
+}
+
+.handbookCard {
+  border: 2px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  padding: 2rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  background-color: var(--ifm-card-background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.sectionImage {
-  width: 100%;
-  height: auto;
+.handbookCard:hover {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 4px 12px var(--accents);
+  transform: translateY(-4px);
+}
+
+.handbookCard h3 {
+  margin-bottom: 1.5rem;
+  color: var(--accents);
+}
+
+.handbookCard p {
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.handbookCard .button {
+  align-self: center;
+  margin-top: auto;
+}
+
+.handbooks {
+  padding: 1rem 0;
 }

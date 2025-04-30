@@ -1,7 +1,7 @@
 ---
 id: special-planning-event-types
 title: Special Planning Event Types#
-sidebar_position: 9
+sidebar_position: 90
 ---
 
 # Special Planning Event Types#

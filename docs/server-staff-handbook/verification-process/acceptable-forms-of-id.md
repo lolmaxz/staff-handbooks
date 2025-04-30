@@ -17,6 +17,7 @@ sidebar_position: 2
 
 - **Insurance Cards** and **Medication IDs** are valid only if they're government-issued and recognized as official ID in the respective country.
 - **Expired IDs** are acceptable if not expired for more than **one year** and the photo matches the selfie.
+- **Birth Certificates** may only be used as a supplemental ID
 
 ### Not Accepted:
 
