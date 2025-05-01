@@ -17,14 +17,15 @@ sidebar_position: 2
 
 - **Insurance Cards** and **Medication IDs** are valid only if they're government-issued and recognized as official ID in the respective country.
 - **Expired IDs** are acceptable if not expired for more than **one year** and the photo matches the selfie.
-- **Birth Certificates** may only be used as a supplemental ID
+- **Birth Certificates** may only be used as a supplemental ID to prove the validity of another ID, **only if that other ID has a photo on it**
 
 ### Not Accepted:
 
 - **Temporary Paper IDs**
 - **Private Organization IDs** (e.g., school IDs, bus IDs)
 - **IDs without online examples** (for verification)
--birth certificates
+- **Digital IDs**
+
 
 :::warning
 If you're uncertain about the validity of an ID, consult with fellow Moderators or verify through a Google search.

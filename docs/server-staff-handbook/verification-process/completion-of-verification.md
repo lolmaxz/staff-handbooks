@@ -18,6 +18,10 @@ Once initial verification meets all required criteria:
    - Assign the **Verified** role.
    - If the bot (Hephia) is down, manually remove the **Unverified** role.
 
+:::danger
+If the member deletes their verification images after the initial verification is completed, please ask them to repost the images in order for a moderator to double check the verification. If they do not comply in a timely manner, you are allowed to give back their unverified role and inform them that their verification has been temporarily revoked.
+:::
+
 ## Welcome Message Template
 
 You can customize the welcome message, but it should include the following:
