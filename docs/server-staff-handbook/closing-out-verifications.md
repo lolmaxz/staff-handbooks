@@ -26,9 +26,8 @@ A second check of the verification ticket is required:
 3. **Closing the Ticket**:
 
    - Use the **"Close with Reason"** function of the ticket bot.
-   - The reason should be: `"Verification Complete - [Name of staff member who did verification]"`
-
-     _Example_: `Verification Complete - Del`
+   - The reason should be: `"Verification Complete - [Name of staff member who did verification] Closed By- [Name of staff member who performed the second check]"`
+     _Example_: `Verification Complete - Del Closed By- Solii`
 
 4. **No Response Cases**:
 

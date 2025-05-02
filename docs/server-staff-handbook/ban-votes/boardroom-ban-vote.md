@@ -1,13 +1,13 @@
 ---
 id: boardroom-ban-vote
-title: Commitee Ban Votes
+title: All Heads Ban Vote ( Event/Server Committees Only)
 sidebar_position: 2
 ---
 
-# Man I Love Democracy
-:::tip Keep in mind
-A Commitee Ban Vote involves higher-level staff for severe cases.
-:::
+# All Heads Ban Vote 
+
+An All Heads Ban Vote involves higher-level staff for severe cases.
+
 
 ## Criteria for Initiation
 
@@ -19,12 +19,12 @@ A Commitee Ban Vote involves higher-level staff for severe cases.
 ## Voting Process
 
 - Involves:
-  - **Event Manager**
-  - **Head Moderator**
-  - **Head Moderator Assistant**
   - **HR**
-  - **Event Secretary**
+  - **Event Head**
+  - **Head Moderator**
+  - **Server Committee**
   - **Head of Security**
+  - **Event Committee**
 
 - The ban vote lasts **12 hours** or until unanimous decision is reached.
 - All Commitee Members are required to vote or provide a reason for abstaining.
