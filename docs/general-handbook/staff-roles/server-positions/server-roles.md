@@ -18,6 +18,7 @@ For a quick access to each of them:
 - [Moderators](#moderators)
 - [Cutie Helpers](#cutie-helpers)
 - [Server Chat Moderators](#server-chat-moderators)
+- [Retired Staff](#retired-staff)
 
 ---
 
@@ -98,6 +99,19 @@ Cutie Helpers are often the first point of contact for new members, making their
 Being anonymous helps Chat Moderators observe the server chat without having any special roles displayed. (It's an invisible position)
 :::
 
+
+
+
+
+## Retired Staff
+Retired Staff are former staff that may no longer have the time to contribute, but have made significant enough contributions to retain `#staff-fun-time` access and to have fun with their peers
+
+:::note Requirements
+ These are more of a per-user basis, however for the members of staff that would like to still be silly with the staff in *`non-work channels`* this role can help act as a second **[Server Chat Mod](#server-chat-moderators)** role, while still allowing former staff to chat with their friends.
+
+:::
+
 ---
 
-If you are interested in joining the Server Team, please refer to the [Staff Application Channel](https://discord.com/channels/734595073920204940/979983964813021205) on the Discord server.
+If you are interested in joining the Server Team, please refer to the [Staff Application Channel](https://discord.com/channels/734595073920204940/979983964813021205) on the Discord server.\
+<sub> *If you cannot see this channel it's because you haven't joined yet!* </sub>
