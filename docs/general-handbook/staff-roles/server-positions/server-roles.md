@@ -104,7 +104,7 @@ Being anonymous helps Chat Moderators observe the server chat without having any
 
 
 ## Retired Staff
-Retired Staff are former staff that may no longer have the time to contribute, but have made significant enough contributions to retain `#staff-fun-time` access and to have fun with their peers
+Retired Staff are former staff that may no longer have the time to contribute, but have stepped down under good terms with both the community and staff alike, retaining `#staff-fun-time` access and to have fun with their peers.
 
 :::note Requirements
  These are more of a per-user basis, however for the members of staff that would like to still be silly with the staff in *`non-work channels`* this role can help act as a second **[Server Chat Mod](#server-chat-moderators)** role, while still allowing former staff to chat with their friends.
