@@ -7,10 +7,11 @@ slug: /event-positions
 
 # Event Staff Positions
 
-❓ _Also called the <b>@Event Breed</b>_ <br/><br/>
+:::tip Also called the *@Event Breed*
 There is multiple staff positions within the Event Team, each with its own set of responsibilities. Below is a list of the Event Team positions and their respective duties.
 For a quick access to each of them:
-
+:::
+---
 - [Event Team Head](#event-team-head)
 - [Head of Security](#head-of-security)
 - [Event Committee](#event-committee)

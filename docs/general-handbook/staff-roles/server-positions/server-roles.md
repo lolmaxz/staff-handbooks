@@ -7,15 +7,18 @@ slug: /server-positions
 
 # Server Staff Positions
 
-❓ _Also called the <b>@Server Breed</b>_ <br/><br/>
+:::tip Also called the *@Server Breed*
 There is multiple staff positions within the Server Team, each with its own set of responsibilities. Below is a list of the Server Team positions and their respective duties.
 For a quick access to each of them:
+:::
+---
 
 - [Server Team Head](#server-team-head)
 - [Server Committee](#server-committee)
 - [Moderators](#moderators)
 - [Cutie Helpers](#cutie-helpers)
 - [Server Chat Moderators](#server-chat-moderators)
+- [Retired Staff](#retired-staff)
 
 ---
 
@@ -76,8 +79,8 @@ The **Server Committee** is a group of staff members that assist the Head Modera
 - Assist members when they have questions.
 - Enforce server rules.
 
-:::tip
-Cutie Helpers are often the first point of contact for new members, making their role crucial for a welcoming community.
+:::tip Our First Line
+Cutie Helpers are often the first point of contact for new members, making their role crucial for a welcoming community!
 :::
 
 ---
@@ -96,6 +99,19 @@ Cutie Helpers are often the first point of contact for new members, making their
 Being anonymous helps Chat Moderators observe the server chat without having any special roles displayed. (It's an invisible position)
 :::
 
+
+
+
+
+## Retired Staff
+Retired Staff are former staff that may no longer have the time to contribute, but have stepped down under good terms with both the community and staff alike, retaining `#staff-fun-time` access and to have fun with their peers.
+
+:::note Requirements
+ These are more of a per-user basis, however for the members of staff that would like to still be silly with the staff in *`non-work channels`* this role can help act as a second **[Server Chat Mod](#server-chat-moderators)** role, while still allowing former staff to chat with their friends.
+
+:::
+
 ---
 
-If you are interested in joining the Server Team, please refer to the [Staff Application Channel](https://discord.com/channels/734595073920204940/979983964813021205) on the Discord server.
+If you are interested in joining the Server Team, please refer to the [Staff Application Channel](https://discord.com/channels/734595073920204940/979983964813021205) on the Discord server.\
+<sub> *If you cannot see this channel it's because you haven't joined yet!* </sub>

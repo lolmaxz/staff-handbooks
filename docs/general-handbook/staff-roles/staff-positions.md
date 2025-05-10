@@ -7,9 +7,9 @@ slug: /staff-roles
 
 # Staff Positions
 
-## Lewd Governor <img class="markdown" src={require("../../../static/img/admin_role_icon.png").default} alt="Admin Role Icon" width="30" />
+## Lewd Governor <img class="markdown" src={require("../../../static/img/admin_role_icon.png").default} alt="Admin Role Icon" width="26" />
 
-The **Lewd Governors** are the admins, owners and co-owners of the server.
+The **Lewd Governors** are the owners and co-owners of the server.
 
 <h3> Responsibilities: </h3>
 
@@ -37,7 +37,7 @@ The **Horny Resources** department handles internal staff matters.
 - Serve as mediators to potentially resolve conflicts within the team.
 - HR performing part of interview post application.
 
-:::info
+:::info Why an HR?
 HR is essential for maintaining a positive and professional environment among staff members.
 
 Currently, **deldepth**, **echo1108**, and **s4.ryn** serve as HR members.

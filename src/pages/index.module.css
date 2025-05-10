@@ -1,9 +1,17 @@
 .heroBanner {
   padding: 4rem 0;
+  background: url('/img/banner-blur.png') no-repeat;
+  background-size: cover;
+  background-position: 0rem -10.5vw;
+  color: var(--oppositeBGText);
+  text-shadow: var(--title-shadow);
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
+
 .hero__title {
-  font-size: 3rem;
+  font-size: 3rem !important;
   font-weight: bold;
 }
 
@@ -17,11 +25,17 @@
 }
 
 .features {
-  padding: 4rem 0;
+  padding: 3rem 0;
+  font-weight: bold;
+  animation: glowsSpin 2s ease-in 1s infinite none;
+  display: flex;
+  border-radius: 24px;
+  animation: glowSpin 3s linear infinite;
 }
 
 .feature {
   margin-bottom: 2rem;
+  
 }
 
 .featureIcon {
@@ -31,17 +45,13 @@
 
 
 
-[class='button button--secondary button--lg']{
-  background: var(--bg-main);
+[class^=button]:not(.buttons){
+  background: var(--ifm-color-primary-darkest);
   color: white !important;
   border: 2px solid var(--accents);
+
 }
 
-
-
-[class='button button--secondary button--lg']:hover{
-filter: brightness(1.5);
-}
 
 .handbookCard {
   border: 2px solid var(--ifm-color-emphasis-200);
@@ -54,12 +64,14 @@ filter: brightness(1.5);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-weight: bold;
 }
 
 .handbookCard:hover {
   border-color: var(--ifm-color-primary);
   box-shadow: 0 4px 12px var(--accents);
   transform: translateY(-4px);
+  font-weight: bold;
 }
 
 .handbookCard h3 {
@@ -69,14 +81,7 @@ filter: brightness(1.5);
 
 .handbookCard p {
   margin-bottom: 1.5rem;
-  color: var(--text);
 }
 
-.handbookCard .button {
-  align-self: center;
-  margin-top: auto;
-}
 
-.handbooks {
-  padding: 1rem 0;
-}
+
