@@ -11,6 +11,7 @@ slug: /server-positions
 There is multiple staff positions within the Server Team, each with its own set of responsibilities. Below is a list of the Server Team positions and their respective duties.
 For a quick access to each of them:
 :::
+
 ---
 
 - [Server Team Head](#server-team-head)

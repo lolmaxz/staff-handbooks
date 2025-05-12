@@ -43,6 +43,6 @@ As a new staff member, make sure to read the General Handbook first before divin
 - Instructions and guidelines for the team that manages events.
 - This handbook will cover event planning, hosting, and management, as well as the roles and responsibilities of event staff members.
 
-:::warning note
-This documentation is a work in progress and will be updated regularly. If you have any questions or suggestions, please reach out to **lolmaxz** on Discord, or propose changes directly through **[GitHub](https://github.com/lolmaxz/staff-handbooks)**.
+:::warning Work in Progress
+This documentation will be updated regularly. If you have any questions or suggestions, please reach out to **lolmaxz** on Discord, or propose changes directly through **[GitHub!](https://github.com/lolmaxz/staff-handbooks)**
 :::

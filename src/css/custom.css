@@ -54,13 +54,24 @@
 
 /* keyframes for Border Animation */
 
-.button, .pagination-nav__link {
+.button, .pagination-nav__link, article .card{
   background-color: transparent;
   border-radius: 0.6em;
   border-color: var(--oppositeBGText);
-  transition: all 150ms ease-in-out;
+  transition: all 150ms ease-out;
   
   &:hover {
     box-shadow: 0 0 0 0 var(--accents) inset, 0 0 0.5vw 4px var(--accents);
   }
+}
+
+.navbar{
+  background: url('/img/banner-blur.png') no-repeat;
+  background-color: var(--ifm-navbar-background-color) !important;
+  background-color: inherit;
+  background-size: cover;
+  background-position: -11rem -5.5vw;
+}
+.footer{
+  background-color: var(--ifm-navbar-background-color);
 }
