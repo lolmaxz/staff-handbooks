@@ -5,9 +5,14 @@ sidebar_position: 2
 slug: /staff-roles
 ---
 
+import RoleBadge from "@site/src/components/RoleBadge";
+import ChannelBadge from "@site/src/components/ChannelBadge";
+import Tooltip from "@site/src/components/Tooltip";
+
 # Staff Positions
 
-## Lewd Governor <img class="markdown" src={require("../../../static/img/admin_role_icon.png").default} alt="Admin Role Icon" width="30" />
+## Lewd Governor <RoleBadge role="Lewd Governor" badgeIcon="admin_role_icon.png" color="#db1cb8" />
+{/* <img class="markdown" src={require("../../../static/img/admin_role_icon.png").default} alt="Admin Role Icon" width="30" /> */}
 
 The **Lewd Governors** are the admins, owners and co-owners of the server.
 
@@ -20,12 +25,13 @@ The **Lewd Governors** are the admins, owners and co-owners of the server.
 - Oversee the overall server operations.
 
 :::info
-Currently, **lolmaxz**, **lusaffi** and **krenki** serves as Lewd Governors, overseeing the server's operations.
+Currently, <RoleBadge role="lolmaxz" color="#00B9ff" />, <RoleBadge role="lusaffi" color="#00B9ff" /> and <RoleBadge role="krenki" color="#00B9ff" /> serves as Lewd Governors, overseeing the server's operations.
 :::
 
 ---
 
-## Horny Resources (HR) <img src={require("../../../static/img/hr_role_icon.webp").default} alt="HR Role Icon" width="30" />
+## Horny Resources (HR) <RoleBadge role="Horny Ressources (HR)" badgeIcon="hr_role_icon.webp" color="#2a6eef" />
+{/* <img src={require("../../../static/img/hr_role_icon.webp").default} alt="HR Role Icon" width="30" /> */}
 
 The **Horny Resources** department handles internal staff matters.
 
@@ -40,7 +46,7 @@ The **Horny Resources** department handles internal staff matters.
 :::info
 HR is essential for maintaining a positive and professional environment among staff members.
 
-Currently, **deldepth**, **echo1108**, and **s4.ryn** serve as HR members.
+Currently, <RoleBadge role="deldepth" color="#00B9ff" />, <RoleBadge role="echo1108" color="#00B9ff" /> and <RoleBadge role="s4.ryn" color="#00B9ff" /> serve as HR members.
 :::
 
 ---

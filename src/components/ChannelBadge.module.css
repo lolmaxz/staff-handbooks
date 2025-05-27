@@ -1,0 +1,56 @@
+.badge {
+  /* basic disco‑chip */
+  --bg-normal: color-mix(in srgb, var(--badge-tint) 30%, transparent);
+  --bg-hover: var(--badge-tint);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  padding: 0.15em 0.55em;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 6px;
+  line-height: 1;
+  color: #fff;
+  background: var(--bg-normal);
+  text-decoration: none;
+  transition: background 120ms ease, transform 120ms ease;
+}
+
+.badge:hover,
+.badge:focus-visible {
+  background: var(--bg-hover);
+  transform: translateY(-1px);
+}
+
+.badge:active {
+  transform: none;
+}
+
+.icon {
+  width: 0.9em;
+  height: 0.9em;
+  flex-shrink: 0;
+}
+
+/* prevent accidental underline if parent styles anchor tags */
+.badge:hover,
+.badge:focus-visible,
+.badge {
+  text-decoration: none;
+}
+
+/* ────────── LIGHT‑THEME TWEAKS ────────── */
+html[data-theme="light"] .badge {
+  /* make the background a little stronger */
+  background: color-mix(in srgb, var(--badge-tint) 35%, transparent);
+  /* text now uses the brand colour instead of white */
+  color: var(--badge-tint);
+}
+
+html[data-theme="light"] .badge:hover,
+html[data-theme="light"] .badge:focus-visible {
+  /* hover gets a solid blurple (same as dark theme) */
+  background: var(--badge-tint);
+  color: #fff; /* restore white text for contrast */
+}

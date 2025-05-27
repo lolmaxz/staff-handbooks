@@ -5,9 +5,13 @@ sidebar_position: 3
 slug: /event-positions
 ---
 
+import RoleBadge from "@site/src/components/RoleBadge";
+import ChannelBadge from "@site/src/components/ChannelBadge";
+import Tooltip from "@site/src/components/Tooltip";
+
 # Event Staff Positions
 
-❓ _Also called the <b>@Event Breed</b>_ <br/><br/>
+❓ _Also called the <RoleBadge role="Event Breed" />_ <br/><br/>
 There is multiple staff positions within the Event Team, each with its own set of responsibilities. Below is a list of the Event Team positions and their respective duties.
 For a quick access to each of them:
 
@@ -21,7 +25,7 @@ For a quick access to each of them:
 
 ---
 
-## Event Team Head <img src={require("../../../../static/img/event_head_role_icon.png").default} alt="Event Head Role Icon" width="30" /> {#event-team-head}
+## Event Team Head <RoleBadge role="Event Team Head" badgeIcon="event_head_role_icon.png" color="#f75edb" /> {#event-team-head}
 
 The person in charge of the **Event Team**, overseeing all actions and setting the vision.
 
@@ -38,30 +42,30 @@ The person in charge of the **Event Team**, overseeing all actions and setting t
 :::info
 The Event Team Head ensures that events run smoothly and that the team is well-coordinated.
 
-Currently, **verbaldrop** serves as the Event Team Head.
+Currently, <RoleBadge role="verbaldrop" color="#00B9ff" /> serves as the Event Team Head.
 :::
 
 ---
 
-## Head of Security <img src={require("../../../../static/img/head_of_security_role_icon.png").default} alt="Head of Security Role Icon" width="30" /> {#head-of-security}
+## Head of Security <RoleBadge role="Head of Security" badgeIcon="head_of_security_role_icon.png" color="#3fa7ff" /> {#head-of-security}
 
 Leads the event security team and provides cyber protection for attendees and the server.
 
 <h3> Responsibilities: </h3>
 
 - Lead event security roles.
-- POC for Admins regarding any cybersecurity issues in server/events.
+- <Tooltip noDecoration={true} width="9em" tip="Point of Contact">POC</Tooltip> for Admins regarding any cybersecurity issues in server/events.
 - Serve as the point of contact for HR reports about team members.
 
 :::note
 The Head of Security ensures the safety and security of events and addresses any security concerns.
 
-Currently, **cobramaia** serves as the Head of Security.
+Currently, <RoleBadge role="cobramaia" color="#00B9ff" /> serves as the Head of Security.
 :::
 
 ---
 
-## Event Committee <img src={require("../../../../static/img/event_committee_role_icon.png").default} alt="Event Committee Role Icon" width="30" /> {#event-committee}
+## Event Committee <RoleBadge role="Event Committee" badgeIcon="event_committee_role_icon.png" color="#00e6c3" /> {#event-committee}
 
 A group that assists the Event Team Head in leading the event team and planning special events.
 
@@ -74,18 +78,18 @@ A group that assists the Event Team Head in leading the event team and planning 
 - Monitor and address Host/Security performance issues, recommending promotions or demotions.
 - Host or attend at least 3 events per month for team oversight and vibe checks.
 - Plan topics for event meetings and prepare materials.
-- Provide monthly updates for ERP News and plan one Patreon event per month.
+- Provide monthly updates for <ChannelBadge label="📰𝘌∙𝘙∙𝘗-news" link="https://discord.com/channels/734595073920204940/1071149239415078912" /> and plan one Patreon event per month.
 - More information in [Event Committee](#). (to be updated)
 
 :::tip
 The Event Committee plays a crucial role in maintaining event quality and team cohesion.
 
-Currently, the Event Committee is comprised of: **vervacious\_**, **nightmarediztydoo** and **defovr**.
+Currently, the Event Committee is comprised of: <RoleBadge role="vervacious\_" color="#00B9ff" />, <RoleBadge role="nightmarediztydoo" color="#00B9ff" /> and <RoleBadge role="defovr" color="#00B9ff" />.
 :::
 
 ---
 
-## Senior Event Team <img src={require("../../../../static/img/senior_event_team_role_icon.png").default} alt="Senior Event Team Role Icon" width="30" /> {#senior-event-team}
+## Senior Event Team <RoleBadge role="Senior Event Team" badgeIcon="senior_event_team_role_icon.png" color="#ffc857" /> {#senior-event-team}
 
 Experienced members of the Event Team with additional responsibilities.
 
@@ -100,12 +104,12 @@ Experienced members of the Event Team with additional responsibilities.
 :::info
 Senior Event Team members are mentors and leaders within the Event Team.
 
-Currently, the Senior Event Team is comprised of: **speedfreek16**, **msangelcakes.**, **blakes6**, **bloodtooth** and **alicendromee**.
+Currently, the Senior Event Team is comprised of: <RoleBadge role="speedfreek16" color="#00B9ff" />, <RoleBadge role="msangelcakes." color="#00B9ff" />, <RoleBadge role="blakes6" color="#00B9ff" />, <RoleBadge role="bloodtooth" color="#00B9ff" /> and <RoleBadge role="alicendromee" color="#00B9ff" />.
 :::
 
 ---
 
-## Event Host <img src={require("../../../../static/img/event_host_role_icon.png").default} alt="Event Host Role Icon" width="30" /> {#event-host}
+## Event Host <RoleBadge role="Event Host" badgeIcon="event_host_role_icon.png" color="#a259f7" /> {#event-host}
 
 Individuals in charge of hosting events and ensuring they run smoothly.
 
@@ -118,7 +122,7 @@ Individuals in charge of hosting events and ensuring they run smoothly.
 
 ---
 
-## Event Security <img src={require("../../../../static/img/event_security_role_icon.png").default} alt="Event Security Role Icon" width="30" /> {#event-security}
+## Event Security <RoleBadge role="Event Security" badgeIcon="event_security_role_icon.png" color="#ff5e5b" /> {#event-security}
 
 Personnel responsible for the safety and security of events.
 
@@ -135,7 +139,7 @@ Event Security must be vigilant and proactive in addressing any concerns during 
 
 ---
 
-## Event Team Trials {#event-team-trials}
+## Event Team Trials <RoleBadge role="Trial Team Trial" color="#3fa7ff" /> {#event-team-trials}
 
 New members of the Event Team learning to host events and act as security.
 This is the position you will be in when you first join the Event Team.
@@ -156,5 +160,5 @@ Event Trials are in training and should be proactive in learning and asking ques
 ---
 
 :::info
-If you have any questions about the Event Team positions, feel free to reach out to the Event Team Head or any member of the Event Committee.
+If you have any questions about the Event Team positions, feel free to reach out to the Event Team Head or any member of the <RoleBadge role="Event Committee" badgeIcon="event_committee_role_icon.png" color="#00e6c3" />.
 :::

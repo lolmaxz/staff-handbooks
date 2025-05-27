@@ -1,0 +1,144 @@
+:root {
+  --blurple: #5865f2;
+  --blurple-soft: color-mix(in srgb, var(--blurple) 12%, transparent);
+  --card-bg: var(--ifm-background-surface-color);
+  --card-border: var(--ifm-color-emphasis-200);
+}
+
+/* ⬛ outer card */
+.card {
+  border: 1px solid var(--card-border);
+  position: relative;
+  /* fall back to the theme’s subtle grey if the variable isn’t set */
+  background: var(--card-bg);
+  border-radius: var(--ifm-global-radius);
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  margin: 1.5rem 0;
+}
+
+/* title */
+.title {
+  margin: 0 0 0.6rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* progress bar */
+.progressBar {
+  height: 6px;
+  background: var(--blurple-soft);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.progressFill {
+  display: block;
+  height: 100%;
+  background: var(--blurple);
+  transition: width 0.25s ease;
+}
+.progressText {
+  font-size: 0.75rem;
+  margin: 0.25rem 0 0.75rem;
+  color: var(--ifm-color-content-secondary);
+}
+
+/* list */
+.list {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+
+.listItem {
+  list-style: none !important;
+}
+
+/* hide native checkbox */
+input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* checkbox visual */
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--check-color);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.checked {
+  background: var(--check-color);
+  border-color: var(--check-color);
+}
+.checkIcon {
+  width: 14px;
+  height: 14px;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0; /* hidden by default */
+  transform: scale(0.7);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  fill: none;
+}
+.checked .checkIcon {
+  opacity: 1; /* visible when parent has .checked */
+  transform: scale(1);
+}
+
+/* label row */
+.label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.text {
+  transition: opacity 0.15s ease;
+}
+.textDone {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* ───────── Markdown override fixes ───────── */
+.card ul.list {
+  list-style: none !important; /* kill bullets even inside .markdown */
+  margin: 0;
+  padding: 0;
+}
+
+.card li.listItem {
+  list-style: none !important; /* fallback for some themes */
+}
+
+/* ensure SVG never fills */
+.checkIcon {
+  fill: none !important;
+}
+
+/* existing styles remain … */
+
+.resetBtn {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 0.7rem;
+  background: var(--ifm-color-emphasis-200);
+  border: none;
+  color: var(--ifm-color-content);
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+.resetBtn:hover {
+  background: var(--ifm-color-emphasis-300);
+}

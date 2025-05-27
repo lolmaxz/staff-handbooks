@@ -1,0 +1,17 @@
+.flag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15em 0.5em;
+  border-radius: 4px;
+  color: #fff;
+}
+.NEW {
+  background: #22c55e;
+}
+.CHANGED {
+  background: #facc15;
+}
+.DEPRECATED {
+  background: #ef4444;
+}
