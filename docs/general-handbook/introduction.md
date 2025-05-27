@@ -35,6 +35,6 @@ Before we dive into the specifics of each department, let's take a look at the s
 
 _Note: This document may be updated over time. When something new is added or edited, a staff announcement in the Discord server will be made to inform you of those changes!_
 
-import DocCardList from '@theme/DocCardList';
+import DocCardList from "@theme/DocCardList";
 
 <DocCardList />
