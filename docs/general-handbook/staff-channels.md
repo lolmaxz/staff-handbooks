@@ -35,6 +35,7 @@ Now, here's all the Channels you need to Familiarize yourself with
 - **#📆event-scheduling**: Channel where a weekly post is made to show the schedule for the week.
 
 - **#⭕server-chat-reports**: This channel is used to report anything you may see in chat that may or could violate our server's rules.
+  - Cutie helpers and moderators may report things directly in **#📗helper-chat** or **#📙moderator-only** instead of using this channel
 <details>
   <summary>Important Note about ⭕Server-Chat-Reports</summary>
     <p>Simply provide the message link to the problematic post and explain why you think it needed to be reported. The server team will handle the rest. <br/>

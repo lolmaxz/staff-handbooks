@@ -5,7 +5,11 @@ sidebar_position: 5
 ---
 
 # Initial Verification Process Complete
+:::warning
 
+No member should ever have both the "vrc verified" role and the regular "verified" role at the same time. If someone tries to do go through the ID verification process while having the "vrc verified" role, you may inform them that only one form of verification is needed. If they want to go through the ID verification process, please remove the "vrc verified" role when you give them the "verified" role.
+
+:::
 Once initial verification meets all required criteria:
 
 1. **Welcome Message**:
