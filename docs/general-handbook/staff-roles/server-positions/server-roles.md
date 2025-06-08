@@ -87,13 +87,14 @@ Cutie Helpers are often the first point of contact for new members, making their
 
 ## Server Chat Moderators {#server-chat-moderators}
 
-**Server Chat Moderators** are staff members who moderate the server chat channels.
+**Server Chat Moderators** are active community members who assist staff to report problems in the server chat channels.
 
 <h3> Responsibilities: </h3>
 
-- Watch the server for any rule breakers and report incidents.
+- Watch the server for any rule breakers and report incidents without needing to open tickets.
 - They do not have special roles displayed, so members are unaware of their status.
-- No application is required; the position is offered based on the server's needs.
+- No application is required; the position is offered based on the server's needs, members activity level, and desire to assist in keeping the community safe.
+- **Server chat members do not have any moderation powers**
 
 :::note
 Being anonymous helps Chat Moderators observe the server chat without having any special roles displayed. (It's an invisible position)
