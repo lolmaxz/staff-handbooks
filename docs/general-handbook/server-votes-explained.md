@@ -8,8 +8,6 @@ import ChannelBadge from "@site/src/components/ChannelBadge";
 import RoleBadge from "@site/src/components/RoleBadge";
 import Tooltip from "@site/src/components/Tooltip";
 
-## Staff Votes Explained
-
 Understanding the different types of votes within the server.
 
 :::note
