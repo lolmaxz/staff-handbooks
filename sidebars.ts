@@ -93,6 +93,18 @@ const sidebars: SidebarsConfig = {
         "general-handbook/staff-voting-explained",
         {
           type: "category",
+          label: "Joining-Staff",
+          link: {
+            type: "doc",
+            id: "general-handbook/joining-staff/staff-applications",
+          },
+          collapsed: true,
+          items: [
+            "general-handbook/joining-staff/headhunting",
+          ]
+        },
+        {
+          type: "category",
           label: "Staff-Perks",
           link: {
             type: "doc",
