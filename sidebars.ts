@@ -90,6 +90,7 @@ const sidebars: SidebarsConfig = {
           ],
         },
         "general-handbook/staff-channels",
+        "general-handbook/staff-voting-explained",
         "general-handbook/staff-perks",
       ],
     },
@@ -157,8 +158,7 @@ const sidebars: SidebarsConfig = {
             "server-staff-handbook/ban-votes/emergency-ban-vote",
           ],
         },
-        "server-staff-handbook/server-votes-explained",
-        "server-staff-handbook/github-records",
+                "server-staff-handbook/github-records",
       ],
     },
 
