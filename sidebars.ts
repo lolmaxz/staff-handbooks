@@ -91,7 +91,30 @@ const sidebars: SidebarsConfig = {
         },
         "general-handbook/staff-channels",
         "general-handbook/staff-voting-explained",
-        "general-handbook/staff-perks",
+        {
+          type: "category",
+          label: "Joining-Staff",
+          link: {
+            type: "doc",
+            id: "general-handbook/joining-staff/staff-applications",
+          },
+          collapsed: true,
+          items: [
+            "general-handbook/joining-staff/headhunting",
+          ]
+        },
+        {
+          type: "category",
+          label: "Staff-Perks",
+          link: {
+            type: "doc",
+            id: "general-handbook/staff-perks/staff-perks",
+          },
+          collapsed: true,
+          items: [
+            "general-handbook/staff-perks/staff-emeritus",
+          ]
+        },
       ],
     },
     {

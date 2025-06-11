@@ -6,6 +6,7 @@ sidebar_position: 4
 
 import ChannelBadge from '@site/src/components/ChannelBadge';
 import Tooltip from '@site/src/components/Tooltip';
+import RoleBadge from "@site/src/components/RoleBadge";
 
 # Staff Perks 🎁
 
