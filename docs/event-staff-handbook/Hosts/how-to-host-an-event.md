@@ -1,34 +1,34 @@
 ---
 id: how-to-host-an-event
 title: How to Host an Event
-sidebar_position: 6
 ---
-
-# How to Host an Event
-
+:::tip
 Hosting an event involves several key steps:
+:::
 
-1. **Scheduling**: Ensure you are scheduled to host the event.
+### **Scheduling:** Ensure you are scheduled to host the event.
 
-2. **Publish the Event**: Click the megaphone icon to publish your event.
+### **Publish the Event:** Click the megaphone icon to publish your event.
 
-3. **Event Announcement**:
+### **Event Announcement:**
 
    - Make a post in **#events**, aiming for a minimum of **2-6 hours** prior to the start of the event.
    - If your announcement overlaps with another ongoing event, post it **1 hour after doors open** for that event.
 
-4. **Reminder Ping**: Send a 1-hour reminder in **#events**.
+### **Reminder Ping**: Send a 1-hour reminder in **#events**.
 
-5. **Event Pings During the Event**:
+### **Event Pings During the Event:**
 
    - **10-15 minutes before start**: Ping **Patreon** members. If all signed-up patrons have joined, you can open the doors to regular members.
    - **On Time**: Send the general invite request notice.
 
-6. **Host the Event**:
+### **Host the Event:**
 
-   - Follow specific guidelines based on the event type (see [Classic Event Types](classic-event-types.md) and [Special Planning Event Types](special-planning-event-types#.md)).
+   :::note info 
+   Follow specific guidelines based on the event type (see [Event Types](classic-event-types.md)).
+   :::
 
-7. **Post-Event**:
+### **Post-Event:**
 
    - Report any incidents in **#events-incidents**.
    - Announce when the event ends and if the world capacity is full.

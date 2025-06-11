@@ -90,33 +90,27 @@ const features = [
 const handbooks = [
   {
     title: "General Handbook",
-    description: "All-purpose basic handbook with information all staff needs to know.",
+    description: "All-purpose basic handbook with information all staff needs to know!",
     link: "./docs/general-handbook",
     icon: "../img/general_icon.svg", // Replace with your own icon
   },
   {
     title: "Server Staff Handbook",
-    description: "Guidelines and procedures for server staff members.",
+    description: "Guidelines and procedures for server staff members!",
     link: "/docs/server-staff-handbook",
     icon: "../img/server_icon.svg", // Replace with your own icon
   },
   {
     title: "Event Staff Handbook",
-    description: "Handbook for the team that manages events.",
+    description: "Handbook for the team that manages events!",
     link: "./docs/event-staff-handbook",
     icon: "../img/event_icon.svg", // Replace with your own icon
-  },
-  {
-    title: "Social Media Handbook",
-    description: "Guidelines for the social media team on preparing posts.",
-    link: "./docs/social-media-handbook",
-    icon: "../img/social_icon.svg", // Replace with your own icon
   },
 ];
 
 export default function Home(): JSX.Element {
   return (
-    <Layout title="Home" description="Eden Apis Staff Handbook - A comprehensive list!">
+    <Layout title="Home" description="Eden Apis Staff Handbook - Your guide to roles, responsibilities, and procedures">
       <HomepageHeader />
       <main>
         <section className={styles.features}>
@@ -129,16 +123,15 @@ export default function Home(): JSX.Element {
           </div>
         </section>
         <section className={styles.handbooks}>
-          <div className="container">
-            <h2>Our Handbooks</h2>
+          <div className="container" style={{ marginBottom: "4rem" }}>
             <div className="row">
               {handbooks.map((handbook, idx) => (
-                <div key={idx} className="col col--3">
-                  <div className={styles.handbookCard}>
+                <div key={idx} className="col col--4">
+                  <div className={clsx(styles.handbookCard, "text--center")}>
                     <h3>{handbook.title}</h3>
                     <p>{handbook.description}</p>
-                    <Link className="button button--secondary button--m" to={handbook.link}>
-                      Take Me Here!
+                    <Link className="button button--secondary button--sm" to={handbook.link}>
+                      Read More
                     </Link>
                   </div>
                 </div>

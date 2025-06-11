@@ -1,0 +1,10 @@
+{
+  "label": "Event Security",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "title": "Event Security Handbook",
+    "description": "Guidelines and procedures for security team members."
+  },
+  "collapsed": true
+}
