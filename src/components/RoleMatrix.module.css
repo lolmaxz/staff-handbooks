@@ -1,0 +1,21 @@
+.table {
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.85rem;
+}
+th,
+td {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+}
+th {
+  background: var(--ifm-background-surface-color);
+}
+.role {
+  font-weight: 600;
+  text-align: left;
+}
+.cell {
+  width: 3rem;
+}

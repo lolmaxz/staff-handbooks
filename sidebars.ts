@@ -14,6 +14,11 @@ const sidebars: SidebarsConfig = {
   handbookSidebar: [
     {
       type: "doc",
+      id: "new-component",
+      label: "New Component!",
+    },
+    {
+      type: "doc",
       id: "intro",
       label: "Introduction",
     },
@@ -26,7 +31,6 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: true,
       items: [
-        "general-handbook/server-hierarchy",
         {
           type: "category",
           label: "All Staff Roles",
@@ -72,19 +76,44 @@ const sidebars: SidebarsConfig = {
               //   "general-handbook/staff-roles/event-side/event-security",
               // ],
             },
-            {
-              type: "doc",
-              label: "Media Staff Roles",
-              id: "general-handbook/staff-roles/media-positions/media-positions",
-              /* link: {
-                 type: "doc",
-                 id: "general-handbook/staff-roles/social-media-side/media-positions",
-               },
-               items: [{type: "doc", id: "general-handbook/staff-roles/social-media-side/social-media-team"}], */
-            },
+            // {
+            //   type: "doc",
+            //   label: "Media Staff Roles",
+            //   id: "general-handbook/staff-roles/media-positions/media-positions",
+            //   /* link: {
+            //      type: "doc",
+            //      id: "general-handbook/staff-roles/social-media-side/media-positions",
+            //    },
+            //    items: [{type: "doc", id: "general-handbook/staff-roles/social-media-side/social-media-team"}], */
+            // },
           ],
         },
         "general-handbook/staff-channels",
+        "general-handbook/staff-voting-explained",
+        {
+          type: "category",
+          label: "Joining-Staff",
+          link: {
+            type: "doc",
+            id: "general-handbook/joining-staff/staff-applications",
+          },
+          collapsed: true,
+          items: [
+            "general-handbook/joining-staff/headhunting",
+          ]
+        },
+        {
+          type: "category",
+          label: "Staff-Perks",
+          link: {
+            type: "doc",
+            id: "general-handbook/staff-perks/staff-perks",
+          },
+          collapsed: true,
+          items: [
+            "general-handbook/staff-perks/staff-emeritus",
+          ]
+        },
       ],
     },
     {
@@ -105,7 +134,7 @@ const sidebars: SidebarsConfig = {
             image: "./static/img/docusaurus.png",
           },
           items: [
-            "server-staff-handbook/training/going-on-off-call",
+            // "server-staff-handbook/training/going-on-off-call",
             //"server-staff-handbook/training/enabling-developer-mode",
             "server-staff-handbook/training/getting-discord-user-id",
           ],
@@ -151,8 +180,7 @@ const sidebars: SidebarsConfig = {
             "server-staff-handbook/ban-votes/emergency-ban-vote",
           ],
         },
-        "server-staff-handbook/server-votes-explained",
-        "server-staff-handbook/github-records",
+                "server-staff-handbook/github-records",
       ],
     },
 
@@ -161,39 +189,38 @@ const sidebars: SidebarsConfig = {
       label: "Event Staff Handbook",
       link: {
         type: "doc",
-        id: 'event-staff-handbook/introduction'
+        id: "event-staff-handbook/introduction",
       },
       items: [
         "event-staff-handbook/Hosts/hosting-requirements",
-    "event-staff-handbook/event-rules",
-    "event-staff-handbook/event-team-channels",
-    "event-staff-handbook/event-roles",
-    {
-      type: "category",
-      label: "Event Hosts",
-      link: {
-        type: "generated-index",
-      },
-      items: [
-        "event-staff-handbook/Hosts/how-to-host-an-event",
-        "event-staff-handbook/Hosts/scheduling-procedures",
-        "event-staff-handbook/Hosts/host-discretion-list",
+        "event-staff-handbook/event-rules",
+        "event-staff-handbook/event-team-channels",
+        "event-staff-handbook/event-roles",
+        {
+          type: "category",
+          label: "Event Hosts",
+          link: {
+            type: "generated-index",
+          },
+          items: [
+            "event-staff-handbook/Hosts/how-to-host-an-event",
+            "event-staff-handbook/Hosts/scheduling-procedures",
+            "event-staff-handbook/Hosts/host-discretion-list",
+          ],
+        },
+        {
+          type: "category",
+          label: "Event Security",
+          link: {
+            type: "doc",
+            id: "event-staff-handbook/Security/Introduction",
+          },
+          items: ["event-staff-handbook/Security/how-to-be-security", "event-staff-handbook/Security/incident-management-guidelines"],
+        },
+        "event-staff-handbook/github-records",
       ],
     },
-    {
-      type: "category",
-      label: "Event Security",
-      link: {
-        type: "doc",
-        id:"event-staff-handbook/Security/Introduction"
-      },
-      items: [
-        "event-staff-handbook/Security/how-to-be-security",
-        "event-staff-handbook/Security/incident-management-guidelines",
-      ],
-    },
-    "event-staff-handbook/github-records",
   ],
-}]}
+};
 
 export default sidebars;
