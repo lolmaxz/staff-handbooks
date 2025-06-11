@@ -135,7 +135,7 @@ const sidebars: SidebarsConfig = {
             image: "./static/img/docusaurus.png",
           },
           items: [
-            "server-staff-handbook/training/going-on-off-call",
+            // "server-staff-handbook/training/going-on-off-call",
             //"server-staff-handbook/training/enabling-developer-mode",
             "server-staff-handbook/training/getting-discord-user-id",
           ],
