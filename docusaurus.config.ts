@@ -110,7 +110,7 @@ const config: Config = {
           items: [
             {
               label: "Staff Handbooks",
-              to: "/docs/server-staff-handbook",
+              to: "/docs/intro",
             },
           ],
         },

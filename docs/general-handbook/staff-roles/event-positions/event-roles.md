@@ -11,9 +11,11 @@ import Tooltip from "@site/src/components/Tooltip";
 
 # Event Staff Positions
 
-❓ _Also called the <RoleBadge role="Event Breed" />_ <br/><br/>
-There is multiple staff positions within the Event Team, each with its own set of responsibilities. Below is a list of the Event Team positions and their respective duties.
-For a quick access to each of them:
+:::info ❓ Also called the <RoleBadge role="Event Breed" />
+There is multiple staff positions within the Event Team, each with its own set of responsibilities. Below is a list of the Event Team positions and their respective duties. Let's start with a quick access to each of them.
+:::
+
+---
 
 - [Event Team Head](#event-team-head)
 - [Head of Security](#head-of-security)
@@ -37,7 +39,7 @@ The person in charge of the **Event Team**, overseeing all actions and setting t
 - Manage event incident tickets and ensure punishments align with guidelines.
 - Organize and lead event meetings.
 - Update Event Rules and Handbooks with any changes from the committee.
-- More information in [Event Committee](#). (to be updated)
+- More information on [Event Committee](#event-committee).
 
 :::info
 The Event Team Head ensures that events run smoothly and that the team is well-coordinated.
@@ -79,7 +81,6 @@ A group that assists the Event Team Head in leading the event team and planning 
 - Host or attend at least 3 events per month for team oversight and vibe checks.
 - Plan topics for event meetings and prepare materials.
 - Provide monthly updates for <ChannelBadge label="📰𝘌∙𝘙∙𝘗-news" link="https://discord.com/channels/734595073920204940/1071149239415078912" /> and plan one Patreon event per month.
-- More information in [Event Committee](#). (to be updated)
 
 :::tip
 The Event Committee plays a crucial role in maintaining event quality and team cohesion.
@@ -99,7 +100,7 @@ Experienced members of the Event Team with additional responsibilities.
 - Host Patreon events and help plan big special events.
 - Manage event report tickets and update incident threads.
 - Enforce event punishments and vote on longer bans.
-- More information in [Event Committee](#). (to be updated)
+- More information in [Event Committee](#event-committee). (To be replaced with new link for senior host inside event-handbook)
 
 :::info
 Senior Event Team members are mentors and leaders within the Event Team.
@@ -145,7 +146,7 @@ New members of the Event Team learning to host events and act as security.
 This is the position you will be in when you first join the Event Team.
 
 This position is temporary as it act like a probation period for new members. After the probation period, the Event Team Head will decide if the member will be promoted to a full role or not.
-More information about the Trial period can be found in [Event Committee](#). (to be updated)
+More information about the Trial period can be found in [Event Committee](#event-committee). (To be replaced with new link for event staff onboarding and final vote)
 
 <h3> Responsibilities: </h3>
 
