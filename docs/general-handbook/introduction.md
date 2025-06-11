@@ -7,7 +7,7 @@ slug: /general-handbook
 
 # The Eden Apis General Handbook
 
-Welcome aboard and thank you for your interest in helping shape our community and entertain our members.
+Welcome aboard and thank you for your interest in helping shape our community and entertaining our members.
 The Eden Apis constantly strives to foster a safe and fun environment for everyone!
 
 This Online Document outlines many things you need to know as a staff member in The Eden Apis. You'll be guided through basic staff responsibilities to better assist the community and make it as enjoyable as possible for all members, then we'll dive into the specifics of each department and their roles.

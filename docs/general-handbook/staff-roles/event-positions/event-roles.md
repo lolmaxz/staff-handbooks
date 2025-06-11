@@ -11,7 +11,7 @@ import Tooltip from "@site/src/components/Tooltip";
 
 # Event Staff Positions
 
-:::info ❓ Also called the <RoleBadge role="Event Breed" />
+:::info ❓ Also called <RoleBadge role="The Event Breed" />
 There is multiple staff positions within the Event Team, each with its own set of responsibilities. Below is a list of the Event Team positions and their respective duties. Let's start with a quick access to each of them.
 :::
 
@@ -29,17 +29,16 @@ There is multiple staff positions within the Event Team, each with its own set o
 
 ## Event Team Head <RoleBadge role="Event Team Head" badgeIcon="event_head_role_icon.png" color="#f75edb" /> {#event-team-head}
 
-The person in charge of the **Event Team**, overseeing all actions and setting the vision.
+The person in charge of the **Event Team**, overseeing all actions, moderation, and development.
 
 <h3> Responsibilities: </h3>
 
-- Onboard and train new Event Team members.
-- Act as the main point of contact for Admins and HR regarding the Event Team.
-- Ensure fair task distribution and completion of weekly responsibilities.
-- Manage event incident tickets and ensure punishments align with guidelines.
-- Organize and lead event meetings.
-- Update Event Rules and Handbooks with any changes from the committee.
-- More information on [Event Committee](#event-committee).
+- Oversee completion of event tasks and document updates in regards to event teams alongside Head of Security.
+- Act as the main point of contact for Owners and HR regarding the Event Team.
+- Ensure fairness in moderation actions within events.
+- Plan event team meetings.
+- Make staff announcements.
+- Train Senior Events Team.
 
 :::info
 The Event Team Head ensures that events run smoothly and that the team is well-coordinated.
@@ -55,11 +54,12 @@ Leads the event security team and provides cyber protection for attendees and th
 
 <h3> Responsibilities: </h3>
 
-- Lead event security roles.
-- <Tooltip noDecoration={true} width="9em" tip="Point of Contact">POC</Tooltip> for Admins regarding any cybersecurity issues in server/events.
+- Oversee completion of security tasks and document updates in regards to event team alongside Event Team Head.
+- Ensure fairness in moderation actions within events.
+- <Tooltip noDecoration={true} width="9em" tip="Point of Contact">POC</Tooltip> for Owners regarding any cybersecurity issues in server/events.
 - Serve as the point of contact for HR reports about team members.
 
-:::note
+:::info
 The Head of Security ensures the safety and security of events and addresses any security concerns.
 
 Currently, <RoleBadge role="cobramaia" color="#00B9ff" /> serves as the Head of Security.
@@ -80,12 +80,13 @@ A group that assists the Event Team Head in leading the event team and planning 
 - Monitor and address Host/Security performance issues, recommending promotions or demotions.
 - Host or attend at least 3 events per month for team oversight and vibe checks.
 - Plan topics for event meetings and prepare materials.
-- Provide monthly updates for <ChannelBadge label="📰𝘌∙𝘙∙𝘗-news" link="https://discord.com/channels/734595073920204940/1071149239415078912" /> and plan one Patreon event per month.
+- Provide quarterly updates for <ChannelBadge label="📰𝘌∙𝘙∙𝘗-news" link="https://discord.com/channels/734595073920204940/1071149239415078912" /> 
+- Oversee planning of monthly Patreon event(s).
 
-:::tip
+:::info
 The Event Committee plays a crucial role in maintaining event quality and team cohesion.
 
-Currently, the Event Committee is comprised of: <RoleBadge role="vervacious\_" color="#00B9ff" />, <RoleBadge role="nightmarediztydoo" color="#00B9ff" /> and <RoleBadge role="defovr" color="#00B9ff" />.
+Currently, the Event Committee is comprised of: <RoleBadge role="vervacious_" color="#00B9ff" />, <RoleBadge role="nightmarediztydoo" color="#00B9ff" /> and <RoleBadge role="defovr" color="#00B9ff" />.
 :::
 
 ---
@@ -99,8 +100,8 @@ Experienced members of the Event Team with additional responsibilities.
 - Train new trial members and complete their reports.
 - Host Patreon events and help plan big special events.
 - Manage event report tickets and update incident threads.
-- Enforce event punishments and vote on longer bans.
-- More information in [Event Committee](#event-committee). (To be replaced with new link for senior host inside event-handbook)
+- Enforce event punishments and vote on longer event bans.
+- More information in [Senior Event Team](#senior-event-team). (To be replaced with new link for senior host inside event-handbook)
 
 :::info
 Senior Event Team members are mentors and leaders within the Event Team.
@@ -117,9 +118,11 @@ Individuals in charge of hosting events and ensuring they run smoothly.
 <h3> Responsibilities: </h3>
 
 - Manage event participants.
-- Enforce rules during events if security is unavailable.
+- Create/Hype up event announcements.
+- Create general good vibes during events.
 - Required to submit their availability template by Friday each week (see "Scheduling Procedures" in the Event Staff Handbook for more details).
 - Responsible for pairing up with security for events.
+- Enforce rules during events if security is unavailable.
 
 ---
 
@@ -133,29 +136,30 @@ Personnel responsible for the safety and security of events.
 - Ensure the event is safe and secure.
 - Make rounds during events to check for issues.
 - Document any event incidents worth noting for the Event Security Manager to review.
+- Coordinate with event host to maintain general good vibes of events.
 
 :::warning
-Event Security must be vigilant and proactive in addressing any concerns during events.
+Event Security must be vigilant and proactive in discreetly addressing any concerns during events.
 :::
 
 ---
 
-## Event Team Trials <RoleBadge role="Trial Team Trial" color="#3fa7ff" /> {#event-team-trials}
+## Event Team Trials <RoleBadge role="Event Team Trial" color="#3fa7ff" /> {#event-team-trials}
 
 New members of the Event Team learning to host events and act as security.
 This is the position you will be in when you first join the Event Team.
 
-This position is temporary as it act like a probation period for new members. After the probation period, the Event Team Head will decide if the member will be promoted to a full role or not.
-More information about the Trial period can be found in [Event Committee](#event-committee). (To be replaced with new link for event staff onboarding and final vote)
+This position is temporary as it act like a probation period for new members. After the probation period, the Senior Event Team Head will decide if the member will be promoted to a host, security, or both.
+More information about the Trial period can be found in [Event Trial](#event-trial). (To be replaced with new link for event staff onboarding and final vote)
 
 <h3> Responsibilities: </h3>
 
-- Learn how to host and provide security for events.
-- Learn how to enforce rules during events.
+- Learn how to host and provide security for events within probation training period.
+- Learn how to enforce rules during events within probation training period.
 - Required to submit their availability template for the next week's schedule (see "Scheduling Procedures" in the Event Staff Handbook for more details).
 
-:::note
-Event Trials are in training and should be proactive in learning and asking questions.
+:::warning
+Event Trials are in training and should be proactive in learning and asking questions. Event Committee may demote based on not completing training in a timely manner.
 :::
 
 ---

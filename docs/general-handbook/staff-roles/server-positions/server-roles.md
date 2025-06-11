@@ -10,7 +10,7 @@ import ChannelBadge from "@site/src/components/ChannelBadge";
 
 # Server Staff Positions
 
-❓ _Also called the <RoleBadge role="Server Breed" badgeIcon="" />_ <br/><br/>
+:::info ❓ Also called <RoleBadge role="The Server Breed" badgeIcon="" /> <br/><br/>
 There is multiple staff positions within the Server Team, each with its own set of responsibilities. Below is a list of the Server Team positions and their respective duties.
 For a quick access to each of them:
 :::
@@ -27,15 +27,16 @@ For a quick access to each of them:
 
 ## Server Team Head <RoleBadge role="Head Moderator 🔰" badgeIcon="" color="#db1cb8" /> {#server-team-head}
 
-The person in charge of the **Server Team**, overseeing all actions and setting the vision.
+The person in charge of the **Server Team**, overseeing all actions, moderations, and development.
 
 <h3> Responsibilities: </h3>
 
 - Oversee completion of server tasks and document updates.
-- Communicate directly with the owner for important matters.
+- Act as the main point of contact for Admins and HR regarding the Server Team.
+- Ensure fairness in moderation actions within the server.
+- Plan server team meetings.
 - Make staff announcements.
 - Train Moderators.
-- Direct communication with owners for any significant situations.
 
 :::note
 The Head Moderator ensures the server runs smoothly and that the moderation team is effective.
@@ -53,7 +54,7 @@ The **Server Committee** is a group of staff members that assist the Head Modera
 - Participate in updating all server-side documentation.
 - Assist in handling problematic situations with members.
 - Support other Moderators.
-- Vote on new changes to the server.
+- Develop new changes for the server.
 
 ---
 
