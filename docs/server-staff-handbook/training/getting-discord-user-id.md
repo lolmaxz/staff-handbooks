@@ -4,45 +4,40 @@ title: How to Get a Discord User ID from a User
 sidebar_position: 3
 ---
 
+import { Settings } from 'lucide-react';
+import { UserRoundCog } from 'lucide-react';
+import { ToggleRight } from 'lucide-react';
+
 # Enabling Developer Mode of Discord
 
 _This setting is required to be active in order to get user's Discord User ID._
 
 ## How to Enable Developer Mode
 
-# On **Desktop**:
+### On Desktop 🖥️
 
-1. Click on the **Settings** cog next to your username.
+1. Click on the **Settings** <Settings size={16} /> icon next to your username.
 2. Navigate to **Advanced** in the left sidebar.
-3. Toggle **Developer Mode** on.
+3. Toggle **Developer Mode** <ToggleRight size={16} /> on.
 
-<details>
-  <summary>See where to click exactly on PC</summary>
-  <img src={require("../../../static/img/developer_pc.png").default} alt="Demo Picture" width="30%" />
-</details>
+<img src={require("@site/static/img/developer_pc.png").default} alt="Demo Picture" width="35%" />
 
-# On **Android**:
+### On Android 📱
 
-1. Tap on your **profile picture** to access User Settings.
-2. Scroll down to **App Settings**.
-3. Tap on **Behavior**.
-4. Toggle **Developer Mode** on.
+1. Tap on your **profile picture** <UserRoundCog size={16} /> to access User Profile.
+2. Tap top right corner on <Settings size={16} /> to access your **App Settings**.
+3. Scroll down and tap on **Advanced**.
+4. Toggle **Developer Mode** <ToggleRight size={16} /> on.
 
-<details>
-  <summary>See where to click exactly on Android</summary>
-  <img src={require("../../../static/img/developer_android_3.jpg").default} alt="Demo Picture" width="30%" />
-</details>
+<img src={require("@site/static/img/developer_android_3.jpg").default} alt="Demo Picture" width="25%" />
 
-# On **iOS**:
+### On iOS 🍏
 
-1. Tap on your **profile picture** to access User Settings.
+1. Tap on your **profile picture** <UserRoundCog size={16} /> to access User Settings.
 2. Tap on **Appearance**.
-3. Scroll down and toggle **Developer Mode** on.
+3. Scroll down and toggle **Developer Mode** <ToggleRight size={16} /> on.
 
-<details>
-  <summary>See where to click exactly on IOS</summary>
-  <img src={require("../../../static/img/developer_IOS.png").default} alt="Demo Picture" width="30%" />
-</details>
+<img src={require("@site/static/img/developer_IOS.png").default} alt="Demo Picture" width="25%" />
 
 :::note
 Once enabled, you can right-click (or tap and hold on mobile) on a user's profile or username to copy their User ID.

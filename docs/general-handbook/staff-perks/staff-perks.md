@@ -47,8 +47,7 @@ Early access is awesome, but let's keep it fair for everyone!
 ### Server Recognition 🌟
 
 - 📋 Staff are listed higher up in the member list on the right panel
-- 📝 You can share your bio in the Know-the-Staff channel so the community can get to know you better!
-  - <ChannelBadge label="Know-the-Staff" link="https://discord.com/channels/734595073920204940/1199888605112447026" />
+- 📝 You can share your bio in the <ChannelBadge label="📚𝘒now-the-𝘚taff" link="https://discord.com/channels/734595073920204940/1199888605112447026" /> channel so the community can get to know you better!
 
 ---
 
@@ -61,7 +60,7 @@ These events are just for us staff members - a great way to bond and have fun to
 :::
 
 - 🎯 Participate in occasional VRChat Staff Events dedicated just to staff members
-- Example: <ChannelBadge variant="post" label="Staff Events" link="https://discord.com/channels/734595073920204940/1299086934437793812" />
+- Example: <ChannelBadge label="💜staff-fun-time  >" link="https://discord.com/channels/734595073920204940/1001344853776552076" /><ChannelBadge variant="thread" label="Staff Event!!" link="https://discord.com/channels/734595073920204940/1299086934437793812" />
 
 ### Dedicated VRChat Group 🎭
 
@@ -78,7 +77,7 @@ These events are just for us staff members - a great way to bond and have fun to
 Even if you're not a Patreon supporter, you get access to these exclusive channels!
 :::
 
-- <ChannelBadge label="Patreon Chat" link="https://discord.com/channels/734595073920204940/811089852934258708" />
+- <ChannelBadge label="💎𝘗atreon-𝘉ig-𝘙oom" link="https://discord.com/channels/734595073920204940/811089852934258708" />
 - <ChannelBadge label="💎Patreon Sexy Voices" variant="vc" link="https://discord.com/channels/734595073920204940/811089922588409856" />
 
 ### Special Channels 🎯
@@ -87,15 +86,15 @@ Even if you're not a Patreon supporter, you get access to these exclusive channe
 These channels give you a sneak peek into what's coming and let you help shape our community!
 :::
 
-- **Giveaway Channel** <ChannelBadge label="Giveaways" link="https://discord.com/channels/734595073920204940/916602912636043314" />
+- **Giveaway Channel** <ChannelBadge label="💘𝘎iveaways" link="https://discord.com/channels/734595073920204940/916602912636043314" />
   - Normally for Active-Cutie or Patreon members
-- **World-Preview Channel** <ChannelBadge label="World Preview" link="https://discord.com/channels/734595073920204940/1199129449065623582" />
+- **World-Preview Channel** <ChannelBadge label="🔑𝘞orld-𝘗review" link="https://discord.com/channels/734595073920204940/1199129449065623582" />
   - See early updates on our world's development
-- **Feature-Request Channel** <ChannelBadge variant="post" label="Feature Requests" link="https://discord.com/channels/734595073920204940/1199129751198105641" />
+- **Feature-Request Channel** <ChannelBadge variant="post" label="🔑𝘍eature-𝘙equest" link="https://discord.com/channels/734595073920204940/1199129751198105641" />
   - Suggest ideas for the world we're working on
-- **World-Polls Channel** <ChannelBadge label="World Polls" link="https://discord.com/channels/734595073920204940/1199130149153685514" />
+- **World-Polls Channel** <ChannelBadge label="🔑𝘞orld-𝘗olls" link="https://discord.com/channels/734595073920204940/1199130149153685514" />
   - Vote on future changes for the world
-- **Booster-Gang Channel** <ChannelBadge label="Booster Gang" link="https://discord.com/channels/734595073920204940/811089566979063808" />
+- **Booster-Gang Channel** <ChannelBadge label="🈹𝘉oosters-𝘎ang" link="https://discord.com/channels/734595073920204940/811089566979063808" />
   - Access normally reserved for Boosters or Patreon supporters
 
 ---
@@ -118,7 +117,8 @@ Your voice matters! Help shape the future of our community.
 ### VRChat World Features 🌍
 
 - 🖼️ Option to have your picture featured in the VRChat world
-- 🎵 Custom jingle choice -> <ChannelBadge label="World Features" link="https://discord.com/channels/734595073920204940/1217187008695369828" />
+- 🎵 Custom jingle choice
+- All found in <ChannelBadge label="🔨𝘞orld-𝘚upporter" link="https://discord.com/channels/734595073920204940/1217187008695369828/1217199824743567461" />
 
 ### Custom Emoji 😊
 
@@ -131,7 +131,7 @@ Make sure your emoji follows our <Tooltip tip={`Rules:
   ❌ No graphic or flashy images
   ❌ No original characters from other communities`} useLineBreaks={true} width="25em">guidelines</Tooltip>!
 :::
-
+<br/>
 :::note
 These perks are subject to change and may be updated as our community grows and evolves. We always aim to maintain a fair balance between staff benefits and community accessibility. Have questions? Feel free to ask!
 :::

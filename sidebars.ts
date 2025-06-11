@@ -31,7 +31,6 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: true,
       items: [
-        "general-handbook/server-hierarchy",
         {
           type: "category",
           label: "All Staff Roles",
@@ -90,7 +89,31 @@ const sidebars: SidebarsConfig = {
           ],
         },
         "general-handbook/staff-channels",
-        "general-handbook/staff-perks",
+        "general-handbook/staff-voting-explained",
+        {
+          type: "category",
+          label: "Joining-Staff",
+          link: {
+            type: "doc",
+            id: "general-handbook/joining-staff/staff-applications",
+          },
+          collapsed: true,
+          items: [
+            "general-handbook/joining-staff/headhunting",
+          ]
+        },
+        {
+          type: "category",
+          label: "Staff-Perks",
+          link: {
+            type: "doc",
+            id: "general-handbook/staff-perks/staff-perks",
+          },
+          collapsed: true,
+          items: [
+            "general-handbook/staff-perks/staff-emeritus",
+          ]
+        },
       ],
     },
     {
@@ -111,7 +134,7 @@ const sidebars: SidebarsConfig = {
             image: "./static/img/docusaurus.png",
           },
           items: [
-            "server-staff-handbook/training/going-on-off-call",
+            // "server-staff-handbook/training/going-on-off-call",
             //"server-staff-handbook/training/enabling-developer-mode",
             "server-staff-handbook/training/getting-discord-user-id",
           ],
@@ -157,8 +180,7 @@ const sidebars: SidebarsConfig = {
             "server-staff-handbook/ban-votes/emergency-ban-vote",
           ],
         },
-        "server-staff-handbook/server-votes-explained",
-        "server-staff-handbook/github-records",
+                "server-staff-handbook/github-records",
       ],
     },
 

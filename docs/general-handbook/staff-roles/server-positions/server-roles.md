@@ -13,6 +13,9 @@ import ChannelBadge from "@site/src/components/ChannelBadge";
 ❓ _Also called the <RoleBadge role="Server Breed" badgeIcon="" />_ <br/><br/>
 There is multiple staff positions within the Server Team, each with its own set of responsibilities. Below is a list of the Server Team positions and their respective duties.
 For a quick access to each of them:
+:::
+
+---
 
 - [Server Team Head](#server-team-head)
 - [Server Committee](#server-committee)
@@ -79,8 +82,8 @@ The **Server Committee** is a group of staff members that assist the Head Modera
 - Assist members when they have questions.
 - Enforce server rules.
 
-:::tip
-Cutie Helpers are often the first point of contact for new members, making their role crucial for a welcoming community.
+:::tip Our First Line
+Cutie Helpers are often the first point of contact for new members, making their role crucial for a welcoming community!
 :::
 
 ---
@@ -103,3 +106,4 @@ Being anonymous helps Chat Moderators observe the server chat without having any
 ---
 
 If you are interested in joining the Server Team, please refer to the <ChannelBadge label="✨𝘚taff-𝘈pplications" link="https://discord.com/channels/734595073920204940/979983964813021205" /> on the Discord server.
+<sub> _If you cannot see this channel it's because you haven't joined yet!_ </sub>
