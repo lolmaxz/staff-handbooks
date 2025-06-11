@@ -41,7 +41,8 @@ Now, here's all the Channels you need to Familiarize yourself with
 - <ChannelBadge label="⭕server-chat-reports" link="https://discord.com/channels/734595073920204940/996504897476366497" />: This channel is used to report anything you may see in chat that may or could violate our server's rules.
 <details>
   <summary>Important Note about <ChannelBadge label="⭕server-chat-reports" link="https://discord.com/channels/734595073920204940/996504897476366497" /></summary>
-    <p>Simply provide the message link to the problematic post and explain why you think it needed to be reported. The server team will handle the rest. <br/>
+    <p>- Cutie helpers and moderators may report things directly in **#📗helper-chat** or **#📙moderator-only** instead of using this channel.<br/>
+    Simply provide the message link to the problematic post and explain why you think it needed to be reported. The server team will handle the rest. <br/>
     If you are unsure if something should be reported, it is always better to report it and let the server team decide if it needs to be addressed. <br/>
     ANY staff member can report a message, but only server staff can handle the reports. This is just a faster direct line of communication for staff to report messages.</p>
 </details>

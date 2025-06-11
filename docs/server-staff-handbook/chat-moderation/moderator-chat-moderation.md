@@ -32,7 +32,7 @@ As a Moderator, your responsibilities in chat moderation include:
 
 - **Collaboration**:
 
-  - If unsure, consult with other Moderators in **#staff-talk**.
+  - If unsure, consult with other Moderators in **#📙moderator-only**.
   - Include message links when asking for assistance.
 
 :::warning
