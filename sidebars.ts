@@ -31,7 +31,6 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: true,
       items: [
-        "general-handbook/server-hierarchy",
         {
           type: "category",
           label: "All Staff Roles",

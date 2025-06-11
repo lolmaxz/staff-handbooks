@@ -23,20 +23,35 @@ Do your best to keep drama out of the server and events!
 
 First things first, let's get you acquainted with the server's organization and hierarchy.
 
-## Server Organization
+## Server Organization and Hierarchy
+
+---
 
 Before we dive into the specifics of each department, let's take a look at the server's organizational chart. This chart will help you understand the different positions, lines of command, and various additional information. If you ever wonder who you need to refer to for questions or issues, please consult this organizational chart below.
 
+- We will also list the server's positions and a brief overview of their duties. This way, you know who is responsible for which tasks.
+
+- As a new staff member, you will need to familiarize yourself with these roles and duties, especially in the department you are part of.
+
 <details>
   <summary>Click to see the Server Organization Diagram</summary>
-  <img src={require("../../static/img/organigram.png").default} alt="Organigram of staff" />
+  <img src={require("../../static/img/server_organigam.png").default} alt="Organigram of staff" />
 </details>
 
-:::warning Note
-This document may be updated over time. When something new is added or edited, a staff announcement in the Discord server will be made to inform you of those changes!
+:::warning
+
+### Reminder to check the department handbook too!
+
+➡️ In addition to this document, you **need** to read the handbook related to the department you just joined!
 :::
 
+---
 
+:::tip Handbook Revisions
+Note: This document may be updated over time. When something new is added or edited, a staff announcement in the Discord server will be made to inform you of those changes!
+:::
+
+---
 
 import DocCardList from "@theme/DocCardList";
 
