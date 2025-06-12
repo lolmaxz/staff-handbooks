@@ -49,8 +49,8 @@
 [class^=button]:not(.buttons){
   background: var(--ifm-color-primary-darkest);
   color: white !important;
-  border: 2px solid var(--accents);
-
+  border: 0.2em solid var(--accents);
+  border-radius: 0.5em;
 }
 
 
