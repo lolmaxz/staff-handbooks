@@ -90,6 +90,7 @@ const sidebars: SidebarsConfig = {
         },
         "general-handbook/staff-channels",
         "general-handbook/staff-voting-explained",
+        "general-handbook/staff-hiatus",
         {
           type: "category",
           label: "Joining-Staff",

@@ -73,7 +73,7 @@ Participate actively in votes relevant to your role to contribute to the server'
 
 - For <RoleBadge role="Committee Members"  color="#db1cb8" /> to discuss and vote on Active Projects/Responsibilities of their respective teams, Committee Member Server Bans for community members, Removal/Demotion of a staff member from being active staff/change in staff roles, any Server ban of an Active staff member, and Ban Appeals.
 - Votes can be initiated by any Committee member, typically started by a Comittee Team Head or <RoleBadge role="Lewd Governor" badgeIcon="admin_role_icon.png" color="#db1cb8" />.
-- <u>Committe Server Ban votes for community members</u> require <Tooltip tip="Unanimous agreement with all commitee member not on hiatus voting removes requirement to wait 12hrs." bubbleColor="#d255ec" labelColor="#db1cb8"> **12hrs** </Tooltip> for discussion and voting. Votes pass with greater then 60% of voting Committee members in agreement.
+- <u>Committee Server Ban votes for community members</u> require <Tooltip tip="Unanimous agreement with all commitee member not on hiatus voting removes requirement to wait 12hrs." bubbleColor="#d255ec" labelColor="#db1cb8"> **12hrs** </Tooltip> for discussion and voting. Votes pass with greater then 60% of voting Committee members in agreement.
 - All other votes are at discretion of <Tooltip tip="HR, Head Moderator, Event Team Head, or Head of Security" bubbleColor="#d255ec" labelColor="#db1cb8"> Committee Team Head </Tooltip> or Lewd Governors to determine timeline to discuss/vote.
 - <RoleBadge role="Lewd Governors" badgeIcon="admin_role_icon.png" color="#db1cb8" /> will finalize all votes.
 ---
