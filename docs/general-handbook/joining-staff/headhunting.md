@@ -18,3 +18,7 @@ One of our lovely staff reccommended you to one of our <RoleBadge role="Committe
 ---
 
 You hacked the system and bypassed the Application phase but instead will just follow the Interview Phase of Joining Staff before reaching Staff Orientation! 
+
+:::note Chat Moderator
+Another role to be selected for is our anonymous chat moderators who are active members of the community who gain access to our <ChannelBadge label="⭕server-chat-reports" link="https://discord.com/channels/734595073920204940/996504897476366497"/> in order to make reports directly to moderators without needing to open a ticket!
+:::

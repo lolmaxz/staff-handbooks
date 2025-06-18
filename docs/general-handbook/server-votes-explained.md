@@ -28,6 +28,7 @@ Participate actively in votes relevant to your role to contribute to the server'
 
 - For Server side applications <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> and <RoleBadge role="Committee Member"  color="#db1cb8" /> discuss new staff applications for Cutie Helpers.
 - For Event side applications <RoleBadge role="Event Host" badgeIcon="event_host_role_icon.png" color="#a259f7" />, <RoleBadge role="Event Security" badgeIcon="event_security_role_icon.png" color="#ff5e5b" />, and <RoleBadge role="Committee Member"  color="#db1cb8" /> discuss applications for the Events Team.
+   <!--Event Team applications to be voted for staying Security and Host or Single application to Event team-->
 - Votes for applicants will be accepted/denied within 1 week of applicant applying.
 - Applicants must have a <Tooltip tip="50% of teams staff not including committee members must vote on the application to be a valid vote." bubbleColor="#d255ec" labelColor="#e68027"> 70% vote in favor </Tooltip> between all staff who voted on the application in order to advance to interview phase of becoming a staff member.
 
