@@ -125,7 +125,6 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: true,
       items: [
-        "server-staff-handbook/references",
         {
           type: "category",
           label: "Training",
