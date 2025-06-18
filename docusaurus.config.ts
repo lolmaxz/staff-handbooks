@@ -79,7 +79,17 @@ const config: Config = {
     },
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
-    colorMode: { defaultMode: "dark" },
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
+    docs: {
+      sidebar: {
+        // hideable: true,
+        autoCollapseCategories: true,
+      },
+    },
     navbar: {
       title: "Home",
       logo: {

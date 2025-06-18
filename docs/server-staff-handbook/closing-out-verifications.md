@@ -2,9 +2,11 @@
 id: closing-out-verifications
 title: Closing Out Verifications (Moderators Only)
 ---
+
 import RoleBadge from "@site/src/components/RoleBadge";
 import ChannelBadge from "@site/src/components/ChannelBadge";
 import Tooltip from "@site/src/components/Tooltip";
+import DiscordButton from '@site/src/components/DiscordButton';
 
 # Closing Out Verifications
 
@@ -14,35 +16,42 @@ A second check of the verification ticket is required:
 - If a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> did the initial verification, a separate <RoleBadge role="Second Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> shall close out the ticket.
 
 ## Procedure
----
-### **Role Selection**:
 
-   - Ensure the <RoleBadge role="Unverified" badgeIcon="unverified_role_icon.png" color="#de0000" /> is <Tooltip tip="Hephia will automatically remove the unverified role when a member is granted the verified role." bubbleColor="#d255ec" width="20rem" labelColor="#e68027"> removed </Tooltip> from the member and <RoleBadge role="Verified" color="#008800" /> has been given to the member.
-   - Ensure the member has selected appropriate roles.
-   - Verify the age category matches to prevent members from faking their age.
 ---
-### **Reminder Pings**:
 
-   - Send up to <Tooltip tip="~24 hours between reminders" bubbleColor="#d255ec" width="13rem" labelColor="#e68027"> **2 reminder pings** </Tooltip> after the welcome message.
-   - If no roles are selected after **48 hours**, you may proceed to close the ticket if verification is satisfactory.
+### Role Selection
+
+- Ensure the <RoleBadge role="Unverified" badgeIcon="unverified_role_icon.png" color="#de0000" /> is <Tooltip tip="Hephia will automatically remove the unverified role when a member is granted the verified role." bubbleColor="#d255ec" width="20rem" labelColor="#e68027"> removed </Tooltip> from the member and <RoleBadge role="Verified" color="#008800" /> has been given to the member.
+- Ensure the member has selected appropriate roles.
+- Verify the age category matches to prevent members from faking their age.
+
 ---
-### **Closing the Ticket**:
 
-   - Use the **"Close with Reason"** function of the ticket bot.
-   <!-- ^^Maxie create component for fake button that is identical to buttons in ticket bot^^-->
-   - The reason should be: `"Verification Complete - [Name of staff member who did verification] Closed By- [Name of staff member who performed the second check]"`
-:::note Example
-"Verification Complete - Del Closed By- Solii"
-:::
-:::info
-Properly closing out tickets ensures accurate record-keeping and helps maintain an organized verification process.
-:::
+### Reminder Pings
+
+- Send up to <Tooltip tip="~24 hours between reminders" bubbleColor="#d255ec" width="13rem" labelColor="#e68027"> **2 reminder pings** </Tooltip> after the welcome message.
+- If no roles are selected after **48 hours**, you may proceed to close the ticket if verification is satisfactory.
+
 ---
-### **No Response Cases**:
 
-   - If the user hasn't responded or provided an ID after **72 hours**, you can close the ticket with the reason: `"No Response >72hrs"`
-   - For tickets without any post from the user for verification after **48 hours**, use: `"No Verification in >48hrs"`
+### Closing the Ticket
+
+- Use the <DiscordButton type="error" emoji="🔒">Close With Reason</DiscordButton> button of the ticket bot. _(It should be at the top of the ticket)_
+- The reason should be: `"Verification Complete - [Name of staff member who did verification] Closed By- [Name of staff member who performed the second check]"`
+  :::note Example
+  "Verification Complete - Del Closed By- Solii"
+  :::
+  :::info
+  Properly closing out tickets ensures accurate record-keeping and helps maintain an organized verification process.
+  :::
+
+---
+
+### No Response Cases
+
+- If the user hasn't responded or provided an ID after **72 hours**, you can close the ticket with the reason: `"No Response >72hrs"`
+- For tickets without any post from the user for verification after **48 hours**, use: `"No Verification in >48hrs"`
 
 :::danger HEPHIA IS OFFLINE
-When closing verification tickets; <u>**double check that hephia is online first!!**</u> If Hephia is <u>**offline**</u> you will have to manually delete the verification threads after closing with the bot. 
+When closing verification tickets; <u>**double check that hephia is online first!!**</u> If Hephia is <u>**offline**</u> you will have to manually delete the verification threads after closing with the bot.
 :::

@@ -80,7 +80,7 @@ A group that assists the Event Team Head in leading the event team and planning 
 - Monitor and address Host/Security performance issues, recommending promotions or demotions.
 - Host or attend at least 3 events per month for team oversight and vibe checks.
 - Plan topics for event meetings and prepare materials.
-- Provide quarterly updates for <ChannelBadge label="📰𝘌∙𝘙∙𝘗-news" link="https://discord.com/channels/734595073920204940/1071149239415078912" /> 
+- Provide quarterly updates for <ChannelBadge label="📰𝘌∙𝘙∙𝘗-news" link="https://discord.com/channels/734595073920204940/1071149239415078912" />
 - Oversee planning of monthly Patreon event(s).
 
 :::info
@@ -120,7 +120,7 @@ Individuals in charge of hosting events and ensuring they run smoothly.
 - Manage event participants.
 - Create/Hype up event announcements.
 - Create general good vibes during events.
-- Required to submit their availability template by Friday each week (see "Scheduling Procedures" in the Event Staff Handbook for more details).
+- Required to submit their availability template by Friday each week (see [Scheduling Procedures](event-staff-handbook/Hosts/scheduling-procedures) for more details).
 - Responsible for pairing up with security for events.
 - Enforce rules during events if security is unavailable.
 

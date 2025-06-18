@@ -2,7 +2,7 @@ import clsx from "clsx";
 import React from "react";
 import styles from "./DiscordButton.module.css";
 
-export type DiscordButtonType = "primary" | "success" | "secondary" | "destructive" | "link";
+export type DiscordButtonType = "primary" | "success" | "secondary" | "error" | "link";
 
 interface DiscordButtonProps {
   type?: DiscordButtonType;

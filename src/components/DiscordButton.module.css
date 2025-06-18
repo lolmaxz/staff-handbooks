@@ -53,11 +53,11 @@
 .secondary:hover:not(.disabled) {
   background: #36393f;
 }
-.destructive {
+.error {
   background: #ed4245;
   color: #fff;
 }
-.destructive:hover:not(.disabled) {
+.error:hover:not(.disabled) {
   background: #a12729;
 }
 .link {
@@ -107,6 +107,6 @@ html[data-theme="light"] .discordButton.link {
   background: #99aab5;
   color: #23272a;
 }
-html[data-theme="light"] .discordButton.destructive {
+html[data-theme="light"] .discordButton.error {
   background: #f04747;
 }
