@@ -5,11 +5,17 @@ sidebar_position: 3
 slug: /server-positions
 ---
 
+import RoleBadge from "@site/src/components/RoleBadge";
+import ChannelBadge from "@site/src/components/ChannelBadge";
+
 # Server Staff Positions
 
-❓ _Also called the <b>@Server Breed</b>_ <br/><br/>
+❓ _Also called the <RoleBadge role="Server Breed" badgeIcon="" />_ <br/><br/>
 There is multiple staff positions within the Server Team, each with its own set of responsibilities. Below is a list of the Server Team positions and their respective duties.
 For a quick access to each of them:
+:::
+
+---
 
 - [Server Team Head](#server-team-head)
 - [Server Committee](#server-committee)
@@ -19,7 +25,7 @@ For a quick access to each of them:
 
 ---
 
-## Server Team Head 🔰 {#server-team-head}
+## Server Team Head <RoleBadge role="Head Moderator 🔰" badgeIcon="" color="#db1cb8" /> {#server-team-head}
 
 The person in charge of the **Server Team**, overseeing all actions and setting the vision.
 
@@ -33,12 +39,12 @@ The person in charge of the **Server Team**, overseeing all actions and setting 
 
 :::note
 The Head Moderator ensures the server runs smoothly and that the moderation team is effective.
-Currently, this position is occupied by **solii** and **cdkinetic**.
+Currently, this position is occupied by <RoleBadge role="Solii" color="#00B9ff" badgeIcon="" /> and <RoleBadge role="cdkinetic" color="#00B9ff" badgeIcon="" />.
 :::
 
 ---
 
-## Server Committee <img src={require("../../../../static/img/server_committee_role_icon.webp").default} alt="Server Committee Role Icon" width="30" /> {#server-committee}
+## Server Committee <RoleBadge role="Server Committee" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" /> {#server-committee}
 
 The **Server Committee** is a group of staff members that assist the Head Moderator in managing the server.
 
@@ -51,7 +57,7 @@ The **Server Committee** is a group of staff members that assist the Head Modera
 
 ---
 
-## Moderators <img src={require("../../../../static/img/moderator_role_icon.png").default} alt="Moderator Role Icon" width="30" /> {#moderators}
+## Moderators <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> {#moderators}
 
 **Moderators** are staff members who enforce server rules and assist members with any issues.
 
@@ -65,7 +71,7 @@ The **Server Committee** is a group of staff members that assist the Head Modera
 
 ---
 
-## Cutie Helpers <img src={require("../../../../static/img/cutie_helper_role_icon.png").default} alt="Cutie Helper Role Icon" width="30" /> {#cutie-helpers}
+## Cutie Helpers <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> {#cutie-helpers}
 
 **Cutie Helpers** are staff members who assist Moderators with verification and other tasks.
 
@@ -76,21 +82,22 @@ The **Server Committee** is a group of staff members that assist the Head Modera
 - Assist members when they have questions.
 - Enforce server rules.
 
-:::tip
-Cutie Helpers are often the first point of contact for new members, making their role crucial for a welcoming community.
+:::tip Our First Line
+Cutie Helpers are often the first point of contact for new members, making their role crucial for a welcoming community!
 :::
 
 ---
 
 ## Server Chat Moderators {#server-chat-moderators}
 
-**Server Chat Moderators** are staff members who moderate the server chat channels.
+**Server Chat Moderators** are active community members who assist staff to report problems in the server chat channels.
 
 <h3> Responsibilities: </h3>
 
-- Watch the server for any rule breakers and report incidents.
+- Watch the server for any rule breakers and report incidents without needing to open tickets.
 - They do not have special roles displayed, so members are unaware of their status.
-- No application is required; the position is offered based on the server's needs.
+- No application is required; the position is offered based on the server's needs, members activity level, and desire to assist in keeping the community safe.
+- **Server chat moderators do not have any moderation powers**
 
 :::note
 Being anonymous helps Chat Moderators observe the server chat without having any special roles displayed. (It's an invisible position)
@@ -98,4 +105,5 @@ Being anonymous helps Chat Moderators observe the server chat without having any
 
 ---
 
-If you are interested in joining the Server Team, please refer to the [Staff Application Channel](https://discord.com/channels/734595073920204940/979983964813021205) on the Discord server.
+If you are interested in joining the Server Team, please refer to the <ChannelBadge label="✨𝘚taff-𝘈pplications" link="https://discord.com/channels/734595073920204940/979983964813021205" /> on the Discord server.
+<sub> _If you cannot see this channel it's because you haven't joined yet!_ </sub>

@@ -5,11 +5,15 @@ sidebar_position: 2
 slug: /staff-roles
 ---
 
+import RoleBadge from "@site/src/components/RoleBadge";
+import ChannelBadge from "@site/src/components/ChannelBadge";
+import Tooltip from "@site/src/components/Tooltip";
+
 # Staff Positions
 
-## Lewd Governor <img class="markdown" src={require("../../../static/img/admin_role_icon.png").default} alt="Admin Role Icon" width="30" />
+## Lewd Governor <RoleBadge role="Lewd Governor" badgeIcon="admin_role_icon.png" color="#db1cb8" />
 
-The **Lewd Governors** are the admins, owners and co-owners of the server.
+The **Lewd Governors** are the owners and co-owners of the server.
 
 <h3> Responsibilities: </h3>
 
@@ -20,12 +24,29 @@ The **Lewd Governors** are the admins, owners and co-owners of the server.
 - Oversee the overall server operations.
 
 :::info
-Currently, **lolmaxz**, **lusaffi** and **krenki** serves as Lewd Governors, overseeing the server's operations.
+Currently, <RoleBadge role="lolmaxz" color="#00B9ff" />, <RoleBadge role="lusaffi" color="#00B9ff" /> and <RoleBadge role="krenki" color="#00B9ff" /> serves as Lewd Governors, overseeing the server's operations.
 :::
 
 ---
 
-## Horny Resources (HR) <img src={require("../../../static/img/hr_role_icon.webp").default} alt="HR Role Icon" width="30" />
+## Committee Member <RoleBadge role="Committee Member"  color="#db1cb8" />
+
+The **Committee Members** lead their respective staff teams with coordinating staff efforts to run Events and Server Moderation.
+
+<h3> Responsibilities: </h3>
+
+- Organize/oversee staff in performing <Tooltip tip="Creation of event schedules, overseeing recording of tickets for punishments, officializing votes from staff, and overseeing training of staff members/trial members" bubbleColor="#d255ec" labelColor="#e68027"> staff duties </Tooltip>  
+- Organize staff meetings, create drafts of changes requested by community members and staff members for discussion in threads or meetings.
+- Assist in document updates of staff handbooks/guidelines.
+- Conduct votes at committee level. See Staff Voting Explained
+- Conduct performance reports of staff members/community health to <RoleBadge role="Lewd Governor" badgeIcon="admin_role_icon.png" color="#db1cb8" />.
+- Track all staff hiatus statuses. Prevent burnout of staff members.
+- Conduct interviews of applicants post application votes. See Staff Application process
+
+---
+
+## Horny Resources (HR) <RoleBadge role="Horny Ressources (HR)" badgeIcon="hr_role_icon.webp" color="#2a6eef" />
+{/* <img src={require("../../../static/img/hr_role_icon.webp").default} alt="HR Role Icon" width="30" /> */}
 
 The **Horny Resources** department handles internal staff matters.
 
@@ -37,10 +58,10 @@ The **Horny Resources** department handles internal staff matters.
 - Serve as mediators to potentially resolve conflicts within the team.
 - HR performing part of interview post application.
 
-:::info
+:::info Why an HR?
 HR is essential for maintaining a positive and professional environment among staff members.
 
-Currently, **deldepth**, **echo1108**, and **s4.ryn** serve as HR members.
+Currently, <RoleBadge role="deldepth" color="#00B9ff" />, <RoleBadge role="echo1108" color="#00B9ff" /> and <RoleBadge role="s4.ryn" color="#00B9ff" /> serve as HR members.
 :::
 
 ---
