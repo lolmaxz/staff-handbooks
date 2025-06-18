@@ -1,48 +1,79 @@
 import Link from "@docusaurus/Link";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
+import { useEffect } from "react";
 
 import styles from "./index.module.css";
 
-// function HomepageHeader() {
-//   const {siteConfig} = useDocusaurusContext();
-//   return (
-//     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-//       <div className="container">
-//         <Heading as="h1" className="hero__title">
-//           {siteConfig.title}
-//         </Heading>
-//         <p className="hero__subtitle">{siteConfig.tagline}</p>
-//         <div className={styles.buttons}>
-//           <Link
-//             className="button button--secondary button--lg"
-//             to="/docs/intro">
-//             Docusaurus Tutorial - 5min ⏱️
-//           </Link>
-//         </div>
-//       </div>
-//     </header>
-//   );
-// }
-
-// export default function Home(): ReactNode {
-//   const {siteConfig} = useDocusaurusContext();
-//   return (
-//     <Layout
-//       title={`Hello from ${siteConfig.title}`}
-//       description="Description will go into a meta tag in <head />">
-//       <HomepageHeader />
-//       <main>
-//         <HomepageFeatures />
-//       </main>
-//     </Layout>
-//   );
-// }
-
 function HomepageHeader() {
+  useEffect(() => {
+    // Add a class to the navbar for blur/transparency
+    const navbar = document.querySelector(".navbar");
+    if (navbar) navbar.classList.add("navbarBlur");
+
+    // 3 independent springy, chill orbs
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let targetX = mouseX;
+    let targetY = mouseY;
+    const orbCount = 3;
+    let springX = Array(orbCount).fill(mouseX);
+    let springY = Array(orbCount).fill(mouseY);
+    let offsetTargetX = Array(orbCount).fill(0);
+    let offsetTargetY = Array(orbCount).fill(0);
+    let offsetX = Array(orbCount).fill(0);
+    let offsetY = Array(orbCount).fill(0);
+    const maxDist = 48;
+
+    const handleMouseMove = (e) => {
+      targetX = e.clientX;
+      targetY = e.clientY;
+    };
+
+    const animate = () => {
+      for (let i = 0; i < orbCount; i++) {
+        // Occasionally pick a new random offset target
+        if (Math.random() < 0.02) {
+          offsetTargetX[i] = (Math.random() - 0.5) * 2 * maxDist;
+          offsetTargetY[i] = (Math.random() - 0.5) * 2 * maxDist;
+        }
+        // Smoothly move offset toward its target
+        offsetX[i] += (offsetTargetX[i] - offsetX[i]) * 0.04;
+        offsetY[i] += (offsetTargetY[i] - offsetY[i]) * 0.04;
+        // Spring the orb toward the cursor + offset
+        springX[i] += (targetX + offsetX[i] - springX[i]) * 0.1;
+        springY[i] += (targetY + offsetY[i] - springY[i]) * 0.1;
+        document.documentElement.style.setProperty(`--mouse-x${i + 1}`, `${springX[i]}px`);
+        document.documentElement.style.setProperty(`--mouse-y${i + 1}`, `${springY[i]}px`);
+      }
+      requestAnimationFrame(animate);
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+    animate();
+
+    return () => {
+      if (navbar) navbar.classList.remove("navbarBlur");
+      document.removeEventListener("mousemove", handleMouseMove);
+      // Clean up CSS variables
+      for (let i = 1; i <= orbCount; i++) {
+        document.documentElement.style.removeProperty(`--mouse-x${i}`);
+        document.documentElement.style.removeProperty(`--mouse-y${i}`);
+      }
+    };
+  }, []);
+
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
+    <header className={clsx("hero hero--primary", styles.heroBanner)} style={{ marginTop: 0, paddingTop: 0, position: "relative" }}>
+      <div className="container" style={{ marginTop: "2.5rem", position: "relative", zIndex: 2 }}>
+        <div className="heroCardOverlay">
+          <div className="scanlines"></div>
+          <div className="glitch-layers">
+            <div className="glitch-layer"></div>
+            <div className="glitch-layer"></div>
+            <div className="glitch-layer"></div>
+          </div>
+        </div>
         <h1 className="hero__title">Eden Apis Staff Handbooks</h1>
         <p className="hero__subtitle">Your guide to roles, responsibilities, and procedures for any staff position.</p>
         <div className={styles.buttons}>
@@ -110,15 +141,19 @@ const handbooks = [
 
 export default function Home(): JSX.Element {
   return (
-    <Layout title="Home" description="Eden Apis Staff Handbook - Your guide to roles, responsibilities, and procedures">
+    <Layout
+      title="Home"
+      description="Eden Apis Staff Handbooks - Your guide to roles, responsibilities, and procedures for any staff position."
+    >
+      <div className="heroPulseBG" />
       <HomepageHeader />
       <main>
         <section className={styles.features}>
           <div className="container">
             <div className="row">
-              {features.map((props, idx) => (
+              {/* {features.map((props, idx) => (
                 <Feature key={idx} {...props} />
-              ))}
+              ))} */}
             </div>
           </div>
         </section>
