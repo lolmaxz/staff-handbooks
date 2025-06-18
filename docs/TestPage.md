@@ -14,6 +14,7 @@ import CommandCard from '@site/src/components/CommandCard';
 import AuditFlag from '@site/src/components/AuditFlag';
 import RoleMatrix from '@site/src/components/RoleMatrix';
 import Timestamp from '@site/src/components/Timestamp';
+import DiscordButton from '@site/src/components/DiscordButton';
 
 # New Components Explained
 
@@ -47,7 +48,7 @@ This page provides examples and clear explanations for all our custom components
 ## Role Badge
 
 **Component:** `RoleBadge`  
-**Description:** Renders a badge showing a role’s name along with optional icons and colors. Use it to visually represent staff roles or permissions.
+**Description:** Renders a badge showing a role's name along with optional icons and colors. Use it to visually represent staff roles or permissions.
 
 **Live Example:**
 
@@ -135,7 +136,7 @@ style={{ marginBottom: '1rem' }}
 <Checklist.Item id="a">Demo item</Checklist.Item>
 <Checklist.Item id="b">Another item</Checklist.Item>
 <Checklist.Item id="c">Another item</Checklist.Item>
-<Checklist.Item id="selfie-one-id">Selfie with one ID <u>Test</u></Checklist.Item>
+<Checklist.Item id="selfie-one-id">Selfie with one ID <u>Test</u></Checklist.Item>
 <Checklist.Item id="id-issuer-visible">• Issuer (government / state / country) is visible</Checklist.Item>
 <Checklist.Item id="id-dob-visible">• DOB is visible</Checklist.Item>
 </Checklist>
@@ -148,7 +149,7 @@ style={{ marginBottom: '1rem' }}
 
 ```jsx title="Checklist Usage Code Example:"
 <Checklist checklistId="demo" title="ID & Selfie Verification" borderColor="#800080">
-  <Checklist.Item id="selfie-one-id">Selfie with one ID</Checklist.Item>
+  <Checklist.Item id="selfie-one-id">Selfie with one ID</Checklist.Item>
   <Checklist.Item id="id-issuer-visible">• Issuer (government / state / country) is visible</Checklist.Item>
   <Checklist.Item id="id-dob-visible">• DOB is visible</Checklist.Item>
   {/* Additional checklist items */}
@@ -210,13 +211,13 @@ Default <Tooltip tip="Simply specify the tip and the default color (#5865F2) wil
 **Live Example:**
 
 <CommandCard cmd="/ban" perms="Moderator" cardColor="indigo">
-  Bans the mentioned user and deletes their last 24 h of messages.
+  Bans the mentioned user and deletes their last 24 h of messages.
   *Note: Ensure that the permission provided is valid for the icon to appear.*
 </CommandCard>
 
 ```jsx title="CommandCard Usage Code Example:"
 <CommandCard cmd="/ban" perms="Moderator" cardColor="indigo">
-  Bans the mentioned user and deletes their last 24 h of messages.
+  Bans the mentioned user and deletes their last 24 h of messages.
 </CommandCard>
 ```
 
@@ -230,7 +231,7 @@ Default <Tooltip tip="Simply specify the tip and the default color (#5865F2) wil
 **Live Examples:**
 
 1. **New Audit:**  
-   <AuditFlag type="NEW" /> Slash‑command bulk‑ban added.
+   <AuditFlag type="NEW" /> Slash-command bulk-ban added.
 
 2. **Changed Audit:**  
    <AuditFlag type="CHANGED" /> Updated user permission hierarchy.
@@ -284,7 +285,7 @@ data={[
 
 **Component:** `Timestamp`  
 **Description:**  
-Converts a Unix timestamp following Discord's exact format to a human-readable date/time format. It adjusts to the reader’s local time, continuously refreshes for authenticity, and mimics Discord’s dynamic timestamp design.  
+Converts a Unix timestamp following Discord's exact format to a human-readable date/time format. It adjusts to the reader's local time, continuously refreshes for authenticity, and mimics Discord's dynamic timestamp design.  
 Any timestamp created with the website [hammertime](https://hammertime.cyou/) is also compatible. You can use strings like `<t:1747208640:F>` for a full date/time format or `<t:1747208640:R>` for a relative time format.
 
 **Live Examples:**
@@ -303,6 +304,33 @@ Time since event: <Timestamp value="<t:1747254420:R>" />
 <Timestamp value="<t:1747208640:R>" />
 
 <Timestamp value="<t:1747254420:R>" />
+```
+
+---
+
+## DiscordButton
+
+**Component:** `DiscordButton`
+**Description:** Inline Discord-style buttons for actions, links, and more. Supports type, color, emoji, link, and disabled states. Color option can be added on any buttons, it will override the default color of the type of button.
+
+**Live Examples:**
+
+<DiscordButton type="primary" emoji="🎉">Primary Button</DiscordButton>
+<DiscordButton type="success" emoji="✅">Success Button</DiscordButton>
+<DiscordButton type="secondary" emoji="💬">Secondary Button</DiscordButton>
+<DiscordButton type="destructive" emoji="⚠️">Destructive Button</DiscordButton>
+<DiscordButton type="link" href="https://example.com" emoji="🔗">Link Button</DiscordButton>
+<DiscordButton color="#ff00ff" emoji="✨">Custom Color</DiscordButton>
+<DiscordButton type="primary" emoji="⏳" disabled>Disabled Button</DiscordButton>
+
+```jsx title="DiscordButton Usage Code Example:"
+<DiscordButton type="primary" emoji="🎉">Primary Button</DiscordButton>
+<DiscordButton type="success" emoji="✅">Success Button</DiscordButton>
+<DiscordButton type="secondary" emoji="💬">Secondary Button</DiscordButton>
+<DiscordButton type="destructive" emoji="⚠️">Destructive Button</DiscordButton>
+<DiscordButton type="link" href="https://example.com" emoji="🔗">Link Button</DiscordButton>
+<DiscordButton color="#ff00ff" emoji="✨">Custom Color</DiscordButton>
+<DiscordButton type="primary" emoji="⏳" disabled>Disabled Button</DiscordButton>
 ```
 
 ---

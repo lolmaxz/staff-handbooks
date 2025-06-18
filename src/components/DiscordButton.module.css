@@ -1,0 +1,111 @@
+.discordButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.13em;
+  font-weight: 600;
+  font-size: 0.88em;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  padding: 0.4em 0.85em 0.28em 0.6em;
+  min-height: 1.9em;
+  line-height: 1.2;
+  transition: background 120ms, color 120ms, box-shadow 120ms;
+  user-select: none;
+  outline: none;
+  vertical-align: middle;
+}
+
+.emoji {
+  margin: 0 0.08em;
+  font-size: 1em;
+  line-height: 1;
+}
+
+.linkIcon {
+  margin-left: 0.18em;
+  width: 0.88em;
+  height: 0.88em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Button Types */
+.primary {
+  background: #5865f2;
+  color: #fff;
+}
+.primary:hover:not(.disabled) {
+  background: #4752c4;
+}
+.success {
+  background: #3ba55d;
+  color: #fff;
+}
+.success:hover:not(.disabled) {
+  background: #2d7d46;
+}
+.secondary {
+  background: #4e5058;
+  color: #fff;
+}
+.secondary:hover:not(.disabled) {
+  background: #36393f;
+}
+.destructive {
+  background: #ed4245;
+  color: #fff;
+}
+.destructive:hover:not(.disabled) {
+  background: #a12729;
+}
+.link {
+  background: #4e5058;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: middle;
+}
+.link:hover:not(.disabled) {
+  background: #36393f;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Disabled State */
+.disabled,
+:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  box-shadow: none;
+}
+
+/* Custom color override */
+.colorOverride {
+  background: var(--discord-btn-custom-bg) !important;
+  color: var(--discord-btn-custom-fg, #fff) !important;
+  transition: background 120ms, color 120ms, box-shadow 120ms, filter 120ms;
+}
+.colorOverride:hover:not(.disabled) {
+  filter: brightness(0.92);
+}
+
+/* Light theme tweaks */
+html[data-theme="light"] .discordButton.primary {
+  background: #7289da;
+  color: #fff;
+}
+html[data-theme="light"] .discordButton.success {
+  background: #43b581;
+}
+html[data-theme="light"] .discordButton.secondary {
+  background: #99aab5;
+  color: #23272a;
+}
+html[data-theme="light"] .discordButton.link {
+  background: #99aab5;
+  color: #23272a;
+}
+html[data-theme="light"] .discordButton.destructive {
+  background: #f04747;
+}

@@ -98,9 +98,7 @@ const sidebars: SidebarsConfig = {
             id: "general-handbook/joining-staff/staff-applications",
           },
           collapsed: true,
-          items: [
-            "general-handbook/joining-staff/headhunting",
-          ]
+          items: ["general-handbook/joining-staff/headhunting"],
         },
         {
           type: "category",
@@ -110,9 +108,7 @@ const sidebars: SidebarsConfig = {
             id: "general-handbook/staff-perks/staff-perks",
           },
           collapsed: true,
-          items: [
-            "general-handbook/staff-perks/staff-emeritus",
-          ]
+          items: ["general-handbook/staff-perks/staff-emeritus"],
         },
       ],
     },
@@ -151,6 +147,7 @@ const sidebars: SidebarsConfig = {
             // "server-staff-handbook/verification-check",
             "server-staff-handbook/verification-process/camera-verification",
             "server-staff-handbook/verification-process/completion-of-verification",
+            "server-staff-handbook/verification-process/verification-requirements",
           ],
         },
         "server-staff-handbook/closing-out-verifications",
@@ -180,7 +177,7 @@ const sidebars: SidebarsConfig = {
             "server-staff-handbook/ban-votes/emergency-ban-vote",
           ],
         },
-                "server-staff-handbook/github-records",
+        "server-staff-handbook/github-records",
       ],
     },
 
