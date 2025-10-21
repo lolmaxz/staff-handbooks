@@ -15,6 +15,7 @@ import AuditFlag from '@site/src/components/AuditFlag';
 import RoleMatrix from '@site/src/components/RoleMatrix';
 import Timestamp from '@site/src/components/Timestamp';
 import DiscordButton from '@site/src/components/DiscordButton';
+import CardGrid, { Card } from '@site/src/components/CardGrid';
 
 # New Components Explained
 
@@ -26,6 +27,12 @@ This page provides examples and clear explanations for all our custom components
 
 **Component:** `TextWithButton`  
 **Description:** Displays a text prompt with an actionable button that links to a resource. Perfect for highlighting downloadable files or external links.
+
+**Required Import:**
+
+```jsx
+import TextWithButton from "@site/src/components/TextWithButton";
+```
 
 **Live Example:**
 
@@ -48,15 +55,47 @@ This page provides examples and clear explanations for all our custom components
 ## Role Badge
 
 **Component:** `RoleBadge`  
-**Description:** Renders a badge showing a role's name along with optional icons and colors. Use it to visually represent staff roles or permissions.
+**Description:** Renders a badge showing a role's name along with optional icons and colors. Use it to visually represent staff roles or permissions. **NEW:** Now includes automatic color presets for common roles!
 
-**Live Example:**
+**Required Import:**
 
+```jsx
+import RoleBadge from "@site/src/components/RoleBadge";
+```
+
+**Live Examples:**
+
+**With Custom Color:**
 <RoleBadge role="Potato" badgeIcon="admin_role_icon.png" color="#db1cb8" />
-<br/>
-<br/>
+
+**With Auto Color Presets:**
+<RoleBadge role="Moderator" />
+<RoleBadge role="Helper" />
+<RoleBadge role="Admin" />
+<RoleBadge role="Event Host" />
+<RoleBadge role="lolmaxz" />
+
+**Available Preset Colors:**
+
+- **Department Positions**: Lewd Governor (#db1cb8), Admin (#db1cb8), HR (#2a6eef), Committee Members (#db1cb8), Event Committee (#00e6c3)
+- **Event Team Heads**: Event Team Head (#f75edb), Head Moderator (#db1cb8), Head of Security (#3fa7ff)
+- **Event Team**: Senior Event Team (#ffc857), Event Host (#a259f7), Event Security (#ff5e5b), Event Team Trial (#3fa7ff)
+- **Staff Roles**: Moderator (#e68027), Helper (#38c8e8)
+- **Staff Members**: lolmaxz, lusaffi, krenki, deldepth, echo1108, s4.ryn, Solii, cdkinetic, verbaldrop, nightmarediztydoo, defovr, cobramaia, vervacious\_ (#00B9ff)
+
 ```jsx title="RoleBadge Usage Code Example:"
+// Custom color (overrides preset)
 <RoleBadge role="Potato" badgeIcon="admin_role_icon.png" color="#db1cb8" />
+
+// Auto color preset (no color needed!)
+<RoleBadge role="Moderator" />
+<RoleBadge role="Helper" />
+<RoleBadge role="Admin" />
+<RoleBadge role="Event Host" />
+<RoleBadge role="lolmaxz" />
+
+// Custom color still works
+<RoleBadge role="Moderator" color="#ff0000" />
 ```
 
 ---
@@ -65,6 +104,12 @@ This page provides examples and clear explanations for all our custom components
 
 **Component:** `ChannelBadge`  
 **Description:** Creates a clickable badge that links to a specific channel and supports variants to visually distinguish between channel types.
+
+**Required Import:**
+
+```jsx
+import ChannelBadge from "@site/src/components/ChannelBadge";
+```
 
 **Live Example:**
 
@@ -116,6 +161,11 @@ Here are some examples of Channel Tags:
 **Component:** `Checklist`
 **Description:** Organizes a list of checklist items for process verification or step-by-step tasks. In addition to styling individual items, the Checklist supports a custom color option that affects the border, checkboxes, and filling bar.
 
+**Required Import:**
+```jsx
+import Checklist from '@site/src/components/Checklist';
+```
+
 **Live Example with Color Picker (see below):**
 
 export function LiveColourChecklist() {
@@ -163,6 +213,12 @@ style={{ marginBottom: '1rem' }}
 **Component:** `Tooltip`  
 **Description:** Wraps text to provide additional hover information. Customizable colors and an option to remove default text decorations enhance clarity.
 
+**Required Import:**
+
+```jsx
+import Tooltip from "@site/src/components/Tooltip";
+```
+
 **Usage Examples:**
 
 1. **Without Decoration:**
@@ -208,6 +264,12 @@ Default <Tooltip tip="Simply specify the tip and the default color (#5865F2) wil
 **Component:** `CommandCard`  
 **Description:** Displays a card containing detailed information about a command, including required permissions and tooltip information.
 
+**Required Import:**
+
+```jsx
+import CommandCard from "@site/src/components/CommandCard";
+```
+
 **Live Example:**
 
 <CommandCard cmd="/ban" perms="Moderator" cardColor="indigo">
@@ -227,6 +289,12 @@ Default <Tooltip tip="Simply specify the tip and the default color (#5865F2) wil
 
 **Component:** `AuditFlag`  
 **Description:** Marks recent updates or audit events with a flag indicator. It supports three types of flags: **NEW** (items recently added), **CHANGED** (modified items), and **DEPRECATED** (items no longer recommended or to be removed).
+
+**Required Import:**
+
+```jsx
+import AuditFlag from "@site/src/components/AuditFlag";
+```
 
 **Live Examples:**
 
@@ -256,6 +324,12 @@ Default <Tooltip tip="Simply specify the tip and the default color (#5865F2) wil
 
 **Component:** `RoleMatrix`  
 **Description:** Presents a matrix that compares various roles and the actions/permissions they have. It is especially useful for quickly understanding role responsibilities.
+
+**Required Import:**
+
+```jsx
+import RoleMatrix from "@site/src/components/RoleMatrix";
+```
 
 **Live Example:**
 
@@ -288,6 +362,12 @@ data={[
 Converts a Unix timestamp following Discord's exact format to a human-readable date/time format. It adjusts to the reader's local time, continuously refreshes for authenticity, and mimics Discord's dynamic timestamp design.  
 Any timestamp created with the website [hammertime](https://hammertime.cyou/) is also compatible. You can use strings like `<t:1747208640:F>` for a full date/time format or `<t:1747208640:R>` for a relative time format.
 
+**Required Import:**
+
+```jsx
+import Timestamp from "@site/src/components/Timestamp";
+```
+
 **Live Examples:**
 
 The full event time: <Timestamp value="<t:1747208640:F>" />
@@ -313,6 +393,12 @@ Time since event: <Timestamp value="<t:1747254420:R>" />
 **Component:** `DiscordButton`
 **Description:** Inline Discord-style buttons for actions, links, and more. Supports type, color, emoji, link, and disabled states. Color option can be added on any buttons, it will override the default color of the type of button.
 
+**Required Import:**
+
+```jsx
+import DiscordButton from "@site/src/components/DiscordButton";
+```
+
 **Live Examples:**
 
 <DiscordButton type="primary" emoji="🎉">Primary Button</DiscordButton>
@@ -322,6 +408,7 @@ Time since event: <Timestamp value="<t:1747254420:R>" />
 <DiscordButton type="link" href="https://example.com" emoji="🔗">Link Button</DiscordButton>
 <DiscordButton color="#ff00ff" emoji="✨">Custom Color</DiscordButton>
 <DiscordButton type="primary" emoji="⏳" disabled>Disabled Button</DiscordButton>
+<br/><br/>
 
 ```jsx title="DiscordButton Usage Code Example:"
 <DiscordButton type="primary" emoji="🎉">Primary Button</DiscordButton>
@@ -332,6 +419,268 @@ Time since event: <Timestamp value="<t:1747254420:R>" />
 <DiscordButton color="#ff00ff" emoji="✨">Custom Color</DiscordButton>
 <DiscordButton type="primary" emoji="⏳" disabled>Disabled Button</DiscordButton>
 ```
+
+---
+
+## CardGrid & Card System
+
+**Components:** `CardGrid` & `Card`  
+**Description:** A flexible system for displaying content in organized cards. Cards can be used individually or grouped in grids for side-by-side layouts.
+
+<Card title="When to Use Each Component" status="info" icon="ℹ️">
+- **Single Card**: Use `<Card>` alone for individual content blocks (stretches a single card to the width of the page)
+- **Multiple Cards**: Use `<CardGrid>` to arrange 2-4 cards side by side
+- **Grid Required**: Only needed when you want cards on the same line
+</Card>
+<br/>
+**Required Import:**
+
+```jsx
+import CardGrid, { Card } from "@site/src/components/CardGrid";
+```
+
+---
+
+## Basic Usage
+
+**Single Card (No Grid Needed):**
+<Card title="Single Card" icon="📝">
+
+  <p>This card works perfectly on its own without any grid container!</p>
+</Card>
+
+<br/>
+**Simple 2-Column Comparison:** `columns={2}`
+<CardGrid columns={2}>
+<Card title="Accepted Documents" status="success" icon="✅">
+
+  <ul>
+    <li>Driver's License</li>
+    <li>Passport</li>
+    <li>State ID</li>
+  </ul>
+</Card>
+<Card title="Not Accepted" status="error" icon="❌">
+  <ul>
+    <li>Student ID</li>
+    <li>Work Badge</li>
+    <li>Library Card</li>
+  </ul>
+</Card>
+</CardGrid>
+
+**3-Column Process Steps:** `columns={3}`
+<CardGrid columns={3}>
+<Card title="Step 1" icon="📝">
+
+  <p>Upload your documents</p>
+</Card>
+<Card title="Step 2" icon="⏳">
+  <p>Wait for review (36 hours)</p>
+</Card>
+<Card title="Step 3" icon="✅">
+  <p>Get verified!</p>
+</Card>
+</CardGrid>
+
+**4-Column Status Types:** `columns={4}`
+<CardGrid columns={4}>
+<Card title="Success" status="success">
+
+  <p>Approved items</p>
+</Card>
+<Card title="Error" status="error">
+  <p>Rejected items</p>
+</Card>
+<Card title="Warning" status="warning">
+  <p>Needs attention</p>
+</Card>
+<Card title="Info" status="info">
+  <p>Helpful tips</p>
+</Card>
+</CardGrid>
+
+:::info Status Types & What They Do
+
+**Status Types:**
+
+- `success` - Green checkmark (✓)
+- `error` - Red X (✗)
+- `warning` - Yellow warning (⚠)
+- `info` - Blue info (ℹ)
+
+**❓ What Status Cards Do:**
+Status cards automatically add color and icon indicators with styling to show different states. No need to specify an emoji, it will be added automatically.
+
+:::
+
+**Clickable Card Example:**
+<Card title="Clickable Card" href="/docs/server-staff-handbook" icon="🔗">
+
+  <p><strong>Entire card is clickable!</strong> Click anywhere to navigate.</p>
+</Card>
+
+---
+
+## Card Options
+
+### **Icons & Status**
+
+- **Custom Icon**: `<Card title="My Card" icon="📝">` - Shows your emoji
+- **Status Only**: `<Card title="Success" status="success">` - Shows automatic ✓
+- **Custom + Status**: `<Card title="Warning" status="warning" icon="⚠️">` - Custom overrides auto
+
+---
+
+## Quick Templates
+
+**Single Card (No Grid):**
+
+```jsx
+<Card title="My Card" icon="📝">
+  <p>Single card content</p>
+</Card>
+```
+
+<details>
+<summary>Show Result</summary>
+
+<Card title="My Card" icon="📝">
+  <p>Single card content</p>
+</Card>
+
+</details>
+
+**2-Column Comparison:**
+
+```jsx
+<CardGrid columns={2}>
+  <Card title="Good Option" status="success" icon="✅">
+    <p>Your content here</p>
+  </Card>
+  <Card title="Bad Option" status="error" icon="❌">
+    <p>Your content here</p>
+  </Card>
+</CardGrid>
+```
+
+<details>
+<summary>Show Result</summary>
+
+<CardGrid columns={2}>
+  <Card title="Good Option" status="success" icon="✅">
+    <p>Your content here</p>
+  </Card>
+  <Card title="Bad Option" status="error" icon="❌">
+    <p>Your content here</p>
+  </Card>
+</CardGrid>
+
+</details>
+
+<details>
+<summary>3 & 4 Column Examples</summary>
+
+**3-Column Process Steps:**
+
+```jsx
+<CardGrid columns={3}>
+  <Card title="Step 1" icon="1️⃣">
+    First step
+  </Card>
+  <Card title="Step 2" icon="2️⃣">
+    Second step
+  </Card>
+  <Card title="Step 3" icon="3️⃣">
+    Third step
+  </Card>
+</CardGrid>
+```
+
+<details>
+<summary>Show Result</summary>
+
+<CardGrid columns={3}>
+  <Card title="Step 1" icon="1️⃣">
+    First step
+  </Card>
+  <Card title="Step 2" icon="2️⃣">
+    Second step
+  </Card>
+  <Card title="Step 3" icon="3️⃣">
+    Third step
+  </Card>
+</CardGrid>
+
+</details>
+
+**4-Column Status Types:**
+
+```jsx
+<CardGrid columns={4}>
+  <Card title="Success" status="success">
+    <p>Approved items</p>
+  </Card>
+  <Card title="Error" status="error">
+    <p>Rejected items</p>
+  </Card>
+  <Card title="Warning" status="warning">
+    <p>Needs attention</p>
+  </Card>
+  <Card title="Info" status="info">
+    <p>Helpful tips</p>
+  </Card>
+</CardGrid>
+```
+
+<details>
+<summary>Show Result</summary>
+
+<CardGrid columns={4}>
+  <Card title="Success" status="success">
+    <p>Approved items</p>
+  </Card>
+  <Card title="Error" status="error">
+    <p>Rejected items</p>
+  </Card>
+  <Card title="Warning" status="warning">
+    <p>Needs attention</p>
+  </Card>
+  <Card title="Info" status="info">
+    <p>Helpful tips</p>
+  </Card>
+</CardGrid>
+
+</details>
+
+</details>
+
+**Clickable Cards:**
+
+```jsx
+<CardGrid columns={2}>
+  <Card title="Documentation" href="/docs" icon="📚">
+    <p>Read the full guide</p>
+  </Card>
+  <Card title="Support" href="/help" icon="💬">
+    <p>Get help here</p>
+  </Card>
+</CardGrid>
+```
+
+<details>
+<summary>Show Result</summary>
+
+<CardGrid columns={2}>
+  <Card title="Documentation" href="/docs/new-component#quick-templates" icon="📚">
+    <p>Read the full guide</p>
+  </Card>
+  <Card title="Support" href="/docs/new-component#quick-templates" icon="💬">
+    <p>Get help here</p>
+  </Card>
+</CardGrid>
+
+</details>
 
 ---
 

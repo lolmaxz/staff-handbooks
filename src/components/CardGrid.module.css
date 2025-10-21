@@ -12,6 +12,10 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.gridFour {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
 .card {
   padding: 20px;
   border: 1px solid var(--ifm-color-emphasis-300);
@@ -35,20 +39,23 @@
   color: var(--ifm-heading-color);
 }
 
-.cardTitleLink {
-  margin: 0 0 12px 0;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 1.1em;
-  font-weight: 600;
-  color: var(--ifm-heading-color);
+.cardLink {
   text-decoration: none;
-  transition: color 0.2s ease;
+  color: inherit;
+  display: block;
+  cursor: pointer;
 }
 
-.cardTitleLink:hover {
+.cardLink:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardLink:hover .cardTitle {
   color: var(--ifm-color-primary);
+}
+
+.cardLink:hover * {
   text-decoration: none;
 }
 
