@@ -1,7 +1,6 @@
 ---
 id: staff-positions
 title: Staff Positions
-sidebar_position: 2
 slug: /staff-roles
 ---
 
@@ -35,18 +34,20 @@ The **Committee Members** lead their respective staff teams with coordinating st
 
 <h3> Responsibilities: </h3>
 
-- Organize/oversee staff in performing <Tooltip tip="Creation of event schedules, overseeing recording of tickets for punishments, officializing votes from staff, and overseeing training of staff members/trial members" bubbleColor="#d255ec" labelColor="#e68027"> staff duties </Tooltip>  
+- Organize/oversee staff in performing <Tooltip tip="Creation of event schedules, overseeing recording of tickets for punishments, officializing votes from staff, and overseeing training of staff members/trial members" bubbleColor="#d255ec" labelColor="#e68027"> staff duties </Tooltip>
 - Organize staff meetings, create drafts of changes requested by community members and staff members for discussion in threads or meetings.
 - Assist in document updates of staff handbooks/guidelines.
 - Conduct votes at committee level. See Staff Voting Explained
 - Conduct performance reports of staff members/community health to <RoleBadge role="Lewd Governor" badgeIcon="admin_role_icon.png" color="#db1cb8" />.
 - Track all staff hiatus statuses. Prevent burnout of staff members.
 - Conduct interviews of applicants post application votes. See Staff Application process
+- Any role's position on the server is always given by a <RoleBadge role="Committee Member"  color="#db1cb8" /> from it's respective department. Including the <RoleBadge role="Mod on Call" color="#e68027" /> roles.
 
 ---
 
-## Horny Resources (HR) <RoleBadge role="Horny Ressources (HR)" badgeIcon="hr_role_icon.webp" color="#2a6eef" />
-{/* <img src={require("../../../static/img/hr_role_icon.webp").default} alt="HR Role Icon" width="30" /> */}
+## Horny Resources (HR) <RoleBadge role="Horny Resources (HR)" badgeIcon="hr_role_icon.webp" color="#2a6eef" />
+
+<!-- {/_ <img src={require("../../../static/img/hr_role_icon.webp").default} alt="HR Role Icon" width="30" /> _/} -->
 
 The **Horny Resources** department handles internal staff matters.
 

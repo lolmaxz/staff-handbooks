@@ -4,32 +4,40 @@ title: Server Rule Violations
 sidebar_position: 8
 ---
 
+import ChannelBadge from "@site/src/components/ChannelBadge";
+import RoleBadge from "@site/src/components/RoleBadge";
+
 # Server Rule Violations
 
-When a member breaks a server rule:
+When a member breaks a server rule, follow these steps to ensure proper handling and documentation.
 
-1. **Reporting**:
+## Reporting Process
 
-   - **Chat Moderators** report issues in **#server-chat-reports**.
-   - **Cutie Helpers/Moderators** report in **#helper-chat**.
+### Staff Reporting
 
-2. **Documentation**:
+- <RoleBadge role="Chat Moderator" color="#ff6b6b" /> and any other members of the <RoleBadge role="Event Breed" badgeIcon="event_host_role_icon.png" color="#f75edb" /> report issues in <ChannelBadge label="⭕server-chat-reports" link="https://discord.com/channels/734595073920204940/1234567890123456789"/>
+- <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> and <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> report in <ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/>
 
-   - Provide a **screenshot** of the violation.
-   - Specify the **rule** that was broken.
-   - Delete the violating post in the channel.
+### Member Reports
 
-3. **Member Reports**:
+- If a member reports an issue in a ticket, a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> handles it
+- Gather essential details: **Who**, **Where**, and **When**
+- Don't just thank them; ask for necessary information
 
-   - If a member reports an issue in a ticket, a **Moderator** handles it.
-   - Gather details: **Who**, **Where**, and **When**.
-   - Do not just thank them; ask for necessary information.
+## Documentation Requirements
 
-4. **Moderation Process**:
+When documenting a rule violation:
 
-   - Confirm the violation in **#staff-talk**.
-   - Discuss appropriate punishment in **#mod-chat** following the Server Guidelines.
+1. **Screenshot** the violation
+2. **Specify** which rule was broken
+3. **Delete** the violating post from the channel
+4. **Record** all relevant details
 
-:::tip
+## Moderation Process
+
+1. **Confirm** the violation in a **Staff-Talk ticket**
+2. **Discuss** appropriate punishment in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> following the Server Guidelines
+
+:::tip Fair Enforcement
 Always aim for fair and consistent enforcement of rules to maintain community trust.
 :::

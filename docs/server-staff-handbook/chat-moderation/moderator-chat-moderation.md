@@ -4,9 +4,12 @@ title: Moderator Chat Moderation
 sidebar_position: 2
 ---
 
+import RoleBadge from "@site/src/components/RoleBadge";
+import ChannelBadge from "@site/src/components/ChannelBadge";
+
 # Moderator Chat Moderation
 
-As a Moderator, your responsibilities in chat moderation include:
+As a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" />, your responsibilities in chat moderation include:
 
 - **De-escalating Arguments**:
 
@@ -32,7 +35,7 @@ As a Moderator, your responsibilities in chat moderation include:
 
 - **Collaboration**:
 
-  - If unsure, consult with other Moderators in **#📙moderator-only**.
+  - If unsure, consult with other <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
   - Include message links when asking for assistance.
 
 :::warning

@@ -122,35 +122,38 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: true,
       items: [
-        {
-          type: "category",
-          label: "Training",
-          link: {
-            type: "generated-index",
-            image: "./static/img/docusaurus.png",
-          },
-          items: [
-            // "server-staff-handbook/training/going-on-off-call",
-            //"server-staff-handbook/training/enabling-developer-mode",
-            "server-staff-handbook/training/getting-discord-user-id",
-          ],
-        },
+        "server-staff-handbook/onboarding",
+        // {
+        //   type: "category",
+        //   label: "Training",
+        //   link: {
+        //     type: "generated-index",
+        //     image: "./static/img/docusaurus.png",
+        //   },
+        //   items: [
+        //     // "server-staff-handbook/training/going-on-off-call",
+        //     //"server-staff-handbook/training/enabling-developer-mode",
+        //     "server-staff-handbook/training/getting-discord-user-id",
+        //   ],
+        // },
         {
           type: "category",
           label: "Verification Process",
           link: {
-            type: "generated-index",
+            type: "doc",
+            id: "server-staff-handbook/verification-process/verification-process",
           },
           items: [
-            "server-staff-handbook/verification-process/timeframe-for-verification",
-            "server-staff-handbook/verification-process/acceptable-forms-of-id",
+            // "server-staff-handbook/verification-process/timeframe-for-verification",
+            "server-staff-handbook/verification-process/verification-requirements",
+            "server-staff-handbook/verification-process/vrchat-linking-troubleshooting",
+            // "server-staff-handbook/verification-process/acceptable-forms-of-id",
             // "server-staff-handbook/verification-check",
             "server-staff-handbook/verification-process/camera-verification",
             "server-staff-handbook/verification-process/completion-of-verification",
-            "server-staff-handbook/verification-process/verification-requirements",
+            "server-staff-handbook/closing-out-verifications",
           ],
         },
-        "server-staff-handbook/closing-out-verifications",
         {
           type: "category",
           label: "Chat Moderation",
@@ -158,10 +161,12 @@ const sidebars: SidebarsConfig = {
             type: "generated-index",
           },
           items: [
+            "server-staff-handbook/chat-moderation/chat-moderation-overview",
             "server-staff-handbook/chat-moderation/cutie-helper-chat-moderation",
             "server-staff-handbook/chat-moderation/moderator-chat-moderation",
           ],
         },
+        "server-staff-handbook/training/getting-discord-user-id",
         "server-staff-handbook/server-rule-violations",
         "server-staff-handbook/staff-talk-tickets",
         "server-staff-handbook/mod-on-call",
@@ -169,9 +174,11 @@ const sidebars: SidebarsConfig = {
           type: "category",
           label: "Ban Procedures",
           link: {
-            type: "generated-index",
+            type: "doc",
+            id: "server-staff-handbook/ban-votes/ban-types-overview",
           },
           items: [
+            // "server-staff-handbook/ban-votes/ban-types-overview",
             "server-staff-handbook/ban-votes/ban-votes-for-members",
             "server-staff-handbook/ban-votes/boardroom-ban-vote",
             "server-staff-handbook/ban-votes/emergency-ban-vote",

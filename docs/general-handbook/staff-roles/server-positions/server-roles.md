@@ -2,7 +2,7 @@
 id: server-positions
 title: Server Positions
 sidebar_position: 3
-slug: /server-positions
+slug: /general-handbook/server-positions
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

@@ -4,24 +4,26 @@ title: Emergency Ban Vote (Admins Only)
 sidebar_position: 3
 ---
 
+import RoleBadge from "@site/src/components/RoleBadge";
+
 # Emergency Ban Vote (Admins Only)
 
 In rare cases where a member poses a serious disruption or safety concern.
 
 ## Process
 
-- **Admins** (Lewd Governors and one department head TBD) will hold an emergency ban vote.
-- If an Admin is unavailable, they may appoint a **replacement representative**.
+- <RoleBadge role="Lewd Governor" color="#ff6b6b" /> and one department head will hold an emergency ban vote
+- If an Admin is unavailable, they may appoint a **replacement representative**
 
 ### Replacement Representatives
 
-- **Maxie (Lewd Governor)**: HR / Social Media Head
-- **Lulu (Lewd Governor)**: Head Moderator / Event Manager
+- **Maxie** (<RoleBadge role="Lewd Governor" color="#ff6b6b" />): <RoleBadge role="HR" color="#ff6b6b" />
+- **Lulu** (<RoleBadge role="Lewd Governor" color="#ff6b6b" />) or **Krenki** (<RoleBadge role="Lewd Governor" color="#ff6b6b" />): <RoleBadge role="Head Moderator" color="#e68027" /> / <RoleBadge role="Event Manager" color="#f75edb" />
 
 ## Guidelines
 
 - These ban votes do **not** require a 24-hour wait.
-- Immediate action is taken to ensure the safety of the community.
+- Immediate action is taken as soon as TWO votes in favor are casted to ensure the safety of the community.
 
 :::danger
 Emergency ban votes are only for severe situations requiring swift action.

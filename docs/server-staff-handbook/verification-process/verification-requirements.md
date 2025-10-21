@@ -1,7 +1,6 @@
 ---
 id: verification-requirements
-title: Verification Requirements
-sidebar_position: 1
+title: How To Verify Members
 ---
 
 import ChannelBadge from "@site/src/components/ChannelBadge";
@@ -9,6 +8,7 @@ import RoleBadge from "@site/src/components/RoleBadge";
 import Tooltip from "@site/src/components/Tooltip";
 import Checklist from '@site/src/components/Checklist';
 import DiscordButton from '@site/src/components/DiscordButton';
+import CardGrid, { Card } from '@site/src/components/CardGrid';
 
 import { IdCard } from 'lucide-react';
 import { RectangleGoggles } from 'lucide-react';
@@ -35,18 +35,27 @@ The verification process begins when a member requests age verification. This se
 
 2. **Verification Methods**:
 
-   **<IdCard size={25} style={{ verticalAlign: 'middle' }} /> Standard ID Verification**
-
-   - This is the preferred and most common method.
-   - The member submits a government-issued ID and a selfie as outlined below.
-
-   ***
-
-   **<RectangleGoggles size={25} style={{ verticalAlign: 'middle' }} /> VRChat Age Verification**<br/>
-
-   - See <ChannelBadge label="🎮vrchat-verification" link="https://discord.com/channels/734595073920204940/1228159292306362368"/> for more information about <Tooltip tip="VRChat verification requires both age verification on VRChat and an active VRC+ subscription">VRChat Age Verification</Tooltip>.
-   - You'll need to link your account: <DiscordButton type="primary" emoji="🔗">Click Here To Link Your VRChat Account</DiscordButton>.
-   - Then click the <DiscordButton type="success" emoji="✅">Cross Verify Your Age From Your VRChat Account</DiscordButton>.
+<CardGrid columns={2}>
+  <Card title="Standard ID Verification" icon={<IdCard size={20} />}>
+    <p><strong>Preferred method</strong> - Government-issued ID with selfie</p>
+    <ul>
+      <li>Most common verification method</li>
+      <li>Submit government-issued ID and selfie</li>
+      <li>Must show DOB, expiry date, issuing body</li>
+      <li>All four corners visible</li>
+    </ul>
+  </Card>
+  
+  <Card title="VRChat Age Verification" icon={<RectangleGoggles size={20} />}>
+    <p><strong>Alternative method</strong> - Using VRChat's verification system</p>
+    <ul>
+      <li>Requires active <Tooltip tip="VRChat verification requires both age verification on VRChat and an active VRC+ subscription">VRC+ subscription</Tooltip></li>
+      <li>Link account: <DiscordButton type="primary" emoji="🔗">Click Here To Link Your VRChat Account</DiscordButton></li>
+      <li>Verify age: <DiscordButton type="success" emoji="✅">Cross Verify Your Age From Your VRChat Account</DiscordButton></li>
+      <li>See <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/> for details</li>
+    </ul>
+  </Card>
+</CardGrid>
 
 ## Verification Checklist
 
@@ -69,27 +78,34 @@ This checklist ensures all necessary steps are completed during the verification
 Only accept official government-issued identification documents
 :::
 
-### ✅ Accepted Documents
-
-- **Driving Licenses**
-- **Identity Cards**
-- **Passports**
-- **Military IDs** (accepted but discouraged due to security concerns)
-- **Insurance Cards** and **Medication IDs** (only if government-issued and recognized as official ID in the respective country)
-
-#### Conditionals
-
-- **Expired IDs** are acceptable if not expired for more than **one year** and the photo matches the selfie.
-- **Birth Certificates** may only be used as a supplement to a photo ID that does not show the date of birth (not as a primary document).
-
-### ❌ Not Accepted
-
-- **Temporary Paper IDs**
-- **Private Organization IDs** (e.g., school IDs, bus IDs)
-- **IDs without online examples** (for verification)
-- **Birth Certificates** (as a primary document)
-- **School IDs** (Unless provided by government body)
-- **Digital IDs**
+<CardGrid columns={2}>
+  <Card title="Accepted Documents" status="success">
+    <ul>
+      <li><strong>Driving Licenses</strong></li>
+      <li><strong>Identity Cards</strong></li>
+      <li><strong>Passports</strong></li>
+      <li><strong>Military IDs</strong> (accepted but discouraged due to security concerns)</li>
+      <li><strong>Insurance Cards</strong> and <strong>Medication IDs</strong> (only if government-issued and recognized as official ID in the respective country)</li>
+    </ul>
+    
+    <h5>Conditionals</h5>
+    <ul>
+      <li><strong>Expired IDs</strong> are acceptable if not expired for more than <strong>one year</strong> and the photo matches the selfie</li>
+      <li><strong>Birth Certificates</strong> may only be used as a supplement to a photo ID that does not show the date of birth (not as a primary document)</li>
+    </ul>
+  </Card>
+  
+  <Card title="Not Accepted" status="error">
+    <ul>
+      <li><strong>Temporary Paper IDs</strong></li>
+      <li><strong>Private Organization IDs</strong> (e.g., school IDs, bus IDs)</li>
+      <li><strong>IDs without online examples</strong> (for verification)</li>
+      <li><strong>Birth Certificates</strong> (as a primary document)</li>
+      <li><strong>School IDs</strong> (Unless provided by government body)</li>
+      <li><strong>Digital IDs</strong></li>
+    </ul>
+  </Card>
+</CardGrid>
 
 :::warning
 If you're uncertain about the validity of an ID, consult with fellow Moderators or verify through a Google search.
@@ -147,3 +163,7 @@ This section outlines the channels and features that become available to members
 ## Verification Example
 
 ![Verification Example](@site/static/img/Verification_Option_1-no_text.webp)
+
+## Next Steps
+
+Once you've completed the verification process using the checklist above, see the [Completion of Verification](./completion-of-verification) page for proper procedures on how to finalize the verification as a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />.
