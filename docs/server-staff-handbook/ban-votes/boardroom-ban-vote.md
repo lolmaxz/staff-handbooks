@@ -4,10 +4,11 @@ title: All Heads Ban Vote ( Event/Server Committees Only)
 sidebar_position: 2
 ---
 
-# All Heads Ban Vote 
+import RoleBadge from "@site/src/components/RoleBadge";
+
+# All Heads Ban Vote
 
 An All Heads Ban Vote involves higher-level staff for severe cases.
-
 
 ## Criteria for Initiation
 
@@ -19,15 +20,16 @@ An All Heads Ban Vote involves higher-level staff for severe cases.
 ## Voting Process
 
 - Involves:
-  - **HR**
-  - **Event Head**
-  - **Head Moderator**
-  - **Server Committee**
-  - **Head of Security**
-  - **Event Committee**
 
-- The ban vote lasts **12 hours** or until unanimous decision is reached.
-- All Commitee Members are required to vote or provide a reason for abstaining.
+  - <RoleBadge role="HR" color="#ff6b6b" />
+  - <RoleBadge role="Event Head" color="#f75edb" />
+  - <RoleBadge role="Head Moderator" color="#e68027" />
+  - <RoleBadge role="Server Committee Member" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" />
+  - <RoleBadge role="Head of Security" color="#ff0000" />
+  - <RoleBadge role="Event Committee" color="#f75edb" />
+
+- The ban vote lasts **12 hours** or until unanimous decision is reached
+- All Committee Members are required to vote or provide a reason for abstaining
 
 :::note
 Once all votes are cast, the ban may be carried out without waiting for the full 12 hours.

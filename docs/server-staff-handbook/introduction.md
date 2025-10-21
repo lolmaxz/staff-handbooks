@@ -8,7 +8,7 @@ slug: /server-staff-handbook
 # Introduction
 
 :::warning
-Warning: The Staff Handbook is currently very outdated, be careful with the information contained in here.
+Warning: The Staff Handbook is currently being updated, be careful with the information contained in here.
 :::
 
 Welcome to the **Eden Apis Server Staff Handbook**. This handbook serves as a comprehensive guide for all staff members, outlining roles, responsibilities, procedures, and resources necessary to perform your duties effectively.
@@ -20,5 +20,3 @@ As a staff member, you play a crucial role in maintaining a safe and welcoming e
 import DocCardList from '@theme/DocCardList';
 
 <DocCardList />
-
-_Last Revision: January 25th, 2024_
