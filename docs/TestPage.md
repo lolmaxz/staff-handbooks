@@ -422,7 +422,7 @@ import DiscordButton from "@site/src/components/DiscordButton";
 
 ---
 
-## CardGrid & Card System
+## CardGrid & Card System 🆕
 
 **Components:** `CardGrid` & `Card`  
 **Description:** A flexible system for displaying content in organized cards. Cards can be used individually or grouped in grids for side-by-side layouts.
@@ -441,7 +441,7 @@ import CardGrid, { Card } from "@site/src/components/CardGrid";
 
 ---
 
-## Basic Usage
+<span style={{fontSize: '2em', fontWeight: 'bold', display: 'block', marginBottom: '1rem'}}>Basic Usage</span>
 
 **Single Card (No Grid Needed):**
 <Card title="Single Card" icon="📝">
@@ -522,9 +522,9 @@ Status cards automatically add color and icon indicators with styling to show di
 
 ---
 
-## Card Options
+<span style={{fontSize: '2em', fontWeight: 'bold', display: 'block', marginBottom: '1rem'}}>Card Options</span>
 
-### **Icons & Status**
+**Icons & Status**
 
 - **Custom Icon**: `<Card title="My Card" icon="📝">` - Shows your emoji
 - **Status Only**: `<Card title="Success" status="success">` - Shows automatic ✓
@@ -532,7 +532,7 @@ Status cards automatically add color and icon indicators with styling to show di
 
 ---
 
-## Quick Templates
+<span style={{fontSize: '2em', fontWeight: 'bold', display: 'block', marginBottom: '1rem'}}>Quick Templates</span>
 
 **Single Card (No Grid):**
 
