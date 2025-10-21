@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./CardGrid.module.css";
 
 interface CardGridProps {
-  columns?: 2 | 3;
+  columns?: 2 | 3 | 4;
   children: React.ReactNode;
   className?: string;
 }
@@ -51,33 +51,34 @@ export function Card({ title, icon, status, href, children, className = "" }: Ca
   const renderTitle = () => {
     const titleContent = (
       <>
-        {icon && <span className={styles.cardIcon}>{icon}</span>}
-        {getStatusIcon()}
+        {icon ? <span className={styles.cardIcon}>{icon}</span> : getStatusIcon()}
         {title}
       </>
     );
 
-    if (href) {
-      return (
-        <a href={href} className={styles.cardTitleLink}>
-          {titleContent}
-        </a>
-      );
-    }
-
     return <h4 className={styles.cardTitle}>{titleContent}</h4>;
   };
 
-  return (
-    <div className={`${styles.card} ${className}`}>
+  const cardContent = (
+    <>
       {renderTitle()}
       <div className={styles.cardContent}>{children}</div>
-    </div>
+    </>
   );
+
+  if (href) {
+    return (
+      <a href={href} className={`${styles.card} ${styles.cardLink} ${className}`}>
+        {cardContent}
+      </a>
+    );
+  }
+
+  return <div className={`${styles.card} ${className}`}>{cardContent}</div>;
 }
 
 export default function CardGrid({ columns = 2, children, className = "" }: CardGridProps) {
-  const gridClass = columns === 3 ? styles.gridThree : styles.gridTwo;
+  const gridClass = columns === 3 ? styles.gridThree : columns === 4 ? styles.gridFour : styles.gridTwo;
 
   return <div className={`${styles.grid} ${gridClass} ${className}`}>{children}</div>;
 }
