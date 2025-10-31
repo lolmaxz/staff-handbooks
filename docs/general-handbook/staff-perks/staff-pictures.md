@@ -1,7 +1,6 @@
 ---
 id: staff-pictures
 title: How to Take Staff Pictures
-sidebar_position: 2
 ---
 
 import ChannelBadge from "@site/src/components/ChannelBadge";

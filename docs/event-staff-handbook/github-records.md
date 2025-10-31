@@ -1,7 +1,6 @@
 ---
 id: github-records
 title: GitHub Records (Event Committee Only)
-sidebar_position: 14
 ---
 
 # GitHub Records (Event Committee Only)

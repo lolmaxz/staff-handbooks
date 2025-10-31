@@ -1,7 +1,6 @@
 ---
 id: server-rule-violations
 title: Server Rule Violations
-sidebar_position: 8
 ---
 
 import ChannelBadge from "@site/src/components/ChannelBadge";

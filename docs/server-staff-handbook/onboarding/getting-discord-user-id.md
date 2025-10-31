@@ -1,7 +1,6 @@
 ---
 id: getting-discord-user-id
-title: How to Get a Discord User ID from a User
-sidebar_position: 3
+title: Enabling Developer Mode !
 ---
 
 import { Settings } from 'lucide-react';

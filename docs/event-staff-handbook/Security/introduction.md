@@ -1,7 +1,6 @@
 ---
 id: Introduction
 title: How to be Security
-sidebar_position: 14
 slug: /event-staff-handbook/event-security
 ---
 

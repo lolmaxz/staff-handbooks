@@ -1,7 +1,6 @@
 ---
 id: event-types
 title: Event Types
-sidebar_position: 8
 slug: /event-staff-handbook/event-types
 ---
 

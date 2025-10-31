@@ -1,7 +1,6 @@
 ---
 id: orgy-event-types
 title: Orgy Events
-sidebar_position: 9
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
@@ -78,6 +77,27 @@ Night of making a hot sticky mess on some poor world creator's world.
 :::warning Staffing is Critical
 Orgy events require significant staffing to ensure safety and consent enforcement. Make sure you have adequate coverage before scheduling.
 :::
+
+## AU Timezone Exception
+
+:::info 🌏 AU Timezone Hosting Exception
+**ONLY if in an AU timezone**, a host is authorized to host an orgy event even if security is missing, but must follow a strict security-to-attendee ratio.
+
+### Strict Security Ratio Rule
+
+**1 security per 10 attendees maximum**
+
+**Examples:**
+
+- 1 security available = **10 attendees maximum**
+- 2 security available = **20 attendees maximum**
+- 3 security available = **30 attendees maximum**
+
+:::warning Important Note
+Being a <RoleBadge role="Senior Event Team" color="#3fa7ff" /> member **does not count** towards the security count! Only actual <RoleBadge role="Event Security" color="#3fa7ff" /> members count for this ratio.
+:::
+
+This exception only applies to AU timezone hosts due to the limited availability of security staff during those time slots.
 
 ---
 

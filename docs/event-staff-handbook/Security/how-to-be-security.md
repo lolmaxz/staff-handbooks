@@ -1,7 +1,6 @@
 ---
 id: how-to-be-security
 title: How to be Security
-sidebar_position: 13
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

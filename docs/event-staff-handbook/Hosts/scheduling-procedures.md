@@ -1,7 +1,6 @@
 ---
 id: scheduling-procedures
 title: Scheduling Procedures
-sidebar_position: 7
 ---
 
 import CardGrid, { Card } from "@site/src/components/CardGrid";

@@ -1,7 +1,6 @@
 ---
 id: staff-channels
 title: Staff Channels
-sidebar_position: 4
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

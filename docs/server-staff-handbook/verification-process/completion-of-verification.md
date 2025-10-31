@@ -1,7 +1,6 @@
 ---
 id: completion-of-verification
 title: Completion Of Verification
-sidebar_position: 5
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

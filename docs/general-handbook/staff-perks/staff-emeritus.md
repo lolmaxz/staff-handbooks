@@ -1,7 +1,6 @@
 ---
 id: staff-emeritus
 title: Staff Emeritus Role
-sidebar_position: 5
 ---
 
 import ChannelBadge from '@site/src/components/ChannelBadge';
@@ -15,5 +14,5 @@ Role given to our Staff Members who have served the community for more then 6 mo
 - Invites to future Staff Events and Staff Birthday Events of friends still on Active Staff.
 - Ability to request to return to Active Staff position without needing to go through <Tooltip tip="Shortened training of changes since becoming inactive may apply." bubbleColor="#d255ec" labelColor="#e68027"> Application process again </Tooltip>.
 - 1 reset of server join counter.
-- Access to redacted ma*d channel.
+- Access to redacted ma\*d channel.
 - Access to up to 2 Patreon Events per year without having <Tooltip tip="Entry is based on Patrons Acess then Active Staff Members first come first serve for these events." bubbleColor="#d255ec" labelColor="#e68027"> Patreon role. </Tooltip>.

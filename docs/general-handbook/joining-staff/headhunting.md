@@ -1,7 +1,6 @@
 ---
 id: headhunting
 title: Selected to Join Staff
-sidebar_position: 8
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

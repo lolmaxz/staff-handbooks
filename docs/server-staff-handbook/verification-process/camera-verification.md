@@ -1,7 +1,6 @@
 ---
 id: camera-verification
 title: Camera Verification
-sidebar_position: 4
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

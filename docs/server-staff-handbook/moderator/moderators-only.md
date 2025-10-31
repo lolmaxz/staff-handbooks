@@ -1,7 +1,6 @@
 ---
 id: moderators-only
 title: Moderators
-sidebar_position: 6
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

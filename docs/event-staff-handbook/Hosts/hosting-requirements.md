@@ -1,7 +1,6 @@
 ---
 id: hosting-requirements
 title: Hosting Requirements
-sidebar_position: 10
 ---
 
 # Hosting Requirements

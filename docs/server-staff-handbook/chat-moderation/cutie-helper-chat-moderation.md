@@ -1,7 +1,6 @@
 ---
 id: cutie-helper-chat-moderation
 title: Cutie Helper Chat Moderation
-sidebar_position: 1
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

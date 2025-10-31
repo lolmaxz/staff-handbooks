@@ -1,7 +1,6 @@
 ---
 id: staff-applications
 title: Applying to join Eden Staff
-sidebar_position: 7
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

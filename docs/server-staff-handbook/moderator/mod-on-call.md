@@ -1,7 +1,6 @@
 ---
 id: mod-on-call
 title: Mod on Call
-sidebar_position: 10
 ---
 
 import ChannelBadge from "@site/src/components/ChannelBadge";

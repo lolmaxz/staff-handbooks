@@ -1,7 +1,6 @@
 ---
 id: group-instance-rules
 title: Group Instance Rules
-sidebar_position: 5
 ---
 
 import ChannelBadge from "@site/src/components/ChannelBadge";
@@ -41,4 +40,3 @@ All Eden rules—especially those on consent and respect—still apply, and our 
 ## Announcement Limits
 
 Try to limit to **1 announcement per day**. Timezones can be weird and we understand that. Just be respectful and don't abuse announcement please.
-

@@ -12,11 +12,11 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
  */
 const sidebars: SidebarsConfig = {
   handbookSidebar: [
-    {
-      type: "doc",
-      id: "new-component",
-      label: "New Component!",
-    },
+    // {
+    //   type: "doc",
+    //   id: "new-component",
+    //   label: "New Component!",
+    // },
     {
       type: "doc",
       id: "intro",
@@ -123,7 +123,15 @@ const sidebars: SidebarsConfig = {
       },
       collapsed: true,
       items: [
-        "server-staff-handbook/onboarding",
+        {
+          type: "category",
+          link: {
+            type: "doc",
+            id: "server-staff-handbook/onboarding/onboarding",
+          },
+          label: "Staff Onboarding",
+          items: ["server-staff-handbook/onboarding/getting-discord-user-id"],
+        },
         "server-staff-handbook/server-channels",
         "server-staff-handbook/server-rules",
         "server-staff-handbook/hephia-commands",
@@ -170,7 +178,6 @@ const sidebars: SidebarsConfig = {
             "server-staff-handbook/chat-moderation/moderator-chat-moderation",
           ],
         },
-        "server-staff-handbook/training/getting-discord-user-id",
         "server-staff-handbook/server-rule-violations",
         {
           type: "category",

@@ -1,7 +1,6 @@
 ---
 id: event-trial-training
 title: Event Trial Training
-sidebar_position: 4
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
@@ -132,6 +131,7 @@ Copy this template when submitting your availability in the weekly scheduling th
 ```
 
 **Example for a day:**
+
 - `• 8pm + Classic Event (?Event Type Preference)` - Available at 8pm EST, prefers Classic Event type
 
 </details>

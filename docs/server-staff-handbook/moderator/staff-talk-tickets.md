@@ -1,7 +1,6 @@
 ---
 id: staff-talk-tickets
 title: Staff-Talk Tickets
-sidebar_position: 9
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

@@ -1,7 +1,6 @@
 ---
 id: event-team-channels
 title: Event Team Channels
-sidebar_position: 2
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

@@ -1,7 +1,6 @@
 ---
 id: staff-perks
 title: Staff Perks
-sidebar_position: 4
 ---
 
 import ChannelBadge from '@site/src/components/ChannelBadge';

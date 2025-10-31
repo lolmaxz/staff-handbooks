@@ -1,7 +1,6 @@
 ---
 id: popup-event-types
 title: Pop-Up Events
-sidebar_position: 10
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

@@ -1,7 +1,6 @@
 ---
 id: ban-types-overview
 title: Ban Types Overview
-sidebar_position: 0
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
