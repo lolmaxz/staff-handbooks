@@ -1,6 +1,6 @@
 ---
 id: senior-to-committee
-title: Promotion: Senior Event Team ➜ Event Committee
+title: Promotion: Senior Event Team to Event Committee
 ---
 
 import CardGrid, { Card } from "@site/src/components/CardGrid";
