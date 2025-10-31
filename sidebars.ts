@@ -161,10 +161,11 @@ const sidebars: SidebarsConfig = {
           type: "category",
           label: "Chat Moderation",
           link: {
-            type: "generated-index",
+            type: "doc",
+            id: "server-staff-handbook/chat-moderation/chat-moderation-overview",
           },
           items: [
-            "server-staff-handbook/chat-moderation/chat-moderation-overview",
+            // "server-staff-handbook/chat-moderation/chat-moderation-overview",
             "server-staff-handbook/chat-moderation/cutie-helper-chat-moderation",
             "server-staff-handbook/chat-moderation/moderator-chat-moderation",
           ],

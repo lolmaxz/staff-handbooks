@@ -29,7 +29,9 @@ These pages are for <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.p
     <p>Manage your availability for ticket notifications and stay on-call for server needs.</p>
     <p><Link to="./mod-on-call">Learn More →</Link></p>
   </Card>
+</CardGrid>
 
+<CardGrid columns={2}>
   <Card title="Closing Out Verifications" status="success" icon="✅" href="./closing-out-verifications">
     <p>Finalize verification processes and complete member verification tickets.</p>
     <p><Link to="./closing-out-verifications">Learn More →</Link></p>
@@ -43,9 +45,9 @@ These pages are for <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.p
 
 ## Additional Resources
 
-- **[Ban Votes for Members](./ban-votes/ban-votes-for-members)** - Initiate and manage ban votes
-- **[Chat Moderation](./chat-moderation/moderator-chat-moderation)** - De-escalation and formal moderation procedures
-- **[Server Channels](./server-channels)** - Access to <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" /> and other moderator channels
+- **[Ban Votes for Members](../ban-votes/ban-votes-for-members)** - Initiate and manage ban votes
+- **[Chat Moderation](../chat-moderation/moderator-chat-moderation)** - De-escalation and formal moderation procedures
+- **[Server Channels](../server-channels)** - Access to <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" /> and other moderator channels
 
 :::tip Collaboration
 Always consult with other moderators in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" /> when you need guidance or are unsure about a situation.

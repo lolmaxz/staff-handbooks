@@ -51,4 +51,4 @@ Ensure Developer Mode is enabled to access the "Copy ID" option.
 
 - [Ban Types Overview](./ban-types-overview)
 - [Server Rule Violations](../server-rule-violations)
-- [GitHub Records](../github-records)
+- [GitHub Records](../moderator/github-records)

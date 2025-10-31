@@ -17,13 +17,13 @@ Please refer to the specific handbook that corresponds to your role or area of i
 
 :::tip New Staff Members! 👋
 
-➡️ Please start with the [General Handbook](./general-handbook/introduction) to get an overview of the community and staff expectations FIRST.
+➡️ Please start with the [General Handbook](./general-handbook) to get an overview of the community and staff expectations FIRST.
 :::
 
 ## Handbooks 📖
 
 <div style={{ marginBottom: "1rem" }}>
-  <Card title="📘 General Handbook" status="info">
+  <Card title="📘 General Handbook">
     <p>An all-purpose basic handbook with information all staff members need to know.</p>
     <p>It highlights the community's expectations, staff responsibilities, and the server's organizational structure, among other things.</p>
     <p><Link to="./general-handbook">Explore General Handbook →</Link></p>
@@ -31,7 +31,7 @@ Please refer to the specific handbook that corresponds to your role or area of i
 </div>
 
 <div style={{ marginBottom: "1rem" }}>
-  <Card title="🛡️ Server Staff Handbook" status="success">
+  <Card title="🛡️ Server Staff Handbook">
     <p>Guidelines and procedures specifically for server staff members.</p>
     <p>This handbook will help you understand your responsibilities and how to handle age verification, server moderation, and other server-related tasks.</p>
     <p><Link to="./server-staff-handbook">Explore Server Staff Handbook →</Link></p>
@@ -39,7 +39,7 @@ Please refer to the specific handbook that corresponds to your role or area of i
 </div>
 
 <div style={{ marginBottom: "1.5rem" }}>
-  <Card title="🎉 Event Staff Handbook" status="warning">
+  <Card title="🎉 Event Staff Handbook">
     <p>Instructions and guidelines for the team that manages events.</p>
     <p>This handbook covers event planning, hosting, and management, as well as the roles and responsibilities of event staff members.</p>
     <p><Link to="./event-staff-handbook">Explore Event Staff Handbook →</Link></p>
@@ -50,11 +50,11 @@ Please refer to the specific handbook that corresponds to your role or area of i
 
 ### Handbooks & Rules 📋
 
-**Handbooks:** [General Handbook](./general-handbook/introduction) · [Server Staff Handbook](./server-staff-handbook/introduction) · [Event Staff Handbook](./event-staff-handbook/introduction)
+**Handbooks:** [General Handbook](./general-handbook) · [Server Staff Handbook](./server-staff-handbook) · [Event Staff Handbook](./event-staff-handbook)
 
 **Rules:** [Server Rules](./server-staff-handbook/server-rules) · [Event Rules](./event-staff-handbook/event-rules) · [Group Instance Rules](./general-handbook/group-instance-rules)
 
-**Other:** [Staff Perks](./general-handbook/staff-perks/staff-perks) 🎁 - All the amazing benefits you get as staff!
+**Other:** [Staff Perks](./general-handbook/staff-perks) 🎁 - All the amazing benefits you get as staff!
 
 ### Staff Channels 💬
 
@@ -82,7 +82,7 @@ For more information, see the post: **["IMPORTANT CONCERNING THIS CHANNEL"](http
 
 ### Staff Perks & Features 🎁
 
-- **[Staff Perks](./general-handbook/staff-perks/staff-perks)** - Complete overview of all staff benefits
+- **[Staff Perks](./general-handbook/staff-perks)** - Complete overview of all staff benefits
 - **Staff Custom Emojis** - Each staff member can introduce one new emoji to the server (animated or not)! See the post: **["Staff Custom Emojis?! :O"](https://discord.com/channels/734595073920204940/1314035968835063878)**
 - **Staff World Pictures** - As staff, we love to showcase you in our world with a nice picture! These pictures are also used for our yearly New Year big group staff picture. Learn how to submit your picture: **[How to Take Staff Pictures](./general-handbook/staff-perks/staff-pictures)** | Submit in thread: **[Staff World Picture Selection](https://discord.com/channels/734595073920204940/1205298011450638357)**
 

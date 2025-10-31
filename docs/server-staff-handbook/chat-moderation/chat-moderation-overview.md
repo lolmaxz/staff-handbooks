@@ -2,6 +2,7 @@
 id: chat-moderation-overview
 title: Chat Moderation Overview
 sidebar_position: 0
+slug: /server-staff-handbook/chat-moderation
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

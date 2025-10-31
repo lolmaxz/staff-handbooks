@@ -122,7 +122,7 @@ Open <ChannelBadge label="🎫｜open-a-ticket" link="https://discord.com/channe
 
 ## Host Discretion
 
-Hosts may request certain members be restricted from their events when reasons are substantial. See the <a href="../Hosts/host-discretion-list">Host Discretion List</a> for process details.
+Hosts may request certain members be restricted from their events when reasons are substantial. See the <a href="./Hosts/host-discretion-list">Host Discretion List</a> for process details.
 
 ---
 

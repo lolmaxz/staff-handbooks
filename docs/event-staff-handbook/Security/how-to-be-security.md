@@ -78,4 +78,4 @@ When volunteering for an event, you'll be helping the <RoleBadge role="Event Hos
 
 - [Security Requirements](./security-requirements)
 - [Incident Management Guidelines](./incident-management-guidelines)
-- [Security Introduction](./introduction)
+- [Security Introduction](../event-security)

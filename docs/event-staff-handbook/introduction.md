@@ -18,12 +18,11 @@ Welcome aboard the Event Team! You play a vital role in keeping events fun, incl
 - Host an event: [How to Host](./event-staff-handbook/Hosts/how-to-host-an-event)
 - Get scheduled: [Scheduling Procedures](./event-staff-handbook/Hosts/scheduling-procedures)
 - Keep events safe: [Incident Management](./event-staff-handbook/Security/incident-management-guidelines)
-- Know the rules: [Event Rules](./event-staff-handbook/event-rules)
 
 ## Explore the Handbook
 
 <CardGrid columns={2}>
-  <Card title="Host Intro" href="./event-staff-handbook/Hosts/introduction" status="info">
+  <Card title="Host Intro" href="./event-staff-handbook/event-host" status="info">
     <p>Learn the Host role, key duties, and core pages.</p>
   </Card>
   <Card title="Event Team Channels" href="./event-staff-handbook/event-team-channels" status="success">
@@ -32,7 +31,7 @@ Welcome aboard the Event Team! You play a vital role in keeping events fun, incl
   <Card title="How to Host" href="./event-staff-handbook/Hosts/how-to-host-an-event" status="warning">
     <p>Announcements, pings, running the event, and post-event wrap-up.</p>
   </Card>
-  <Card title="Security Intro" href="./event-staff-handbook/Security/introduction" status="info">
+  <Card title="Security Intro" href="./event-staff-handbook/event-security" status="info">
     <p>Responsibilities, coordination with hosts, and incident basics.</p>
   </Card>
   <Card title="Scheduling" href="./event-staff-handbook/Hosts/scheduling-procedures" status="success">

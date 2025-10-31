@@ -33,4 +33,4 @@ Emergency ban votes are only for severe situations requiring swift action.
 
 - [Ban Types Overview](./ban-types-overview)
 - [Server Rule Violations](../server-rule-violations)
-- [GitHub Records](../github-records)
+- [GitHub Records](../moderator/github-records)
