@@ -1,6 +1,6 @@
 ---
 id: mod-on-call
-title: Mod on Call (Moderators Only)
+title: Mod on Call
 sidebar_position: 10
 ---
 

@@ -16,6 +16,7 @@ import RoleMatrix from '@site/src/components/RoleMatrix';
 import Timestamp from '@site/src/components/Timestamp';
 import DiscordButton from '@site/src/components/DiscordButton';
 import CardGrid, { Card } from '@site/src/components/CardGrid';
+import Spoiler from '@site/src/components/Spoiler';
 
 # New Components Explained
 
@@ -685,3 +686,41 @@ Status cards automatically add color and icon indicators with styling to show di
 ---
 
 Each section above shows a live example alongside a code snippet, making it easy to see how each component can be used in your project.
+
+---
+
+## Spoiler (Discord‑style) 🆕
+
+**Component:** `Spoiler`
+**Description:** Hides inline text with a black background until clicked (or toggled with Space/Enter). When revealed, a faint grey background remains to indicate it was spoilered. Width stays stable so layout doesn’t shift.
+
+**Required Import:**
+
+```jsx
+import Spoiler from "@site/src/components/Spoiler";
+```
+
+**Live Examples:**
+
+Default hidden, click to reveal:
+
+This message contains a <Spoiler>secret detail</Spoiler> you can reveal.
+
+Pre‑revealed (start open):
+
+<Spoiler revealed>already visible but still marked</Spoiler>
+
+Custom colors (optional):
+
+<Spoiler background="rgba(0,0,0,.9)" color="#fff">high contrast spoiler</Spoiler>
+
+```jsx title="Spoiler Usage Code Example:"
+// Default usage
+This message contains a <Spoiler>secret detail</Spoiler> you can reveal.
+
+// Start open
+<Spoiler revealed>already visible but still marked</Spoiler>
+
+// Optional custom colors
+<Spoiler background="rgba(0,0,0,.9)" color="#fff">high contrast spoiler</Spoiler>
+```

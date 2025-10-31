@@ -4,6 +4,8 @@ title: Event Types
 sidebar_position: 8
 ---
 
+import ChannelBadge from "@site/src/components/ChannelBadge";
+
 # Event Types
 
 
@@ -45,7 +47,21 @@ Please refer to specific event guidelines for each classic event type. This sect
 | **Free Use Event** | 3-5 | 1-6 | 25-40 | Gather your Free Use friends who volunteer as tribute. Can be themed or just a world with private rooms. *Have at least one security for every 2-3 Free Use participants and one security member free to roam the world.* *Designate a SFW/Aftercare area for attendees to cool off* *Free Use rooms may be locked so long as they are in VC with staff* |
 | **Role Play Events** | 3-5 | 1-6 | 15-35 | Send the attendees on an Adventure. Think up some quests for attendees to perform while getting into character with your volunteer NPCs. Pick a theme, make a goal, build up some world lore to introduce in your secondary announcement and signups thread then get everyone ready to explore. *Quest prizes can include a turn with a Free Use volunteer* *Designate an Out of Character/SFW/Aftercare area for attendees to cool off* |
 | **Horror Map Event** | 3-4 | 0-3 | 20-40 | Guide your event through a haunted mansion, spooky maze, or challenge attendees to test their steel to get past some paranormal worlds. *Have the attendees break up into groups and stay with a staff member for easy regrouping.* *Have a chill area available at spawn for anyone who needs to calm down with a staff member.* |
-| **Pop-Up Events** | 1-2 | 0-3 | 25-40 | Plan a late night post event afterparty or fill in an open slot. Find your Security who will be present before you request to do a pop-up event of any Classic Event Type. *Back to Back events must be announced at same time as normal event with separate signup threads.* *Back to Back required to be coordinated with other host and security in #Event_Organization* *Please request from Event Assistant Managers with at least a 2hr notice and post announcement 90 min prior to attendees for a popup announcement and the final reminder can be 45min-1hour before start.* |
+| **Pop-Up Events** | 1-2 | 0-3 | 25-40 | Plan a late night post event afterparty or fill in an open slot. Find your Security who will be present before you request to do a pop-up event of any Classic Event Type. *Back to Back events must be announced at same time as normal event with separate signup threads.* *Back to Back required to be coordinated with other host and security in <ChannelBadge label="📘events-organization" link="https://discord.com/channels/734595073920204940/741166096421486645" />* *Please request from Event Assistant Managers with at least a 2hr notice and post announcement 90 min prior to attendees for a popup announcement and the final reminder can be 45min-1hour before start.* |
 
 
 </details>
+
+## Orgy Events: Additional Guidelines
+
+- Aftercare available and communicated to attendees
+- Minimum staffing: 4 total
+  - Option A: 1 Host and 3 Security
+  - Option B: 2 Hosts and 2 Security
+- Choose a world large enough to accommodate the event; 3+ rooms recommended
+- Consent still applies in Blue zones; announce zone expectations at the start
+- No training during the event
+  - Exception: only if additional Security can be gathered to run training; absolutely no Host training
+- Recommended: pick worlds with built‑in consent labels if available
+- Encourage the Eden Consent badge; explain it in announcements and enforce consent
+- Maintain coverage: at least 1 Host/Security present in the Open Consent Zone at all times

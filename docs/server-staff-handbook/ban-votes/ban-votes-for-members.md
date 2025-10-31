@@ -46,3 +46,9 @@ All ban votes are held in <ChannelBadge label="📙moderator-only" link="https:/
 :::note
 Ensure Developer Mode is enabled to access the "Copy ID" option.
 :::
+
+## Related
+
+- [Ban Types Overview](./ban-types-overview)
+- [Server Rule Violations](../server-rule-violations)
+- [GitHub Records](../github-records)

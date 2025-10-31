@@ -28,3 +28,9 @@ In rare cases where a member poses a serious disruption or safety concern.
 :::danger
 Emergency ban votes are only for severe situations requiring swift action.
 :::
+
+## Related
+
+- [Ban Types Overview](./ban-types-overview)
+- [Server Rule Violations](../server-rule-violations)
+- [GitHub Records](../github-records)

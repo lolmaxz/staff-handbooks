@@ -1,6 +1,6 @@
 ---
 id: staff-talk-tickets
-title: Staff-Talk Tickets (Moderators Only)
+title: Staff-Talk Tickets
 sidebar_position: 9
 ---
 

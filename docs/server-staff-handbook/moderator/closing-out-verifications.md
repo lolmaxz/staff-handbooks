@@ -1,6 +1,6 @@
 ---
 id: closing-out-verifications
-title: Closing Out Verifications (Moderators Only)
+title: Closing Out Verifications
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
@@ -55,3 +55,9 @@ A second check of the verification ticket is required:
 :::danger HEPHIA IS OFFLINE
 When closing verification tickets; <u>**double check that hephia is online first!!**</u> If Hephia is <u>**offline**</u> you will have to manually delete the verification threads after closing with the bot.
 :::
+
+## Related
+
+- [Completion of Verification](./verification-process/completion-of-verification)
+- [Verification Checklist](./verification-process/verification-checklist)
+- [GitHub Records](./github-records)

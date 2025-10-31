@@ -29,6 +29,7 @@
   --bg-main: #1a1825;
   --text: #fff;
   --accents: #e76bfa;
+  --search-local-highlight-color: #5468ff;
 }
 
 /* Dark theme overrides */
@@ -127,23 +128,25 @@ article .card {
 }
 
 /* Navbar - truly transparent with only blur, above hero background */
-.navbar,
-.navbar *,
+/* Exclude navbar-sidebar completely from these rules */
+/* .navbar:not(.navbar-sidebar),
 .navbar__inner,
 .theme-navbar,
-.theme-navbar *,
 .navbar__items,
-.navbar__items *,
-.navbar__brand,
-.navbar__brand * {
+.navbar__brand {
   background: none !important;
   background-color: transparent !important;
   box-shadow: none !important;
   border-bottom: none !important;
-}
+} */
+
+/* .navbar:not(.navbar-sidebar) *:not(.navbar-sidebar):not(.navbar-sidebar *) {
+  background: none !important;
+  background-color: transparent !important;
+} */
 
 [data-theme="dark"] .navbar {
-  background: rgba(20, 21, 30, 0.3) !important;
+  background: rgba(20, 21, 30, 0.7) !important;
 }
 
 /* Mouse effect */
@@ -422,13 +425,65 @@ article .card {
 [data-theme="light"] .navbar__items *,
 [data-theme="light"] .navbar__brand,
 [data-theme="light"] .navbar__brand * {
-  background: rgba(255, 255, 255, 0.7) !important;
-  background-color: rgba(255, 255, 255, 0.7) !important;
+  /* background: rgba(255, 255, 255, 0.7) !important; */
+  background-color: rgba(255, 255, 255, 0.65) !important;
   color: #222 !important;
   box-shadow: none !important;
   border: none !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
+  border-bottom: none !important;
+  /* backdrop-filter: blur(10px) !important; */
+  /* -webkit-backdrop-filter: blur(10px) !important; */
+}
+
+/* Ensure consistent navbar height and positioning across themes */
+.navbar {
+  min-height: var(--ifm-navbar-height) !important;
+  height: var(--ifm-navbar-height) !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+[data-theme="light"] .navbar,
+[data-theme="dark"] .navbar {
+  min-height: var(--ifm-navbar-height) !important;
+  height: var(--ifm-navbar-height) !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.navbar__inner {
+  min-height: var(--ifm-navbar-height) !important;
+  height: var(--ifm-navbar-height) !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* [data-theme="dark"] .navbar {
+  /* backdrop-filter: blur(10px) !important; */
+/* -webkit-backdrop-filter: blur(10px) !important; */
+/* } */
+
+/* Ensure consistent line-height and vertical alignment in navbar to prevent shifting */
+/* .navbar__item,
+.navbar__link {
+  line-height: 1.5 !important;
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+} */
+
+.navbar__brand {
+  height: var(--ifm-navbar-height) !important;
+  min-height: var(--ifm-navbar-height) !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.navbar__brand__text,
+.navbar__title {
+  line-height: 1.5 !important;
+  display: flex !important;
+  align-items: center !important;
 }
 
 .navbar--fixed-top {
@@ -491,24 +546,29 @@ article .card {
 }
 
 [data-theme="light"] .navbar__search-input {
-  background: rgba(255, 255, 255, 0.9) !important;
+  /* background: rgba(255, 255, 255, 0.9) !important; */
   border: 1px solid #e5e7eb !important;
   color: #1f2937 !important;
 }
 
-[data-theme="light"] .navbar__search-input:focus {
+/*[data-theme="light"] .navbar__search-input:focus {
   border-color: #8b5cf6 !important;
   box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2) !important;
-}
+} */
 
-[data-theme="dark"] .navbar__search-input {
-  background: rgba(30, 32, 44, 0.9) !important;
-  border: 1px solid rgba(139, 92, 246, 0.3) !important;
+/* [data-theme="light"] .navbar__search-input {
   color: #e5e7eb !important;
-}
+  --search-local-highlight-color: #5468ff;
+  --ifm-navbar-search-input-placeholder-color: #8b5cf6 !important;
+  --search-local-muted-color: #8b5cf6 !important;
+  background: rgba(30, 32, 44, 0.9);
+  border: 1px solid rgba(139, 92, 246, 0.3) !important;
+} */
 
-[data-theme="dark"] .navbar__search-input:focus {
-  border-color: #8b5cf6 !important;
+[data-theme="light"] .navbar__search-input:focus {
+  /* border-color: #8b5cf6 !important; */
+  /* --ifm-navbar-search-input-placeholder-color: #8b5cf6 !important; */
+  --search-local-muted-color: #8b5cf6 !important;
   box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.3) !important;
 }
 
@@ -519,7 +579,9 @@ article .card {
 }
 
 [data-theme="light"] .navbar__search-input::placeholder {
-  color: #8b5cf6 !important;
+  color: #1f2937 !important;
+  /* --ifm-navbar-search-input-placeholder-color: #8b5cf6 !important;
+  --search-local-muted-color: #8b5cf6 !important; */
   opacity: 1 !important;
 }
 
@@ -593,4 +655,31 @@ main {
 /* Clean up any existing background declarations */
 .docusaurus-mt-lg {
   background: var(--ifm-background-color);
+}
+
+/* Ensure sidebar stays sticky and doesn't scroll with page */
+.theme-doc-sidebar-container {
+  position: sticky !important;
+  top: 0px !important;
+  align-self: flex-start !important;
+  max-height: calc(100vh - var(--ifm-navbar-height)) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.theme-doc-sidebar-menu {
+  max-height: 100% !important;
+  overflow-y: auto !important;
+}
+
+/* Ensure sidebar container respects footer boundary */
+.theme-doc-wrapper {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: calc(100vh - var(--ifm-navbar-height)) !important;
+}
+
+/* Make sure sidebar row container allows sticky to work properly */
+.main-wrapper .container .row {
+  align-items: flex-start !important;
 }

@@ -69,7 +69,7 @@ Remember: Every attendee deserves the same level of professional treatment, rega
 
 ## Logging Incidents
 
-- After dealing with the situation, log the incident in **#events-incidents**.
+- After dealing with the situation, log the incident in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" />.
 - Include:
 
   - Offender's Discord Tag (without pinging them) and VRC Name.
@@ -81,7 +81,7 @@ Remember: Every attendee deserves the same level of professional treatment, rega
 
   - Disciplinary actions taken.
     :::note Record Keeping and Consequences
-  - Make sure **all** incidents are recorded in **#events-incidents** and the Eden Apis Host Quick References.
+  - Make sure **all** incidents are recorded in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" /> and the Eden Apis Host Quick References.
   - Multiple reports against a user within a certain time frame can lead to a ban from events.
     :::
 
@@ -111,3 +111,10 @@ At any time, you have the right as the **Host** to remove any rule breaker from 
 :::note
 It's important to learn how to create and tag incident tickets correctly when an incident occurs!
 :::
+
+## Related
+
+- [Security Requirements](./security-requirements)
+- [How to Be Security](./how-to-be-security)
+- [Event Rules](../event-rules)
+- [How to Host an Event](../Hosts/how-to-host-an-event)

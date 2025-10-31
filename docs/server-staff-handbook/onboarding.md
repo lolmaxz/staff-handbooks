@@ -15,9 +15,21 @@ import { Settings } from 'lucide-react';
 
 Welcome to the Eden Apis staff team! This comprehensive guide will help you understand your role, responsibilities, and the tools available to you.
 
-:::info Getting Started
+::::info Getting Started
 Take your time to familiarize yourself with all sections. Don't hesitate to ask questions in <ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> or <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
-:::
+::::
+
+## First-Day Quick Start
+
+- Verify a member: [Verification Process](./verification-process/verification-process) → [Requirements](./verification-process/verification-requirements)
+- Close a verification: [Closing Out Verifications](./closing-out-verifications) → [Welcome Template](./verification-process/completion-of-verification)
+- Moderate chat: [Chat Moderation Overview](./chat-moderation/chat-moderation-overview)
+- Handle violations: [Server Rule Violations](./server-rule-violations)
+- Open a staff-talk ticket: [Staff-Talk Tickets](./staff-talk-tickets)
+- Record actions: [GitHub Records](./github-records)
+- Review ban process: [Ban Types Overview](./ban-votes/ban-types-overview)
+- Go on/off call: [Going On/Off Call](./training/going-on-off-call)
+- Enable Developer Mode: [Getting Discord User ID](./training/getting-discord-user-id)
 
 ## Your Role & Responsibilities
 
@@ -164,7 +176,7 @@ Three types of ban votes based on severity:
 
 ### Key Guidelines
 
-:::warning Important Rules
+::::warning Important Rules
 
 - **Verification**: Complete within 12-24 hours (ideally under 36 hours)
 - **Documentation**: Always screenshot violations before deletion
@@ -188,7 +200,7 @@ Three types of ban votes based on severity:
 - **Ban Procedures**: <DiscordButton type="link" emoji="⚖️" href="./ban-votes/ban-types-overview">Different vote types and criteria</DiscordButton>
 - **VRChat Linking**: <DiscordButton type="link" emoji="🔗" href="./verification-process/vrchat-linking-troubleshooting">Troubleshooting and technical support</DiscordButton>
 
-:::tip Success Tips
+::::tip Success Tips
 
 - **Read thoroughly**: Take time to understand each process
 - **Ask questions**: Better to ask than make mistakes
