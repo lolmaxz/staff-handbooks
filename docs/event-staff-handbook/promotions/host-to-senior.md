@@ -1,12 +1,12 @@
 ---
 id: host-to-senior
-title: Promotion: Host to Senior Event Team
+title: "Promotion: Host ➜ Senior Event Team"
 ---
 
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import RoleBadge from "@site/src/components/RoleBadge";
 
-# Host -> Senior Event Team 🌟
+# Host ➜ Senior Event Team 🌟
 
 The **Senior Event Team** helps mentor others, handle event tickets, and shape how the team runs. Here’s the short version of what it takes and what changes.
 

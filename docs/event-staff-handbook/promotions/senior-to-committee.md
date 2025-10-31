@@ -1,12 +1,12 @@
 ---
 id: senior-to-committee
-title: Promotion: Senior Event Team to Event Committee
+title: "Promotion: Senior Event Team ➜ Event Committee"
 ---
 
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import RoleBadge from "@site/src/components/RoleBadge";
 
-# Senior -> Event Committee 🌟
+# Senior ➜ Event Committee 🌟
 
 Committee members help set standards, guide scheduling policy, review tricky incidents, and mentor the team. Here’s a simple view of how you get there and what it means.
 
