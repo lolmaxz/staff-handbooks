@@ -1,7 +1,6 @@
 ---
 id: server-rules
 title: Server Rules
-sidebar_position: 2
 ---
 
 import ChannelBadge from "@site/src/components/ChannelBadge";

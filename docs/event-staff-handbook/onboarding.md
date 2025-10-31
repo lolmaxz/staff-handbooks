@@ -1,7 +1,6 @@
 ---
 id: onboarding
 title: Event Onboarding
-sidebar_position: 0
 ---
 
 import CardGrid, { Card } from "@site/src/components/CardGrid";

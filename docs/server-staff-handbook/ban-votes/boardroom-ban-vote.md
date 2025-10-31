@@ -1,7 +1,6 @@
 ---
 id: boardroom-ban-vote
-title: All Heads Ban Vote ( Event/Server Committees Only)
-sidebar_position: 2
+title: All Heads Ban Vote (Committees Only)
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

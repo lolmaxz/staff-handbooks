@@ -1,7 +1,6 @@
 ---
 id: staff-voting-explained
 title: Staff Voting Explained
-sidebar_position: 13
 ---
 
 import ChannelBadge from "@site/src/components/ChannelBadge";
@@ -21,8 +20,8 @@ Participate actively in votes relevant to your role to contribute to the server'
 - Anyone can propose a change by starting a new forum thread and initiating a vote.
 - Staff can bring up server suggestions they would also like to see implemented with a proposed plan of updates.
 - <RoleBadge role="Lewd Governor" badgeIcon="admin_role_icon.png" color="#db1cb8" /> will finalize all votes prior to updates.
----
 
+---
 
 ### Staff Applications in 💜Eden-Applications
 
@@ -34,6 +33,7 @@ Participate actively in votes relevant to your role to contribute to the server'
 
 - <RoleBadge role="Head Moderator 🔰" badgeIcon="" color="#db1cb8" /> or <RoleBadge role="Server Committee" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" /> will finalize the votes for Server side applicants.
 - <RoleBadge role="Head of Event Commitee" badgeIcon="event_head_role_icon.png" color="#db1cb8" /> or <RoleBadge role="Event Commitee Member" badgeIcon="event_committee_role_icon.png" color="#db1cb8" /> will finalize the votes for Event side applicants.
+
 ---
 
 ### Moderator Promotions in 📙moderator-only
@@ -42,6 +42,7 @@ Participate actively in votes relevant to your role to contribute to the server'
 - Promotion votes will be initiated in a new thread in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> upon a Cutie Helper completing all parts of Moderator training by <RoleBadge role="Server Committee" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" />, typically started by <RoleBadge role="Head Moderator 🔰" badgeIcon="" color="#db1cb8" />.
 - Promotion vote will pass upon 80% of voting Moderators to be in agreement that a Cutie Helper is ready to be a Moderator.
 - <RoleBadge role="Head Moderator 🔰" badgeIcon="" color="#db1cb8" /> will finalize the vote.
+
 ---
 
 ### Senior Event Team Promotions in 📙senior-events-only
@@ -50,6 +51,7 @@ Participate actively in votes relevant to your role to contribute to the server'
 - Promotion votes will be initiated in a new thread in <ChannelBadge label="📙senior-events-only" link="https://discord.com/channels/734595073920204940/1229903826522476564"/> upon a Host or Event Security staff member completing all parts of Senior Events Team training by <RoleBadge role="Event Committee" badgeIcon="event_committee_role_icon.png" color="#00e6c3" />, typically started by <RoleBadge role="Event Team Head" badgeIcon="event_head_role_icon.png" color="#f75edb" /> or <RoleBadge role="Head of Security" badgeIcon="head_of_security_role_icon.png" color="#3fa7ff" />.
 - Promotion vote will pass upon 80% of voting Senior Event Team members to be in agreement that a Host or Event Security staff member is ready to be a Senior Event Team Member.
 - <RoleBadge role="Event Team Head" badgeIcon="event_head_role_icon.png" color="#f75edb" /> or <RoleBadge role="Head of Security" badgeIcon="head_of_security_role_icon.png" color="#3fa7ff" /> will finalize the vote.
+
 ---
 
 ### Moderator discussion votes in 📙moderator-only
@@ -58,7 +60,8 @@ Participate actively in votes relevant to your role to contribute to the server'
 - Any <RoleBadge role="Committee Member"  color="#db1cb8" /> is allowed to provide inputs to assist Moderators in discussions about a community member but may only vote within their respective team.
 - Rule violation punishment and media acceptability votes will pass with greater than 50% voting Moderators in agreement.
 - <Tooltip tip="Server Ban votes require **24hrs** to be reviewed by all Moderators before being finalized, typically a Server Committee member will finalize the vote." bubbleColor="#d255ec" labelColor="#e68027"> Server Ban Votes </Tooltip> will pass with greater then 80% voting Moderators in agreement.
-- Community member will be informed of removal from community in next *24hrs via ticket and time-out from server* by **Moderator who initiated the Discussion Thread**.
+- Community member will be informed of removal from community in next _24hrs via ticket and time-out from server_ by **Moderator who initiated the Discussion Thread**.
+
 ---
 
 ### Senior Event Team discussion votes in 📙senior-events-only
@@ -67,7 +70,8 @@ Participate actively in votes relevant to your role to contribute to the server'
 - Any <RoleBadge role="Committee Member"  color="#db1cb8" /> is allowed to provide inputs to assist Senior Event Team members in discussions about a community member/avatar but may only vote within their respective team.
 - Rule violation punishment and unacceptable avatar votes will pass with greater than 50% voting Senior Event Team members in agreement.
 - <Tooltip tip="Permanent Event Ban votes require **24hrs** to be reviewed by all Senior Event Team members before being finalized, typically an Event Committee member will finalize the vote." bubbleColor="#d255ec" labelColor="#ffc857"> Permanent Event Ban Votes </Tooltip> will pass with greater then 80% voting Senior Event Team members in agreement.
- - **Event Suspensions** will have <RoleBadge role="Event Hosts" badgeIcon="event_host_role_icon.png" color="#a259f7" /> updated in <ChannelBadge label="Active Event Suspension List" link="https://discord.com/channels/734595073920204940/1028891725265113128"/> within next **24hrs** and *community member updated of suspension via ticket by Senior Event Team member who initiated the Discussion Thread*.
+- **Event Suspensions** will have <RoleBadge role="Event Hosts" badgeIcon="event_host_role_icon.png" color="#a259f7" /> updated in <ChannelBadge label="Active Event Suspension List" link="https://discord.com/channels/734595073920204940/1028891725265113128"/> within next **24hrs** and _community member updated of suspension via ticket by Senior Event Team member who initiated the Discussion Thread_.
+
 ---
 
 ### Committee Member discussion votes in 🌷𝘈ll-𝘏eads, 🌷Server-Committee, or 🌷Event-Committee
@@ -77,6 +81,7 @@ Participate actively in votes relevant to your role to contribute to the server'
 - <u>Committee Server Ban votes for community members</u> require <Tooltip tip="Unanimous agreement with all commitee member not on hiatus voting removes requirement to wait 12hrs." bubbleColor="#d255ec" labelColor="#db1cb8"> **12hrs** </Tooltip> for discussion and voting. Votes pass with greater then 60% of voting Committee members in agreement.
 - All other votes are at discretion of <Tooltip tip="HR, Head Moderator, Event Team Head, or Head of Security" bubbleColor="#d255ec" labelColor="#db1cb8"> Committee Team Head </Tooltip> or Lewd Governors to determine timeline to discuss/vote.
 - <RoleBadge role="Lewd Governors" badgeIcon="admin_role_icon.png" color="#db1cb8" /> will finalize all votes.
+
 ---
 
 ### Lewd Governor discussion votes in 📕admin-general

@@ -1,7 +1,6 @@
 ---
 id: incident-management-guidelines
 title: Incident Management Guidelines
-sidebar_position: 12
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

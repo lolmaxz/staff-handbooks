@@ -1,7 +1,6 @@
 ---
 id: event-positions
 title: Event Positions
-sidebar_position: 3
 slug: /event-positions
 ---
 
@@ -101,7 +100,7 @@ Experienced members of the Event Team with additional responsibilities.
 - Host Patreon events and help plan big special events.
 - Manage event report tickets and update incident threads.
 - Enforce event punishments and vote on longer event bans.
-- More information in [Senior Event Team](#senior-event-team). (To be replaced with new link for senior host inside event-handbook)
+- More information in [Senior Event Team](./event-staff-handbook/senior-event-team).
 
 :::info
 Senior Event Team members are mentors and leaders within the Event Team.

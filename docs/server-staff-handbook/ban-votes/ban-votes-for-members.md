@@ -1,7 +1,6 @@
 ---
 id: ban-votes-for-members
-title: Ban Votes for Members (Moderators Only)
-sidebar_position: 1
+title: Ban Votes for Members (Mods Only)
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

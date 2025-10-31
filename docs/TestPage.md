@@ -1,7 +1,6 @@
 ---
 id: new-component
 title: New Components Explained!
-sidebar_position: 9
 ---
 
 import React, { useState } from 'react';

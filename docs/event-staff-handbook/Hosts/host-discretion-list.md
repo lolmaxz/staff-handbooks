@@ -1,7 +1,6 @@
 ---
 id: host-discretion-list
 title: Host Discretion List
-sidebar_position: 13
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

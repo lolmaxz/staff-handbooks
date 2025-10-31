@@ -1,7 +1,6 @@
 ---
 id: github-records
 title: GitHub Records
-sidebar_position: 11
 ---
 
 import CardGrid, { Card } from "@site/src/components/CardGrid";

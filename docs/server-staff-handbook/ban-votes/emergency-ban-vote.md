@@ -1,7 +1,6 @@
 ---
 id: emergency-ban-vote
 title: Emergency Ban Vote (Admins Only)
-sidebar_position: 3
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

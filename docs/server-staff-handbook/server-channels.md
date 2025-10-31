@@ -1,7 +1,6 @@
 ---
 id: server-channels
 title: Server Staff Channels
-sidebar_position: 1
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
@@ -42,4 +41,3 @@ Don't forget to familiarize yourself with all server rules and procedures.
 
 If you're unsure about anything, feel free to ping <RoleBadge role="Head Moderator" color="#db1cb8" /> or <RoleBadge role="Server Committee" color="#db1cb8" />.
 :::
-

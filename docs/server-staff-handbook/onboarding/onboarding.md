@@ -1,7 +1,7 @@
 ---
 id: onboarding
 title: Staff Onboarding
-sidebar_position: 0
+slug: /server-staff-handbook/onboarding
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
@@ -29,7 +29,7 @@ Take your time to familiarize yourself with all sections. Don't hesitate to ask 
 - Record actions: [GitHub Records](./moderator/github-records)
 - Review ban process: [Ban Types Overview](./ban-votes/ban-types-overview)
 - Go on/off call: [Going On/Off Call](./moderator/mod-on-call)
-- Enable Developer Mode: [Getting Discord User ID](./training/getting-discord-user-id)
+- Enable Developer Mode: [Getting Discord User ID](./onboarding/getting-discord-user-id)
 
 ## Your Role & Responsibilities
 
@@ -172,7 +172,7 @@ Three types of ban votes based on severity:
 - **Check Linking Status**: <DiscordButton type="secondary" emoji="🔍">Right Click on the user's avatar / Username → Apps → Check Linking Status</DiscordButton>
 - **Vote Bot**: `>votereact [message ID]` for ban votes
 - **Ticket Commands**: <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only - `/rename`, `/add`, `/remove` for ticket management
-- **Developer Mode**: <DiscordButton type="link" emoji="⚙️" href="./training/getting-discord-user-id">Enable Developer Mode</DiscordButton> (required for copying User IDs)
+- **Developer Mode**: <DiscordButton type="link" emoji="⚙️" href="./onboarding/getting-discord-user-id">Enable Developer Mode</DiscordButton> (required for copying User IDs)
 
 ### Key Guidelines
 

@@ -1,7 +1,6 @@
 ---
 id: intro
 title: Eden Apis Handbooks
-sidebar_position: 1
 ---
 
 import { Card } from "@site/src/components/CardGrid";

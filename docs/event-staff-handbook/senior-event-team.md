@@ -1,7 +1,6 @@
 ---
 id: senior-event-team
 title: Senior Event Team
-sidebar_position: 5
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
@@ -33,8 +32,7 @@ Seniors are recognized for their reliability, good judgment, excellent communica
     <ul>
       <li>Handle event report tickets in <ChannelBadge label="🎫｜open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070" /> (Event‑Talk)</li>
       <li>Update actions taken in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" /> threads</li>
-      <li>Participate in weekly incident review (weekly roll)</li>
-      <li>Ensure incidents are properly documented and followed up</li>
+      <li>Work together with other <RoleBadge role="Senior Event Team" color="#3fa7ff" /> members to ensure incidents are properly documented and followed up</li>
     </ul>
   </Card>
 </CardGrid>
@@ -82,14 +80,19 @@ Seniors are recognized for their reliability, good judgment, excellent communica
 
 <div style={{ marginTop: "1.5rem" }} />
 
-## Weekly Incident Review (Weekly Roll)
+## Event Incident Management
 
-Seniors participate in a weekly rotation to review and update event incidents:
+<Card title="Collaborative Approach" status="info" icon="🤝">
+  <p><RoleBadge role="Senior Event Team" color="#3fa7ff" /> members work together as a team to handle incidents. Unlike moderators or committee members, there is no weekly roll system.</p>
+  <p>All seniors collaborate to:</p>
+  <ul>
+    <li>Review and update <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" /> threads</li>
+    <li>Ensure all actions taken are properly documented</li>
+    <li>Handle follow-ups and escalations as needed</li>
+  </ul>
+</Card>
 
-1. **Weekly Selection**: Similar to Mod on Call, Seniors may roll for weekly incident review responsibilities (process may vary based on team structure)
-2. **Review Period**: Check all <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" /> threads from the past week
-3. **Update Actions**: Ensure all actions taken are properly documented and updated in the incident threads
-4. **Follow-Up**: Verify that any required follow-ups or escalations are handled
+<div style={{ marginTop: "1.5rem" }} />
 
 :::tip Collaboration
 Always coordinate with other <RoleBadge role="Senior Event Team" color="#3fa7ff" /> members and <RoleBadge role="Event Committee" color="#db1cb8" /> when handling complex incidents or making important decisions.
@@ -101,10 +104,53 @@ When training <RoleBadge role="Event Trial" color="#f75edb" /> members:
 
 - **Be Patient & Encouraging**: Training can be overwhelming; provide clear guidance and support
 - **Give Constructive Feedback**: Focus on specific areas for improvement with actionable suggestions
-- **Document Thoroughly**: Complete training reports with detailed observations
+- **Document Thoroughly**: Complete training reports with detailed observations using the template below
 - **Follow Training Stages**: Ensure trials complete all required stages (Security Shadowing, Security Observed, Co-Host, Host with Co-Host, Solo Host Observed)
 
-For more details, see the [Event Trial Training](./event-trial-training) page.
+:::info Training Report Requirement
+As a <RoleBadge role="Senior Event Team" color="#3fa7ff" /> member, your responsibility is to report in the appropriate training thread when you are done doing a training session with a Trial Host. Use the template below to describe how the training went, then send it in the thread.
+:::
+
+### Training Report Template
+
+The following message is separate so you can easily copy it and fill it out, even on mobile!
+
+<details>
+<summary>📋 Senior Host Training Report Template (Click to expand)</summary>
+
+Copy this template (remove the code block markers when posting):
+
+```
+## -- TRAINING REPORT --
+
+**Day + Time:** [Fill in]
+
+**Event Type:** [Fill in]
+
+**Trial host that got training:** [Fill in]
+
+**Training Phase:** [Fill in]
+
+**Any other Host that were trained at the same time (leave empty if no other):** [Fill in]
+
+### - What was the strong point of the trial during the training period?
+[Answer here]
+
+### - Has the Trial listened to you and seems to remember what you tell them?
+[Answer here]
+
+### - What do you think the host could improve on?
+[Answer here]
+
+### - How was the overall experience of training that host + any other comments?
+[Answer here]
+
+## -- END TRAINING REPORT --
+```
+
+</details>
+
+For more details about the training process, see the [Event Trial Training](./event-trial-training) page.
 
 <div style={{ marginTop: "1.5rem" }} />
 

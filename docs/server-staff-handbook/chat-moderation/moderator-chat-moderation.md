@@ -1,7 +1,6 @@
 ---
 id: moderator-chat-moderation
 title: Moderator Chat Moderation
-sidebar_position: 2
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

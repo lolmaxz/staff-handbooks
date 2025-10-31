@@ -1,7 +1,6 @@
 ---
 id: server-positions
 title: Server Positions
-sidebar_position: 3
 slug: /general-handbook/server-positions
 ---
 

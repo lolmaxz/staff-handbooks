@@ -1,7 +1,6 @@
 ---
 id: freeuse-event-types
 title: Free-Use Events
-sidebar_position: 10
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

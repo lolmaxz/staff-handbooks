@@ -1,7 +1,6 @@
 ---
 id: hephia-commands
 title: Hephia V1.2 Slash Commands
-sidebar_position: 5
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";

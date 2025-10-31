@@ -1,7 +1,6 @@
 ---
 id: vrchat-linking-troubleshooting
 title: VRChat Linking & Cross Verification Troubleshooting
-sidebar_position: 3
 ---
 
 import ChannelBadge from "@site/src/components/ChannelBadge";

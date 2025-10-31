@@ -103,7 +103,7 @@ const config: Config = {
           position: "left",
           label: "Eden Staff Handbooks",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        // { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/lolmaxz/staff-handbooks",
           label: "GitHub",

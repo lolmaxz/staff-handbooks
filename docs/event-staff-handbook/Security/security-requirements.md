@@ -1,7 +1,6 @@
 ---
 id: security-requirements
 title: Security Requirements
-sidebar_position: 11
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
