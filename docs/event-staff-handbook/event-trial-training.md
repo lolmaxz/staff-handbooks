@@ -79,6 +79,69 @@ After completing your trial, you will receive the <RoleBadge role="Event Host" c
 
 <div style={{ marginTop: "1.5rem" }} />
 
+## 📅 Submitting Your Availability
+
+As a trial, you need to let the team know your availabilities to be trained. **You will also be responsible to reach out to trainers** to train you unless they do it first.
+
+### How to Fill Out the Template
+
+- In your schedule template, specify for each day what **times** or **time ranges** you are available to potentially get trained
+- Times must be in **EST** (Eastern Standard Time)
+- If you are on your **second phase for Solo event**, you can also specify your **preferred event type** if you have a preference
+- Include how many events you're willing to be trained on that week
+
+### Time Format Examples
+
+- **Single time:** `8pm`
+- **Time range:** `8pm->11pm` (available during that entire range)
+- **Either/or (not in between):** `8pm+11pm` (available at 8pm OR 11pm, not in between)
+
+### Trial Host Template
+
+Copy this template when submitting your availability in the weekly scheduling thread (remove the code block markers when posting):
+
+<details>
+<summary>📋 Trial Host Availability Template (Click to expand)</summary>
+
+```
+## --- My Schedule [TRIAL] ---
+### Max Event Willing to Host/Be Trained this Week: [Number]
+
+** --- Monday --- **
+-
+
+** --- Tuesday --- **
+-
+
+** --- Wednesday --- **
+-
+
+** --- Thursday --- **
+-
+
+** --- Friday --- **
+-
+
+** --- Saturday --- **
+-
+
+** --- Sunday --- **
+-
+
+### --- END SCHEDULE ---
+```
+
+**Example for a day:**
+- `• 8pm + Classic Event (?Event Type Preference)` - Available at 8pm EST, prefers Classic Event type
+
+</details>
+
+:::tip 💖 Helpful Note
+This way you can give many availabilities, but scheduling will try to limit your hosting/training to the amount you specified! This helps manage your workload and ensures fair distribution.
+:::
+
+<div style={{ marginTop: "1.5rem" }} />
+
 :::info ❓ Questions?
 For any questions during your trial, don't hesitate to reach out to your trainers or the <RoleBadge role="Event Committee" color="#db1cb8" />.
 :::

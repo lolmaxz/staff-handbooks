@@ -5,6 +5,7 @@ title: How to Host an Event
 
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import ChannelBadge from "@site/src/components/ChannelBadge";
+import RoleBadge from "@site/src/components/RoleBadge";
 import Checklist from "@site/src/components/Checklist";
 import { Megaphone } from 'lucide-react';
 
@@ -26,6 +27,25 @@ import { Megaphone } from 'lucide-react';
 </Checklist>
 
 Related references: <ChannelBadge variant="post" label="💠｜rules" link="https://discord.com/channels/734595073920204940/737074569319546921" /> · <ChannelBadge variant="post" label="📘how-to-join-events" link="https://discord.com/channels/734595073920204940/980342448712724560" /> · <ChannelBadge variant="post" label="📆events-schedule" link="https://discord.com/channels/734595073920204940/820927836411002890" />
+
+## Event Post Checklist
+
+Before posting your event announcement, make sure your post includes all required elements:
+
+<Checklist checklistId="event-post-checklist" title="Event Post Requirements">
+  <Checklist.Item id="role-ping">General Event Ping role (<code> \<@&790399512116068375> </code>)</Checklist.Item>
+  <Checklist.Item id="event-title">Event title with time in hours (using hammertime code)</Checklist.Item>
+  <Checklist.Item id="date-time">Date and time (hammertime code format)</Checklist.Item>
+  <Checklist.Item id="world-info">World information: Quest/PC compatibility emojis, world name + author, event capacity</Checklist.Item>
+  <Checklist.Item id="cohost">Co-host mention (if applicable)</Checklist.Item>
+  <Checklist.Item id="event-description">Event description, game rules if needed, and flairs</Checklist.Item>
+  <Checklist.Item id="signup-link">Signup thread link</Checklist.Item>
+  <Checklist.Item id="rules-link">Event Rules link</Checklist.Item>
+  <Checklist.Item id="join-link">How to Join link</Checklist.Item>
+  <Checklist.Item id="questions-link">Questions/Events Talk channel link</Checklist.Item>
+  <Checklist.Item id="vrchat-link">VRChat Linking channel link</Checklist.Item>
+  <Checklist.Item id="host-vr">Host's VRC account link</Checklist.Item>
+</Checklist>
 
 <details>
   <summary>Announcement Template (copy/paste)</summary>
@@ -68,7 +88,7 @@ If overlapping another event, post <strong>1h after</strong> their doors open.
 
 ## Live Pings
 
-- <strong>10–15 min before start</strong>: Ping <strong>Patreon</strong> members; if all joined, open doors to regular members
+- <strong>10–15 min before start</strong>: Ping <RoleBadge color="#ffd957" role="Patreon Supporter" /> members; if all joined, open doors to regular members
 - <strong>On time</strong>: Send the general invite request notice
 
 ## Patreon Access & Capacity Guidelines
@@ -95,7 +115,7 @@ If overlapping another event, post <strong>1h after</strong> their doors open.
 
 ## Host the Event
 
-Follow specific guidance for your event type; see [Event Types](../classic-event-types).
+Follow specific guidance for your event type; see [Event Types](../event-types).
 
 ## VR Announcement Talking Points
 
@@ -122,4 +142,4 @@ Be punctual with pings and start times. Join early to handle technical issues pr
 
 - [Scheduling Procedures](./scheduling-procedures)
 - [Incident Management](../Security/incident-management-guidelines)
-- [Event Types](../classic-event-types)
+- [Event Types](../event-types)
