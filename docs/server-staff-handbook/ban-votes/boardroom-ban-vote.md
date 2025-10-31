@@ -34,3 +34,9 @@ An All Heads Ban Vote involves higher-level staff for severe cases.
 :::note
 Once all votes are cast, the ban may be carried out without waiting for the full 12 hours.
 :::
+
+## Related
+
+- [Ban Types Overview](./ban-types-overview)
+- [Server Rule Violations](../server-rule-violations)
+- [GitHub Records](../github-records)

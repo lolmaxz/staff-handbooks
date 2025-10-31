@@ -1,0 +1,32 @@
+.root {
+  --spoiler-bg: rgba(0, 0, 0, 0.7);
+  --spoiler-fg: inherit;
+  --spoiler-pad-y: 0.1em;
+  --spoiler-pad-x: 0.3em;
+  --spoiler-radius: 4px;
+  --spoiler-revealed-bg: rgba(255, 255, 255, 0.08); /* faint grey */
+
+  display: inline-block;
+  padding: var(--spoiler-pad-y) var(--spoiler-pad-x);
+  border-radius: var(--spoiler-radius);
+  background: var(--spoiler-bg);
+  color: transparent; /* hide text without shifting layout */
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1.35;
+}
+
+.revealed {
+  background: var(--spoiler-revealed-bg);
+  color: var(--spoiler-fg);
+  user-select: text;
+}
+
+.focusRing {
+  outline: none;
+}
+
+.focusRing:focus-visible {
+  box-shadow: 0 0 0 3px rgba(114, 137, 218, 0.45);
+}

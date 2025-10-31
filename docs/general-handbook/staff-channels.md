@@ -36,12 +36,14 @@ Now, here's all the Channels you need to Familiarize yourself with
 
 - <ChannelBadge label="📃meeting-logs" link="https://discord.com/channels/734595073920204940/1024401011953127544" />: Channel where meeting notes and recaps are posted after meetings. If you miss a meeting, it's important to read the latest notes here. Only Committee members can write in this channel.
 
+- <ChannelBadge label="🐸staff-bites-meetings" link="https://discord.com/channels/734595073920204940/1398456755452776630" />: Weekly staff meetings channel where all staff members can participate in discussions and votes to shape the future of the server. This ensures everyone has a voice in important decisions!
+
 - <ChannelBadge variant="post" label="📆event-scheduling" link="https://discord.com/channels/734595073920204940/1024399192300454029" />: Channel where a weekly post is made to show the schedule for the week.
 
 - <ChannelBadge label="⭕server-chat-reports" link="https://discord.com/channels/734595073920204940/996504897476366497" />: This channel is used to report anything you may see in chat that may or could violate our server's rules.
 <details>
   <summary>Important Note about <ChannelBadge label="⭕server-chat-reports" link="https://discord.com/channels/734595073920204940/996504897476366497" /></summary>
-    <p>- Cutie helpers and moderators may report things directly in **#📗helper-chat** or **#📙moderator-only** instead of using this channel.<br/>
+    <p>- Cutie helpers and moderators may report things directly in <ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789" /> or <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" /> instead of using this channel.<br/>
     Simply provide the message link to the problematic post and explain why you think it needed to be reported. The server team will handle the rest. <br/>
     If you are unsure if something should be reported, it is always better to report it and let the server team decide if it needs to be addressed. <br/>
     ANY staff member can report a message, but only server staff can handle the reports. This is just a faster direct line of communication for staff to report messages.</p>

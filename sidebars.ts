@@ -89,6 +89,7 @@ const sidebars: SidebarsConfig = {
           ],
         },
         "general-handbook/staff-channels",
+        "general-handbook/group-instance-rules",
         "general-handbook/staff-voting-explained",
         "general-handbook/staff-hiatus",
         {
@@ -109,7 +110,7 @@ const sidebars: SidebarsConfig = {
             id: "general-handbook/staff-perks/staff-perks",
           },
           collapsed: true,
-          items: ["general-handbook/staff-perks/staff-emeritus"],
+          items: ["general-handbook/staff-perks/staff-emeritus", "general-handbook/staff-perks/staff-pictures"],
         },
       ],
     },
@@ -123,6 +124,9 @@ const sidebars: SidebarsConfig = {
       collapsed: true,
       items: [
         "server-staff-handbook/onboarding",
+        "server-staff-handbook/server-channels",
+        "server-staff-handbook/server-rules",
+        "server-staff-handbook/hephia-commands",
         // {
         //   type: "category",
         //   label: "Training",
@@ -151,7 +155,6 @@ const sidebars: SidebarsConfig = {
             // "server-staff-handbook/verification-check",
             "server-staff-handbook/verification-process/camera-verification",
             "server-staff-handbook/verification-process/completion-of-verification",
-            "server-staff-handbook/closing-out-verifications",
           ],
         },
         {
@@ -168,8 +171,20 @@ const sidebars: SidebarsConfig = {
         },
         "server-staff-handbook/training/getting-discord-user-id",
         "server-staff-handbook/server-rule-violations",
-        "server-staff-handbook/staff-talk-tickets",
-        "server-staff-handbook/mod-on-call",
+        {
+          type: "category",
+          label: "Moderators Only",
+          link: {
+            type: "doc",
+            id: "server-staff-handbook/moderator/moderators-only",
+          },
+          items: [
+            "server-staff-handbook/moderator/staff-talk-tickets",
+            "server-staff-handbook/moderator/mod-on-call",
+            "server-staff-handbook/moderator/github-records",
+            "server-staff-handbook/moderator/closing-out-verifications",
+          ],
+        },
         {
           type: "category",
           label: "Ban Procedures",
@@ -184,7 +199,6 @@ const sidebars: SidebarsConfig = {
             "server-staff-handbook/ban-votes/emergency-ban-vote",
           ],
         },
-        "server-staff-handbook/github-records",
       ],
     },
 
@@ -196,31 +210,42 @@ const sidebars: SidebarsConfig = {
         id: "event-staff-handbook/introduction",
       },
       items: [
-        "event-staff-handbook/Hosts/hosting-requirements",
+        "event-staff-handbook/onboarding",
         "event-staff-handbook/event-rules",
         "event-staff-handbook/event-team-channels",
-        "event-staff-handbook/event-roles",
+
         {
           type: "category",
-          label: "Event Hosts",
-          link: {
-            type: "generated-index",
-          },
+          label: "Hosts",
+          link: { type: "doc", id: "event-staff-handbook/Hosts/Introduction" },
           items: [
             "event-staff-handbook/Hosts/how-to-host-an-event",
             "event-staff-handbook/Hosts/scheduling-procedures",
+            "event-staff-handbook/Hosts/hosting-requirements",
             "event-staff-handbook/Hosts/host-discretion-list",
           ],
         },
         {
           type: "category",
-          label: "Event Security",
+          label: "Security",
           link: {
             type: "doc",
             id: "event-staff-handbook/Security/Introduction",
           },
-          items: ["event-staff-handbook/Security/how-to-be-security", "event-staff-handbook/Security/incident-management-guidelines"],
+          items: [
+            "event-staff-handbook/Security/how-to-be-security",
+            "event-staff-handbook/Security/security-requirements",
+            "event-staff-handbook/Security/incident-management-guidelines",
+          ],
         },
+        {
+          type: "category",
+          label: "Promotions",
+          link: { type: "generated-index" },
+          items: ["event-staff-handbook/promotions/host-to-senior", "event-staff-handbook/promotions/senior-to-committee"],
+        },
+        "event-staff-handbook/classic-event-types",
+        "event-staff-handbook/event-trial-training",
         "event-staff-handbook/github-records",
       ],
     },
