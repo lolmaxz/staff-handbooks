@@ -568,6 +568,7 @@ article .card {
 [data-theme="light"] .navbar__search-input:focus {
   /* border-color: #8b5cf6 !important; */
   /* --ifm-navbar-search-input-placeholder-color: #8b5cf6 !important; */
+  --search-local-hit-color: #8b5cf6 !important;
   --search-local-muted-color: #8b5cf6 !important;
   box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.3) !important;
 }

@@ -150,7 +150,7 @@ New members of the Event Team learning to host events and act as security.
 This is the position you will be in when you first join the Event Team.
 
 This position is temporary as it act like a probation period for new members. After the probation period, the Senior Event Team Head will decide if the member will be promoted to a host, security, or both.
-More information about the Trial period can be found in [Event Trial](#event-trial). (To be replaced with new link for event staff onboarding and final vote)
+More information about the Trial period can be found in [Event Trial](./event-staff-handbook/event-trial-training). (To be replaced with new link for event staff onboarding and final vote)
 
 <h3> Responsibilities: </h3>
 

@@ -39,4 +39,4 @@ Once all votes are cast, the ban may be carried out without waiting for the full
 
 - [Ban Types Overview](./ban-types-overview)
 - [Server Rule Violations](../server-rule-violations)
-- [GitHub Records](../github-records)
+- [GitHub Records](../moderator/github-records)

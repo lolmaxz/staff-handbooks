@@ -151,15 +151,6 @@ This section outlines the channels and features that become available to members
 <p> Here's a few channels as example of what gets unlocked once you get verified </p>
 <ChannelBadge label="📄𝘕𝘚𝘍𝘞-𝘉ios" link="https://discord.com/channels/734595073920204940/737074569319546921"/> | <ChannelBadge label="🔞kink-sharing" link="https://discord.com/channels/734595073920204940/737074569319546921"/> | <ChannelBadge label="🎮vr-name-sharing" link="https://discord.com/channels/734595073920204940/737074569319546921"/> | <ChannelBadge label="📸lewd-vr-pics" link="https://discord.com/channels/734595073920204940/737074569319546921"/> | <ChannelBadge label="👾avatar-creators" link="https://discord.com/channels/734595073920204940/737074569319546921"/> | <ChannelBadge label="🎨avatar-support" link="https://discord.com/channels/734595073920204940/737074569319546921"/>
 
-<Checklist checklistId="access-granted" title="Additional Features Unlocked" borderColor="#800080">
-  <Checklist.Item id="features">Event Participation (Social Lewd nights, Drinking Events, Movie Events)</Checklist.Item>
-  <Checklist.Item id="voice">Voice Channel Access</Checklist.Item>
-  <Checklist.Item id="threads">Exclusive Threads</Checklist.Item>
-  <Checklist.Item id="giveaways">Giveaways</Checklist.Item>
-  <Checklist.Item id="worlds">ERP Worlds Links for VRChat</Checklist.Item>
-  <Checklist.Item id="roles">Hundreds of Customizable Roles</Checklist.Item>
-</Checklist>
-
 ## Verification Example
 
 ![Verification Example](@site/static/img/Verification_Option_1-no_text.webp)

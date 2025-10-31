@@ -66,7 +66,7 @@ Welcome to the Event Team! This page gives you the fastest path to being effecti
       <li>Tips and constraints</li>
     </ul>
   </Card>
-  <Card title="Advance Your Role" href="./senior-team-promotion" status="warning">
+  <Card title="Advance Your Role" href="./promotions/senior-to-committee" status="warning">
     <ul>
       <li>Activity criteria</li>
       <li>How to request promotion</li>

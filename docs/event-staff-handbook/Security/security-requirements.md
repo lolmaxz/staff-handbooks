@@ -72,4 +72,4 @@ Being part of the security team does <strong>not</strong> grant permission to re
 
 - [How to be Security](./how-to-be-security)
 - [Incident Management Guidelines](./incident-management-guidelines)
-- [Security Introduction](./introduction)
+- [Security Introduction](../event-security)

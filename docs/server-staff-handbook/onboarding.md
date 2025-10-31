@@ -21,14 +21,14 @@ Take your time to familiarize yourself with all sections. Don't hesitate to ask 
 
 ## First-Day Quick Start
 
-- Verify a member: [Verification Process](./verification-process/verification-process) → [Requirements](./verification-process/verification-requirements)
-- Close a verification: [Closing Out Verifications](./closing-out-verifications) → [Welcome Template](./verification-process/completion-of-verification)
-- Moderate chat: [Chat Moderation Overview](./chat-moderation/chat-moderation-overview)
+- Verify a member: [Verification Process](./verification-process) → [Requirements](./verification-process)
+- Close a verification: [Closing Out Verifications](./moderator/closing-out-verifications) → [Welcome Template](./verification-process/completion-of-verification)
+- Moderate chat: [Chat Moderation Overview](./chat-moderation)
 - Handle violations: [Server Rule Violations](./server-rule-violations)
-- Open a staff-talk ticket: [Staff-Talk Tickets](./staff-talk-tickets)
-- Record actions: [GitHub Records](./github-records)
+- Open a staff-talk ticket: [Staff-Talk Tickets](./moderator/staff-talk-tickets)
+- Record actions: [GitHub Records](./moderator/github-records)
 - Review ban process: [Ban Types Overview](./ban-votes/ban-types-overview)
-- Go on/off call: [Going On/Off Call](./training/going-on-off-call)
+- Go on/off call: [Going On/Off Call](./moderator/mod-on-call)
 - Enable Developer Mode: [Getting Discord User ID](./training/getting-discord-user-id)
 
 ## Your Role & Responsibilities
@@ -191,16 +191,16 @@ Three types of ban votes based on severity:
 1. **General Questions**: Ask in <ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/>
 2. **Moderator Issues**: Consult in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
 3. **Technical Problems**: Ping <RoleBadge role="lolmaxz" color="#ff6b6b" /> for bot/linking issues
-4. **Staff-Talk Tickets**: Use <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> → "Talk to a Staff"
+4. **Staff-Talk Tickets**: Use <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> → <DiscordButton type="link" emoji="☎️" href="./moderator/staff-talk-tickets">Talk to a Staff</DiscordButton>
 
 ### Documentation Resources
 
-- **Verification Process**: <DiscordButton type="link" emoji="📋" href="./verification-process/verification-process">Detailed steps and requirements</DiscordButton>
-- **Chat Moderation**: <DiscordButton type="link" emoji="💬" href="./chat-moderation/chat-moderation-overview">Role-specific guidelines and procedures</DiscordButton>
+- **Verification Process**: <DiscordButton type="link" emoji="📋" href="./verification-process">Detailed steps and requirements</DiscordButton>
+- **Chat Moderation**: <DiscordButton type="link" emoji="💬" href="./chat-moderation">Role-specific guidelines and procedures</DiscordButton>
 - **Ban Procedures**: <DiscordButton type="link" emoji="⚖️" href="./ban-votes/ban-types-overview">Different vote types and criteria</DiscordButton>
 - **VRChat Linking**: <DiscordButton type="link" emoji="🔗" href="./verification-process/vrchat-linking-troubleshooting">Troubleshooting and technical support</DiscordButton>
 
-::::tip Success Tips
+:::tip Success Tips
 
 - **Read thoroughly**: Take time to understand each process
 - **Ask questions**: Better to ask than make mistakes

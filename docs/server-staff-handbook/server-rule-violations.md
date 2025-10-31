@@ -46,5 +46,5 @@ Always aim for fair and consistent enforcement of rules to maintain community tr
 
 - [Ban Types Overview](./ban-votes/ban-types-overview)
 - [Ban Votes for Members](./ban-votes/ban-votes-for-members)
-- [GitHub Records](./github-records)
-- [Staff-Talk Tickets](./staff-talk-tickets)
+- [GitHub Records](./moderator/github-records)
+- [Staff-Talk Tickets](./moderator/staff-talk-tickets)
