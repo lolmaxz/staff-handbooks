@@ -40,11 +40,14 @@ Welcome aboard the Event Team! You play a vital role in keeping events fun, incl
   <Card title="Incident Management" href="./event-staff-handbook/Security/incident-management-guidelines" status="error">
     <p>Warnings, handling offenders, and logging in #events-incidents.</p>
   </Card>
-  <Card title="Event Types" href="./event-staff-handbook/classic-event-types" status="info">
+  <Card title="Event Types" href="./event-staff-handbook/event-types" status="info">
     <p>Classic and special event types with expectations and tips.</p>
   </Card>
   <Card title="Trial Training" href="./event-staff-handbook/event-trial-training" status="success">
     <p>6-event training path and evaluation areas.</p>
+  </Card>
+  <Card title="Senior Event Team" href="./event-staff-handbook/senior-event-team" status="info">
+    <p>Responsibilities, duties, and expectations for Senior members.</p>
   </Card>
   <Card title="Promotions" href="./event-staff-handbook/promotions/host-to-senior" status="warning">
     <p>Paths: Host ➜ Senior and Senior ➜ Committee.</p>
