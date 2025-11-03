@@ -5,6 +5,7 @@ title: Completion Of Verification
 
 import RoleBadge from "@site/src/components/RoleBadge";
 import ChannelBadge from "@site/src/components/ChannelBadge";
+import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
 
 # Initial Verification Process Complete
 
@@ -28,6 +29,38 @@ Once initial verification meets all required criteria:
 :::danger Verification Image Deletion
 If the member deletes their verification images after the initial verification is completed, please ask them to repost the images in order for a moderator to double check the verification. If they do not comply in a timely manner, you are allowed to give back their <RoleBadge role="Unverified" color="#ff0000" /> role and inform them that their verification has been temporarily revoked.
 :::
+
+## Example: Completion Conversation
+
+Here's an example of how to handle verification completion:
+
+<DiscordConversation title="Verification Completion">
+  <DiscordMessage
+    name="Cutie Helper 1"
+    color="#38c8e8"
+  >
+    <span style={{ fontSize: "1.4rem", fontWeight: 600 }}>
+      🎉 Thank you @Member for getting verified — we appreciate your patience! ❤️
+    </span>
+    <br />
+    You now have access to all verified channels! Here are some helpful resources:
+    - 📜 Read the Rules
+    - 🎭 Customize Your Roles (including DM Status Role)
+    - 📅 Check Upcoming Events
+    
+    ⚠️ Please do not delete any images - they will be automatically removed when the ticket is closed.
+  </DiscordMessage>
+  <DiscordMessage
+    name="Member 1"
+    color="#5865f2"
+    message="Thank you! I'm excited to be part of the community!"
+  />
+  <DiscordMessage
+    name="Cutie Helper 1"
+    color="#38c8e8"
+    message="You're welcome! Enjoy your time here. The ticket will be closed shortly after a moderator reviews everything."
+  />
+</DiscordConversation>
 
 ## Welcome Message Template
 

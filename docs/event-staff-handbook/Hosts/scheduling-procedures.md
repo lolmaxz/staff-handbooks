@@ -6,6 +6,7 @@ title: Scheduling Procedures
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import RoleBadge from "@site/src/components/RoleBadge";
 import ChannelBadge from "@site/src/components/ChannelBadge";
+import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
 
 # Scheduling Procedures
 
@@ -183,6 +184,31 @@ Follow this flowchart to determine when and how to request security based on you
     </p>
   </Card>
 </CardGrid>
+
+### Example: Requesting Security for Your Event
+
+<DiscordConversation title="Security Request - Classic Event Tonight 9pm EST">
+  <DiscordMessage
+    name="Event Host 1"
+    color="#f75edb"
+  >
+    Hi <span className="mention">@Event Security</span> — I’m hosting a Classic event tonight at <strong>9pm EST</strong>.
+    
+    Looking for <strong>1 security</strong>. Pretty please! 😊
+  </DiscordMessage>
+  <DiscordMessage
+    name="Event Security 1"
+    color="#3fa7ff"
+    message="I can cover! I’ll be there 10 minutes early to help with lineup."
+  />
+  <DiscordMessage
+    name="Event Host 1"
+    color="#f75edb"
+    message="Thank you! Don't forget to add `(security)` in the signup thread next to your name. 😊"
+  />
+</DiscordConversation>
+
+If no security responds 1 hour prior, follow the escalation path below.
 
 ### Request Escalation Path
 

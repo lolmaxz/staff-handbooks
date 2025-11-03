@@ -5,6 +5,7 @@ title: Ban Votes for Members (Mods Only)
 
 import RoleBadge from "@site/src/components/RoleBadge";
 import ChannelBadge from "@site/src/components/ChannelBadge";
+import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
 
 # Ban Votes for Members (Moderators Only)
 
@@ -18,6 +19,40 @@ All ban votes are held in <ChannelBadge label="📙moderator-only" link="https:/
 - Create a **thread** in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> to discuss:
   - The rule(s) broken
   - Why the member deserves a ban
+
+### Example: Ban Vote Thread
+
+Here's an example of how a ban vote thread should be structured:
+
+<DiscordConversation title="Server ban vote - Started by Moderator 1">
+  <DiscordMessage
+    name="Moderator 1"
+    color="#8b5cf6"
+    message="Vote here within next 24hrs on server ban of [MemberName]."
+    timestamp="11/17/2022 6:35 PM"
+    reactions={[
+      { emoji: "✅", count: 9, selected: true },
+      { emoji: "❌", count: 1 },
+    ]}
+  />
+  <DiscordMessage
+    name="Moderator 1"
+    color="#8b5cf6"
+  >
+    [MemberName] has committed following problems within the server and events:
+    - Non sexual consent break
+    - Over intoxication in several events
+    - Talking to self while isolating in events
+    - Making people uncomfortable with complaints of work and politics in events and VC
+    - Made several complaints toward staff over non-issue with technical bugs that happened at an event
+    - Not accepting staff decisions and lying to staff about contacting HR
+  </DiscordMessage>
+  <DiscordMessage
+    name="Moderator 1"
+    color="#8b5cf6"
+    message="@Moderator"
+  />
+</DiscordConversation>
 
 ## Voting Process
 

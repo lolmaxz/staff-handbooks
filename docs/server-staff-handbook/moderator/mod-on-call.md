@@ -20,8 +20,18 @@ The **Mod on Call** is responsible for closing out tickets and updating the GitH
   - In case of a tie, previous week's Mod on Call wins the tie.
   - Other Mods who tie will roll again.
 
+  - **Advantage for GitHub logger**: If a moderator handled the **GitHub Records** logging duties during the previous week, they may roll **with advantage** (roll twice, keep the highest roll). This rewards recent workload while keeping the system fair.
+
+  - **Volunteer option**: Any <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> may volunteer to take Mod on Call for the week. If a volunteer steps up before or during the roll, they can be assigned the duty (especially helpful when the dice hasn’t favored someone for multiple weeks).
+
 - If the <RoleBadge role="Head Moderator 🔰" badgeIcon="" color="#db1cb8" /> or <RoleBadge role="Server Committee" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" /> member doesn't start the roll thread by **midnight EST**, they will take over the duties by default.
 
-:::note
-This process helps ensures fair rotation of responsibilities and makes it fun!
-:::
+::::note Card Naming Format (GitHub)
+When creating a new member record in the GitHub Warning Book, the card/issue title must be formatted as:
+
+<strong>DiscordTag [DiscordID]</strong>
+
+Example: <code>FictionalUser [123456789012345678]</code>
+
+Include the profile screenshot in the body of the card. See the GitHub Records page for the full logging template.
+::::

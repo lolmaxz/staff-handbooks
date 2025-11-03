@@ -4,6 +4,7 @@ title: All Heads Ban Vote (Committees Only)
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
+import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
 
 # All Heads Ban Vote
 
@@ -33,6 +34,36 @@ An All Heads Ban Vote involves higher-level staff for severe cases.
 :::note
 Once all votes are cast, the ban may be carried out without waiting for the full 12 hours.
 :::
+
+## Example: Boardroom Ban Vote Thread
+
+Here's an example of how a boardroom ban vote thread should be structured:
+
+<DiscordConversation title="All Heads Ban Vote - Started by Head Moderator 1">
+  <DiscordMessage
+    name="Head Moderator 1"
+    color="#e68027"
+    message="Vote here within next 12hrs on all heads ban of [MemberName]."
+    reactions={[
+      { emoji: "✅", count: 5, selected: true },
+      { emoji: "❌", count: 0 },
+    ]}
+  />
+  <DiscordMessage
+    name="Head Moderator 1"
+    color="#e68027"
+  >
+    [MemberName] has accumulated multiple rule violations:
+    - 5 rule breaks (3 server, 2 event) over the past month
+    - Two reported consent breaks within 48 hours
+    - Pattern of escalating behavior despite multiple warnings
+  </DiscordMessage>
+  <DiscordMessage
+    name="Head Moderator 1"
+    color="#e68027"
+    message="@Moderator"
+  />
+</DiscordConversation>
 
 ## Related
 

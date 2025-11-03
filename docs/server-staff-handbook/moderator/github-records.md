@@ -5,6 +5,7 @@ title: GitHub Records
 
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import RoleBadge from "@site/src/components/RoleBadge";
+import GitHubLogCard from "@site/src/components/GitHubLogCard";
 
 # GitHub Records (Moderators Only)
 
@@ -14,7 +15,13 @@ All moderation actions must be recorded in the **GitHub Warning Book** to keep h
 Clear records help us make fair decisions, see patterns, and coordinate as a team.
 :::
 
-## Quick Guide
+## Step-by-step
+
+1. Close the ticket properly (confirmation, acknowledgement, reason)
+2. Open the member's issue in the GitHub Warning Book, or create a new one if none exists
+3. Add/update the latest incident log using the template below
+4. Apply/update labels for active warnings
+5. If appropriate, add the member to the watchlist channel/thread for follow-up visibility
 
 <CardGrid columns={2}>
   <Card title="Access" status="info" icon="🔑">
@@ -31,12 +38,12 @@ Clear records help us make fair decisions, see patterns, and coordinate as a tea
     </ul>
   </Card>
 
-  <Card title="New Record" status="warning" icon="🆕">
+  <Card title="New Issue Naming" status="warning" icon="🆕">
     <ul>
-      <li>If the member has no prior record, create one with:</li>
-      <li><strong>Discord Tag</strong> and <strong>Discord ID</strong> in the title</li>
-      <li>Profile screenshot</li>
-      <li><em>Example:</em> <code>lolmaxz [229734830932361216]</code></li>
+      <li>If the member has no prior record, create a new issue with:</li>
+      <li><strong>Discord Tag</strong> + <strong>[Discord ID]</strong> in the title</li>
+      <li>Profile screenshot in the body</li>
+      <li><em>Example:</em> <code>FictionalUser [123456789012345678]</code></li>
     </ul>
   </Card>
 
@@ -63,6 +70,46 @@ Clear records help us make fair decisions, see patterns, and coordinate as a tea
     </ul>
   </Card>
 </CardGrid>
+
+## Logging Template
+
+Copy and paste this into the GitHub issue body, then replace the bracketed fields:
+
+:::info Card Title Format
+The card title must be formatted as:
+<strong>DiscordTag [DiscordID]</strong>
+Example: <code>FictionalUser [123456789012345678]</code>
+:::
+
+```
+When: [YYYY-MM-DD HH:mm TZ]
+Why: [Short reason / rule broken]
+Result: [Warning issued / Ticket closed with reason / Timeout Xh / Ban vote opened]
+Logged By: [Your Mod Name]
+
+Evidence:
+- [Link to ticket screenshot]
+- [Second link if applicable]
+
+Notes:
+- [Optional notes]
+```
+
+:::tip Watchlist
+If this member needs continued visibility, add a brief summary in the **watchlist** channel/thread after logging the incident. Keep it factual and short.
+:::
+
+## Visual Example
+
+<GitHubLogCard
+  title="FictionalUser [123456789012345678]"
+  when="When: 2024-06-16"
+  why="Why: Oversharing/Negativity in public channels."
+  result="Result: No acknowledgement from user, informal warning issued."
+  loggedBy="Logged By: Moderator 1"
+  avatarUrl="https://cdn.discordapp.com/embed/avatars/4.png"
+  note="Profile screenshot placed here to match GitHub entry."
+/>
 
 :::warning Keep it accurate
 Accurate record‑keeping is essential for consistency and fairness across cases.

@@ -9,6 +9,7 @@ import RoleBadge from "@site/src/components/RoleBadge";
 import DiscordButton from '@site/src/components/DiscordButton';
 import Tooltip from '@site/src/components/Tooltip';
 import CardGrid, { Card } from '@site/src/components/CardGrid';
+import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
 
 import { IdCard } from 'lucide-react';
 import { RectangleGoggles } from 'lucide-react';
@@ -18,6 +19,46 @@ import { RectangleGoggles } from 'lucide-react';
 ## Overview
 
 The verification process is how we confirm members are 18+ to access our adult content and features. Members initiate verification through <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> by selecting <DiscordButton type="success" emoji="✅">Age Verification</DiscordButton>.
+
+### Example: Initial Verification Request
+
+Here's how a typical verification ticket starts:
+
+<DiscordConversation title="Verification Ticket - Age Verification">
+  <DiscordMessage
+    name="Member 1"
+    color="#5865f2"
+    message="Hi! I'd like to get verified so I can access the adult channels."
+  />
+  <DiscordMessage
+    name="Cutie Helper 1"
+    color="#38c8e8"
+  >
+    Hi! I can help you with that. The verification steps were auto-posted in this ticket when it opened — please follow those.
+
+    You will need to upload <strong>2 images</strong>:
+    - <strong>Image 1:</strong> Your government ID (clear, all 4 corners, DOB visible)
+    - <strong>Image 2:</strong> A selfie holding the same ID (face clearly visible, matches the ID photo)
+
+    If you have any questions, let me know and I’ll assist.
+
+  </DiscordMessage>
+  <DiscordMessage
+    name="Member 1"
+    color="#5865f2"
+    message="Got it! Let me get those ready."
+  />
+  <DiscordMessage
+    name="Member 1"
+    color="#5865f2"
+    message="There you go! [2 images attached]"
+  />
+  <DiscordMessage
+    name="Cutie Helper 1"
+    color="#38c8e8"
+    message="Perfect! I can see your ID clearly. Give me a moment to review everything."
+  />
+</DiscordConversation>
 
 :::info Staff Training
 This process ensures only verified adults can access <Tooltip tip="Channels like Bios, Kink Sharing, VR name sharing, Lewd VR Pics, Avatar Creators content, and more">exclusive channels</Tooltip> and participate in adult events.

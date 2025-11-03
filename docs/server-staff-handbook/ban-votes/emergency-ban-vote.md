@@ -4,6 +4,7 @@ title: Emergency Ban Vote (Admins Only)
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
+import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
 
 # Emergency Ban Vote (Admins Only)
 
@@ -27,6 +28,38 @@ In rare cases where a member poses a serious disruption or safety concern.
 :::danger
 Emergency ban votes are only for severe situations requiring swift action.
 :::
+
+## Example: Emergency Ban Vote
+
+Here's an example of how an emergency ban vote thread should be structured:
+
+<DiscordConversation title="Emergency Ban Vote - Started by Admin 1">
+  <DiscordMessage
+    name="Admin 1"
+    color="#db1cb8"
+    highlighted={true}
+    message="🚨 EMERGENCY BAN VOTE - [MemberName]"
+    reactions={[
+      { emoji: "✅", count: 2, selected: true },
+    ]}
+  />
+  <DiscordMessage
+    name="Admin 1"
+    color="#db1cb8"
+  >
+    Immediate action required - serious safety concern:
+    - Threats of physical harm reported
+    - Pattern of dangerous behavior escalating
+    - Community safety at risk
+  </DiscordMessage>
+  <DiscordMessage
+    name="Admin 1"
+    color="#db1cb8"
+    message="@Moderator"
+  />
+</DiscordConversation>
+
+**Note:** Emergency bans can be executed as soon as TWO votes in favor are cast, without waiting for a full 24-hour period.
 
 ## Related
 

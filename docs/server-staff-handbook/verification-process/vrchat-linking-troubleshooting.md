@@ -7,6 +7,7 @@ import ChannelBadge from "@site/src/components/ChannelBadge";
 import RoleBadge from "@site/src/components/RoleBadge";
 import Tooltip from '@site/src/components/Tooltip';
 import DiscordButton from '@site/src/components/DiscordButton';
+import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
 
 # VRChat Linking & Cross Verification Troubleshooting
 
@@ -111,6 +112,38 @@ This tool is **essential** for troubleshooting - always check this first when me
 - **If yes**: Have them click <DiscordButton type="success" emoji="💾">Update Display Name</DiscordButton> in <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/>
 - **Wait**: ~5 minutes, then rejoin the world
 - **Still not working?** Ping <RoleBadge role="lolmaxz" color="#ff6b6b" />
+
+### Example: VRChat Linking Troubleshooting
+
+Here's an example of how to help a member troubleshoot linking issues:
+
+<DiscordConversation title="VRChat Linking Ticket">
+  <DiscordMessage
+    name="Member 1"
+    color="#5865f2"
+    message="Hi! I'm trying to link my VRChat account but the bot isn't accepting my friend request."
+  />
+  <DiscordMessage
+    name="Cutie Helper 1"
+    color="#38c8e8"
+    message="I can help with that! Let me check your linking status first. [Checking status...]"
+  />
+  <DiscordMessage
+    name="Cutie Helper 1"
+    color="#38c8e8"
+    message="I see you already have a pending friend request. The bot only detects requests, it doesn't accept them. Please cancel any pending requests and wait for the 'Send Friend Request' button to reappear in the linking channel."
+  />
+  <DiscordMessage
+    name="Member 1"
+    color="#5865f2"
+    message="Oh I see! I cancelled it. Now I'll wait for the button to come back."
+  />
+  <DiscordMessage
+    name="Cutie Helper 1"
+    color="#38c8e8"
+    message="Perfect! Once you send a fresh request, it should process automatically. Let me know if you still have issues after that."
+  />
+</DiscordConversation>
 
 ## Escalation Process
 

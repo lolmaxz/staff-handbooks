@@ -16,6 +16,7 @@ import Timestamp from '@site/src/components/Timestamp';
 import DiscordButton from '@site/src/components/DiscordButton';
 import CardGrid, { Card } from '@site/src/components/CardGrid';
 import Spoiler from '@site/src/components/Spoiler';
+import DiscordConversation, { DiscordMessage } from '@site/src/components/DiscordConversation';
 
 # New Components Explained
 
@@ -723,3 +724,134 @@ This message contains a <Spoiler>secret detail</Spoiler> you can reveal.
 // Optional custom colors
 <Spoiler background="rgba(0,0,0,.9)" color="#fff">high contrast spoiler</Spoiler>
 ```
+
+---
+
+## Discord Conversation 🆕
+
+**Components:** `DiscordConversation` & `DiscordMessage`  
+**Description:** Creates a Discord-style chat interface perfect for showing example conversations, ticket interactions, or ban vote threads. Automatically handles message grouping, timestamps, reactions, mentions, and highlights.
+
+**Required Import:**
+
+```jsx
+import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
+```
+
+**Live Examples:**
+
+**Basic Conversation:**
+<DiscordConversation title="Example Conversation">
+<DiscordMessage
+    name="Moderator 1"
+    color="#e68027"
+    message="Hi there! How can I help you today?"
+  />
+<DiscordMessage
+    name="Member 1"
+    color="#5865f2"
+    message="I have a question about the server rules."
+  />
+<DiscordMessage
+    name="Moderator 1"
+    color="#e68027"
+    message="Of course! What would you like to know?"
+  />
+</DiscordConversation>
+
+```jsx title="Basic Conversation Code Example:"
+<DiscordConversation title="Example Conversation">
+  <DiscordMessage name="Moderator 1" color="#e68027" message="Hi there! How can I help you today?" />
+  <DiscordMessage name="Member 1" color="#5865f2" message="I have a question about the server rules." />
+  <DiscordMessage name="Moderator 1" color="#e68027" message="Of course! What would you like to know?" />
+</DiscordConversation>
+```
+
+**With Reactions:**
+<DiscordConversation title="Ban Vote Discussion">
+<DiscordMessage
+name="Moderator 1"
+color="#8b5cf6"
+message="Vote here within next 24hrs on server ban of [MemberName]."
+reactions={[
+{ emoji: "✅", count: 9, selected: true },
+{ emoji: "❌", count: 1 },
+]}
+/>
+</DiscordConversation>
+
+```jsx title="Reactions Code Example:"
+<DiscordMessage
+  name="Moderator 1"
+  color="#8b5cf6"
+  message="Vote here within next 24hrs on server ban of [MemberName]."
+  reactions={[
+    { emoji: "✅", count: 9, selected: true },
+    { emoji: "❌", count: 1 },
+  ]}
+/>
+```
+
+**Multi-line Content (Lists Auto-detected):**
+<DiscordConversation title="Ban Reasons">
+<DiscordMessage
+name="Moderator 1"
+color="#8b5cf6"
+
+>
+
+    [MemberName] has committed following problems:
+    - Non sexual consent break
+    - Over intoxication in several events
+    - Making people uncomfortable
+
+  </DiscordMessage>
+</DiscordConversation>
+
+```jsx title="Lists Auto-detected Code Example:"
+<DiscordMessage name="Moderator 1" color="#8b5cf6">
+  [MemberName] has committed following problems: - Non sexual consent break - Over intoxication in several events - Making people
+  uncomfortable
+</DiscordMessage>
+```
+
+**Auto-highlighted @Moderator mentions:**
+<DiscordConversation title="Staff Mention">
+<DiscordMessage
+    name="Moderator 1"
+    color="#8b5cf6"
+    message="@Moderator please review this case."
+  />
+</DiscordConversation>
+
+```jsx title="@Moderator Auto-highlight Code Example:"
+<DiscordMessage name="Moderator 1" color="#8b5cf6" message="@Moderator please review this case." />
+```
+
+**Key Features:**
+
+- **Auto-timestamps**: Automatically generates realistic timestamps if not provided
+- **Message grouping**: Messages from the same author automatically group together (no avatar/timestamp repeated)
+- **List detection**: Lines starting with `- ` automatically become bullet lists
+- **Mention styling**: `@mentions` are automatically styled in Discord blue
+- **Auto-highlight**: Messages containing `@Moderator` are automatically highlighted
+- **Reactions**: Support up to 4 reactions with emoji, count, and selected state
+- **Discord fonts**: Uses Discord's official font stack for authentic appearance
+
+**Available Props:**
+
+**DiscordConversation:**
+
+- `title` (optional): Header text for the conversation
+
+**DiscordMessage:**
+
+- `name` (required): Username to display
+- `color` (optional): Username color (default: white)
+- `message` (optional): Message content (use this OR `children`)
+- `children` (optional): Message content as children (preferred for multi-line)
+- `timestamp` (optional): Custom timestamp string
+- `minutesOffset` (optional): Auto-generate timestamp X minutes ago
+- `reactions` (optional): Array of reaction objects `{ emoji, count, selected? }`
+- `highlighted` (optional): Force highlight on/off (auto-detected for @Moderator)
+- `avatar` (optional): Custom avatar URL

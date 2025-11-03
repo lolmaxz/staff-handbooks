@@ -83,6 +83,7 @@ For more information, see the post: **["IMPORTANT CONCERNING THIS CHANNEL"](http
 
 - **[Staff Perks](./general-handbook/staff-perks)** - Complete overview of all staff benefits
 - **Staff Custom Emojis** - Each staff member can introduce one new emoji to the server (animated or not)! See the post: **["Staff Custom Emojis?! :O"](https://discord.com/channels/734595073920204940/1314035968835063878)**
+- **Staff Merchandise** - Request Eden Apis merchandise (shipping address needed and subject to availability). Check the post: **[🛍️ Staff Merchandise](https://discord.com/channels/734595073920204940/1313995738627440661)**
 - **Staff World Pictures** - As staff, we love to showcase you in our world with a nice picture! These pictures are also used for our yearly New Year big group staff picture. Learn how to submit your picture: **[How to Take Staff Pictures](./general-handbook/staff-perks/staff-pictures)** | Submit in thread: **[Staff World Picture Selection](https://discord.com/channels/734595073920204940/1205298011450638357)**
 
 :::warning Work in Progress ⚠️

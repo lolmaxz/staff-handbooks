@@ -545,6 +545,15 @@ article .card {
   color: #e5e7eb !important;
 }
 
+[data-theme="dark"] .footer__link-item {
+  color: #e5e7eb !important;
+  transition: color 0.2s ease;
+}
+
+[data-theme="dark"] .footer__link-item:hover {
+  color: var(--accents) !important;
+}
+
 [data-theme="light"] .navbar__search-input {
   /* background: rgba(255, 255, 255, 0.9) !important; */
   border: 1px solid #e5e7eb !important;
@@ -683,4 +692,25 @@ main {
 /* Make sure sidebar row container allows sticky to work properly */
 .main-wrapper .container .row {
   align-items: flex-start !important;
+}
+
+/* Add vertical spacing between handbook cards on tablet and mobile */
+@media (max-width: 996px) {
+  /* Target columns in rows */
+  .row .col.col--4 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  .row .col.col--4:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  /* Alternative: add margin-top to all but first card */
+  .row .col.col--4:not(:first-child) {
+    margin-top: 1.5rem !important;
+  }
+
+  .row .col.col--4:first-child {
+    margin-top: 0 !important;
+  }
 }

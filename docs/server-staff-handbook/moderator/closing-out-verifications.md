@@ -13,7 +13,7 @@ import DiscordButton from '@site/src/components/DiscordButton';
 A second check of the verification ticket is required:
 
 - Any <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> will perform this step for <RoleBadge role="Cutie Helpers" badgeIcon="cutie_helper_role_icon.png" color="#308027" /> initial verifications.
-- If a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> did the initial verification, a separate <RoleBadge role="Second Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> shall close out the ticket.
+- If a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> did the initial verification, a separate second moderator shall close out the ticket.
 
 ## Procedure
 
@@ -23,7 +23,7 @@ A second check of the verification ticket is required:
 
 - Ensure the <RoleBadge role="Unverified" badgeIcon="unverified_role_icon.png" color="#de0000" /> is <Tooltip tip="Hephia will automatically remove the unverified role when a member is granted the verified role." bubbleColor="#d255ec" width="20rem" labelColor="#e68027"> removed </Tooltip> from the member and <RoleBadge role="Verified" color="#008800" /> has been given to the member.
 - Ensure the member has selected appropriate roles.
-- Verify the age category matches to prevent members from faking their age.
+- Verify the age role/tag they selected matches the age of the member to prevent members from faking their age. (When possible)
 
 ---
 
@@ -38,10 +38,14 @@ A second check of the verification ticket is required:
 
 - Use the <DiscordButton type="error" emoji="🔒">Close With Reason</DiscordButton> button of the ticket bot. _(It should be at the top of the ticket)_
 - The reason should be: `"Verification Complete - [Name of staff member who did verification] Closed By- [Name of staff member who performed the second check]"`
-  :::note Example
+  <div style={{ marginTop: "0.5rem" }} />
+  :::note Example - HOW TO
   "Verification Complete - Del Closed By- Solii"
   :::
-  :::info
+  :::warning Always Include a Reason
+  All tickets must be closed with a reason. The reason must clearly state **who handled the verification** and **who closed the ticket**. Tickets should never be closed without a reason attached.
+  :::
+  :::info Let's stay organized!
   Properly closing out tickets ensures accurate record-keeping and helps maintain an organized verification process.
   :::
 
