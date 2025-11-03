@@ -131,13 +131,13 @@ Your first step is to get scheduled for training!
    **Template Instructions:**
 
    - For each day, specify the **times** or **time ranges** you are available to potentially get trained
-   - Times must be in **EST** (Eastern Standard Time)
+   - Times must be in **EST** (Eastern Standard Time) or using HammerTime format (See website: https://hammertime.cyou/)
    - You can provide a time range like `8pm->11pm` (available during that range)
    - Use `+` for either time but not in between, like `8pm+11pm` (available at 8pm OR 11pm, not in between)
    - If you are on your **second phase for Solo event**, you can also specify your **preferred event type** if you have a preference
    - Include how many events you're willing to be trained on that week
 
-   **Copy this template** (remove the code block markers when posting):
+   **Copy this template**:
 
    <details>
    <summary>📋 Trial Host Availability Template (Click to expand)</summary>
@@ -172,8 +172,8 @@ Your first step is to get scheduled for training!
 
    **Example format for a day:**
 
-   - `• 8pm + Classic Event (?Event Type Preference)` - Available at 8pm EST, prefers Classic Event type
-   - `• 9pm->11pm` - Available between 9pm and 11pm EST
+   - `• 8pm + 10pm - Classic Event (?Event Type Preference)` - Available at 8pm EST and 10pm EST, prefers Classic Event type
+   - `• 9pm->11pm - Special Event` - Available between 9pm and 11pm EST for any event type
 
    </details>
 

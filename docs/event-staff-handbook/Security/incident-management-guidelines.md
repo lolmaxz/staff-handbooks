@@ -6,6 +6,7 @@ title: Incident Management Guidelines
 import RoleBadge from "@site/src/components/RoleBadge";
 import ChannelBadge from "@site/src/components/ChannelBadge";
 import Tooltip from "@site/src/components/Tooltip";
+import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
 
 # Incident Management Guidelines
 
@@ -71,18 +72,50 @@ Remember: Every attendee deserves the same level of professional treatment, rega
 - After dealing with the situation, log the incident in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" />.
 - Include:
 
-  - Offender's Discord Tag (without pinging them) and VRC Name.
-  - Detailed account of the incident:
+### Example: Incident Report in Events Incidents
 
-    - Specific rules broken.
-    - All people involved.
-    - Notable statements made during the incident and discussion.
+Here's how an incident report should be structured:
 
-  - Disciplinary actions taken.
-    :::note Record Keeping and Consequences
-  - Make sure **all** incidents are recorded in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" /> and the Eden Apis Host Quick References.
-  - Multiple reports against a user within a certain time frame can lead to a ban from events.
-    :::
+<DiscordConversation title="Event Incident Report">
+  <DiscordMessage
+    name="Event Security 1"
+    color="#3fa7ff"
+  >
+    **Incident Report - [Event Name]**
+    
+    **Offender:** MemberName#1234 (VRC: VRName)
+    
+    **Incident Details:**
+    - Broken consent violation during event
+    - Unwanted physical contact reported by attendee
+    - Member became defensive when approached
+    
+    **Action Taken:**
+    - Verbal warning issued
+    - Member removed from event
+    - Incident documented for review
+    
+    **Witnesses:** Event Host 1, Attendee 2
+  </DiscordMessage>
+  <DiscordMessage
+    name="Senior Event Team 1"
+    color="#3fa7ff"
+    message="Thanks for the detailed report. This will be reviewed and logged."
+  />
+</DiscordConversation>
+
+- Offender's Discord Tag (without pinging them) and VRC Name.
+- Detailed account of the incident:
+
+  - Specific rules broken.
+  - All people involved.
+  - Notable statements made during the incident and discussion.
+
+- Disciplinary actions taken.
+  :::note Record Keeping and Consequences
+- Make sure **all** incidents are recorded in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" /> and the Eden Apis Host Quick References.
+- Multiple reports against a user within a certain time frame can lead to a ban from events.
+  :::
 
 ---
 

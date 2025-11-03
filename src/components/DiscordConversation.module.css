@@ -1,0 +1,389 @@
+.conversationWrapper {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "gg sans", "Noto Sans", "Noto Sans Display", "Helvetica Neue", Arial, sans-serif;
+}
+
+[data-theme="dark"] .conversationWrapper {
+  background: #2f3136;
+  border-color: #202225;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="light"] .conversationWrapper {
+  background: #ffffff;
+  border-color: #e3e5e8;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .header {
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom-color: #202225;
+  color: #dcddde;
+}
+
+[data-theme="light"] .header {
+  background: #f2f3f5;
+  border-bottom-color: #e3e5e8;
+  color: #4f5660;
+}
+
+.headerIcon {
+  font-size: 1rem;
+}
+
+.headerTitle {
+  color: inherit;
+}
+
+.conversation {
+  padding: 0.75rem;
+  background: inherit;
+  min-height: 100px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+[data-theme="dark"] .conversation {
+  background: #36393f;
+}
+
+[data-theme="light"] .conversation {
+  background: #ffffff;
+}
+
+.message {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.message:not(:last-child) {
+  margin-bottom: 0.3rem; /* revert to original compact spacing */
+  margin-top: 0.3rem;
+}
+
+/* Group messages from same user */
+.message:not(:first-child) {
+  margin-top: 0.25rem;
+}
+
+/* Continuation messages (same author back-to-back) */
+.messageContinuation {
+  margin-top: 0 !important; /* no extra gap */
+  margin-bottom: 0 !important; /* no extra gap */
+  padding-top: 0 !important; /* override base .message padding */
+  padding-bottom: 0 !important; /* override base .message padding */
+}
+
+.avatarContainer {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+}
+
+/* For continuation lines, keep left spacing but remove vertical height from avatar column */
+.messageContinuation .avatarContainer {
+  height: 0 !important;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+.messageContent {
+  flex: 1;
+  min-width: 0;
+}
+
+.messageHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.username {
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: text-decoration 0.1s ease;
+  font-family: inherit;
+}
+
+.username:hover {
+  text-decoration: underline;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: var(--ifm-color-emphasis-600);
+  font-weight: 400;
+}
+
+[data-theme="dark"] .timestamp {
+  color: #72767d;
+}
+
+[data-theme="light"] .timestamp {
+  color: #747f8d;
+}
+
+.messageBody {
+  font-size: 0.9375rem;
+  line-height: 1.375;
+  color: var(--ifm-font-color-base);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-family: inherit;
+  border-radius: 6px; /* for hover highlight rounding */
+  transition: background-color 120ms ease;
+}
+
+/* Subtle hover highlight on entire message row */
+.message:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+  margin-left: calc(-0.75rem - 40px - 0.75rem);
+  margin-right: -0.75rem;
+  padding-left: calc(0.75rem + 40px + 0.75rem);
+  padding-right: 0.75rem;
+}
+
+[data-theme="dark"] .message:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Subtle hover highlight on message */
+/* Remove inner body hover to avoid double-stacking with row hover */
+.messageBody:hover {
+  background-color: transparent !important;
+}
+
+/* Remove default extra margins from paragraphs/lists inside messages */
+.messageBody p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.messageBody ul {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Tiny spacing between list items */
+.messageBody ul li {
+  margin: 0.65rem 0; /* slightly more spacing between items */
+}
+
+[data-theme="dark"] .messageBody {
+  color: #dcddde;
+}
+
+[data-theme="light"] .messageBody {
+  color: #2e3338;
+}
+
+/* Style @mentions to appear blue like Discord */
+.messageBody :global(a),
+.messageBody :global(.mention) {
+  color: #5865f2 !important;
+  background-color: rgba(88, 101, 242, 0.3);
+  padding: 0 0.125rem;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.messageBody :global(a:hover),
+.messageBody :global(.mention:hover) {
+  background-color: rgba(88, 101, 242, 0.4);
+  text-decoration: underline;
+}
+
+/* Full-width yellow-ish background for highlighted messages */
+.messageHighlighted {
+  background-color: rgba(250, 166, 26, 0.15) !important;
+  margin-left: calc(-0.75rem - 40px - 0.75rem);
+  margin-right: -0.75rem;
+  padding-left: calc(0.75rem + 40px + 0.75rem);
+  padding-right: 0.75rem;
+  padding-top: 0.125rem !important;
+  padding-bottom: 0.125rem !important;
+  border-left: 3px solid rgba(250, 166, 26, 0.5);
+}
+
+/* Slightly stronger highlight on hover for highlighted messages */
+.messageHighlighted:hover {
+  background-color: rgba(250, 166, 26, 0.17) !important;
+}
+
+[data-theme="dark"] .messageHighlighted {
+  background-color: rgba(250, 166, 26, 0.1) !important;
+}
+
+[data-theme="dark"] .messageHighlighted:hover {
+  background-color: rgba(250, 166, 26, 0.13) !important;
+}
+
+.messageHighlighted.messageContinuation {
+  padding-top: 0.125rem !important;
+  padding-bottom: 0.125rem !important;
+}
+
+/* Reduce message padding for highlighted continuation to minimize height */
+.message.messageHighlighted.messageContinuation {
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+}
+
+/* Also reduce line-height spacing for compact highlighted messages */
+.messageHighlighted.messageContinuation .messageBody {
+  line-height: 1 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Mentions inside compact highlighted messages should not increase height */
+.messageHighlighted.messageContinuation .messageBody :global(.mention) {
+  line-height: inherit !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Compact text for all continuation rows */
+.messageContinuation .messageBody {
+  line-height: 1.05 !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Also reduce line-height spacing for compact highlighted messages */
+.messageHighlighted.messageContinuation .messageBody {
+  line-height: inherit !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* Mentions inside compact highlighted messages should not increase height */
+.messageHighlighted.messageContinuation .messageBody :global(.mention) {
+  line-height: inherit !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Reactions styling */
+.reactions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem; /* tiny extra space below reactions */
+}
+
+.reaction {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.1s ease, background-color 0.1s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+[data-theme="dark"] .reaction {
+  border-color: rgba(255, 255, 255, 0.1);
+  background-color: #4f545c;
+}
+
+[data-theme="light"] .reaction {
+  background-color: #f2f3f5;
+}
+
+.reactionSelected {
+  background-color: #5865f2 !important;
+  border-color: #5865f2 !important;
+}
+
+.reactionSelected .reactionCount {
+  color: #ffffff !important;
+}
+
+.reaction:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.reactionEmoji {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.reactionCount {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--ifm-font-color-base);
+}
+
+[data-theme="dark"] .reactionCount {
+  color: #dcddde;
+}
+
+[data-theme="light"] .reactionCount {
+  color: #2e3338;
+}
+
+/* Scrollbar styling for conversation window */
+.conversation::-webkit-scrollbar {
+  width: 8px;
+}
+
+.conversation::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.conversation::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-emphasis-400);
+  border-radius: 4px;
+}
+
+.conversation::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-emphasis-500);
+}
+
+[data-theme="dark"] .conversation::-webkit-scrollbar-thumb {
+  background: #202225;
+}
+
+[data-theme="dark"] .conversation::-webkit-scrollbar-thumb:hover {
+  background: #2f3136;
+}

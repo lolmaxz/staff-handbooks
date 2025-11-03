@@ -208,6 +208,37 @@
   color: #4b5563;
 }
 
+/* Add vertical spacing between handbook cards on tablet and mobile */
+@media (max-width: 996px) {
+  /* Remove height: 100% on mobile/tablet to allow spacing */
+  .handbookCard {
+    height: auto !important;
+  }
+  
+  /* Add spacing to column containers */
+  .handbooks .row .col,
+  .handbooks .row .col--4 {
+    margin-bottom: 1.5rem !important;
+    padding-bottom: 0 !important;
+  }
+  
+  .handbooks .row .col:last-child,
+  .handbooks .row .col--4:last-child {
+    margin-bottom: 0 !important;
+  }
+  
+  /* Add margin-top as backup */
+  .handbooks .row .col:not(:first-child),
+  .handbooks .row .col--4:not(:first-child) {
+    margin-top: 1.5rem !important;
+  }
+  
+  .handbooks .row .col:first-child,
+  .handbooks .row .col--4:first-child {
+    margin-top: 0 !important;
+  }
+}
+
 footer {
   color: #e0e0e0 !important;
   background: #181824 !important;

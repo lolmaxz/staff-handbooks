@@ -5,6 +5,7 @@ title: Server Rule Violations
 
 import ChannelBadge from "@site/src/components/ChannelBadge";
 import RoleBadge from "@site/src/components/RoleBadge";
+import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
 
 # Server Rule Violations
 
@@ -31,6 +32,35 @@ When documenting a rule violation:
 2. **Specify** which rule was broken
 3. **Delete** the violating post from the channel
 4. **Record** all relevant details
+
+### Example: Reporting a Rule Violation
+
+Here's an example of how staff should document and report a rule violation:
+
+<DiscordConversation title="Rule Violation Report">
+  <DiscordMessage
+    name="Cutie Helper 1"
+    color="#38c8e8"
+    message="Reporting a rule violation in general-chat"
+  />
+  <DiscordMessage
+    name="Cutie Helper 1"
+    color="#38c8e8"
+  >
+    **Details:**
+    - **Who:** @MemberName
+    - **Where:** #general-chat
+    - **When:** Just now
+    - **Rule Broken:** Respectful communication (hate speech)
+    - **Action Taken:** Message deleted
+    - **[Screenshot attached]**
+  </DiscordMessage>
+  <DiscordMessage
+    name="Moderator 1"
+    color="#e68027"
+    message="Thanks for the report! I'll handle this in a staff-talk ticket."
+  />
+</DiscordConversation>
 
 ## Moderation Process
 

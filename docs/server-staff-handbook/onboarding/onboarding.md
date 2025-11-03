@@ -172,6 +172,8 @@ Three types of ban votes based on severity:
 - **Check Linking Status**: <DiscordButton type="secondary" emoji="🔍">Right Click on the user's avatar / Username → Apps → Check Linking Status</DiscordButton>
 - **Vote Bot**: `>votereact [message ID]` for ban votes
 - **Ticket Commands**: <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only - `/rename`, `/add`, `/remove` for ticket management
+  - `/rename` has a brief cooldown. If it fails, you can edit the ticket thread title manually.
+  - <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> may ask a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789" /> to assist.
 - **Developer Mode**: <DiscordButton type="link" emoji="⚙️" href="./onboarding/getting-discord-user-id">Enable Developer Mode</DiscordButton> (required for copying User IDs)
 
 ### Key Guidelines

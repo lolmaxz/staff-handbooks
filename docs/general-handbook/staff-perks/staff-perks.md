@@ -87,12 +87,6 @@ These channels give you a sneak peek into what's coming and let you help shape o
 
 - **Giveaway Channel** <ChannelBadge label="💘𝘎iveaways" link="https://discord.com/channels/734595073920204940/916602912636043314" />
   - Normally for Active-Cutie or Patreon members
-- **World-Preview Channel** <ChannelBadge label="🔑𝘞orld-𝘗review" link="https://discord.com/channels/734595073920204940/1199129449065623582" />
-  - See early updates on our world's development
-- **Feature-Request Channel** <ChannelBadge variant="post" label="🔑𝘍eature-𝘙equest" link="https://discord.com/channels/734595073920204940/1199129751198105641" />
-  - Suggest ideas for the world we're working on
-- **World-Polls Channel** <ChannelBadge label="🔑𝘞orld-𝘗olls" link="https://discord.com/channels/734595073920204940/1199130149153685514" />
-  - Vote on future changes for the world
 - **Booster-Gang Channel** <ChannelBadge label="🈹𝘉oosters-𝘎ang" link="https://discord.com/channels/734595073920204940/811089566979063808" />
   - Access normally reserved for Boosters or Patreon supporters
 
@@ -112,6 +106,7 @@ Your voice matters! Help shape the future of our community.
 ### Eden Apis Merchandise 🛍️
 
 - 🎁 You can request some Eden Apis merchandise <Tooltip tip="Shipping address needed and subject to what's available" width="18em"><b>Note</b></Tooltip>
+  - Check the merchandise Post: <ChannelBadge variant="post" label="🛍️ Staff Merchandise" link="https://discord.com/channels/734595073920204940/1313995738627440661" />
 
 ### VRChat World Features 🌍
 
@@ -122,6 +117,7 @@ Your voice matters! Help shape the future of our community.
 ### Custom Emoji 😊
 
 - 🎨 Each staff member can introduce one new emoji to the server
+  - See the emoji Post: <ChannelBadge variant="thread" label="Staff Custom Emojis?! :O" link="https://discord.com/channels/734595073920204940/1314035968835063878" />
 
 :::caution
 Make sure your emoji follows our <Tooltip tip={`Rules:
