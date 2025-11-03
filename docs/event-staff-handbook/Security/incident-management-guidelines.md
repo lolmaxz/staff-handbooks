@@ -104,18 +104,18 @@ Here's how an incident report should be structured:
   />
 </DiscordConversation>
 
-  - Offender's Discord Tag (without pinging them) and VRC Name.
-  - Detailed account of the incident:
+- Offender's Discord Tag (without pinging them) and VRC Name.
+- Detailed account of the incident:
 
-    - Specific rules broken.
-    - All people involved.
-    - Notable statements made during the incident and discussion.
+  - Specific rules broken.
+  - All people involved.
+  - Notable statements made during the incident and discussion.
 
-  - Disciplinary actions taken.
-    :::note Record Keeping and Consequences
-  - Make sure **all** incidents are recorded in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" /> and the Eden Apis Host Quick References.
-  - Multiple reports against a user within a certain time frame can lead to a ban from events.
-    :::
+- Disciplinary actions taken.
+  :::note Record Keeping and Consequences
+- Make sure **all** incidents are recorded in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" /> and the Eden Apis Host Quick References.
+- Multiple reports against a user within a certain time frame can lead to a ban from events.
+  :::
 
 ---
 
