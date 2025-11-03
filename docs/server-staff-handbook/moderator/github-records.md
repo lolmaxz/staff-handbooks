@@ -6,8 +6,15 @@ title: GitHub Records
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import RoleBadge from "@site/src/components/RoleBadge";
 import GitHubLogCard from "@site/src/components/GitHubLogCard";
+import TextWithButton from "@site/src/components/TextWithButton";
 
 # GitHub Records (Moderators Only)
+
+<TextWithButton
+  text="Open the GitHub Warning Book to create/update member logs."
+  buttonLabel="Open Warning Book"
+  buttonHref="https://github.com/users/lolmaxz/projects/3"
+/>
 
 All moderation actions must be recorded in the **GitHub Warning Book** to keep history consistent and searchable.
 
@@ -27,6 +34,7 @@ Clear records help us make fair decisions, see patterns, and coordinate as a tea
   <Card title="Access" status="info" icon="🔑">
     <ul>
       <li>Open the GitHub Warning Book (linked in the <strong>mod-special</strong> channel).</li>
+      <li>Direct link: <a href="https://github.com/users/lolmaxz/projects/3" target="_blank" rel="noopener noreferrer">GitHub Warning Book</a></li>
       <li>Make sure you are signed in with the correct account.</li>
     </ul>
   </Card>
@@ -74,12 +82,6 @@ Clear records help us make fair decisions, see patterns, and coordinate as a tea
 ## Logging Template
 
 Copy and paste this into the GitHub issue body, then replace the bracketed fields:
-
-:::info Card Title Format
-The card title must be formatted as:
-<strong>DiscordTag [DiscordID]</strong>
-Example: <code>FictionalUser [123456789012345678]</code>
-:::
 
 ```
 When: [YYYY-MM-DD HH:mm TZ]

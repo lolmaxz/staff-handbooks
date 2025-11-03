@@ -18,3 +18,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/src/Original_docs/*
+./src/Original_docs
+./src/Original_docs/*
