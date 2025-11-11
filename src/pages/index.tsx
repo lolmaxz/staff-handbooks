@@ -78,6 +78,14 @@ function HomepageHeader() {
         <h1 className="hero__title">Eden Apis Staff Handbooks</h1>
         <p className="hero__subtitle">Your guide to roles, responsibilities, and procedures for any staff position.</p>
         <div className={styles.buttons}>
+          <Link
+            className="button button--outline button--secondary button--lg"
+            href="https://theedenapis.com"
+            target="_self"
+            style={{ marginRight: "1rem" }}
+          >
+            ← Back to Main Site
+          </Link>
           <Link className="button button--secondary button--lg" to="/docs/intro">
             Get Started!
           </Link>
