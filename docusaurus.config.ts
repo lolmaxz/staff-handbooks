@@ -10,10 +10,11 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://staff-handbooks.vercel.app/",
+  url: "https://theedenapis.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  baseUrl: "/staff-handbooks/",
+  trailingSlash: false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
