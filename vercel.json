@@ -3,6 +3,14 @@
   "outputDirectory": "build",
   "rewrites": [
     {
+      "source": "/staff-handbooks/img/(.*)",
+      "destination": "/img/$1"
+    },
+    {
+      "source": "/staff-handbooks/assets/(.*)",
+      "destination": "/assets/$1"
+    },
+    {
       "source": "/staff-handbooks/(.*)",
       "destination": "/$1"
     },
