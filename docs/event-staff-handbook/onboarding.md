@@ -7,6 +7,7 @@ import CardGrid, { Card } from "@site/src/components/CardGrid";
 import ChannelBadge from "@site/src/components/ChannelBadge";
 import RoleBadge from "@site/src/components/RoleBadge";
 import Link from "@docusaurus/Link";
+import { Dumbbell } from 'lucide-react';
 
 # Event Onboarding 🎯
 
@@ -19,11 +20,11 @@ All training will be the same regardless if you applied for Host or Security, co
 2. Test you in both roles to see if you're a better fit for one or both
    :::
 
-## Training Stages
+## <Dumbbell size={30} style={{display: 'inline', verticalAlign: 'middle', marginRight: '0.5rem'}} /> Training Stages
 
 Your training consists of **6 events** total across **5 stages**, which include both security and host training:
 
-<CardGrid columns={2}>
+<CardGrid columns={3}>
   <Card title="1. Security Shadowing" status="info" icon="🛡️">
     <p><strong>2 Events</strong></p>
     <p>Follow around a member of the <RoleBadge role="Senior Event Team" color="#3fa7ff" /> or <RoleBadge role="Event Committee" color="#db1cb8" /> and learn how to do security.</p>
@@ -38,7 +39,9 @@ Your training consists of **6 events** total across **5 stages**, which include 
     <p><strong>1 Event</strong></p>
     <p>Co-host an event with a <RoleBadge role="Senior Event Team" color="#3fa7ff" /> member or above.</p>
   </Card>
+</CardGrid>
 
+<CardGrid columns={2}>
   <Card title="4. Host with a Co-Host" status="success" icon="🎯">
     <p><strong>1 Event</strong></p>
     <p>You'll act as the acting host with a <RoleBadge role="Senior Event Team" color="#3fa7ff" /> member or above there to guide and co-host.</p>
@@ -85,7 +88,7 @@ For more detailed information about each stage, feedback areas, and what to expe
   </ul>
 </Card>
 
-## Essential Resources
+## 📚 Essential Resources
 
 - **[Event Rules](./event-rules)** - Rules specific to events
 - **[Event Team Channels](./event-team-channels)** - Important channels for the team
@@ -94,19 +97,26 @@ For more detailed information about each stage, feedback areas, and what to expe
 - **[Incident Management](./Security/incident-management-guidelines)** - How to handle incidents
 - **[Scheduling Procedures](./Hosts/scheduling-procedures)** - How the weekly schedule works
 
-## Probation Period
+## ⌛ Probation Period
 
 :::warning ⏰ Important Timeline
-You will have a **6-week probation period** to finish this training (1 event per week).
+You will have a **6-week probation period** to finish this training (Average of 1 event per week).
 
-- At the end of those 6 weeks, if you have not finished training yet, we'll look over your progress and pull you in to discuss with you.
-- If we find you to be progressing well but just a bit slow, we'll discuss with you and give you an additional **2-3 weeks**.
-- Otherwise, the probation period will end and removal from the team.
+**Note:** Staff in training for event side can still not be accepted at the end of the trial, but we do our best to prepare them.
 
-When training is completed, we'll look over how you performed in training and will vote on whether to make you full staff. **Staff in training for event side can still not be accepted at the end of the trial**, but we do our best to prepare them.
+<span style={{fontSize: '1.1em', fontWeight: 'bold', display: 'block', marginTop: '1em', marginBottom: '0.5em'}}>✅ **Scenario 1: You Completed Your Training Within the 6 Weeks Period**</span>
+
+- Your performance during training will be reviewed.
+- The **senior team** will vote on whether to make you full staff.
+
+<span style={{fontSize: '1.1em', fontWeight: 'bold', display: 'block', marginTop: '1em', marginBottom: '0.5em'}}>⚠️ **Scenario 2: Training NOT Completed Within 6 Weeks**</span>
+
+**If Progressing Well, But Slowly:** Extension of **2-3 weeks** may be granted after progress review.
+
+**If Not Progressing Well:** End of probation period and **staff roles will be removed**.
 :::
 
-## Staff Conduct
+## 🎓 Staff Conduct
 
 :::info Remember
 Staff are the face of Eden. You're expected to not only uphold the rules but follow them to the letter yourselves. As such, be aware how you conduct yourself, as any issues that could arise could result in consequences.
