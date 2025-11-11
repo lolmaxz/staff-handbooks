@@ -13,6 +13,8 @@ const config: Config = {
   url: "https://theedenapis.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
+  // For Vercel microfrontends, the baseUrl is needed so assets are correctly referenced
+  // Vercel will route /staff-handbooks/* to this app, and the app serves with the baseUrl prefix
   baseUrl: "/staff-handbooks/",
   trailingSlash: false,
 
