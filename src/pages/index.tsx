@@ -1,4 +1,5 @@
 import Link from "@docusaurus/Link";
+import useBaseUrl from "@docusaurus/useBaseUrl";
 import Layout from "@theme/Layout";
 import clsx from "clsx";
 import { useEffect } from "react";
@@ -87,10 +88,11 @@ function HomepageHeader() {
 }
 
 function Feature({ title, description, icon }) {
+  const iconUrl = useBaseUrl(icon);
   return (
     <div className={clsx("col col--4", styles.feature)}>
       <div className="text--center">
-        <img src={icon} className={styles.featureIcon} alt={title} />
+        <img src={iconUrl} className={styles.featureIcon} alt={title} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -104,17 +106,17 @@ const features = [
   {
     title: "Roles & Responsibilities",
     description: "Understand the different staff roles and what is expected from each position.",
-    icon: "../img/roles_icon.svg", // Replace with your own icon
+    icon: "img/roles_icon.svg",
   },
   {
     title: "Training Resources",
     description: "Access guides on verification processes, chat moderation, and more.",
-    icon: "../img/training_icon.svg", // Replace with your own icon
+    icon: "img/training_icon.svg",
   },
   {
     title: "Procedures & Policies",
     description: "Learn about server rule violations, ban procedures, and voting mechanisms.",
-    icon: "../img/policies_icon.svg", // Replace with your own icon
+    icon: "img/policies_icon.svg",
   },
 ];
 
@@ -122,20 +124,20 @@ const handbooks = [
   {
     title: "General Handbook",
     description: "All-purpose basic handbook with information all staff needs to know!",
-    link: "./docs/general-handbook",
-    icon: "../img/general_icon.svg", // Replace with your own icon
+    link: "/docs/general-handbook",
+    icon: "img/general_icon.svg",
   },
   {
     title: "Server Staff Handbook",
     description: "Guidelines and procedures for server staff members!",
     link: "/docs/server-staff-handbook",
-    icon: "../img/server_icon.svg", // Replace with your own icon
+    icon: "img/server_icon.svg",
   },
   {
     title: "Event Staff Handbook",
     description: "Handbook for the team that manages events!",
-    link: "./docs/event-staff-handbook",
-    icon: "../img/event_icon.svg", // Replace with your own icon
+    link: "/docs/event-staff-handbook",
+    icon: "img/event_icon.svg",
   },
 ];
 
@@ -160,17 +162,20 @@ export default function Home(): JSX.Element {
         <section className={styles.handbooks}>
           <div className="container" style={{ marginBottom: "4rem" }}>
             <div className="row">
-              {handbooks.map((handbook, idx) => (
-                <div key={idx} className="col col--4">
-                  <div className={clsx(styles.handbookCard, "text--center")}>
-                    <h3>{handbook.title}</h3>
-                    <p>{handbook.description}</p>
-                    <Link className="button button--secondary button--sm" to={handbook.link}>
-                      Read More
-                    </Link>
+              {handbooks.map((handbook, idx) => {
+                const iconUrl = useBaseUrl(handbook.icon);
+                return (
+                  <div key={idx} className="col col--4">
+                    <div className={clsx(styles.handbookCard, "text--center")}>
+                      <h3>{handbook.title}</h3>
+                      <p>{handbook.description}</p>
+                      <Link className="button button--secondary button--sm" to={handbook.link}>
+                        Read More
+                      </Link>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
