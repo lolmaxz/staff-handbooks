@@ -16,7 +16,9 @@ import { Settings } from 'lucide-react';
 Welcome to the Eden Apis staff team! This comprehensive guide will help you understand your role, responsibilities, and the tools available to you.
 
 ::::info Getting Started
-Take your time to familiarize yourself with all sections. Don't hesitate to ask questions in <ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> or <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
+Take your time to familiarize yourself with all sections. Don't hesitate to ask questions in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
+
+**Note:** As a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />, you will have access to <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> for transparency and easier training. Use <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> **only** for verification ticket discussions.
 ::::
 
 ## First-Day Quick Start
@@ -25,43 +27,66 @@ Take your time to familiarize yourself with all sections. Don't hesitate to ask 
 - Close a verification: [Closing Out Verifications](./moderator/closing-out-verifications) → [Welcome Template](./verification-process/completion-of-verification)
 - Moderate chat: [Chat Moderation Overview](./chat-moderation)
 - Handle violations: [Server Rule Violations](./server-rule-violations)
-- Open a staff-talk ticket: [Staff-Talk Tickets](./moderator/staff-talk-tickets)
-- Record actions: [GitHub Records](./moderator/github-records)
-- Review ban process: [Ban Types Overview](./ban-votes/ban-types-overview)
-- Go on/off call: [Going On/Off Call](./moderator/mod-on-call)
+- Open a staff-talk ticket: [Staff-Talk Tickets](./moderator/staff-talk-tickets) *(Moderators only)*
+- Record actions: [GitHub Records](./moderator/github-records) *(Moderators only)*
+- Review ban process: [Ban Types Overview](./ban-votes/ban-types-overview) *(Moderators only)*
+- Mod on Call: [Mod on Call](./moderator/mod-on-call) *(Moderators only)*
 - Enable Developer Mode: [Getting Discord User ID](./onboarding/getting-discord-user-id)
 
 ## Your Role & Responsibilities
 
 <CardGrid columns={2}>
-  <Card title="Cutie Helper" icon={<RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />} status="info" href="/docs/general-handbook/server-positions/#cutie-helpers">
-    <p><strong>Entry-level staff position</strong></p>
+  <Card title="Cutie Helper (Trainee)" icon={<RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />} status="info" href="/docs/general-handbook/server-positions/#cutie-helpers">
+    <p><strong>Entry-level trainee position (2 months)</strong></p>
     <ul>
-      <li>Handle verification processes</li>
-      <li>Chat moderation and guidance</li>
-      <li>Template enforcement</li>
-      <li>Minor infraction handling</li>
+      <li>Handle verification tickets (under supervision or independently)</li>
+      <li>Chat moderation (simple rule reminders, small disruptions)</li>
+      <li>Participate in tickets as observers</li>
+      <li>Shadow Moderators to learn workflow</li>
     </ul>
+    <p><strong>⚠️ Restrictions:</strong> Cannot issue warnings, mutes, bans, or make final decisions</p>
   </Card>
   
   <Card title="Moderator" icon={<RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" />} status="success" href="/docs/general-handbook/server-positions/#moderators">
-    <p><strong>Advanced staff position</strong></p>
+    <p><strong>Fully trained staff position</strong></p>
     <ul>
-      <li>De-escalation and formal moderation</li>
-      <li>Timeout and warning authority</li>
-      <li>Ban vote participation</li>
-      <li>Staff-talk ticket handling</li>
+      <li>Verification ticket handling</li>
+      <li>Full chat moderation authority</li>
+      <li>Server side ticket management</li>
+      <li>Evidence gathering & ban voting</li>
+      <li>Mod on Call (weekly ticket logging)</li>
+      <li>Assisting Cutie Helpers with training</li>
     </ul>
   </Card>
 </CardGrid>
+
+## Training Path (Cutie Helpers)
+
+As a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />, you are expected to:
+
+- Handle verification tickets **on your own** or **together with a Moderator**
+- Handle at least **2 training/test tickets**
+- Contribute to ongoing Mod discussions
+
+### Promotion to Moderator
+
+After demonstrating the following qualities, you may be promoted via Moderator voting:
+
+- ✅ Good judgment
+- ✅ Consistent presence
+- ✅ Rule understanding
+- ✅ Calm and respectful communication
+- ✅ Reliability and no drama involvement
+
+**→ Promotion via Moderator voting after 2 months. 1 month in case of exceptional progress.**
 
 ## Essential Channels
 
 <CardGrid columns={3}>
   <Card title="Communication" status="info">
     <ul>
-      <li><ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/></li>
-      <li><ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/></li>
+      <li><ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> - Verification tickets <strong>only</strong></li>
+      <li><ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> - All questions, discussions, and issues</li>
       <li><ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/></li>
     </ul>
   </Card>
@@ -116,23 +141,23 @@ Maintain a positive community environment:
   <Card title="Cutie Helper Chat Moderation" status="info" href="./chat-moderation/cutie-helper-chat-moderation">
     <ul>
       <li>Direct members to appropriate channels</li>
-      <li>Reply to member's messages with <RoleBadge role=" ON" color="#3b82f6" /> (not <RoleBadge role=" OFF" color="#6b7280" />) in case of error(s) in the verification process</li>
-      <li>Handle minor infractions directly or ask for help from other <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> when necessary</li>
+      <li>Simple rule reminders and small disruptions</li>
       <li>Screenshot and delete rule violations</li>
+      <li><strong>Cannot issue warnings, mutes, or bans</strong></li>
     </ul>
   </Card>
   
   <Card title="Moderator Chat Moderation" status="success" href="./chat-moderation/moderator-chat-moderation">
     <ul>
       <li>De-escalate arguments and heated discussions</li>
-      <li>Issue 1-hour timeouts for cooling off members when necessary</li>
-      <li>Clean up drama related messages</li>
-      <li>Consult with other <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> when unsure</li>
+      <li>Issue timeouts for cooling off members when necessary</li>
+      <li>Issue formal warnings</li>
+      <li>Train and assist Cutie Helpers</li>
     </ul>
   </Card>
 </CardGrid>
 
-### Ban Procedures
+### Ban Procedures (Moderators Only)
 
 Three types of ban votes based on severity:
 
@@ -170,10 +195,10 @@ Three types of ban votes based on severity:
 ### Staff Tools
 
 - **Check Linking Status**: <DiscordButton type="secondary" emoji="🔍">Right Click on the user's avatar / Username → Apps → Check Linking Status</DiscordButton>
-- **Vote Bot**: `>votereact [message ID]` for ban votes
+- **Vote Bot**: Use Discord's built-in poll feature or Hephia v2 command `/votereact [message ID]` for ban votes *(Moderators only)*
 - **Ticket Commands**: <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only - `/rename`, `/add`, `/remove` for ticket management
   - `/rename` has a brief cooldown. If it fails, you can edit the ticket thread title manually.
-  - <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> may ask a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789" /> to assist.
+  - <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> may ask a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" /> to assist.
 - **Developer Mode**: <DiscordButton type="link" emoji="⚙️" href="./onboarding/getting-discord-user-id">Enable Developer Mode</DiscordButton> (required for copying User IDs)
 
 ### Key Guidelines
@@ -184,22 +209,23 @@ Three types of ban votes based on severity:
 - **Documentation**: Always screenshot violations before deletion
 - **Collaboration**: Ask for help when unsure - don't guess
 - **Professionalism**: Remain calm and objective in all interactions
+- **Cutie Helper Restrictions**: Do not issue warnings, mutes, bans, or make final decisions - escalate to Moderators
   :::
 
 ## Getting Help
 
 ### When You Need Assistance
 
-1. **General Questions**: Ask in <ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/>
-2. **Moderator Issues**: Consult in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
+1. **Verification Ticket Discussions**: Ask in <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> *(verification only)*
+2. **All Other Questions & Issues**: Consult in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
 3. **Technical Problems**: Ping <RoleBadge role="lolmaxz" color="#ff6b6b" /> for bot/linking issues
-4. **Staff-Talk Tickets**: Use <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> → <DiscordButton type="link" emoji="☎️" href="./moderator/staff-talk-tickets">Talk to a Staff</DiscordButton>
+4. **Staff-Talk Tickets**: Use <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> → <DiscordButton type="link" emoji="☎️" href="./moderator/staff-talk-tickets">Talk to a Staff</DiscordButton> *(Moderators only)*
 
 ### Documentation Resources
 
 - **Verification Process**: <DiscordButton type="link" emoji="📋" href="./verification-process">Detailed steps and requirements</DiscordButton>
 - **Chat Moderation**: <DiscordButton type="link" emoji="💬" href="./chat-moderation">Role-specific guidelines and procedures</DiscordButton>
-- **Ban Procedures**: <DiscordButton type="link" emoji="⚖️" href="./ban-votes/ban-types-overview">Different vote types and criteria</DiscordButton>
+- **Ban Procedures**: <DiscordButton type="link" emoji="⚖️" href="./ban-votes/ban-types-overview">Different vote types and criteria</DiscordButton> *(Moderators only)*
 - **VRChat Linking**: <DiscordButton type="link" emoji="🔗" href="./verification-process/vrchat-linking-troubleshooting">Troubleshooting and technical support</DiscordButton>
 
 :::tip Success Tips
@@ -208,6 +234,7 @@ Three types of ban votes based on severity:
 - **Ask questions**: Better to ask than make mistakes
 - **Stay updated**: Check for policy changes regularly
 - **Be patient**: Learning takes time - we're here to help!
+- **Shadow Moderators**: As a Cutie Helper, observe how Moderators handle situations
   :::
 
 Welcome to the team! 🎉
