@@ -64,17 +64,13 @@ The **Server Committee** is a group of staff members that assist the Head Modera
 
 <h3> Responsibilities: </h3>
 
-- **Verification ticket handling** - Complete verification reviews and closures
-- **Chat moderation** - Full moderation authority including de-escalation
-- **Server side ticket management** - Handle Staff-Talk tickets and member issues
-- **Evidence gathering** - Document and compile evidence for cases
-- **Ban voting** - Participate in ban vote procedures
-- **Mod on Call** - Rotating weekly responsibility to log completed tickets
-- **Assisting Cutie Helpers with training** - Mentor and guide trainee moderators
-
-:::tip Moderator Training Duty
-Moderators are expected to assist and train Cutie Helpers. This includes allowing them to observe tickets, answering their questions, and providing guidance on proper procedures.
-:::
+- Handle verification tickets, including reviews and closures.
+- Perform chat moderation with full authority, including de-escalation.
+- Manage server-side tickets such as Staff-Talk and member issues.
+- Gather and document evidence for moderation cases.
+- Participate in ban vote procedures.
+- Rotate as Mod on Call to log completed tickets weekly.
+- Assist and train Cutie Helpers as mentors.
 
 ---
 
@@ -89,43 +85,10 @@ Moderators are expected to assist and train Cutie Helpers. This includes allowin
 - Participate in tickets as observers
 - Shadow Moderators to learn workflow
 
-<CardGrid columns={2}>
-  <Card title="⚠️ Restrictions" status="error">
-    <p>Cutie Helpers do <strong>not</strong>:</p>
-    <ul>
-      <li>Issue warnings</li>
-      <li>Issue mutes or timeouts</li>
-      <li>Issue bans</li>
-      <li>Make final moderation decisions</li>
-    </ul>
-    <p>These tasks are for <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only.</p>
-  </Card>
-  
-  <Card title="📚 Training Expectations" status="info">
-    <p>All Cutie Helpers are expected to:</p>
-    <ul>
-      <li>Handle verification tickets on their own or with a Moderator</li>
-      <li>Handle at least 2 training/test tickets</li>
-      <li>Contribute to ongoing Mod discussions</li>
-      <li>Showcase calm and respectful communication</li>
-    </ul>
-  </Card>
-</CardGrid>
-
-### Promotion Path
-
-Cutie Helpers may be promoted to <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> after demonstrating:
-
-- ✅ Good judgment
-- ✅ Consistent presence
-- ✅ Rule understanding
-- ✅ Calm and respectful communication
-- ✅ Reliability and no drama involvement
-
-**→ Promotion via Moderator voting after 2 months. 1 month in case of exceptional progress.**
-
 :::tip Our First Line
 Cutie Helpers are often the first point of contact for new members through verification, making their role crucial for a welcoming community!
+
+For details on restrictions, training expectations, and the promotion path, see the [Cutie Helper Training & Promotion](/docs/server-staff-handbook/onboarding/cutie-helper-training) page.
 :::
 
 ---
