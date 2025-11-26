@@ -50,23 +50,23 @@ import Tooltip from "@site/src/components/Tooltip";
 
 <CardGrid columns={2}>
   <Card title="/ban" status="error" icon="🔨">
-    <p><strong>Usage:</strong> <code>/ban [user] [reason]</code></p>
+    <p><strong>Usage:</strong> <code>/ban [user] [reason?]</code></p>
     <p>Ban a member from the server. Works with both <strong>userID</strong> and <strong>mention</strong> (tagging).</p>
-    <p>Also supports Discord's built-in ban system and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>Reason is optional. Also supports Discord's built-in ban system and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
   </Card>
 
   <Card title="/unban" status="success" icon="🔓">
-    <p><strong>Usage:</strong> <code>/unban [userID]</code></p>
+    <p><strong>Usage:</strong> <code>/unban [userID] [reason?]</code></p>
     <p>Unban a member from the server. <strong>Only supports userID</strong> (user isn't in server, so can't be mentioned).</p>
-    <p>Supports regular unban from Discord UI and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>Reason is optional. Supports regular unban from Discord UI and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
   </Card>
 </CardGrid>
 
 <CardGrid columns={2}>
   <Card title="/kick" status="warning" icon="👢">
-    <p><strong>Usage:</strong> <code>/kick [user] [reason]</code></p>
+    <p><strong>Usage:</strong> <code>/kick [user] [reason?]</code></p>
     <p>Kick a member from the server. Works with both <strong>userID</strong> and <strong>mention</strong> (tagging).</p>
-    <p>Supports Discord's built-in kick system and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>Reason is optional. Supports Discord's built-in kick system and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
   </Card>
 
   <Card title="/timeout" status="info" icon="⏳">
@@ -84,8 +84,7 @@ import Tooltip from "@site/src/components/Tooltip";
       <li><code>true</code> - Mute the member</li>
       <li><code>false</code> - Unmute the member</li>
     </ul>
-    <p><strong>Note:</strong> If the member is not currently in a voice channel, the action will be <strong>scheduled</strong> and automatically applied when they join a VC next.</p>
-    <p>Moderative actions (server mute/unmute) are logged to <ChannelBadge label="🟩-staff-logs" link="https://discord.com/channels/734595073920204940/741167289813958718" />.</p>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>If the member is not currently in a voice channel, the action will be scheduled. <a href="#voice-channel-vc-actions">Learn more about scheduled events</a>.</p>
   </Card>
 
   <Card title="/deafen" status="info" icon="🔇">
@@ -95,14 +94,13 @@ import Tooltip from "@site/src/components/Tooltip";
       <li><code>true</code> - Deafen the member</li>
       <li><code>false</code> - Undeafen the member</li>
     </ul>
-    <p><strong>Note:</strong> If the member is not currently in a voice channel, the action will be <strong>scheduled</strong> and automatically applied when they join a VC next.</p>
-    <p>Moderative actions (server deafen/undeafen) are logged to <ChannelBadge label="🟩-staff-logs" link="https://discord.com/channels/734595073920204940/741167289813958718" />.</p>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>If the member is not currently in a voice channel, the action will be scheduled. <a href="#voice-channel-vc-actions">Learn more about scheduled events</a>.</p>
   </Card>
 </CardGrid>
 
 ---
 
-## 🎤 Voice Channel (VC) Actions
+## 🎤 Voice Channel (VC) Actions {#voice-channel-vc-actions}
 
 Hephia now supports voice channel moderation through both slash commands and context menu options.
 
@@ -133,13 +131,16 @@ Context menu options are faster for quick VC moderation actions! Just right-clic
 **Scheduled Actions:**
 
 - If a member is **not currently in a voice channel** when you use `/mute`, `/deafen`, or the context menu options, the action will be **scheduled** and automatically applied when they join a VC next.
-
-**Mutual Exclusivity:**
-
-- **Mute and Unmute** are mutually exclusive - you cannot mute and unmute a member at the same time.
-- **Deafen and Undeafen** are mutually exclusive - you cannot deafen and undeafen a member at the same time.
-- However, you **can** combine mute with deafen/undeafen (e.g., mute and deafen, or mute and undeafen).
   :::
+
+<details>
+<summary style={{fontSize: '0.9em', color: '#888'}}><strong>Mutual Exclusivity</strong></summary>
+<p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>
+- **Mute and Unmute** are mutually exclusive - you cannot mute and unmute a member at the same time.<br/>
+- **Deafen and Undeafen** are mutually exclusive - you cannot deafen and undeafen a member at the same time.<br/>
+- However, you **can** combine mute with deafen/undeafen (e.g., mute and deafen, or mute and undeafen).
+</p>
+</details>
 
 ---
 
