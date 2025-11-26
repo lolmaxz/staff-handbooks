@@ -24,7 +24,7 @@ All ban votes are held in <ChannelBadge label="📙moderator-only" link="https:/
 
 Here's an example of how a ban vote thread should be structured:
 
-<DiscordConversation title="Server ban vote - Started by Moderator 1">
+<DiscordConversation id="server-ban-vote" title="Server ban vote - Started by Moderator 1">
   <DiscordMessage
     name="Moderator 1"
     color="#8b5cf6"

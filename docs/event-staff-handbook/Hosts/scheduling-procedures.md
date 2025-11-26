@@ -187,7 +187,7 @@ Follow this flowchart to determine when and how to request security based on you
 
 ### Example: Requesting Security for Your Event
 
-<DiscordConversation title="Security Request - Classic Event Tonight 9pm EST">
+<DiscordConversation id="security-request" title="Security Request - Classic Event Tonight 9pm EST">
   <DiscordMessage
     name="Event Host 1"
     color="#f75edb"

@@ -741,7 +741,7 @@ import DiscordConversation, { DiscordMessage } from "@site/src/components/Discor
 **Live Examples:**
 
 **Basic Conversation:**
-<DiscordConversation title="Example Conversation">
+<DiscordConversation id="test-basic-conversation" title="Example Conversation">
 <DiscordMessage
     name="Moderator 1"
     color="#e68027"
@@ -760,7 +760,7 @@ import DiscordConversation, { DiscordMessage } from "@site/src/components/Discor
 </DiscordConversation>
 
 ```jsx title="Basic Conversation Code Example:"
-<DiscordConversation title="Example Conversation">
+<DiscordConversation id="test-basic-conversation" title="Example Conversation">
   <DiscordMessage name="Moderator 1" color="#e68027" message="Hi there! How can I help you today?" />
   <DiscordMessage name="Member 1" color="#5865f2" message="I have a question about the server rules." />
   <DiscordMessage name="Moderator 1" color="#e68027" message="Of course! What would you like to know?" />
@@ -768,7 +768,7 @@ import DiscordConversation, { DiscordMessage } from "@site/src/components/Discor
 ```
 
 **With Reactions:**
-<DiscordConversation title="Ban Vote Discussion">
+<DiscordConversation id="test-ban-vote-discussion" title="Ban Vote Discussion">
 <DiscordMessage
 name="Moderator 1"
 color="#8b5cf6"
@@ -793,7 +793,7 @@ reactions={[
 ```
 
 **Multi-line Content (Lists Auto-detected):**
-<DiscordConversation title="Ban Reasons">
+<DiscordConversation id="test-ban-reasons" title="Ban Reasons">
 <DiscordMessage
 name="Moderator 1"
 color="#8b5cf6"
@@ -816,7 +816,7 @@ color="#8b5cf6"
 ```
 
 **Auto-highlighted @Moderator mentions:**
-<DiscordConversation title="Staff Mention">
+<DiscordConversation id="test-staff-mention" title="Staff Mention">
 <DiscordMessage
     name="Moderator 1"
     color="#8b5cf6"

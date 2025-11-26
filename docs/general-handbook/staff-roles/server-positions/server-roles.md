@@ -6,6 +6,7 @@ slug: /general-handbook/server-positions
 
 import RoleBadge from "@site/src/components/RoleBadge";
 import ChannelBadge from "@site/src/components/ChannelBadge";
+import CardGrid, { Card } from "@site/src/components/CardGrid";
 
 # Server Staff Positions
 
@@ -19,7 +20,7 @@ For a quick access to each of them:
 - [Server Team Head](#server-team-head)
 - [Server Committee](#server-committee)
 - [Moderators](#moderators)
-- [Cutie Helpers](#cutie-helpers)
+- [Cutie Helpers (Trainee Moderators)](#cutie-helpers)
 - [Server Chat Moderators](#server-chat-moderators)
 
 ---
@@ -59,31 +60,35 @@ The **Server Committee** is a group of staff members that assist the Head Modera
 
 ## Moderators <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> {#moderators}
 
-**Moderators** are staff members who enforce server rules and assist members with any issues.
+**Moderators** are fully trained staff members responsible for all aspects of moderation.
 
 <h3> Responsibilities: </h3>
 
-- Handle **Staff Talk Tickets**: Assist members who open tickets for help.
-- Help with verification if Cutie Helpers are overwhelmed or unavailable.
-- Log tickets onto our online warning board.
-- Issue warnings and information to members through tickets when necessary.
-- Enforce server rules and apply appropriate punishments.
+- Handle verification tickets, including reviews and closures.
+- Perform chat moderation with full authority, including de-escalation.
+- Manage server-side tickets such as Staff-Talk and member issues.
+- Gather and document evidence for moderation cases.
+- Participate in ban vote procedures.
+- Rotate as Mod on Call to log completed tickets weekly.
+- Assist and train Cutie Helpers as mentors.
 
 ---
 
-## Cutie Helpers <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> {#cutie-helpers}
+## Cutie Helpers (Trainee Moderators) <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> {#cutie-helpers}
 
-**Cutie Helpers** are staff members who assist Moderators with verification and other tasks.
+**Cutie Helpers** are entry-level staff who are learning moderation procedures and server policies. They support basic tasks and prepare for eventual promotion to Moderator.
 
 <h3> Responsibilities: </h3>
 
-- Handle all primary age verification tickets.
-- Monitor server channels for rule-breaking instances.
-- Assist members when they have questions.
-- Enforce server rules.
+- Handle verification tickets under supervision (or independently once trained)
+- Perform chat moderation (simple rule reminders, small disruptions)
+- Participate in tickets as observers
+- Shadow Moderators to learn workflow
 
 :::tip Our First Line
-Cutie Helpers are often the first point of contact for new members, making their role crucial for a welcoming community!
+Cutie Helpers are often the first point of contact for new members through verification, making their role crucial for a welcoming community!
+
+For details on restrictions, training expectations, and the promotion path, see the [Cutie Helper Training & Promotion](/docs/server-staff-handbook/onboarding/cutie-helper-training) page.
 :::
 
 ---
@@ -101,6 +106,17 @@ Cutie Helpers are often the first point of contact for new members, making their
 
 :::note
 Being anonymous helps Chat Moderators observe the server chat without having any special roles displayed. (It's an invisible position)
+:::
+
+---
+
+## Channel Changes
+
+:::info Recent Updates
+The following channel changes have been implemented:
+
+- **helper-chat** → **verification-chat** - Dedicated channel for discussing **verification tickets only**
+- **moderator-only** - Now opened up for Cutie Helpers as soon as they get onboarded for transparency and easier training. Use this channel for all questions, issues, and discussions not related to verification tickets.
 :::
 
 ---

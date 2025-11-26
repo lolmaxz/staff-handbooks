@@ -130,7 +130,7 @@ const sidebars: SidebarsConfig = {
             id: "server-staff-handbook/onboarding/onboarding",
           },
           label: "Staff Onboarding",
-          items: ["server-staff-handbook/onboarding/getting-discord-user-id"],
+          items: ["server-staff-handbook/onboarding/cutie-helper-training", "server-staff-handbook/onboarding/getting-discord-user-id"],
         },
         "server-staff-handbook/server-channels",
         "server-staff-handbook/server-rules",
