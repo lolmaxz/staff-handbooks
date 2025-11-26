@@ -62,7 +62,7 @@ While these tickets will be used to dish out a punishment, we still want to trea
 
 Here's an example of how to properly handle a staff-talk ticket from start to finish:
 
-<DiscordConversation title="Staff-Talk Ticket Example">
+<DiscordConversation id="staff-talk-ticket-example" title="Staff-Talk Ticket Example">
   <DiscordMessage
     name="Moderator 1"
     color="#e68027"
@@ -147,7 +147,7 @@ Remain calm and objective! If you feel yourself getting frustrated, please step 
 
 ### Short Example
 
-<DiscordConversation title="Ticket - Respectful Communication">
+<DiscordConversation id="ticket-respectful-communication" title="Ticket - Respectful Communication">
   <DiscordMessage
     name="Moderator 1"
     color="#e68027"

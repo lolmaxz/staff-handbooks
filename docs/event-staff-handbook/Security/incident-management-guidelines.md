@@ -76,7 +76,7 @@ Remember: Every attendee deserves the same level of professional treatment, rega
 
 Here's how an incident report should be structured:
 
-<DiscordConversation title="Event Incident Report">
+<DiscordConversation id="event-incident-report" title="Event Incident Report">
   <DiscordMessage
     name="Event Security 1"
     color="#3fa7ff"

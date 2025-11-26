@@ -36,6 +36,17 @@ function getAvatarFromName(name: string, providedAvatar?: string): string {
     return DISCORD_AVATARS[index];
   }
 
+  // Check for cutie helper patterns: "cutie helper 1", "cutiehelper1", "cutie-helper-1", etc.
+  const cutieHelperMatch = normalizedName.match(/cutie\s*[-_]?helper\s*[_-]?(\d+)/);
+  if (cutieHelperMatch) {
+    const number = parseInt(cutieHelperMatch[1], 10);
+    // Use a hash-based offset to ensure different from other roles
+    // This ensures Cutie Helper gets unique avatars that don't conflict with moderator/user/member/staff/admin
+    const baseOffset = 3; // Start at avatar 3, different from moderator (0), user (1), member (2)
+    const index = (baseOffset + number - 1) % DISCORD_AVATARS.length;
+    return DISCORD_AVATARS[index];
+  }
+
   // Check for other patterns like "user 1", "member 1", "staff 1", "admin 1", etc.
   const numberMatch = normalizedName.match(/(user|member|staff|admin)\s*[_-]?(\d+)/);
   if (numberMatch) {
@@ -333,10 +344,23 @@ export function DiscordMessage({
 
 interface DiscordConversationProps {
   title?: string;
+  id?: string;
   children: React.ReactNode;
 }
 
-export default function DiscordConversation({ title = "Discord Conversation", children }: DiscordConversationProps) {
+export default function DiscordConversation({ title = "Discord Conversation", id, children }: DiscordConversationProps) {
+  // Generate a unique key for localStorage based on ID or use a default
+  const storageKey = React.useMemo(() => (id ? `discordConversationBackgroundStyle_${id}` : "discordConversationBackgroundStyle"), [id]);
+
+  // Load background style from localStorage, default to "default"
+  const [backgroundStyle, setBackgroundStyle] = React.useState<"default" | "chroma" | "strawberry">(() => {
+    if (typeof window !== "undefined") {
+      const key = id ? `discordConversationBackgroundStyle_${id}` : "discordConversationBackgroundStyle";
+      const saved = localStorage.getItem(key);
+      return saved === "chroma" || saved === "default" || saved === "strawberry" ? saved : "default";
+    }
+    return "default";
+  });
   const messageIndexRef = useRef(0);
   const totalMessagesRef = useRef(0);
   const lastAuthorRef = useRef<string | null>(null);
@@ -377,20 +401,63 @@ export default function DiscordConversation({ title = "Discord Conversation", ch
     registerMessage,
   };
 
-  // Reset counter when component mounts
+  // Save background style to localStorage whenever it changes
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem(storageKey, backgroundStyle);
+    }
+  }, [backgroundStyle, storageKey]);
+
+  // Reset counter when component mounts or when background style changes
   React.useEffect(() => {
     messageIndexRef.current = 0;
     totalMessagesRef.current = 0;
     lastAuthorRef.current = null;
     messagePositionsRef.current = [];
-  }, []);
+  }, [backgroundStyle]);
 
   return (
-    <DiscordConversationContext.Provider value={contextValue}>
-      <div className={styles.conversationWrapper}>
+    <DiscordConversationContext.Provider key={backgroundStyle} value={contextValue}>
+      <div
+        className={`${styles.conversationWrapper} ${backgroundStyle === "chroma" ? styles.conversationWrapperChroma : ""} ${
+          backgroundStyle === "strawberry" ? styles.conversationWrapperStrawberry : ""
+        }`}
+      >
         <div className={styles.header}>
           <div className={styles.headerIcon}>💬</div>
           <span className={styles.headerTitle}>{title}</span>
+          <div className={styles.headerControls}>
+            <button
+              className={`${styles.backgroundToggle} ${backgroundStyle === "default" ? styles.backgroundToggleActive : ""}`}
+              onClick={() => setBackgroundStyle("default")}
+              title="Default grey background"
+              aria-label="Default grey background"
+            >
+              <div className={styles.backgroundToggleCircle} style={{ background: "#72767d" }} />
+            </button>
+            <button
+              className={`${styles.backgroundToggle} ${backgroundStyle === "chroma" ? styles.backgroundToggleActive : ""}`}
+              onClick={() => setBackgroundStyle("chroma")}
+              title="Chroma glow effect"
+              aria-label="Chroma glow effect"
+            >
+              <div
+                className={styles.backgroundToggleCircle}
+                style={{ background: "linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)" }}
+              />
+            </button>
+            <button
+              className={`${styles.backgroundToggle} ${backgroundStyle === "strawberry" ? styles.backgroundToggleActive : ""}`}
+              onClick={() => setBackgroundStyle("strawberry")}
+              title="Strawberry Lemonade"
+              aria-label="Strawberry Lemonade"
+            >
+              <div
+                className={styles.backgroundToggleCircle}
+                style={{ background: "linear-gradient(135deg, #B84D7A 0%, #A02F2F 50%, #D4A03F 100%)" }}
+              />
+            </button>
+          </div>
         </div>
         <div className={styles.conversation}>{children}</div>
       </div>

@@ -23,15 +23,18 @@ Take your time to familiarize yourself with all sections. Don't hesitate to ask 
 
 ## First-Day Quick Start
 
-- Verify a member: [Verification Process](./verification-process) → [Requirements](./verification-process)
-- Close a verification: [Closing Out Verifications](./moderator/closing-out-verifications) → [Welcome Template](./verification-process/completion-of-verification)
+- Verify a member: [Verification Process](./verification-process) → [Requirements](./verification-process) → [Welcome Template](./verification-process/completion-of-verification)
 - Moderate chat: [Chat Moderation Overview](./chat-moderation)
 - Handle violations: [Server Rule Violations](./server-rule-violations)
-- Open a staff-talk ticket: [Staff-Talk Tickets](./moderator/staff-talk-tickets) *(Moderators only)*
-- Record actions: [GitHub Records](./moderator/github-records) *(Moderators only)*
-- Review ban process: [Ban Types Overview](./ban-votes/ban-types-overview) *(Moderators only)*
-- Mod on Call: [Mod on Call](./moderator/mod-on-call) *(Moderators only)*
 - Enable Developer Mode: [Getting Discord User ID](./onboarding/getting-discord-user-id)
+
+### For Later (When You Become a Moderator)
+
+- Close a verification: [Closing Out Verifications](./moderator/closing-out-verifications)
+- Open a staff-talk ticket: [Staff-Talk Tickets](./moderator/staff-talk-tickets)
+- Record actions: [GitHub Records](./moderator/github-records)
+- Review ban process: [Ban Types Overview](./ban-votes/ban-types-overview)
+- Mod on Call: [Mod on Call](./moderator/mod-on-call)
 
 ## Your Role & Responsibilities
 
@@ -79,6 +82,10 @@ After demonstrating the following qualities, you may be promoted via Moderator v
 - ✅ Reliability and no drama involvement
 
 **→ Promotion via Moderator voting after 2 months. 1 month in case of exceptional progress.**
+
+:::info More Information
+For detailed information about the training process, requirements, and promotion criteria, see the [Cutie Helper Training](./onboarding/cutie-helper-training) page.
+:::
 
 ## Essential Channels
 
@@ -192,14 +199,44 @@ Three types of ban votes based on severity:
 
 ## Important Tools & Commands
 
-### Staff Tools
+### Essential Tools
 
-- **Check Linking Status**: <DiscordButton type="secondary" emoji="🔍">Right Click on the user's avatar / Username → Apps → Check Linking Status</DiscordButton>
-- **Vote Bot**: Use Discord's built-in poll feature or Hephia v2 command `/votereact [message ID]` for ban votes *(Moderators only)*
-- **Ticket Commands**: <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only - `/rename`, `/add`, `/remove` for ticket management
-  - `/rename` has a brief cooldown. If it fails, you can edit the ticket thread title manually.
-  - <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> may ask a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" /> to assist.
-- **Developer Mode**: <DiscordButton type="link" emoji="⚙️" href="./onboarding/getting-discord-user-id">Enable Developer Mode</DiscordButton> (required for copying User IDs)
+<CardGrid columns={2}>
+  <Card title="Check Linking Status" status="info" icon="🔍">
+    <p>Right-click on a user's avatar or username → <strong>Apps</strong> → <strong>Check Linking Status</strong></p>
+    <p><DiscordButton type="secondary" emoji="🔍">Check Linking Status</DiscordButton></p>
+  </Card>
+
+  <Card title="Developer Mode" status="success" icon="⚙️">
+    <p>Required for copying User IDs and other developer features.</p>
+    <p><DiscordButton type="link" emoji="⚙️" href="./onboarding/getting-discord-user-id">Enable Developer Mode</DiscordButton></p>
+  </Card>
+</CardGrid>
+
+### Ticket Management Commands
+
+<Card title="Ticket Commands (Moderator Only)" status="warning" icon="🎫">
+  <!-- <p><strong>Restriction:</strong> <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only</p> -->
+  <p><strong>Available Commands:</strong></p>
+  <ul>
+    <li><code>/rename</code> - Rename ticket thread</li>
+    <li><code>/add</code> - Add user to ticket</li>
+    <li><code>/remove</code> - Remove user from ticket</li>
+  </ul>
+  <p><strong>Notes:</strong></p>
+  <ul>
+    <li><code>/rename</code> has a brief cooldown. If it fails, you can edit the ticket thread title manually.</li>
+    <li><RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> may ask a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" /> to assist with renaming.</li>
+  </ul>
+</Card>
+
+### Voting Tools
+
+<Card title="Vote Bot" status="info" icon="🗳️">
+  <p>Use Discord's built-in poll feature or Hephia v1.2 command for ban votes:</p>
+  <p><code>/votereact [message ID]</code></p>
+  <p><em>Moderators only</em></p>
+</Card>
 
 ### Key Guidelines
 
@@ -216,16 +253,16 @@ Three types of ban votes based on severity:
 
 ### When You Need Assistance
 
-1. **Verification Ticket Discussions**: Ask in <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> *(verification only)*
+1. **Verification Ticket Discussions**: Ask in <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> _(verification only)_
 2. **All Other Questions & Issues**: Consult in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
 3. **Technical Problems**: Ping <RoleBadge role="lolmaxz" color="#ff6b6b" /> for bot/linking issues
-4. **Staff-Talk Tickets**: Use <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> → <DiscordButton type="link" emoji="☎️" href="./moderator/staff-talk-tickets">Talk to a Staff</DiscordButton> *(Moderators only)*
+4. **Staff-Talk Tickets**: Use <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> → <DiscordButton type="link" emoji="☎️" href="./moderator/staff-talk-tickets">Talk to a Staff</DiscordButton> _(Moderators only)_
 
 ### Documentation Resources
 
 - **Verification Process**: <DiscordButton type="link" emoji="📋" href="./verification-process">Detailed steps and requirements</DiscordButton>
 - **Chat Moderation**: <DiscordButton type="link" emoji="💬" href="./chat-moderation">Role-specific guidelines and procedures</DiscordButton>
-- **Ban Procedures**: <DiscordButton type="link" emoji="⚖️" href="./ban-votes/ban-types-overview">Different vote types and criteria</DiscordButton> *(Moderators only)*
+- **Ban Procedures**: <DiscordButton type="link" emoji="⚖️" href="./ban-votes/ban-types-overview">Different vote types and criteria</DiscordButton> _(Moderators only)_
 - **VRChat Linking**: <DiscordButton type="link" emoji="🔗" href="./verification-process/vrchat-linking-troubleshooting">Troubleshooting and technical support</DiscordButton>
 
 :::tip Success Tips

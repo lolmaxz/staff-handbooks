@@ -117,7 +117,7 @@ This tool is **essential** for troubleshooting - always check this first when me
 
 Here's an example of how to help a member troubleshoot linking issues:
 
-<DiscordConversation title="VRChat Linking Ticket">
+<DiscordConversation id="vrchat-linking-ticket" title="VRChat Linking Ticket">
   <DiscordMessage
     name="Member 1"
     color="#5865f2"

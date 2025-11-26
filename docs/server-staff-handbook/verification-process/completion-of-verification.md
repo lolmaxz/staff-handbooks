@@ -34,7 +34,7 @@ If the member deletes their verification images after the initial verification i
 
 Here's an example of how to handle verification completion:
 
-<DiscordConversation title="Verification Completion">
+<DiscordConversation id="verification-completion" title="Verification Completion">
   <DiscordMessage
     name="Cutie Helper 1"
     color="#38c8e8"
