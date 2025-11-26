@@ -22,6 +22,8 @@ import Tooltip from "@site/src/components/Tooltip";
 - **`/ban`** - Ban a member (supports userID and mention)
 - **`/unban`** - Unban a member (supports userID only)
 - **`/kick`** - Kick a member (supports userID and mention)
+- **`/mute`** - Mute/unmute a member in voice channels
+- **`/deafen`** - Deafen/undeafen a member in voice channels
 - **`/votereact`** - Create reaction votes with presets
 - **`/help`** - Get help with Hephia commands
 
@@ -48,23 +50,23 @@ import Tooltip from "@site/src/components/Tooltip";
 
 <CardGrid columns={2}>
   <Card title="/ban" status="error" icon="🔨">
-    <p><strong>Usage:</strong> <code>/ban [user] [reason]</code></p>
+    <p><strong>Usage:</strong> <code>/ban [user] [reason?]</code></p>
     <p>Ban a member from the server. Works with both <strong>userID</strong> and <strong>mention</strong> (tagging).</p>
-    <p>Also supports Discord's built-in ban system and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>Reason is optional. Also supports Discord's built-in ban system and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
   </Card>
 
   <Card title="/unban" status="success" icon="🔓">
-    <p><strong>Usage:</strong> <code>/unban [userID]</code></p>
+    <p><strong>Usage:</strong> <code>/unban [userID] [reason?]</code></p>
     <p>Unban a member from the server. <strong>Only supports userID</strong> (user isn't in server, so can't be mentioned).</p>
-    <p>Supports regular unban from Discord UI and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>Reason is optional. Supports regular unban from Discord UI and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
   </Card>
 </CardGrid>
 
 <CardGrid columns={2}>
   <Card title="/kick" status="warning" icon="👢">
-    <p><strong>Usage:</strong> <code>/kick [user] [reason]</code></p>
+    <p><strong>Usage:</strong> <code>/kick [user] [reason?]</code></p>
     <p>Kick a member from the server. Works with both <strong>userID</strong> and <strong>mention</strong> (tagging).</p>
-    <p>Supports Discord's built-in kick system and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>Reason is optional. Supports Discord's built-in kick system and logs to <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />.</p>
   </Card>
 
   <Card title="/timeout" status="info" icon="⏳">
@@ -73,6 +75,72 @@ import Tooltip from "@site/src/components/Tooltip";
     <p>Use for de-escalation or temporary rule enforcement.</p>
   </Card>
 </CardGrid>
+
+<CardGrid columns={2}>
+  <Card title="/mute" status="info" icon="🔇">
+    <p><strong>Usage:</strong> <code>/mute [user] [true|false]</code></p>
+    <p><strong>New command!</strong> Mute or unmute a member in voice channels.</p>
+    <ul>
+      <li><code>true</code> - Mute the member</li>
+      <li><code>false</code> - Unmute the member</li>
+    </ul>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>If the member is not currently in a voice channel, the action will be scheduled. <a href="#voice-channel-vc-actions">Learn more about scheduled events</a>.</p>
+  </Card>
+
+  <Card title="/deafen" status="info" icon="🔇">
+    <p><strong>Usage:</strong> <code>/deafen [user] [true|false]</code></p>
+    <p><strong>New command!</strong> Deafen or undeafen a member in voice channels.</p>
+    <ul>
+      <li><code>true</code> - Deafen the member</li>
+      <li><code>false</code> - Undeafen the member</li>
+    </ul>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>If the member is not currently in a voice channel, the action will be scheduled. <a href="#voice-channel-vc-actions">Learn more about scheduled events</a>.</p>
+  </Card>
+</CardGrid>
+
+---
+
+## 🎤 Voice Channel (VC) Actions {#voice-channel-vc-actions}
+
+Hephia now supports voice channel moderation through both slash commands and context menu options.
+
+### Slash Commands
+
+The VC moderation commands are listed above in the [Moderation Commands](#-moderation-commands) section:
+
+- **`/mute [user] [true|false]`** - Mute or unmute a member in voice channels
+- **`/deafen [user] [true|false]`** - Deafen or undeafen a member in voice channels
+
+### Context Menu Options
+
+You can also use voice channel moderation through Discord's context menu:
+
+1. **Right-click** on a member in a voice channel (or in member list)
+2. Select **Apps** (or **Hephia**)
+3. Choose from the following options:
+   - **Mute** - Server mute the member
+   - **Unmute** - Remove server mute from the member
+   - **Deafen** - Server deafen the member
+   - **Undeafen** - Remove server deafen from the member
+
+:::tip Quick Access
+Context menu options are faster for quick VC moderation actions! Just right-click and select the action you need.
+:::
+
+:::info Important Notes
+**Scheduled Actions:**
+
+- If a member is **not currently in a voice channel** when you use `/mute`, `/deafen`, or the context menu options, the action will be **scheduled** and automatically applied when they join a VC next.
+  :::
+
+<details>
+<summary style={{fontSize: '0.9em', color: '#888'}}><strong>Mutual Exclusivity</strong></summary>
+<p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>
+- **Mute and Unmute** are mutually exclusive - you cannot mute and unmute a member at the same time.<br/>
+- **Deafen and Undeafen** are mutually exclusive - you cannot deafen and undeafen a member at the same time.<br/>
+- However, you **can** combine mute with deafen/undeafen (e.g., mute and deafen, or mute and undeafen).
+</p>
+</details>
 
 ---
 
@@ -87,9 +155,11 @@ import Tooltip from "@site/src/components/Tooltip";
   </Card>
 
   <Card title="/addgreeting" status="success" icon="👋">
-    <p><strong>Usage:</strong> <code>/addgreeting [message]</code></p>
+    <p><strong>Usage:</strong> <code>/addgreeting [message] [confirm: true]</code></p>
     <p><strong>Restriction:</strong> Can be used by <strong>anyone</strong>!</p>
-    <p>Add a greeting message to the server. Logs who added it, and it has a chance to appear as soon as it's added! 💜</p>
+    <p>Add a greeting message to the server. You must set <code>confirm</code> to <code>true</code> if you understand what you are doing.</p>
+    <p>Logs who added it, and it has a chance to appear as soon as it's added! 💜</p>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}><em>Note: All greeting submissions are logged. Inappropriate greetings can be traced back to the submitter.</em></p>
   </Card>
 </CardGrid>
 <CardGrid columns={2}>
@@ -205,7 +275,8 @@ import Tooltip from "@site/src/components/Tooltip";
 
 ---
 
-## 🚫 Deprecated Commands
+<details>
+<summary><strong>🚫 Deprecated Commands</strong></summary>
 
 :::danger ⚠️ These Commands No Longer Exist
 The following commands have been **removed** and should **NOT** be used:
@@ -220,6 +291,8 @@ The following commands have been **removed** and should **NOT** be used:
 - **`>updateuserstat`**, **`>updatelovensestat`**, **`>updateverifiedstat`**, **`>updatestats`** → Force updating stats channels (not needed atm)
 - **`>warningscan`**, **`>legitauto`**, **`>mcwl`**, **`>mcrefresh`** → Old deprecated commands and Minecraft stuff that got replaced
   :::
+
+</details>
 
 ---
 
@@ -239,12 +312,94 @@ Role changes specifically are logged in <ChannelBadge label="⏹️-role-changes
 - User joins and leaves
 - Threads creation/update/deletion/archival
 - VC creation/editing/deletion
+- **Nickname changes** (logged in <ChannelBadge label="⏹️-role-changes" link="https://discord.com/channels/734595073920204940/944749246584872980" />)
+- **Username changes** (logged in <ChannelBadge label="⏹️-role-changes" link="https://discord.com/channels/734595073920204940/944749246584872980" />)
 
 All logs now include **who made the change** for better tracking!
 :::
 
-:::warning Unverified Role Protection
+:::info Voice Channel (VC) Logging
+Hephia now monitors and logs voice channel activity! Most VC logs go to <ChannelBadge label="🔊-vc-logs" link="https://discord.com/channels/734595073920204940/1442671108913631252" /> to keep <ChannelBadge label="🟩-staff-logs" link="https://discord.com/channels/734595073920204940/741167289813958718" /> less cluttered.
+
+**VC Activity Logged:**
+
+- Members joining/leaving voice channels
+- Members switching between voice channels
+- Members muting/unmuting themselves
+- Members deafening/undeafening themselves
+- **Moderative actions** (server mute/unmute/deafen/undeafen) - These go to <ChannelBadge label="🟩-staff-logs" link="https://discord.com/channels/734595073920204940/741167289813958718" />
+- Force disconnects from VCs (coming soon)
+
+**Pop-up VC Transcripts:**
+
+- Full transcripts are automatically created when pop-up VCs disappear
+- Includes all messages, edited versions, and deleted messages
+- Transcripts are **persistent** even if Hephia restarts! 💜
+- Example: <a href="https://discord.com/channels/734595073920204940/1442671108913631252/1442726474741452800" target="_blank">View Example Transcript</a>
+  :::
+
+<details>
+<summary><strong>📋 Complete Logging Capabilities</strong></summary>
+
+Hephia v1.2 logs the following server actions:
+
+**Moderation Actions:**
+
+- Bans and unbans
+- Kicks
+- Timeouts
+- Server mutes/unmutes (VC)
+- Server deafens/undeafens (VC)
+
+**User Activity:**
+
+- User joins and leaves
+- Username changes
+- Nickname changes
+
+**Channel Management:**
+
+- Channel creation, editing, and deletion
+- Channel permission changes (logs who made the change)
+- Thread creation, updates, deletion, and archival
+- Voice channel creation, editing, and deletion
+
+**Role Management:**
+
+- Role creation, editing, and deletion (logs who made the change)
+- Role permission changes (logs who made the change)
+- Role assignments and removals (also logs who made the change, if done by a staff member)
+
+**Voice Channel Activity:**
+
+- Members joining/leaving voice channels
+- Members switching between voice channels
+- Members muting/unmuting themselves
+- Members deafening/undeafening themselves
+- Force disconnects from VCs (coming soon)
+
+**Message Activity:**
+
+- Message edits
+- Message deletions (also logs who deleted)
+
+**Pop-up VC Transcripts:**
+
+- Full transcripts automatically created when pop-up VCs disappear
+- Includes all messages, edited versions, and deleted messages
+
+**Other:**
+
+- Greeting message submissions (who added them)
+
+All logs include **who made the change** or **who performed the action** for better tracking and accountability.
+
+</details>
+
+:::warning Role Protection
 Hephia v1.2 now **refuses to let anyone** (besides Administrators) manually remove the unverified role if the verified role isn't present. If someone attempts to remove it manually, Hephia will revert it back immediately. Verification is only supposed to be done by **giving the verified role**, and Hephia ensures this!
+
+Additionally, Hephia will **prevent both Verified and VRC Verified roles from being present at the same time**. If someone tries to add one when the other is already present, Hephia will automatically roll back the change and inform the Administrators. Members should only have **one form of verification** at a time.
 :::
 
 ---
