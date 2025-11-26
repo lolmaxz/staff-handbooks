@@ -24,7 +24,7 @@ The verification process is how we confirm members are 18+ to access our adult c
 
 Here's how a typical verification ticket starts:
 
-<DiscordConversation title="Verification Ticket - Age Verification">
+<DiscordConversation id="verification-ticket-age" title="Verification Ticket - Age Verification">
   <DiscordMessage
     name="Member 1"
     color="#5865f2"

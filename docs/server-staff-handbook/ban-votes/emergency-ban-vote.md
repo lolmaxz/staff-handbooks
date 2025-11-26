@@ -33,7 +33,7 @@ Emergency ban votes are only for severe situations requiring swift action.
 
 Here's an example of how an emergency ban vote thread should be structured:
 
-<DiscordConversation title="Emergency Ban Vote - Started by Admin 1">
+<DiscordConversation id="emergency-ban-vote" title="Emergency Ban Vote - Started by Admin 1">
   <DiscordMessage
     name="Admin 1"
     color="#db1cb8"

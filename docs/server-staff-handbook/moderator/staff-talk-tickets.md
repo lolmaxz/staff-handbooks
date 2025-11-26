@@ -13,6 +13,12 @@ import CardGrid, { Card } from "@site/src/components/CardGrid";
 
 # Staff-Talk Tickets
 
+:::warning Moderators Only
+This page covers procedures for <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only. <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> **cannot** open or manage Staff-Talk tickets independently.
+
+Cutie Helpers may observe these tickets as part of their training but cannot issue warnings, mutes, or punishments.
+:::
+
 :::info
 **For the first 2 months** as a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" />, draft your messages in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" /> and get approval from a <RoleBadge role="Server Committee Member" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" /> before opening tickets.
 :::
@@ -21,7 +27,7 @@ import CardGrid, { Card } from "@site/src/components/CardGrid";
 
 - **Punishment/Action Tickets**
 
-  - Punishment tickets <u>**must**</u> be opened by **Staff**.
+  - Punishment tickets <u>**must**</u> be opened by **Moderators only**.
   - <u>**Only**</u> **1** staff member may talk within a ticket at a time. <u>Do not dogpile into the ticket</u>
   - Do **not** give out any punishments in tickets started by a member.
 
@@ -56,7 +62,7 @@ While these tickets will be used to dish out a punishment, we still want to trea
 
 Here's an example of how to properly handle a staff-talk ticket from start to finish:
 
-<DiscordConversation title="Staff-Talk Ticket Example">
+<DiscordConversation id="staff-talk-ticket-example" title="Staff-Talk Ticket Example">
   <DiscordMessage
     name="Moderator 1"
     color="#e68027"
@@ -118,7 +124,6 @@ Here's an example of how to properly handle a staff-talk ticket from start to fi
 2. Rename the ticket using `/rename` to: `Stafftalk-Username`.
 
 - Note: `/rename` has a short cooldown. If it fails due to cooldown or permissions, you can rename the ticket thread title manually.
-- If you are a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />, request a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789" /> to assist with the rename.
 
 3. Add the user to the ticket with `/add`.
 
@@ -142,7 +147,7 @@ Remain calm and objective! If you feel yourself getting frustrated, please step 
 
 ### Short Example
 
-<DiscordConversation title="Ticket - Respectful Communication">
+<DiscordConversation id="ticket-respectful-communication" title="Ticket - Respectful Communication">
   <DiscordMessage
     name="Moderator 1"
     color="#e68027"
@@ -209,3 +214,12 @@ If this still does not work, the <RoleBadge role="Head Moderator" color="#e68027
 :::info
 Properly handling tickets ensures transparency and fairness for members involved!
 :::
+
+## Training Cutie Helpers
+
+As a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" />, you are expected to assist and train <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />. When handling Staff-Talk tickets:
+
+- Allow Cutie Helpers to **observe** the ticket process
+- Explain your reasoning and approach
+- Answer their questions in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
+- Remember: they cannot issue punishments themselves, but learning by observation is valuable

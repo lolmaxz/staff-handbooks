@@ -39,7 +39,7 @@ Once all votes are cast, the ban may be carried out without waiting for the full
 
 Here's an example of how a boardroom ban vote thread should be structured:
 
-<DiscordConversation title="All Heads Ban Vote - Started by Head Moderator 1">
+<DiscordConversation id="boardroom-ban-vote" title="All Heads Ban Vote - Started by Head Moderator 1">
   <DiscordMessage
     name="Head Moderator 1"
     color="#e68027"
