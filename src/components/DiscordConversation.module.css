@@ -113,12 +113,12 @@
 }
 
 .backgroundToggleActive {
-  border-color: #e0e0e0;
+  border-color: #ffffff !important;
   border-width: 3px;
 }
 
 .backgroundToggleActive:hover {
-  border-color: #e0e0e0;
+  border-color: #ffffff !important;
 }
 
 [data-theme="dark"] .backgroundToggle {
@@ -130,11 +130,11 @@
 }
 
 [data-theme="dark"] .backgroundToggleActive {
-  border-color: #e0e0e0;
+  border-color: #ffffff !important;
 }
 
 [data-theme="dark"] .backgroundToggleActive:hover {
-  border-color: #e0e0e0;
+  border-color: #ffffff !important;
 }
 
 .backgroundToggleCircle {
