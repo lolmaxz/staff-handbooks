@@ -1,6 +1,6 @@
 ---
 id: hephia-commands
-title: Hephia V1.2 Slash Commands
+title: Hephia V1.2 Info and Commands
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
@@ -337,6 +337,33 @@ Hephia now monitors and logs voice channel activity! Most VC logs go to <Channel
 - Transcripts are **persistent** even if Hephia restarts! 💜
 - Example: <a href="https://discord.com/channels/734595073920204940/1442671108913631252/1442726474741452800" target="_blank">View Example Transcript</a>
   :::
+
+:::info GIF Limiting System
+Hephia automatically monitors GIF messages in configured channels to prevent spam and reduce lag. The system uses two independent monitoring methods:
+
+**Time-Based Monitoring:**
+
+- Tracks GIFs within a specific time window (e.g., 10 GIFs in 2 minutes)
+- If the limit is exceeded, the triggering GIF is deleted and a warning is sent
+
+**Message-Based Monitoring:**
+
+- Tracks GIFs within the last X messages (e.g., 10 GIFs in the last 50 messages)
+- Maintains a rolling history to prevent GIF spam over time
+- If the limit is exceeded, the triggering GIF is deleted and a warning is sent
+
+**How It Works:**
+
+- Both monitoring systems can be active simultaneously
+- When either limit is exceeded, the GIF message is automatically deleted
+- A warning message is sent to the channel (auto-deleted after 1 minute)
+- The system resets after a short cooldown period
+
+**Why It Exists:**
+GIF spam can cause performance issues and lag for other members. This system helps maintain a smooth chat experience for everyone by preventing excessive GIF posting in monitored channels.
+
+**Note:** Bot messages are not tracked, and the system only monitors channels <Tooltip tip="This information is undisclosed to prevent users from circumventing the GIF limiting system">where it has been specifically configured</Tooltip>.
+:::
 
 <details>
 <summary><strong>📋 Complete Logging Capabilities</strong></summary>
