@@ -28,7 +28,7 @@ When a member breaks a server rule, follow these steps to ensure proper handling
 
 <CardGrid columns={2}>
   <Card title={<><RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> (Trainee)</>} status="info">
-    <p><strong>📍 Report to:</strong> <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/></p>
+    <p><strong>📍 Report to:</strong> <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/></p>
     <p><strong>Responsibilities:</strong></p>
     <ul>
       <li>Document violations (screenshot, delete, report)</li>
@@ -44,7 +44,7 @@ When a member breaks a server rule, follow these steps to ensure proper handling
 
 <Card title={<RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" />} status="success">
 
-<p><strong>📍 Report to:</strong> <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/></p>
+<p><strong>📍 Report to:</strong> <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/></p>
 <p><strong>Responsibilities:</strong></p>
 <ul>
 <li>All Cutie Helper responsibilities, plus:</li>
@@ -183,9 +183,9 @@ When a member reports an issue in a ticket:
 After documentation and reporting:
 
 <Checklist checklistId="moderation-process" title="Moderation Process Checklist">
-  <Checklist.Item id="review-report"><strong>1. Moderator reviews</strong> the report in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/></Checklist.Item>
+  <Checklist.Item id="review-report"><strong>1. Moderator reviews</strong> the report in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/></Checklist.Item>
   <Checklist.Item id="open-ticket"><strong>2. Moderator opens</strong> a Staff-Talk ticket for formal action (if warranted)</Checklist.Item>
-  <Checklist.Item id="discuss-punishment"><strong>3. Moderators discuss</strong> appropriate punishment in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> following the <Tooltip tip="The Server Guidelines are currently under rework and may not be accessible to the public in the near future, as it is a sensitive document and we want to avoid people using it to circumvent rules">Server Guidelines</Tooltip></Checklist.Item>
+  <Checklist.Item id="discuss-punishment"><strong>3. Moderators discuss</strong> appropriate punishment in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> following the <Tooltip tip="The Server Guidelines are currently under rework and may not be accessible to the public in the near future, as it is a sensitive document and we want to avoid people using it to circumvent rules">Server Guidelines</Tooltip></Checklist.Item>
   <Checklist.Item id="log-action"><strong>4. Moderator logs</strong> the action to GitHub Warning Book</Checklist.Item>
 </Checklist>
 

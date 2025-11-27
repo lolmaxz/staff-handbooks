@@ -46,8 +46,8 @@ These pages are for <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.p
 
 - **[Ban Votes for Members](../ban-votes/ban-votes-for-members)** - Initiate and manage ban votes
 - **[Chat Moderation](../chat-moderation/moderator-chat-moderation)** - De-escalation and formal moderation procedures
-- **[Server Channels](../server-channels)** - Access to <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" /> and other moderator channels
+- **[Server Channels](../server-channels)** - Access to <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474" /> and other moderator channels
 
 :::tip Collaboration
-Always consult with other moderators in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" /> when you need guidance or are unsure about a situation.
+Always consult with other moderators in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474" /> when you need guidance or are unsure about a situation.
 :::

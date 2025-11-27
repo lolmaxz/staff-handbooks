@@ -16,7 +16,7 @@ The **Mod on Call** is the <RoleBadge role="Moderator" badgeIcon="moderator_role
 - One <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> is assigned each week as the **Mod on Call**.
 - Responsibility rotates through the Moderator team in a **fixed order**.
 - The schedule is tracked via a **Google Sheet** so each Moderator knows when they are expected to handle ticket logging.
-- A smaller extraction from the full schedule is pinned in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
+- A smaller extraction from the full schedule is pinned in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
 
 ## Schedule Swaps
 
@@ -38,19 +38,17 @@ The Mod on Call for the week is responsible for:
 For instructions on how to log tickets to the GitHub Warning Book, see the [GitHub Records](./github-records) page.
 :::
 
-
-
 ## Example Schedule
 
-| Week | Date Start   | Date End     | Moderator       | Notes |
-|------|--------------|--------------|-----------------|-------|
-| 47   | November 22  | November 28  | MoonPennyBunny  |       |
-| 48   | November 29  | December 5   | Krenki          |       |
-| 49   | December 6   | December 12  | Echo            |       |
-| 50   | December 13  | December 19  | SoliiCannoli    |       |
-| 51   | December 20  | December 26  | PrionIron       |       |
-| 52   | December 27  | January 2    | Alicendrome     |       |
+| Week | Date Start  | Date End    | Moderator    | Notes |
+| ---- | ----------- | ----------- | ------------ | ----- |
+| 47   | November 22 | November 28 | Moderator #1 |       |
+| 48   | November 29 | December 5  | Moderator #2 | LOA   |
+| 49   | December 6  | December 12 | Moderator #3 |       |
+| 50   | December 13 | December 19 | Moderator #4 | SICK  |
+| 51   | December 20 | December 26 | Moderator #5 |       |
+| 52   | December 27 | January 2   | Moderator #6 |       |
 
 :::tip Check the Schedule
-Always check the pinned Google Sheet in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> to know when your week is coming up!
+Always check the pinned Google Sheet in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> to know when your week is coming up!
 :::

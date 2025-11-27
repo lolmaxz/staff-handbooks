@@ -10,13 +10,13 @@ import DiscordConversation, { DiscordMessage } from "@site/src/components/Discor
 # Ban Votes for Members (Moderators Only)
 
 :::warning
-All ban votes are held in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> and last **24 hours**.
+All ban votes are held in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> and last **24 hours**.
 :::
 
 ## Initiating a Ban Vote
 
 - Any <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> can initiate a ban vote in accordance with the **Server Guidelines**
-- Create a **thread** in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> to discuss:
+- Create a **thread** in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> to discuss:
   - The rule(s) broken
   - Why the member deserves a ban
 

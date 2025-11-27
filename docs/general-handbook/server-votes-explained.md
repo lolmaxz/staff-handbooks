@@ -36,10 +36,10 @@ Participate actively in votes relevant to your role to contribute to the server'
 
 ---
 
-### Moderator Promotions in 📙moderator-only
+### Moderator Promotions in 📙moderators
 
 - For <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> to discuss promotion of any <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> to Moderator.
-- Promotion votes will be initiated in a new thread in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> upon a Cutie Helper completing all parts of Moderator training by <RoleBadge role="Server Committee" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" />, typically started by <RoleBadge role="Head Moderator 🔰" badgeIcon="" color="#db1cb8" />.
+- Promotion votes will be initiated in a new thread in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> upon a Cutie Helper completing all parts of Moderator training by <RoleBadge role="Server Committee" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" />, typically started by <RoleBadge role="Head Moderator 🔰" badgeIcon="" color="#db1cb8" />.
 - Promotion vote will pass upon 80% of voting Moderators to be in agreement that a Cutie Helper is ready to be a Moderator.
 - <RoleBadge role="Head Moderator 🔰" badgeIcon="" color="#db1cb8" /> will finalize the vote.
 
@@ -54,9 +54,9 @@ Participate actively in votes relevant to your role to contribute to the server'
 
 ---
 
-### Moderator discussion votes in 📙moderator-only
+### Moderator discussion votes in 📙moderators
 
-- <Tooltip tip="Used by Moderators to discuss rule violation punishments, server ban votes, or media acceptable to remain within the server." bubbleColor="#d255ec" labelColor="#e68027"> Moderator Discussion Thread and Votes</Tooltip> can be initiated by any <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> within <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
+- <Tooltip tip="Used by Moderators to discuss rule violation punishments, server ban votes, or media acceptable to remain within the server." bubbleColor="#d255ec" labelColor="#e68027"> Moderator Discussion Thread and Votes</Tooltip> can be initiated by any <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> within <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
 - Any <RoleBadge role="Committee Member"  color="#db1cb8" /> is allowed to provide inputs to assist Moderators in discussions about a community member but may only vote within their respective team.
 - Rule violation punishment and media acceptability votes will pass with greater than 50% voting Moderators in agreement.
 - <Tooltip tip="Server Ban votes require **24hrs** to be reviewed by all Moderators before being finalized, typically a Server Committee member will finalize the vote." bubbleColor="#d255ec" labelColor="#e68027"> Server Ban Votes </Tooltip> will pass with greater then 80% voting Moderators in agreement.

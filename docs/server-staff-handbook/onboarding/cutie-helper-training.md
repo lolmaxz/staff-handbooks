@@ -21,7 +21,7 @@ This page outlines the training expectations, restrictions, and promotion path f
     <li>Issue bans</li>
     <li>Make final moderation decisions</li>
   </ul>
-  <p>These tasks are for <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only. If you encounter a situation requiring these actions, report it in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.</p>
+  <p>These tasks are for <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only. If you encounter a situation requiring these actions, report it in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.</p>
 </Card>
 
 ---
@@ -52,10 +52,10 @@ All <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color=
 
 - **Shadow Moderators** to learn proper workflow and procedures
 - **Observe tickets** to understand how issues are resolved
-- **Ask questions** in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> — Moderators are expected to help train you!
+- **Ask questions** in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> — Moderators are expected to help train you!
 
 :::tip Use Verification-Chat Correctly
-<ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> is for **verification ticket discussions only**. All other questions, issues, and discussions should go to <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
+<ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> is for **verification ticket discussions only**. All other questions, issues, and discussions should go to <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
 :::
 
 ---

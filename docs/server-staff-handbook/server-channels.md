@@ -16,9 +16,9 @@ Once your application to be part of the server staff has been accepted, you will
 
 ## Text Channels
 
-- <ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/737215117049069610" />: This channel is where new server staff begins and where they report things they see on the server or any issues with a verification ticket. It's the main channel for moderators to become.
+- <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/737215117049069610" />: This channel is where new server staff begins and where they report things they see on the server or any issues with a verification ticket. It's the main channel for moderators to become.
 
-- <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" />: This channel is where moderators (those who got promoted from cutie helper to moderator) discuss any issues on the server, from trouble makers, rule violation handlings to helping out with verification as well and some discussions about bans and other moderative actions.
+- <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474" />: This channel is where moderators (those who got promoted from cutie helper to moderator) discuss any issues on the server, from trouble makers, rule violation handlings to helping out with verification as well and some discussions about bans and other moderative actions.
 
 - <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />: This is where most of the ban and kick commands are executed, so we can keep a clean channel only for the kicks and bans. It's easier to find back a ban or a kick. Both helpers and moderators can access this channel.
 

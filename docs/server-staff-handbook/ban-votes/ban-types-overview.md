@@ -16,7 +16,7 @@ This section outlines the different types of ban procedures available to staff m
 
 **Who**: <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only  
 **Duration**: 24 hours  
-**Location**: <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
+**Location**: <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
 
 - Standard ban votes for rule violations
 - Requires discussion and voting among all moderators
