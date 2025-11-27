@@ -20,7 +20,7 @@ This section covers the chat moderation responsibilities and procedures for diff
     <ul>
       <li><strong>Primary Focus:</strong> Simple rule reminders and small disruptions</li>
       <li><strong>Tools:</strong> Templates, polite corrections, screenshotting</li>
-      <li><strong>Escalation:</strong> Report to <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/></li>
+      <li><strong>Escalation:</strong> Report to <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/></li>
     </ul>
     <p><strong>⚠️ Restrictions:</strong> Cannot issue warnings, mutes, bans, or make final decisions</p>
   </Card>
@@ -30,7 +30,7 @@ This section covers the chat moderation responsibilities and procedures for diff
     <ul>
       <li><strong>Primary Focus:</strong> De-escalation and formal moderation</li>
       <li><strong>Tools:</strong> Timeouts, channel cleanup, formal warnings</li>
-      <li><strong>Escalation:</strong> Consult in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/></li>
+      <li><strong>Escalation:</strong> Consult in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/></li>
     </ul>
     <p><strong>Additional:</strong> Train and assist Cutie Helpers</p>
   </Card>
@@ -68,6 +68,6 @@ When in doubt, consult with other staff members before taking action. Cutie Help
 
 - Allowing Cutie Helpers to participate in tickets as **observers**
 - Providing guidance on proper procedures
-- Answering questions in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> (use <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> for verification ticket discussions only)
+- Answering questions in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> (use <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> for verification ticket discussions only)
 
 For detailed procedures, see the specific role pages in this section.

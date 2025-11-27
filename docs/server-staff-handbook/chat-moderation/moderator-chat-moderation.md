@@ -34,7 +34,7 @@ As a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68
 
 - **Collaboration**:
 
-  - If unsure, consult with other <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
+  - If unsure, consult with other <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
   - Include message links when asking for assistance.
 
 :::warning

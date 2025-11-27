@@ -14,7 +14,7 @@ As a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color
 :::danger Important Restrictions
 Cutie Helpers do **not** issue warnings, mutes, bans, or make final decisions. These tasks are for <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only.
 
-If you encounter a situation requiring these actions, **report it to a Moderator** in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
+If you encounter a situation requiring these actions, **report it to a Moderator** in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
 :::
 
 ## Your Responsibilities
@@ -41,7 +41,7 @@ Not everything in chat requires escalating to a ticket. As a <RoleBadge role="Cu
 
   - Capture evidence of any rule violations.
   - Delete messages that violate server rules (e.g., inappropriate images).
-  - After deletion, please post your screenshot(s) in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> so the mod team can more easily keep track of your work.
+  - After deletion, please post your screenshot(s) in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> so the mod team can more easily keep track of your work.
 
 :::note
 Always remain professional and courteous when interacting with members.

@@ -20,7 +20,7 @@ Cutie Helpers may observe these tickets as part of their training but cannot iss
 :::
 
 :::info
-**For the first 2 months** as a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" />, draft your messages in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474" /> and get approval from a <RoleBadge role="Server Committee Member" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" /> before opening tickets.
+**For the first 2 months** as a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" />, draft your messages in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474" /> and get approval from a <RoleBadge role="Server Committee Member" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" /> before opening tickets.
 :::
 
 ## Important Guidelines
@@ -140,7 +140,7 @@ Use a calm, professional tone. Keep messages short, clear, and focused on facts.
 - Explain the outcome and next steps
 - Thank them for their time and confirm understanding
 
-If it becomes too much to handle, request help from another <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
+If it becomes too much to handle, request help from another <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
 :::warning Don't Stress!
 Remain calm and objective! If you feel yourself getting frustrated, please step away and ask for help.
 :::
@@ -192,7 +192,7 @@ Remain calm and objective! If you feel yourself getting frustrated, please step 
 
 **Do not remove the member before they have acknowledged the punishment.** We need explicit acknowledgement to confirm they read and understood the rule break and the action taken.
 
-While waiting for acknowledgement, **ping the member every ~24 hours** to bring the ticket back to their attention. If they remain unresponsive for <u>two weeks</u> (or are clearly active elsewhere while ignoring the ticket), you may request to **temporarily remove their verification until they respond** in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/> by adding back the <RoleBadge role="Unverified Role" badgeIcon="unverified_role_icon.png" color="#de0000" />.
+While waiting for acknowledgement, **ping the member every ~24 hours** to bring the ticket back to their attention. If they remain unresponsive for <u>two weeks</u> (or are clearly active elsewhere while ignoring the ticket), you may request to **temporarily remove their verification until they respond** in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> by adding back the <RoleBadge role="Unverified Role" badgeIcon="unverified_role_icon.png" color="#de0000" />.
 
 If this still does not work, the <RoleBadge role="Head Moderator" color="#e68027" /> may decide to close the ticket and log it as "unresponsive".
 :::
@@ -221,5 +221,5 @@ As a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68
 
 - Allow Cutie Helpers to **observe** the ticket process
 - Explain your reasoning and approach
-- Answer their questions in <ChannelBadge label="📙moderator-only" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
+- Answer their questions in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
 - Remember: they cannot issue punishments themselves, but learning by observation is valuable

@@ -64,7 +64,7 @@ Please refer to the specific handbook that corresponds to your role or area of i
 - <ChannelBadge variant="post" label="🎉staff-projects" link="https://discord.com/channels/734595073920204940/1024400360229589112" /> - Propose new ideas and changes
 - <ChannelBadge variant="post" label="💾staff-documents" link="https://discord.com/channels/734595073920204940/1007807458409984010" /> - Staff-related documents and resources
 - <ChannelBadge variant="post" label="📘events-organization" link="https://discord.com/channels/734595073920204940/741166096421486645" /> - Event planning and coordination
-- <ChannelBadge label="📗helper-chat" link="https://discord.com/channels/734595073920204940/737215117049069610" /> - Chat for helpers and moderators
+- <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/737215117049069610" /> - Chat for helpers and moderators
 
 ### New Staff Onboarding 🚀
 

@@ -116,7 +116,7 @@ Being anonymous helps Chat Moderators observe the server chat without having any
 The following channel changes have been implemented:
 
 - **helper-chat** → **verification-chat** - Dedicated channel for discussing **verification tickets only**
-- **moderator-only** - Now opened up for Cutie Helpers as soon as they get onboarded for transparency and easier training. Use this channel for all questions, issues, and discussions not related to verification tickets.
+- **moderators** - Now opened up for Cutie Helpers as soon as they get onboarded for transparency and easier training. Use this channel for all questions, issues, and discussions not related to verification tickets.
 :::
 
 ---
