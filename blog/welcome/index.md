@@ -1,7 +1,7 @@
 ---
 slug: the-eden-apis-origins
 title: The Eden Apis - How It All Began
-authors: [lolmaxz, lusaffi, krenki]
+authors: [lolmaxz, krenki]
 date: 2025-01-24T10:00
 tags: [Eden Official, Autobiography]
 ---

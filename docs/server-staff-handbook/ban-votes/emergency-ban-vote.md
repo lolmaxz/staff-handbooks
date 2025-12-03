@@ -18,7 +18,7 @@ In rare cases where a member poses a serious disruption or safety concern.
 ### Replacement Representatives
 
 - **Maxie** (<RoleBadge role="Lewd Governor" color="#ff6b6b" />): <RoleBadge role="HR" color="#ff6b6b" />
-- **Lulu** (<RoleBadge role="Lewd Governor" color="#ff6b6b" />) or **Krenki** (<RoleBadge role="Lewd Governor" color="#ff6b6b" />): <RoleBadge role="Head Moderator" color="#e68027" /> / <RoleBadge role="Event Manager" color="#f75edb" />
+- **Krenki** (<RoleBadge role="Lewd Governor" color="#ff6b6b" />): <RoleBadge role="Head Moderator" color="#e68027" /> / <RoleBadge role="Event Manager" color="#f75edb" />
 
 ## Guidelines
 

@@ -16,7 +16,7 @@ const config: Config = {
   // For Vercel microfrontends, the baseUrl is needed so assets are correctly referenced
   // Vercel will route /staff-handbooks/* to this app, and the app serves with the baseUrl prefix
   baseUrl: "/staff-handbooks/",
-  trailingSlash: false,
+  trailingSlash: true,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

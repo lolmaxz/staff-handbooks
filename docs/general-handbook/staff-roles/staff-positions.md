@@ -23,7 +23,7 @@ The **Lewd Governors** are the owners and co-owners of the server.
 - Oversee the overall server operations.
 
 :::info
-Currently, <RoleBadge role="lolmaxz" color="#00B9ff" />, <RoleBadge role="lusaffi" color="#00B9ff" /> and <RoleBadge role="krenki" color="#00B9ff" /> serves as Lewd Governors, overseeing the server's operations.
+Currently, <RoleBadge role="lolmaxz" color="#00B9ff" /> and <RoleBadge role="krenki" color="#00B9ff" /> serves as Lewd Governors, overseeing the server's operations.
 :::
 
 ---
