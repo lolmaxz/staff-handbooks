@@ -34,7 +34,6 @@ const roleToColorMap: Record<string, string> = {
   Helper: "#38c8e8",
   // -- Separate Staff Members --
   lolmaxz: "#00B9ff",
-  lusaffi: "#00B9ff",
   krenki: "#00B9ff",
   deldepth: "#00B9ff",
   echo1108: "#00B9ff",
