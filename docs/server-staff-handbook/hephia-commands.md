@@ -1,6 +1,6 @@
 ---
 id: hephia-commands
-title: Hephia V1.2 Info and Commands
+title: Hephia V1.2 Info71 and Commands
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
