@@ -7,7 +7,7 @@ import ChannelBadge from "@site/src/components/ChannelBadge";
 import Spoiler from "@site/src/components/Spoiler";
 import { Card } from "@site/src/components/CardGrid";
 
-<img src="/img/server_rules_banner.png" alt="Server Rules Banner" style={{width: "50%", display: "block", margin: "0 auto 1rem"}} />
+<img src={require("../../static/img/server_rules_banner.png").default} alt="Server Rules Banner" style={{width: "50%", display: "block", margin: "0 auto 1rem"}} />
 
 # Server Rules
 

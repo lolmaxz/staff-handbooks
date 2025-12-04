@@ -27,7 +27,7 @@ import CardGrid, { Card } from "@site/src/components/CardGrid";
   }
 `}</style>
 
-<img src="/img/group_instance_rules_banner.png" alt="Group Instance Rules Banner" style={{width: "50%", display: "block", margin: "0 auto 1rem"}} />
+<img src={require("../../static/img/group_instance_rules_banner.png").default} alt="Group Instance Rules Banner" style={{width: "50%", display: "block", margin: "0 auto 1rem"}} />
 
 # Group Instance Rules
 

@@ -7,7 +7,7 @@ import ChannelBadge from "@site/src/components/ChannelBadge";
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import Tooltip from "@site/src/components/Tooltip";
 
-<img src="/img/event_rules_banner.png" alt="Event Rules Banner" style={{width: "50%", display: "block", margin: "0 auto 1rem"}} />
+<img src={require("../../static/img/event_rules_banner.png").default} alt="Event Rules Banner" style={{width: "50%", display: "block", margin: "0 auto 1rem"}} />
 
 # Event Rules
 

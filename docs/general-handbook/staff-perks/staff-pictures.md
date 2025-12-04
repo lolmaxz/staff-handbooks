@@ -41,9 +41,9 @@ As staff, we love to showcase you in our world with a nice picture! These pictur
 <div style={{ display: "flex", gap: "1rem", marginBottom: "2rem", flexWrap: "wrap" }}>
   <div style={{ flex: "1", minWidth: "300px" }}>
     <img 
-      src="/img/staff-picture-demo-1.jpg" 
+      src={require("../../../static/img/staff-picture-demo-1.jpg").default}
       alt="How to hide the world layer in VRChat camera" 
-      style={{ width: "100%", height: "400px", objectFit: "contain", display: "block" }}
+      style={{ width: "100%", height: "400px", objectFit: "contain", display: "block", cursor: "zoom-in" }}
     />
     <p style={{ textAlign: "center", marginTop: "0.5rem", fontSize: "0.9em", fontStyle: "italic" }}>
       How to hide the world layer
@@ -51,9 +51,9 @@ As staff, we love to showcase you in our world with a nice picture! These pictur
   </div>
   <div style={{ flex: "1", minWidth: "300px" }}>
     <img 
-      src="/img/staff-picture-demo-2.jpg" 
+      src={require("../../../static/img/staff-picture-demo-2.jpg").default}
       alt="How to adjust camera resolution in VRChat" 
-      style={{ width: "100%", height: "400px", objectFit: "contain", display: "block" }}
+      style={{ width: "100%", height: "400px", objectFit: "contain", display: "block", cursor: "zoom-in" }}
     />
     <p style={{ textAlign: "center", marginTop: "0.5rem", fontSize: "0.9em", fontStyle: "italic" }}>
       How to adjust camera resolution
