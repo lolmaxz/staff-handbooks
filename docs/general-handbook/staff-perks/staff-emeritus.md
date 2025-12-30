@@ -16,3 +16,4 @@ Role given to our Staff Members who have served the community for more then 6 mo
 - 1 reset of server join counter.
 - Access to redacted ma\*d channel.
 - Access to up to 2 Patreon Events per year without having <Tooltip tip="Entry is based on Patrons Acess then Active Staff Members first come first serve for these events." bubbleColor="#d255ec" labelColor="#e68027"> Patreon role. </Tooltip>.
+- Ability to use external stickers as a small privilege.
