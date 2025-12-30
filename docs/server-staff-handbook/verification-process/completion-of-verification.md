@@ -79,14 +79,12 @@ You can customize the welcome message, but it should include the following:
   If someone has a “DM Ask First” role, be courteous and **[ask here before DMing](https://discord.com/channels/734595073920204940/770397726101471272)**.
 
 ### 📅 Server Events:
-
 - 🗓️ **[Check Upcoming Events](https://discord.com/channels/734595073920204940/820927836411002890)**  
   Stay updated on all scheduled events.
 - ❓ **[How to Join Events](https://discord.com/channels/734595073920204940/980342448712724560)**  
   Step-by-step guide to getting involved.
 
 ### ⚠️ **Note:**
-
 **Please do not delete any images.**  
 They will be automatically removed when the ticket is closed.
 ```
