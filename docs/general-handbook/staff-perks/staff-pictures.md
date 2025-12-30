@@ -5,6 +5,7 @@ title: How to Take Staff Pictures
 
 import ChannelBadge from "@site/src/components/ChannelBadge";
 import Link from "@docusaurus/Link";
+import ContentWithThumbnail from "@site/src/components/ContentWithThumbnail";
 
 # How to Take Staff Pictures 📸
 
@@ -65,19 +66,29 @@ As staff, we love to showcase you in our world with a nice picture! These pictur
 
 ### 🌟 Recommended: The Eden Studio
 
-<Link to="https://vrchat.com/home/world/wrld_b3a22d04-c97a-4503-975f-3e686dd4e44c/info">**The Eden Studio**</Link> - Created by our team member **rekka93**
-
-- A new photobooth created purely for our staff's posters!
-- Simply go into the big middle room after making sure everything is set up properly on your camera
-- Follow instructions for taking pictures
-- Once they look good to you on the wall, put your camera in the bubble in front of the posters and take the picture
-- Make sure to set the resolution (4K+) and turn off the world layer!
+<ContentWithThumbnail thumbnail="TheEdenStudio_thumbnail.png" thumbnailAlt="The Eden Studio thumbnail">
+  <p>
+    <Link to="https://vrchat.com/home/world/wrld_b3a22d04-c97a-4503-975f-3e686dd4e44c/info"><strong>The Eden Studio</strong></Link> - Created by our team member <strong>rekka93</strong>
+  </p>
+  <ul>
+    <li>A new photobooth created purely for our staff's posters!</li>
+    <li>Simply go into the big middle room after making sure everything is set up properly on your camera</li>
+    <li>Follow instructions for taking pictures</li>
+    <li>Once they look good to you on the wall, put your camera in the bubble in front of the posters and take the picture</li>
+    <li>Make sure to set the resolution (4K+) and turn off the world layer!</li>
+  </ul>
+</ContentWithThumbnail>
 
 ### 🌟 Alternative: A Whole Lotta Lights
 
-<Link to="https://vrchat.com/home/world/wrld_5a91a9fe-cf30-4ea3-a481-cc029de2dbdf">**A Whole Lotta Lights**</Link>
-
-- Use the **FIRST WHITE SET** next to where you spawn
+<ContentWithThumbnail thumbnail="AWholeLottaLights.png" thumbnailAlt="A Whole Lotta Lights thumbnail">
+  <p>
+    <Link to="https://vrchat.com/home/world/wrld_5a91a9fe-cf30-4ea3-a481-cc029de2dbdf"><strong>A Whole Lotta Lights</strong></Link>
+  </p>
+  <ul>
+    <li>Use the <strong>FIRST WHITE SET</strong> next to where you spawn</li>
+  </ul>
+</ContentWithThumbnail>
 
 ## 📏 Additional Information
 
