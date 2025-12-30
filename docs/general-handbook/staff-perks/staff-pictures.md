@@ -61,7 +61,7 @@ As staff, we love to showcase you in our world with a nice picture! These pictur
   </div>
 </div>
 
-## 💡 Lighting Recommendations
+## 💡 Lighting Requirements
 
 ### 🌟 Recommended: The Eden Studio
 
