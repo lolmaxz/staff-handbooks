@@ -85,7 +85,7 @@ A group that assists the Event Team Head in leading the event team and planning 
 :::info
 The Event Committee plays a crucial role in maintaining event quality and team cohesion.
 
-Currently, the Event Committee is comprised of: <RoleBadge role="vervacious_" color="#00B9ff" />, <RoleBadge role="nightmarediztydoo" color="#00B9ff" /> and <RoleBadge role="defovr" color="#00B9ff" />.
+Currently, the Event Committee is comprised of: <RoleBadge role="vervacious_" color="#00B9ff" />, <RoleBadge role="nightmarediztydoo" color="#00B9ff" />, <RoleBadge role="defovr" color="#00B9ff" /> and <RoleBadge role="zerohour1998" color="#00B9ff" />.
 :::
 
 ---

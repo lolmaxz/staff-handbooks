@@ -82,7 +82,7 @@ import RoleBadge from "@site/src/components/RoleBadge";
 - **Event Team Heads**: Event Team Head (#f75edb), Head Moderator (#db1cb8), Head of Security (#3fa7ff)
 - **Event Team**: Senior Event Team (#ffc857), Event Host (#a259f7), Event Security (#ff5e5b), Event Team Trial (#3fa7ff)
 - **Staff Roles**: Moderator (#e68027), Helper (#38c8e8)
-- **Staff Members**: lolmaxz, krenki, echo1108, s4.ryn, Solii, cdkinetic, verbaldrop, nightmarediztydoo, defovr, cobramaia, vervacious\_ (#00B9ff)
+- **Staff Members**: lolmaxz, krenki, s4.ryn, Solii, cdkinetic, verbaldrop, nightmarediztydoo, defovr, zerohour1998, cobramaia, vervacious\_ (#00B9ff)
 
 ```jsx title="RoleBadge Usage Code Example:"
 // Custom color (overrides preset)
