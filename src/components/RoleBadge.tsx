@@ -36,7 +36,6 @@ const roleToColorMap: Record<string, string> = {
   lolmaxz: "#00B9ff",
   krenki: "#00B9ff",
   deldepth: "#00B9ff",
-  echo1108: "#00B9ff",
   "s4.ryn": "#00B9ff",
   Solii: "#00B9ff",
   cdkinetic: "#00B9ff",
@@ -45,6 +44,7 @@ const roleToColorMap: Record<string, string> = {
   defovr: "#00B9ff",
   cobramaia: "#00B9ff",
   vervacious_: "#00B9ff",
+  zerohour1998: "#00B9ff",
 };
 
 interface Props {
