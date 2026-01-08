@@ -100,7 +100,7 @@ Experienced members of the Event Team with additional responsibilities.
 - Host Patreon events and help plan big special events.
 - Manage event report tickets and update incident threads.
 - Enforce event punishments and vote on longer event bans.
-- More information in [Senior Event Team](./event-staff-handbook/senior-event-team).
+- More information in [Senior Event Team](../event-staff-handbook/senior-event-team).
 
 :::info
 Senior Event Team members are mentors and leaders within the Event Team.
@@ -119,7 +119,7 @@ Individuals in charge of hosting events and ensuring they run smoothly.
 - Manage event participants.
 - Create/Hype up event announcements.
 - Create general good vibes during events.
-- Required to submit their availability template by Friday each week (see [Scheduling Procedures](event-staff-handbook/Hosts/scheduling-procedures) for more details).
+- Required to submit their availability template by Friday each week (see [Scheduling Procedures](../event-staff-handbook/Hosts/scheduling-procedures) for more details).
 - Responsible for pairing up with security for events.
 - Enforce rules during events if security is unavailable.
 
@@ -149,7 +149,7 @@ New members of the Event Team learning to host events and act as security.
 This is the position you will be in when you first join the Event Team.
 
 This position is temporary as it act like a probation period for new members. After the probation period, the Senior Event Team Head will decide if the member will be promoted to a host, security, or both.
-More information about the Trial period can be found in [Event Trial](./event-staff-handbook/event-trial-training). (To be replaced with new link for event staff onboarding and final vote)
+More information about the Trial period can be found in [Event Trial](/docs/event-staff-handbook/event-trial-training). (To be replaced with new link for event staff onboarding and final vote)
 
 <h3> Responsibilities: </h3>
 

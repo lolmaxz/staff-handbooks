@@ -23,18 +23,18 @@ Take your time to familiarize yourself with all sections. Don't hesitate to ask 
 
 ## First-Day Quick Start
 
-- Verify a member: [Verification Process](./verification-process) → [Requirements](./verification-process) → [Welcome Template](./verification-process/completion-of-verification)
-- Moderate chat: [Chat Moderation Overview](./chat-moderation)
-- Handle violations: [Server Rule Violations](./server-rule-violations)
-- Enable Developer Mode: [Getting Discord User ID](./onboarding/getting-discord-user-id)
+- Verify a member: [Verification Process](../verification-process) → [Requirements](../verification-process/verification-requirements) → [Welcome Template](../verification-process/completion-of-verification)
+- Moderate chat: [Chat Moderation Overview](../chat-moderation)
+- Handle violations: [Server Rule Violations](../server-rule-violations)
+- Enable Developer Mode: [Getting Discord User ID](./getting-discord-user-id)
 
 ### For Later (When You Become a Moderator)
 
-- Close a verification: [Closing Out Verifications](./moderator/closing-out-verifications)
-- Open a staff-talk ticket: [Staff-Talk Tickets](./moderator/staff-talk-tickets)
-- Record actions: [GitHub Records](./moderator/github-records)
-- Review ban process: [Ban Types Overview](./ban-votes/ban-types-overview)
-- Mod on Call: [Mod on Call](./moderator/mod-on-call)
+- Close a verification: [Closing Out Verifications](../moderator/closing-out-verifications)
+- Open a staff-talk ticket: [Staff-Talk Tickets](../moderator/staff-talk-tickets)
+- Record actions: [GitHub Records](../moderator/github-records)
+- Review ban process: [Ban Types Overview](../ban-votes/ban-types-overview)
+- Mod on Call: [Mod on Call](../moderator/mod-on-call)
 
 ## Your Role & Responsibilities
 
@@ -84,7 +84,7 @@ After demonstrating the following qualities, you may be promoted via Moderator v
 **→ Promotion via Moderator voting after 2 months. 1 month in case of exceptional progress.**
 
 :::info More Information
-For detailed information about the training process, requirements, and promotion criteria, see the [Cutie Helper Training](./onboarding/cutie-helper-training) page.
+For detailed information about the training process, requirements, and promotion criteria, see the [Cutie Helper Training](./cutie-helper-training) page.
 :::
 
 ## Essential Channels
@@ -121,7 +121,7 @@ For detailed information about the training process, requirements, and promotion
 The verification process ensures only adults can access our community:
 
 <CardGrid columns={2}>
-  <Card title="Standard ID Verification" status="success" href="./verification-process/verification-requirements">
+  <Card title="Standard ID Verification" status="success" href="../verification-process/verification-requirements">
     <ul>
       <li>Government-issued ID with selfie</li>
       <li>Must show DOB, expiry date, issuing body</li>
@@ -130,7 +130,7 @@ The verification process ensures only adults can access our community:
     </ul>
   </Card>
   
-  <Card title="VRChat Age Verification" status="info" href="./verification-process/vrchat-linking-troubleshooting">
+  <Card title="VRChat Age Verification" status="info" href="../verification-process/vrchat-linking-troubleshooting">
     <ul>
       <li>Requires active <Tooltip tip="VRC+ subscription costs ~$10/month">VRC+ subscription</Tooltip></li>
       <li>Alternative verification method</li>
@@ -145,7 +145,7 @@ The verification process ensures only adults can access our community:
 Maintain a positive community environment:
 
 <CardGrid columns={2}>
-  <Card title="Cutie Helper Chat Moderation" status="info" href="./chat-moderation/cutie-helper-chat-moderation">
+  <Card title="Cutie Helper Chat Moderation" status="info" href="../chat-moderation/cutie-helper-chat-moderation">
     <ul>
       <li>Direct members to appropriate channels</li>
       <li>Simple rule reminders and small disruptions</li>
@@ -154,7 +154,7 @@ Maintain a positive community environment:
     </ul>
   </Card>
   
-  <Card title="Moderator Chat Moderation" status="success" href="./chat-moderation/moderator-chat-moderation">
+  <Card title="Moderator Chat Moderation" status="success" href="../chat-moderation/moderator-chat-moderation">
     <ul>
       <li>De-escalate arguments and heated discussions</li>
       <li>Issue timeouts for cooling off members when necessary</li>
@@ -169,7 +169,7 @@ Maintain a positive community environment:
 Three types of ban votes based on severity:
 
 <CardGrid columns={3}>
-  <Card title="Moderator Ban Vote" status="info" href="./ban-votes/ban-votes-for-members">
+  <Card title="Moderator Ban Vote" status="info" href="../ban-votes/ban-votes-for-members">
     <p><strong>24-hour duration</strong></p>
     <ul>
       <li>Standard rule violations</li>
@@ -178,7 +178,7 @@ Three types of ban votes based on severity:
     </ul>
   </Card>
   
-  <Card title="All Heads Ban Vote" status="warning" href="./ban-votes/boardroom-ban-vote">
+  <Card title="All Heads Ban Vote" status="warning" href="../ban-votes/boardroom-ban-vote">
     <p><strong>12-hour duration</strong></p>
     <ul>
       <li>4-6 rule breaks</li>
@@ -187,7 +187,7 @@ Three types of ban votes based on severity:
     </ul>
   </Card>
   
-  <Card title="Emergency Ban Vote" status="error" href="./ban-votes/emergency-ban-vote">
+  <Card title="Emergency Ban Vote" status="error" href="../ban-votes/emergency-ban-vote">
     <p><strong>Immediate action</strong></p>
     <ul>
       <li>Safety concerns</li>
@@ -209,7 +209,7 @@ Three types of ban votes based on severity:
 
   <Card title="Developer Mode" status="success" icon="⚙️">
     <p>Required for copying User IDs and other developer features.</p>
-    <p><DiscordButton type="link" emoji="⚙️" href="./onboarding/getting-discord-user-id">Enable Developer Mode</DiscordButton></p>
+    <p><DiscordButton type="link" emoji="⚙️" href="./getting-discord-user-id">Enable Developer Mode</DiscordButton></p>
   </Card>
 </CardGrid>
 
@@ -256,14 +256,14 @@ Three types of ban votes based on severity:
 1. **Verification Ticket Discussions**: Ask in <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> _(verification only)_
 2. **All Other Questions & Issues**: Consult in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
 3. **Technical Problems**: Ping <RoleBadge role="lolmaxz" color="#ff6b6b" /> for bot/linking issues
-4. **Staff-Talk Tickets**: Use <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> → <DiscordButton type="link" emoji="☎️" href="./moderator/staff-talk-tickets">Talk to a Staff</DiscordButton> _(Moderators only)_
+4. **Staff-Talk Tickets**: Use <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> → <DiscordButton type="link" emoji="☎️" href="../moderator/staff-talk-tickets">Talk to a Staff</DiscordButton> _(Moderators only)_
 
 ### Documentation Resources
 
-- **Verification Process**: <DiscordButton type="link" emoji="📋" href="./verification-process">Detailed steps and requirements</DiscordButton>
-- **Chat Moderation**: <DiscordButton type="link" emoji="💬" href="./chat-moderation">Role-specific guidelines and procedures</DiscordButton>
-- **Ban Procedures**: <DiscordButton type="link" emoji="⚖️" href="./ban-votes/ban-types-overview">Different vote types and criteria</DiscordButton> _(Moderators only)_
-- **VRChat Linking**: <DiscordButton type="link" emoji="🔗" href="./verification-process/vrchat-linking-troubleshooting">Troubleshooting and technical support</DiscordButton>
+- **Verification Process**: <DiscordButton type="link" emoji="📋" href="../verification-process">Detailed steps and requirements</DiscordButton>
+- **Chat Moderation**: <DiscordButton type="link" emoji="💬" href="../chat-moderation">Role-specific guidelines and procedures</DiscordButton>
+- **Ban Procedures**: <DiscordButton type="link" emoji="⚖️" href="../ban-votes/ban-types-overview">Different vote types and criteria</DiscordButton> _(Moderators only)_
+- **VRChat Linking**: <DiscordButton type="link" emoji="🔗" href="../verification-process/vrchat-linking-troubleshooting">Troubleshooting and technical support</DiscordButton>
 
 :::tip Success Tips
 

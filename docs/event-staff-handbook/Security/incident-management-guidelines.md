@@ -146,7 +146,7 @@ It's important to learn how to create and tag incident tickets correctly when an
 
 ## Related
 
-- [Security Requirements](./security-requirements)
-- [How to Be Security](./how-to-be-security)
-- [Event Rules](../event-rules)
-- [How to Host an Event](../Hosts/how-to-host-an-event)
+- [Security Requirements](/docs/event-staff-handbook/Security/security-requirements)
+- [How to Be Security](/docs/event-staff-handbook/Security/how-to-be-security)
+- [Event Rules](/docs/event-staff-handbook/event-rules)
+- [How to Host an Event](/docs/event-staff-handbook/Hosts/how-to-host-an-event)

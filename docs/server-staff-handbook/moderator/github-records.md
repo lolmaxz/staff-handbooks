@@ -119,6 +119,6 @@ Accurate record‑keeping is essential for consistency and fairness across cases
 
 ## Related
 
-- [Server Rule Violations](../server-rule-violations)
-- [Ban Types Overview](../ban-votes/ban-types-overview)
-- [Mod on Call](./mod-on-call)
+- [Server Rule Violations](/docs/server-staff-handbook/server-rule-violations)
+- [Ban Types Overview](/docs/server-staff-handbook/ban-votes/ban-types-overview)
+- [Mod on Call](/docs/server-staff-handbook/moderator/mod-on-call)

@@ -40,9 +40,9 @@ As a Host, you’re one of the most visible faces of our community. You set the 
 <div style={{ marginBottom: "1rem" }}>
   <Card title="Useful Pages" status="success">
     <ul>
-      <li>Read: <a href="./Hosts/how-to-host-an-event">How to Host an Event</a></li>
-      <li>Read: <a href="./Hosts/scheduling-procedures">Scheduling Procedures</a></li>
-      <li>Read: <a href="./Hosts/hosting-requirements">Hosting Requirements</a></li>
+      <li>Read: <a href="./how-to-host-an-event">How to Host an Event</a></li>
+      <li>Read: <a href="./scheduling-procedures">Scheduling Procedures</a></li>
+      <li>Read: <a href="./hosting-requirements">Hosting Requirements</a></li>
     </ul>
   </Card>
 </div>

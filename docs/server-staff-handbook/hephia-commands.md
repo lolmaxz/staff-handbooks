@@ -46,7 +46,7 @@ import Tooltip from "@site/src/components/Tooltip";
 
 ---
 
-## 🛡️ Moderation Commands
+## 🛡️ Moderation Commands {#moderation-commands}
 
 <CardGrid columns={2}>
   <Card title="/ban" status="error" icon="🔨">
@@ -106,7 +106,7 @@ Hephia now supports voice channel moderation through both slash commands and con
 
 ### Slash Commands
 
-The VC moderation commands are listed above in the [Moderation Commands](#-moderation-commands) section:
+The VC moderation commands are listed above in the [Moderation Commands](#moderation-commands) section:
 
 - **`/mute [user] [true|false]`** - Mute or unmute a member in voice channels
 - **`/deafen [user] [true|false]`** - Deafen or undeafen a member in voice channels
@@ -433,6 +433,6 @@ Additionally, Hephia will **prevent both Verified and VRC Verified roles from be
 
 ## 📚 Related Resources
 
-- [Server Channels](./server-channels) - Learn about staff channels
-- [Staff Onboarding](./onboarding) - Getting started guide
+- [Server Channels](/docs/server-staff-handbook/server-channels) - Learn about staff channels
+- [Staff Onboarding](/docs/server-staff-handbook/onboarding) - Getting started guide
 - [Hephia V1.2 Update Notes](https://notes.theedenapis.com/s/23400282-07da-4f8f-be84-9c9d18ef8c96/doc/update-notes-49mPiOzp7x) - Full update documentation

@@ -164,5 +164,5 @@ If none of the above solutions resolve the issue:
 - **VRChat Age Logs**: <ChannelBadge label="🔗-vrchat-age-logs" link="https://discord.com/channels/734595073920204940/1319750107859779725"/>
 
 :::info
-For more detailed information about the VRChat verification process, see the [Verification Requirements](./verification-requirements) page.
+For more detailed information about the VRChat verification process, see the [Verification Requirements](/docs/server-staff-handbook/verification-process/verification-requirements) page.
 :::

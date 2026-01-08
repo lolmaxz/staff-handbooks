@@ -70,10 +70,10 @@ Seniors are recognized for their reliability, good judgment, excellent communica
 
   <Card title="Essential Resources" status="success" icon="📚">
     <ul>
-      <li><Link to="./Security/incident-management-guidelines">Incident Management Guidelines</Link></li>
-      <li><Link to="./event-rules">Event Rules</Link></li>
-      <li><Link to="./event-trial-training">Event Trial Training Process</Link></li>
-      <li><Link to="./Hosts/scheduling-procedures">Scheduling Procedures</Link></li>
+      <li><Link to="../Security/incident-management-guidelines">Incident Management Guidelines</Link></li>
+      <li><Link to="../event-rules">Event Rules</Link></li>
+      <li><Link to="../event-trial-training">Event Trial Training Process</Link></li>
+      <li><Link to="../Hosts/scheduling-procedures">Scheduling Procedures</Link></li>
     </ul>
   </Card>
 </CardGrid>
@@ -150,7 +150,7 @@ Copy this template (remove the code block markers when posting):
 
 </details>
 
-For more details about the training process, see the [Event Trial Training](./event-trial-training) page.
+For more details about the training process, see the [Event Trial Training](../event-trial-training) page.
 
 <div style={{ marginTop: "1.5rem" }} />
 
@@ -175,8 +175,8 @@ Senior Event Team members are mentors and leaders. Your actions, attitude, and a
 
 ## Related
 
-- [Promotion: Host ➜ Senior Event Team](./promotions/host-to-senior) - Learn how to become a Senior
-- [Promotion: Senior ➜ Event Committee](./promotions/senior-to-committee) - Next step in your journey
-- [Event Trial Training](./event-trial-training) - Training process you'll guide
-- [Incident Management Guidelines](./Security/incident-management-guidelines) - Handling incidents properly
-- [Event Team Channels](./event-team-channels) - Important channels for seniors
+- [Promotion: Host ➜ Senior Event Team](../promotions/host-to-senior) - Learn how to become a Senior
+- [Promotion: Senior ➜ Event Committee](../promotions/senior-to-committee) - Next step in your journey
+- [Event Trial Training](../event-trial-training) - Training process you'll guide
+- [Incident Management Guidelines](../Security/incident-management-guidelines) - Handling incidents properly
+- [Event Team Channels](../event-team-channels) - Important channels for seniors

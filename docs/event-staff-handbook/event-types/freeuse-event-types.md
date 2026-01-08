@@ -173,8 +173,8 @@ Free-Use rooms may be locked so long as they are in VC with staff, ensuring secu
 
 ## Related
 
-- [Event Types](../event-types) - Overview of all event types
-- [Orgy Events](./orgy-event-types) - Another special planning event type
-- [How to Host an Event](../Hosts/how-to-host-an-event) - General hosting guidelines
-- [Incident Management Guidelines](../Security/incident-management-guidelines) - Handling incidents during events
-- [Security Requirements](../Security/security-requirements) - Security responsibilities
+- [Event Types](/docs/event-staff-handbook/event-types) - Overview of all event types
+- [Orgy Events](/docs/event-staff-handbook/event-types/orgy-event-types) - Another special planning event type
+- [How to Host an Event](../../Hosts/how-to-host-an-event) - General hosting guidelines
+- [Incident Management Guidelines](../../Security/incident-management-guidelines) - Handling incidents during events
+- [Security Requirements](../../Security/security-requirements) - Security responsibilities

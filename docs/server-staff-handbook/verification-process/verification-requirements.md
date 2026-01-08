@@ -157,4 +157,4 @@ This section outlines the channels and features that become available to members
 
 ## Next Steps
 
-Once you've completed the verification process using the checklist above, see the [Completion of Verification](./completion-of-verification) page for proper procedures on how to finalize the verification as a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />.
+Once you've completed the verification process using the checklist above, see the [Completion of Verification](/docs/server-staff-handbook/verification-process/completion-of-verification) page for proper procedures on how to finalize the verification as a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />.

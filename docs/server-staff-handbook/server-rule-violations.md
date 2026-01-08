@@ -195,7 +195,7 @@ Always aim for fair and consistent enforcement of rules to maintain community tr
 
 ## Related
 
-- [Ban Types Overview](./ban-votes/ban-types-overview) _(Moderators only)_
-- [Ban Votes for Members](./ban-votes/ban-votes-for-members) _(Moderators only)_
-- [GitHub Records](./moderator/github-records) _(Moderators only)_
-- [Staff-Talk Tickets](./moderator/staff-talk-tickets) _(Moderators only)_
+- [Ban Types Overview](../ban-votes/ban-types-overview) _(Moderators only)_
+- [Ban Votes for Members](../ban-votes/ban-votes-for-members) _(Moderators only)_
+- [GitHub Records](../moderator/github-records) _(Moderators only)_
+- [Staff-Talk Tickets](../moderator/staff-talk-tickets) _(Moderators only)_

@@ -224,6 +224,6 @@ _<RoleBadge role="Senior Event Team" color="#3fa7ff" />_ can solo host Classic a
 
 ## Related
 
-- [How to Host an Event](./how-to-host-an-event)
-- [Security Requirements](../Security/security-requirements)
-- [Event Team Channels](../event-team-channels)
+- [How to Host an Event](/docs/event-staff-handbook/Hosts/how-to-host-an-event)
+- [Security Requirements](/docs/event-staff-handbook/Security/security-requirements)
+- [Event Team Channels](/docs/event-staff-handbook/event-team-channels)

@@ -11,7 +11,7 @@ import ChannelBadge from "@site/src/components/ChannelBadge";
 Once your application to be part of the server staff has been accepted, you will receive the necessary role(s), granting you access to server-specific channels.
 
 :::info Reminder!
-**Make sure to check the channels from the [General Handbook](../general-handbook/staff-channels) first!**
+**Make sure to check the channels from the [General Handbook](../../general-handbook/staff-channels) first!**
 :::
 
 ## Text Channels
