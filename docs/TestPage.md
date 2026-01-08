@@ -17,6 +17,7 @@ import DiscordButton from '@site/src/components/DiscordButton';
 import CardGrid, { Card } from '@site/src/components/CardGrid';
 import Spoiler from '@site/src/components/Spoiler';
 import DiscordConversation, { DiscordMessage } from '@site/src/components/DiscordConversation';
+import ContentWithThumbnail from '@site/src/components/ContentWithThumbnail';
 
 # New Components Explained
 
@@ -855,3 +856,67 @@ color="#8b5cf6"
 - `reactions` (optional): Array of reaction objects `{ emoji, count, selected? }`
 - `highlighted` (optional): Force highlight on/off (auto-detected for @Moderator)
 - `avatar` (optional): Custom avatar URL
+
+---
+
+## Content With Thumbnail 🆕
+
+**Component:** `ContentWithThumbnail`  
+**Description:** Displays content alongside a thumbnail image in a side-by-side layout. Perfect for showcasing screenshots, diagrams, or visual examples alongside explanatory text. Automatically stacks vertically on mobile devices for better responsiveness.
+
+**Required Import:**
+
+```jsx
+import ContentWithThumbnail from "@site/src/components/ContentWithThumbnail";
+```
+
+**Live Examples:**
+
+**Basic Usage:**
+<ContentWithThumbnail thumbnail="docusaurus.png" thumbnailAlt="Docusaurus logo">
+
+  <p>This component displays content alongside a thumbnail image. The content area is flexible and can contain any React elements, including text, lists, and other components.</p>
+  <p>The thumbnail appears on the right side (or bottom on mobile) and automatically scales to fit while maintaining its aspect ratio.</p>
+</ContentWithThumbnail>
+
+**With List Content:**
+<ContentWithThumbnail thumbnail="logo.svg" thumbnailAlt="Site logo">
+
+  <p><strong>Key Features:</strong></p>
+  <ul>
+    <li>Responsive layout that stacks on mobile</li>
+    <li>Automatic image sizing and border styling</li>
+    <li>Flexible content area for any React content</li>
+    <li>Clean, professional appearance</li>
+  </ul>
+</ContentWithThumbnail>
+
+```jsx title="ContentWithThumbnail Usage Code Example:"
+// Basic usage
+<ContentWithThumbnail thumbnail="docusaurus.png" thumbnailAlt="Docusaurus logo">
+  <p>This component displays content alongside a thumbnail image.</p>
+  <p>The thumbnail appears on the right side and automatically scales to fit.</p>
+</ContentWithThumbnail>
+
+// With list content
+<ContentWithThumbnail thumbnail="logo.svg" thumbnailAlt="Site logo">
+  <p><strong>Key Features:</strong></p>
+  <ul>
+    <li>Responsive layout that stacks on mobile</li>
+    <li>Automatic image sizing and border styling</li>
+    <li>Flexible content area for any React content</li>
+  </ul>
+</ContentWithThumbnail>
+```
+
+**Available Props:**
+
+- `thumbnail` (required): Path to the thumbnail image relative to `static/img/` directory
+- `thumbnailAlt` (optional): Alt text for the thumbnail image (default: empty string)
+- `children` (required): Content to display alongside the thumbnail (can be any React elements)
+
+**Layout Behavior:**
+
+- **Desktop**: Content on the left, thumbnail on the right (200px width)
+- **Mobile**: Stacks vertically with thumbnail on top, content below
+- **Image**: Automatically maintains aspect ratio and includes border styling
