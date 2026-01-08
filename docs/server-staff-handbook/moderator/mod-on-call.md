@@ -35,7 +35,7 @@ The Mod on Call for the week is responsible for:
 3. **Ensuring all records are properly documented** before the week ends
 
 :::info Logging to GitHub
-For instructions on how to log tickets to the GitHub Warning Book, see the [GitHub Records](./github-records) page.
+For instructions on how to log tickets to the GitHub Warning Book, see the [GitHub Records](/docs/server-staff-handbook/moderator/github-records) page.
 :::
 
 ## Example Schedule

@@ -123,5 +123,5 @@ Prompt verification ensures new members can engage with the community quickly wh
 - Text-only transcript sent to member
 
 :::info
-For detailed verification steps and document requirements, see the [Verification Requirements](./verification-process/verification-requirements) page.
+For detailed verification steps and document requirements, see the [Verification Requirements](./verification-requirements) page.
 :::

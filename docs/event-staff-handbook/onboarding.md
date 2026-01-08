@@ -55,7 +55,7 @@ Your training consists of **6 events** total across **5 stages**, which include 
 
 <div style={{ marginTop: "1.5rem" }} />
 
-For more detailed information about each stage, feedback areas, and what to expect, see the **[Event Trial Training](./event-trial-training)** page.
+For more detailed information about each stage, feedback areas, and what to expect, see the **[Event Trial Training](../event-trial-training)** page.
 
 ## Staff Expectations
 
@@ -90,12 +90,12 @@ For more detailed information about each stage, feedback areas, and what to expe
 
 ## 📚 Essential Resources
 
-- **[Event Rules](./event-rules)** - Rules specific to events
-- **[Event Team Channels](./event-team-channels)** - Important channels for the team
-- **[How to Host an Event](./Hosts/how-to-host-an-event)** - Complete hosting guide
-- **[How to be Security](./Security/how-to-be-security)** - Security responsibilities
-- **[Incident Management](./Security/incident-management-guidelines)** - How to handle incidents
-- **[Scheduling Procedures](./Hosts/scheduling-procedures)** - How the weekly schedule works
+- **[Event Rules](../event-rules)** - Rules specific to events
+- **[Event Team Channels](../event-team-channels)** - Important channels for the team
+- **[How to Host an Event](../Hosts/how-to-host-an-event)** - Complete hosting guide
+- **[How to be Security](../Security/how-to-be-security)** - Security responsibilities
+- **[Incident Management Guidelines](../Security/incident-management-guidelines)** - How to handle incidents
+- **[Scheduling Procedures](../Hosts/scheduling-procedures)** - How the weekly schedule works
 
 ## ⌛ Probation Period
 

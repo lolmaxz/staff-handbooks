@@ -40,14 +40,14 @@ import TextWithButton from "@site/src/components/TextWithButton";
 <TextWithButton
   text="Need the quick-reference PDF version of the Incident‑Response Cheat‑Sheet?"
   buttonLabel="Download PDF"
-  buttonHref="/files/incident-cheatsheet.pdf"
+  buttonHref="#"
 />
 
 ```jsx title="TextWithButton Usage Code Example:"
 <TextWithButton
   text="Need the quick-reference PDF version of the Incident‑Response Cheat‑Sheet?"
   buttonLabel="Download PDF"
-  buttonHref="/files/incident-cheatsheet.pdf"
+  buttonHref="#"
 />
 ```
 
@@ -114,35 +114,35 @@ import ChannelBadge from "@site/src/components/ChannelBadge";
 
 **Live Example:**
 
-Make sure to read the <ChannelBadge label="Rules" link="link_here" /> channel rules before posting in the <ChannelBadge variant="post" label="introductions" link="link_here" /> channel.
+Make sure to read the <ChannelBadge label="Rules" link="#" /> channel rules before posting in the <ChannelBadge variant="post" label="introductions" link="#" /> channel.
 
 Here are some examples of Channel Tags:
 
-<ChannelBadge label="Rules" link="link_here" />
-<ChannelBadge variant="thread" label="ticket‑9876" link="link_here" color="#248046" />
-<ChannelBadge variant="post" label="introductions" link="link_here" />
-<ChannelBadge variant="vc" label="💦 Horny Time" link="link_here" />
+<ChannelBadge label="Rules" link="#" />
+<ChannelBadge variant="thread" label="ticket‑9876" link="#" color="#248046" />
+<ChannelBadge variant="post" label="introductions" link="#" />
+<ChannelBadge variant="vc" label="💦 Horny Time" link="#" />
 <br/>
 <br/>
 ```jsx title="ChannelBadge Usage Code Example:"
 // Regular channel badge
 <ChannelBadge
   label="Rules"
-  link="link_here"
+  link="https://discord.com/channels/734595073920204940/737074569319546921"
 />
 
 // Variant badge for posts
 <ChannelBadge
   variant="post"
   label="introductions"
-  link="link_here"
+  link="https://discord.com/channels/734595073920204940/737074569319546921"
 />
 
 // Ticket (Thread) example
 <ChannelBadge
   variant="thread"
   label="ticket‑9876"
-  link="link_here"
+  link="https://discord.com/channels/734595073920204940/737074569319546921"
   color="#248046"
 />
 
@@ -150,7 +150,7 @@ Here are some examples of Channel Tags:
 <ChannelBadge
   variant="vc"
   label="💦 Horny Time"
-  link="link_here"
+  link="https://discord.com/channels/734595073920204940/737074569319546921"
 />
 
 ````

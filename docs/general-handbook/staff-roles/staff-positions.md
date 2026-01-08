@@ -45,7 +45,7 @@ The **Committee Members** lead their respective staff teams with coordinating st
 
 ---
 
-## Horny Resources (HR) <RoleBadge role="Horny Resources (HR)" badgeIcon="hr_role_icon.webp" color="#2a6eef" />
+## Horny Resources (HR) <RoleBadge role="Horny Resources (HR)" badgeIcon="hr_role_icon.webp" color="#2a6eef" /> {#horny-resources-hr}
 
 <!-- {/_ <img src={require("../../../static/img/hr_role_icon.webp").default} alt="HR Role Icon" width="30" /> _/} -->
 

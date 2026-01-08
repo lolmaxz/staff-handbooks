@@ -46,7 +46,7 @@ Inactivity may result in a discussion with the <RoleBadge role="Head of Security
 ## 🚨 Incident Reporting
 
 <Card title="Report Properly" status="warning">
-  <p>Refer to the <Link to="./incident-management-guidelines">Incident Management Guidelines</Link> for handling and reporting incidents.</p>
+  <p>Refer to the <Link to="/docs/event-staff-handbook/Security/incident-management-guidelines">Incident Management Guidelines</Link> for handling and reporting incidents.</p>
 </Card>
 
 ## 💼 Professional Conduct
@@ -57,7 +57,7 @@ Inactivity may result in a discussion with the <RoleBadge role="Head of Security
   </Card>
   
   <Card title="Avoid Drama" icon="🚫" status="warning">
-    <p>Steer clear of conflicts. If necessary, <Link to="/docs/staff-roles#horny-resources-hr"><RoleBadge role="Horny Resources (HR)" badgeIcon="hr_role_icon.webp" color="#2a6eef" /></Link> may assist in conflict resolution.</p>
+    <p>Steer clear of conflicts. If necessary, <Link to="/staff-handbooks/docs/staff-roles#horny-resources-hr"><RoleBadge role="Horny Resources (HR)" badgeIcon="hr_role_icon.webp" color="#2a6eef" /></Link> may assist in conflict resolution.</p>
   </Card>
 </CardGrid>
 
@@ -69,6 +69,6 @@ Being part of the security team does <strong>not</strong> grant permission to re
 
 ## Related
 
-- [How to be Security](./how-to-be-security)
-- [Incident Management Guidelines](./incident-management-guidelines)
-- [Security Introduction](../event-security)
+- [How to be Security](/docs/event-staff-handbook/Security/how-to-be-security)
+- [Incident Management Guidelines](/docs/event-staff-handbook/Security/incident-management-guidelines)
+- [Security Introduction](/docs/event-staff-handbook/Security/Introduction)

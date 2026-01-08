@@ -13,7 +13,7 @@ import ChannelBadge from "@site/src/components/ChannelBadge";
 Welcome to the **Eden Apis Server Staff Handbook**! This guide will help you understand your role, responsibilities, and the essential tools you'll use as server staff.
 
 :::tip Getting Started
-Start with the [Onboarding Guide](./server-staff-handbook/onboarding) for a quick first-day checklist, then focus on the three key areas below.
+Start with the [Onboarding Guide](./onboarding) for a quick first-day checklist, then focus on the three key areas below.
 :::
 
 ## 🎯 Essential Areas to Focus On
@@ -21,34 +21,34 @@ Start with the [Onboarding Guide](./server-staff-handbook/onboarding) for a quic
 These are the **most important** sections every server staff member should know:
 
 <CardGrid columns={3}>
-  <Card title="Server Channels" status="info" icon="📗" href="./server-staff-handbook/server-channels">
+  <Card title="Server Channels" status="info" icon="📗" href="./server-channels">
     <p><strong>Understand where to:</strong></p>
     <ul>
       <li>Report issues and verification tickets</li>
       <li>Discuss moderation actions</li>
       <li>Access logs and important information</li>
     </ul>
-    <p><Link to="./server-staff-handbook/server-channels">Learn about Channels →</Link></p>
+    <p><Link to="./server-channels">Learn about Channels →</Link></p>
   </Card>
 
-  <Card title="Verification Process" status="success" icon="✅" href="./server-staff-handbook/verification-process">
+  <Card title="Verification Process" status="success" icon="✅" href="./verification-process">
     <p><strong>Learn how to:</strong></p>
     <ul>
       <li>Handle member verifications</li>
       <li>Review ID requirements</li>
       <li>Complete verification tickets</li>
     </ul>
-    <p><Link to="./server-staff-handbook/verification-process">Start Verification Guide →</Link></p>
+    <p><Link to="./verification-process">Start Verification Guide →</Link></p>
   </Card>
 
-  <Card title="Hephia Commands" status="warning" icon="🤖" href="./server-staff-handbook/hephia-commands">
+  <Card title="Hephia Commands" status="warning" icon="🤖" href="./hephia-commands">
     <p><strong>Master the essential:</strong></p>
     <ul>
       <li>Member information (<code>/info</code>)</li>
       <li>Moderation commands</li>
       <li>Server utilities</li>
     </ul>
-    <p><Link to="./server-staff-handbook/hephia-commands">View All Commands →</Link></p>
+    <p><Link to="./hephia-commands">View All Commands →</Link></p>
   </Card>
 </CardGrid>
 
@@ -58,11 +58,11 @@ These are the **most important** sections every server staff member should know:
 
 Once you've mastered the essentials above, explore these additional areas:
 
-- **[Server Rules](./server-staff-handbook/server-rules)** - Understand the server's rules and enforcement
-- **[Chat Moderation](./server-staff-handbook/chat-moderation)** - Handle chat-related issues
-- **[Server Rule Violations](./server-staff-handbook/server-rule-violations)** - Process violations and reports
-- **[Ban Votes](./server-staff-handbook/ban-votes/ban-types-overview)** - Understand the ban vote process
-- **[Staff Talk Tickets](./server-staff-handbook/moderator/staff-talk-tickets)** - Manage member communication tickets
+- **[Server Rules](./server-rules)** - Understand the server's rules and enforcement
+- **[Chat Moderation](./chat-moderation)** - Handle chat-related issues
+- **[Server Rule Violations](./server-rule-violations)** - Process violations and reports
+- **[Ban Votes](./ban-votes/ban-types-overview)** - Understand the ban vote process
+- **[Staff Talk Tickets](./moderator/staff-talk-tickets)** - Manage member communication tickets
 
 :::info Professionalism Matters
 As server staff, you represent the community. Maintain professionalism in all interactions and uphold the server's values both publicly and privately. Your actions reflect on the entire team.

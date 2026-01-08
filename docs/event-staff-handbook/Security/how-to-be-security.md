@@ -70,11 +70,11 @@ When volunteering for an event, you'll be helping the <RoleBadge role="Event Hos
 ## 🚨 Incident Management
 
 <Card title="Handling Incidents" status="warning">
-  <p>If an incident occurs, follow the guidelines outlined in the <Link to="../Security/incident-management-guidelines">Incident Management Guidelines</Link> section.</p>
+  <p>If an incident occurs, follow the guidelines outlined in the <Link to="/docs/event-staff-handbook/Security/incident-management-guidelines">Incident Management Guidelines</Link> section.</p>
 </Card>
 
 ## Related
 
-- [Security Requirements](./security-requirements)
-- [Incident Management Guidelines](./incident-management-guidelines)
-- [Security Introduction](../event-security)
+- [Security Requirements](/docs/event-staff-handbook/Security/security-requirements)
+- [Incident Management Guidelines](/docs/event-staff-handbook/Security/incident-management-guidelines)
+- [Security Introduction](/docs/event-staff-handbook/Security/Introduction)

@@ -103,6 +103,6 @@ This exception only applies to AU timezone hosts due to the limited availability
 
 ## Related
 
-- [Event Types](../event-types) - Overview of all event types
-- [How to Host an Event](../Hosts/how-to-host-an-event) - General hosting guidelines
-- [Incident Management](../Security/incident-management-guidelines) - Handling incidents during events
+- [Event Types](/docs/event-staff-handbook/event-types) - Overview of all event types
+- [How to Host an Event](../../Hosts/how-to-host-an-event) - General hosting guidelines
+- [Incident Management Guidelines](../../Security/incident-management-guidelines) - Handling incidents during events

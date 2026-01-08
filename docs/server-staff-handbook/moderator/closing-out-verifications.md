@@ -62,6 +62,5 @@ When closing verification tickets; <u>**double check that hephia is online first
 
 ## Related
 
-- [Completion of Verification](./verification-process/completion-of-verification)
-- [Verification Checklist](./verification-process/verification-checklist)
-- [GitHub Records](./github-records)
+- [Completion of Verification](/docs/server-staff-handbook/verification-process/completion-of-verification)
+- [GitHub Records](/docs/server-staff-handbook/moderator/github-records)

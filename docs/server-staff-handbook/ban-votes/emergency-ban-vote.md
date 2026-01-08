@@ -63,6 +63,6 @@ Here's an example of how an emergency ban vote thread should be structured:
 
 ## Related
 
-- [Ban Types Overview](./ban-types-overview)
-- [Server Rule Violations](../server-rule-violations)
-- [GitHub Records](../moderator/github-records)
+- [Ban Types Overview](/docs/server-staff-handbook/ban-votes/ban-types-overview)
+- [Server Rule Violations](/docs/server-staff-handbook/server-rule-violations)
+- [GitHub Records](/docs/server-staff-handbook/moderator/github-records)

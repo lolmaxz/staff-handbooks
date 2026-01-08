@@ -101,6 +101,6 @@ Post announcement **90 min prior** to attendees for a popup announcement, and th
 
 ## Related
 
-- [Event Types](../event-types) - Overview of all event types
-- [How to Host an Event](../Hosts/how-to-host-an-event) - General hosting guidelines
-- [Scheduling Procedures](../Hosts/scheduling-procedures) - Regular event scheduling
+- [Event Types](/docs/event-staff-handbook/event-types) - Overview of all event types
+- [How to Host an Event](../../Hosts/how-to-host-an-event) - General hosting guidelines
+- [Scheduling Procedures](../../Hosts/scheduling-procedures) - Regular event scheduling

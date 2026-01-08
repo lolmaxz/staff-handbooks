@@ -115,7 +115,7 @@ If overlapping another event, post <strong>1h after</strong> their doors open.
 
 ## Host the Event
 
-Follow specific guidance for your event type; see [Event Types](../event-types).
+Follow specific guidance for your event type; see [Event Types](/docs/event-staff-handbook/event-types).
 
 ## VR Announcement Talking Points
 
@@ -140,6 +140,6 @@ Be punctual with pings and start times. Join early to handle technical issues pr
 
 ## Related
 
-- [Scheduling Procedures](./scheduling-procedures)
-- [Incident Management](../Security/incident-management-guidelines)
-- [Event Types](../event-types)
+- [Scheduling Procedures](/docs/event-staff-handbook/Hosts/scheduling-procedures)
+- [Incident Management Guidelines](/docs/event-staff-handbook/Security/incident-management-guidelines)
+- [Event Types](/docs/event-staff-handbook/event-types)
