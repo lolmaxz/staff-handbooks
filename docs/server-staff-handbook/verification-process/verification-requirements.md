@@ -30,7 +30,7 @@ The verification process begins when a member requests age verification. This se
 1. **Initial Contact**:
 
    - Member initiates verification in <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/>
-   - They select <DiscordButton type="success" emoji="✅">Age Verification</DiscordButton> option
+   - They select from **Regular ID**, **VRChat**, or **Fansly** verification options (VRChat uses Hephia V2 only)
    - If they see 'No Access', direct them to <ChannelBadge label="💠𝘙ules" link="https://discord.com/channels/734595073920204940/737074569319546921"/>
 
 2. **Verification Methods**:
@@ -67,8 +67,7 @@ This checklist ensures all necessary steps are completed during the verification
   <Checklist.Item id="check-note">Confirm handwritten note with date and username</Checklist.Item>
   <Checklist.Item id="check-details">Ensure DOB, expiry date, and issuing body are visible</Checklist.Item>
   <Checklist.Item id="check-corners">Verify all four corners of ID are visible</Checklist.Item>
-  <Checklist.Item id="assign-role">Assign <RoleBadge role="Verified" color="#00ff00" /> role</Checklist.Item>
-  <Checklist.Item id="remove-role">Remove <RoleBadge role="Unverified" color="#ff0000" /> role **only** if bot is down</Checklist.Item>
+  <Checklist.Item id="verify">Use <code>/verify</code> in the ticket or the Verify button on Orion Board to complete verification (staff cannot manually assign Verified)</Checklist.Item>
   <Checklist.Item id="welcome">Send welcome message with important channel information</Checklist.Item>
 </Checklist>
 
@@ -158,3 +157,5 @@ This section outlines the channels and features that become available to members
 ## Next Steps
 
 Once you've completed the verification process using the checklist above, see the [Completion of Verification](/docs/server-staff-handbook/verification-process/completion-of-verification) page for proper procedures on how to finalize the verification as a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />.
+
+For details on the Verify button and <code>/verify</code> command, see [Orion Board: Verification](/docs/general-handbook/orion-board/orion-board-verification).

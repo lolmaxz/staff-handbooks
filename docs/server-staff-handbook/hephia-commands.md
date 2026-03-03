@@ -1,6 +1,6 @@
 ---
 id: hephia-commands
-title: Hephia V1.2 Info71 and Commands
+title: Hephia V1.2 Info and Commands
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
@@ -71,7 +71,7 @@ import Tooltip from "@site/src/components/Tooltip";
 
   <Card title="/timeout" status="info" icon="⏳">
     <p><strong>Usage:</strong> <code>/timeout [user] [duration] [reason]</code></p>
-    <p>Temporarily restrict a member from sending messages or speaking in voice channels for a set duration.</p>
+    <p><strong>New command!</strong> Temporarily restrict a member from sending messages or speaking in voice channels for a set duration. Replaces the timeout command from Hephia V2.</p>
     <p>Use for de-escalation or temporary rule enforcement.</p>
   </Card>
 </CardGrid>

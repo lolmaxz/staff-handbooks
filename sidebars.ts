@@ -112,6 +112,26 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           items: ["general-handbook/staff-perks/staff-emeritus", "general-handbook/staff-perks/staff-pictures"],
         },
+        {
+          type: "category",
+          label: "Orion Board",
+          link: {
+            type: "doc",
+            id: "general-handbook/orion-board/orion-board-introduction",
+          },
+          collapsed: true,
+          items: [
+            "general-handbook/orion-board/orion-board-dashboard-overview",
+            "general-handbook/orion-board/orion-board-commands",
+            "general-handbook/orion-board/orion-board-verification",
+            "general-handbook/orion-board/orion-board-moderation-and-warnings",
+            "general-handbook/orion-board/orion-board-bans-and-kicks",
+            "general-handbook/orion-board/orion-board-watchlist",
+            "general-handbook/orion-board/orion-board-host-discretion",
+            "general-handbook/orion-board/orion-board-searching-members",
+            "general-handbook/orion-board/orion-board-data-protection-privacy",
+          ],
+        },
       ],
     },
     {

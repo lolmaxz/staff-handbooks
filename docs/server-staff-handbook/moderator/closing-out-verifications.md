@@ -23,31 +23,29 @@ A second check of the verification ticket is required:
 
 - Ensure the <RoleBadge role="Unverified" badgeIcon="unverified_role_icon.png" color="#de0000" /> is <Tooltip tip="Hephia will automatically remove the unverified role when a member is granted the verified role." bubbleColor="#d255ec" width="20rem" labelColor="#e68027"> removed </Tooltip> from the member and <RoleBadge role="Verified" color="#008800" /> has been given to the member.
 - Ensure the member has selected appropriate roles.
-- Verify the age role/tag they selected matches the age of the member to prevent members from faking their age. (When possible)
+- Verify the age role/tag they selected matches the age of the member to prevent members from faking their age. (When possible, we don't enforce this)
 
 ---
 
 ### Reminder Pings
 
-- Send up to <Tooltip tip="~24 hours between reminders" bubbleColor="#d255ec" width="13rem" labelColor="#e68027"> **2 reminder pings** </Tooltip> after the welcome message.
-- If no roles are selected after **48 hours**, you may proceed to close the ticket if verification is satisfactory.
+- Send up to <Tooltip tip="Reminders can only be sent 24h apart and at least 12h after the ticket was opened." bubbleColor="#d255ec" width="20rem" labelColor="#e68027"> **2 reminder pings** </Tooltip> after the welcome message. Use <code>/reminder</code> in the ticket—optional custom message, or use the default.
+- If no roles are selected after **48 hours**, you may proceed to close the ticket if verification is satisfactory. (optional)
 
 ---
 
 ### Closing the Ticket
 
-- Use the <DiscordButton type="error" emoji="🔒">Close With Reason</DiscordButton> button of the ticket bot. _(It should be at the top of the ticket)_
-- The reason should be: `"Verification Complete - [Name of staff member who did verification] Closed By- [Name of staff member who performed the second check]"`
-  <div style={{ marginTop: "0.5rem" }} />
-  :::note Example - HOW TO
-  "Verification Complete - Del Closed By- Solii"
-  :::
-  :::warning Always Include a Reason
-  All tickets must be closed with a reason. The reason must clearly state **who handled the verification** and **who closed the ticket**. Tickets should never be closed without a reason attached.
-  :::
-  :::info Let's stay organized!
-  Properly closing out tickets ensures accurate record-keeping and helps maintain an organized verification process.
-  :::
+Verification completion is done via **<code>/verify</code>** in the ticket thread or the <DiscordButton type="success" emoji="✅">Verify</DiscordButton> button on the Orion Board (Verifications → click the ticket). After verification, close the ticket.
+
+:::tip No reason required
+**You no longer need to specify a reason** when closing verification tickets. This was previously required (e.g. "Verification Complete - [Name] Closed By- [Name]")—it is **no longer needed**. Orion Board tracks who did what automatically.
+:::
+
+<div style={{ maxWidth: "600px" }}>
+  <img src={require("@site/static/img/orion-verify-button-ticket.png").default} alt="Verify button on verification ticket page" style={{ width: "100%", display: "block" }} />
+  <p style={{ fontSize: "0.75rem", color: "var(--ifm-color-emphasis-600)", margin: "0.15rem 0 0", padding: "0.35rem 0.5rem", backgroundColor: "var(--ifm-color-emphasis-200)", textAlign: "center" }}>Verify button on the verification ticket page.</p>
+</div>
 
 ---
 
@@ -56,11 +54,7 @@ A second check of the verification ticket is required:
 - If the user hasn't responded or provided an ID after **72 hours**, you can close the ticket with the reason: `"No Response >72hrs"`
 - For tickets without any post from the user for verification after **48 hours**, use: `"No Verification in >48hrs"`
 
-:::danger HEPHIA IS OFFLINE
-When closing verification tickets; <u>**double check that hephia is online first!!**</u> If Hephia is <u>**offline**</u> you will have to manually delete the verification threads after closing with the bot.
-:::
-
 ## Related
 
 - [Completion of Verification](/docs/server-staff-handbook/verification-process/completion-of-verification)
-- [GitHub Records](/docs/server-staff-handbook/moderator/github-records)
+- [Orion Board: Verification](/docs/general-handbook/orion-board/orion-board-verification)

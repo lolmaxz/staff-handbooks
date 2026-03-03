@@ -1,61 +1,59 @@
 ---
 id: github-records
-title: GitHub Records (Event Committee Only)
+title: Moderation Records (Orion Board)
 ---
 
-# GitHub Records (Event Committee Only)
+import TextWithButton from "@site/src/components/TextWithButton";
+import CardGrid, { Card } from "@site/src/components/CardGrid";
 
-All moderation actions need to be recorded in the **GitHub Warning Book**.
+# Moderation Records (Orion Board)
 
-## Procedure
+All event moderation actions are now recorded in **Orion Board**. The GitHub Warning Book (project 4) has been replaced.
 
-1. **Access the GitHub Warning Book**:
+<TextWithButton
+  text="Access the Orion Board dashboard to view and manage event moderation records:"
+  buttonLabel="Open Orion Board"
+  buttonHref="https://orion.theedenapis.com/dashboard"
+/>
 
-   - You can access to the [warning book of event here](https://github.com/users/lolmaxz/projects/4)
+## Where to Find Things
 
-2. **Creating a New Record**:
+| What                      | Where in Orion Board                      |
+| ------------------------- | ----------------------------------------- |
+| **Event Moderation Logs** | Mod Logs → Event → Moderation Actions tab |
+| **Host Discretion**       | Mod Logs → Event → Host Discretion tab    |
+| **Event Watchlist**       | Mod Logs → Event → Watchlist tab          |
+| **Event Bans**            | Kicks and Bans page (Ban tab)             |
 
-   - If the member hasn't broken a rule before, create a new record with:
+Event warnings are created via slash commands in Discord (<code>/warn-event</code>, <code>/warn-informal-event</code>). The dashboard is for viewing, editing, and linking tickets.
 
-     - **Discord Tag** and **Discord ID** in the title.
-     - Upload a screenshot of their Discord profile.
+<CardGrid columns={2}>
+  <Card title="Recording Details" status="info" icon="📝">
+    <ul>
+      <li>When the rule was broken</li>
+      <li>What rule was broken</li>
+      <li>Punishment received (if any) - Will record event bans automatically</li>
+    </ul>
+  </Card>
 
-<details>
-  <summary>Example of a Card:</summary>
-  <img src={require("../../static/img/Example_github_card.png").default} alt="Example of a card in github" width="80%" />
-</details>
+  <Card title="Documentation" status="info" icon="📎">
+    <ul>
+      <li>Add screenshots or evidence links to the moderation action - up to 50 screenshots and unlimited links</li>
+      <li>Link the related ticket when applicable</li>
+    </ul>
+  </Card>
+</CardGrid>
 
-:::tip
-
-- Here you can have an easy access to a ready to copy template for a new card:
-
-```
-Date: 01/01/2024
-Reporter: USERNAME
-VRChat Username: VRCHAT DISPLAY NAME
-punishment?: PUNISHMENT
-Punishment ends?: DATE END PUNISHMENT
-
-Additional notes: ANY ADDITIONAL NOTE AND EXPLANATION
-```
-
-:::
-
-3. **Recording Details**:
-
-   - When the rule was broken.
-   - What rule was broken.
-   - Punishment they received.
-
-4. **Documentation**:
-
-   - Add a screenshot of the ticket.
-   - Mark it with the date of the incident.
-
-5. **Updating Records**:
-
-   - Move the member to the appropriate warning or ban level based on the **Warning System** for the Event Team.
+<div style={{ maxWidth: "900px", margin: "0 auto 2rem" }}>
+  <img src={require("@site/static/img/orion-event-moderation-logs.png").default} alt="Event Moderation Logs on Orion Board" style={{ width: "100%", display: "block" }} />
+  <p style={{ fontSize: "0.75rem", color: "var(--ifm-color-emphasis-600)", margin: "0.15rem 0 0", padding: "0.35rem 0.5rem", backgroundColor: "var(--ifm-color-emphasis-200)", textAlign: "center" }}>Event moderation logs in Orion Board.</p>
+</div>
 
 :::warning
 Accurate record-keeping is crucial for tracking member behavior and ensuring consistent moderation.
 :::
+
+## Related
+
+- [Orion Board: Moderation and Warnings](/docs/general-handbook/orion-board/orion-board-moderation-and-warnings)
+- [Orion Board: Host Discretion](/docs/general-handbook/orion-board/orion-board-host-discretion)

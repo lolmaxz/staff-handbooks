@@ -53,7 +53,7 @@ Please refer to the specific handbook that corresponds to your role or area of i
 
 **Rules:** <Link to="/docs/server-staff-handbook/server-rules">Server Rules</Link> · <Link to="/docs/event-staff-handbook/event-rules">Event Rules</Link> · <Link to="/docs/general-handbook/group-instance-rules">Group Instance Rules</Link>
 
-**Other:** <Link to="/docs/general-handbook/staff-perks">Staff Perks</Link> 🎁 - All the amazing benefits you get as staff!
+**Other:** <Link to="/docs/general-handbook/staff-perks">Staff Perks</Link> 🎁 - All the amazing benefits you get as staff! · <Link to="/docs/general-handbook/orion-board/orion-board-introduction">Orion Board</Link> - Ticket and moderation dashboard
 
 ### Staff Channels 💬
 

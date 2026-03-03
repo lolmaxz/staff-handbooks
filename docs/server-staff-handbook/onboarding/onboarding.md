@@ -220,8 +220,8 @@ Three types of ban votes based on severity:
   <p><strong>Available Commands:</strong></p>
   <ul>
     <li><code>/rename</code> - Rename ticket thread</li>
-    <li><code>/add</code> - Add user to ticket</li>
-    <li><code>/remove</code> - Remove user from ticket</li>
+    <li><code>/add-member</code> - Add user to ticket</li>
+    <li><code>/remove-member</code> - Remove user from ticket</li>
   </ul>
   <p><strong>Notes:</strong></p>
   <ul>
