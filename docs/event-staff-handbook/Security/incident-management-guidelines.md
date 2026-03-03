@@ -117,6 +117,12 @@ Here's how an incident report should be structured:
 - Multiple reports against a user within a certain time frame can lead to a ban from events.
   :::
 
+:::info Event Incidents vs Orion Board
+**Event incidents** stay on Discord for now—continue logging in the events-incidents channel. In the future we plan to move event incident logging to Orion Board.
+
+**Event warnings** can be recorded in Orion Board via slash commands (<code>/warn-event</code>, <code>/warn-informal-event</code>). Use these when issuing formal or informal event warnings.
+:::
+
 ---
 
 ## Specific Rule Violations and Actions

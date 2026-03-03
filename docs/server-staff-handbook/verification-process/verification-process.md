@@ -18,7 +18,9 @@ import { RectangleGoggles } from 'lucide-react';
 
 ## Overview
 
-The verification process is how we confirm members are 18+ to access our adult content and features. Members initiate verification through <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> by selecting <DiscordButton type="success" emoji="✅">Age Verification</DiscordButton>.
+The verification process is how we confirm members are 18+ to access our adult content and features. Members initiate verification through <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> by selecting one of the verification options: **Regular ID** (government ID + selfie), **VRChat Age Verification** (uses Hephia V2 only), or **Fansly Age Verification** (if/when enabled).
+
+Verification is completed using the <code>/verify</code> command in the ticket or the <DiscordButton type="success" emoji="✅">Verify</DiscordButton> button on the Orion Board. See [Orion Board: Verification](/docs/general-handbook/orion-board/orion-board-verification).
 
 ### Example: Initial Verification Request
 

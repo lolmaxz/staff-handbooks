@@ -25,7 +25,7 @@ These pages are for <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.p
   </Card>
 
   <Card title="Mod on Call" status="warning" icon="📞" href="/docs/server-staff-handbook/moderator/mod-on-call">
-    <p>Manage your availability for ticket notifications and stay on-call for server needs.</p>
+    <p><em>Deprecated.</em> Tickets and records are now in Orion Board. Kept for reference only.</p>
     <p><Link to="/docs/server-staff-handbook/moderator/mod-on-call">Learn More →</Link></p>
   </Card>
 </CardGrid>
@@ -36,8 +36,8 @@ These pages are for <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.p
     <p><Link to="/docs/server-staff-handbook/moderator/closing-out-verifications">Learn More →</Link></p>
   </Card>
 
-  <Card title="GitHub Records" status="info" icon="📝" href="/docs/server-staff-handbook/moderator/github-records">
-    <p>Record and track moderation actions, warnings, and important incidents.</p>
+  <Card title="Moderation Records (Orion Board)" status="info" icon="📝" href="/docs/server-staff-handbook/moderator/github-records">
+    <p>Record and track moderation actions, warnings, and important incidents in Orion Board.</p>
     <p><Link to="/docs/server-staff-handbook/moderator/github-records">Learn More →</Link></p>
   </Card>
 </CardGrid>

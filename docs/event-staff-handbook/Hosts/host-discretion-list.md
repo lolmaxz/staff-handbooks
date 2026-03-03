@@ -12,6 +12,13 @@ import { TriangleAlert } from 'lucide-react';
 The **Host Discretion List** allows hosts to restrict certain members from attending their events, this is a serious list and requires good reason(s) for adding a user to the list!
 :::
 
+Host discretion is now managed in **Orion Board**. <RoleBadge role="Event Committee" badgeIcon="event_committee_role_icon.png" color="#f75edb" /> create and manage entries from the dashboard. Go to Mod Logs → Event → Host Discretion. See [Orion Host Discretion](/docs/general-handbook/orion-board/orion-board-host-discretion) for details.
+
+<div style={{ maxWidth: "900px" }}>
+  <img src={require("@site/static/img/orion-host-discretion-section.png").default} alt="Host Discretion section on Orion Board" style={{ width: "100%", display: "block" }} />
+  <p style={{ fontSize: "0.75rem", color: "var(--ifm-color-emphasis-600)", margin: "0.15rem 0 0", padding: "0.35rem 0.5rem", backgroundColor: "var(--ifm-color-emphasis-200)", textAlign: "center" }}>Host Discretion list in Mod Logs (Event).</p>
+</div>
+
 ## Adding a Member to Your Discretion List
 
 - Contact the <RoleBadge role="Event Team Head" badgeIcon="event_head_role_icon.png" color="#f75edb" /> or a <RoleBadge role="Event Committee Member"  badgeIcon="event_committee_role_icon.png" color="#f75edb" />

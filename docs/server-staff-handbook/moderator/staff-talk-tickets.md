@@ -19,14 +19,13 @@ This page covers procedures for <RoleBadge role="Moderator" badgeIcon="moderator
 Cutie Helpers may observe these tickets as part of their training but cannot issue warnings, mutes, or punishments.
 :::
 
-:::info
+:::info Upcoming Training System
 **For the first 2 months** as a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" />, draft your messages in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474" /> and get approval from a <RoleBadge role="Server Committee Member" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" /> before opening tickets.
 :::
 
 ## Important Guidelines
 
 - **Punishment/Action Tickets**
-
   - Punishment tickets <u>**must**</u> be opened by **Moderators only**.
   - <u>**Only**</u> **1** staff member may talk within a ticket at a time. <u>Do not dogpile into the ticket</u>
   - Do **not** give out any punishments in tickets started by a member.
@@ -120,12 +119,14 @@ Here's an example of how to properly handle a staff-talk ticket from start to fi
 
 ## Setting up a Ticket
 
-1. Go to <ChannelBadge label="🎫𝘖pen-a-𝘛icket" link="https://discord.com/channels/734595073920204940/1106413750975746070" /> and select <DiscordButton type="secondary" emoji="☎️">Talk to a Staff</DiscordButton> button.
-2. Rename the ticket using `/rename` to: `Stafftalk-Username`.
+1. Go to <ChannelBadge label="🎫𝘖pen-a-𝘛icket" link="https://discord.com/channels/734595073920204940/1106413750975746070" /> and open the **Server Help** dropdown. Select **Other** (not "Talk to a Staff"—Staff Problem directs members to HR and does not create a ticket).
+2. Rename the ticket using `/rename` to: `Stafftalk-Username` or similar.
 
-- Note: `/rename` has a short cooldown. If it fails due to cooldown or permissions, you can rename the ticket thread title manually.
+- ⚠️ **Note**: `/rename` has a cooldown. If it fails due to cooldown or permissions, rename the ticket thread title manually.
 
-3. Add the user to the ticket with `/add`.
+3. Add the user to the ticket with `/add-member`.
+
+Renaming and adding/removing members can also be done from the Orion Dashboard. See [Orion Board: Commands](/docs/general-handbook/orion-board/orion-board-commands).
 
 ---
 
@@ -192,24 +193,27 @@ Remain calm and objective! If you feel yourself getting frustrated, please step 
 
 **Do not remove the member before they have acknowledged the punishment.** We need explicit acknowledgement to confirm they read and understood the rule break and the action taken.
 
-While waiting for acknowledgement, **ping the member every ~24 hours** to bring the ticket back to their attention. If they remain unresponsive for <u>two weeks</u> (or are clearly active elsewhere while ignoring the ticket), you may request to **temporarily remove their verification until they respond** in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> by adding back the <RoleBadge role="Unverified Role" badgeIcon="unverified_role_icon.png" color="#de0000" />.
+While waiting for acknowledgement, **ping the member every ~24 hours** to bring the ticket back to their attention. Use <code>/reminder</code> in the ticket—optional custom message, or use the default. Reminders can only be sent **24h apart** and **at least 12h after the ticket was opened**. If they remain unresponsive for <u>two weeks</u> (or are clearly active elsewhere while ignoring the ticket), you may request to **temporarily remove their verification until they respond** in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> by adding back the <RoleBadge role="Unverified Role" badgeIcon="unverified_role_icon.png" color="#de0000" />.
 
 If this still does not work, the <RoleBadge role="Head Moderator" color="#e68027" /> may decide to close the ticket and log it as "unresponsive".
 :::
 
-- Remove the member from the ticket after member acknowledges the warning/punishment using `/remove` ticket bot command.
+- Remove the member from the ticket after they acknowledge the warning/punishment using `/remove-member`.
 </p>
 </details>
 
+:::tip Close Request
+When staff feel the user is done—but want the member to close when they're ready—use `/close-request`. The ticket opener gets Close/Deny buttons. Only the opener can use them.
+:::
+
 ## Logging the Ticket
 
-- A <RoleBadge role="Server Committee Member" badgeIcon="server_committee_role_icon.webp" color="#db1cb8" /> will guide you on how to log the ticket into the **GitHub Warning Book**.
+- Log the ticket in **Orion Board**. Link the ticket to the moderation action when applicable. See [Moderation Records (Orion Board)](/docs/server-staff-handbook/moderator/github-records) and [Orion Board: Moderation and Warnings](/docs/general-handbook/orion-board/orion-board-moderation-and-warnings).
 
-<TextWithButton
-  text="Dont forget to make a GitHub account and request access!"
-  buttonLabel="GitHub Warning Book"
-  buttonHref="https://github.com/users/lolmaxz/projects/3/"
-/>
+<div style={{ maxWidth: "700px", margin: "0 auto 2rem" }}>
+  <img src={require("@site/static/img/orion-linking-ticket-to-moderation.png").default} alt="Linking a related ticket to a moderation action" style={{ width: "100%", display: "block" }} />
+  <p style={{ fontSize: "0.75rem", color: "var(--ifm-color-emphasis-600)", margin: "0.15rem 0 0", padding: "0.35rem 0.5rem", backgroundColor: "var(--ifm-color-emphasis-200)", textAlign: "center" }}>Linking a ticket to a moderation action.</p>
+</div>
 
 :::info
 Properly handling tickets ensures transparency and fairness for members involved!

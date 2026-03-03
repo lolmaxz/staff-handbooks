@@ -1,57 +1,48 @@
 ---
 id: github-records
-title: GitHub Records
+title: Moderation Records (Orion Board)
 ---
 
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import RoleBadge from "@site/src/components/RoleBadge";
-import GitHubLogCard from "@site/src/components/GitHubLogCard";
 import TextWithButton from "@site/src/components/TextWithButton";
 
-# GitHub Records (Moderators Only)
+# Moderation Records (Orion Board)
 
-<TextWithButton
-  text="Open the GitHub Warning Book to create/update member logs."
-  buttonLabel="Open Warning Book"
-  buttonHref="https://github.com/users/lolmaxz/projects/3"
-/>
-
-All moderation actions must be recorded in the **GitHub Warning Book** to keep history consistent and searchable.
-
-:::info Why this matters
-Clear records help us make fair decisions, see patterns, and coordinate as a team.
+:::info
+This page was formerly called **GitHub Records**. All moderation actions are now recorded in **Orion Board**.
 :::
 
-## Step-by-step
+All moderation actions are now recorded in **Orion Board**. Server Moderation Logs, Watchlist, and Kicks & Bans are all managed in the dashboard.
 
-1. Close the ticket properly (confirmation, acknowledgement, reason)
-2. Open the member's issue in the GitHub Warning Book, or create a new one if none exists
-3. Add/update the latest incident log using the template below
-4. Apply/update labels for active warnings
-5. If appropriate, add the member to the watchlist channel/thread for follow-up visibility
+<TextWithButton
+  text="Access the Orion Board dashboard to view and manage moderation records:"
+  buttonLabel="Open Orion Board"
+  buttonHref="https://orion.theedenapis.com/dashboard"
+/>
+
+:::info Why this matters
+Clear records help us make fair decisions, see patterns, and coordinate as a team. Orion Board keeps everything in one place—no more separate GitHub projects.
+:::
+
+## Where to Find Things
+
+| What | Where in Orion Board |
+|------|----------------------|
+| **Moderation Actions** | Mod Logs → Server → Moderation Actions tab |
+| **Watchlist** | Mod Logs → Server → Watchlist tab |
+| **Kicks & Bans** | Kicks and Bans page |
+
+Warnings are created via slash commands in Discord (<code>/warn</code>, <code>/warn-informal</code>). The dashboard is for viewing, editing, and linking tickets to moderation actions.
+
+For full details on the moderation system, see [Orion Board: Moderation and Warnings](/docs/general-handbook/orion-board/orion-board-moderation-and-warnings).
 
 <CardGrid columns={2}>
-  <Card title="Access" status="info" icon="🔑">
-    <ul>
-      <li>Open the GitHub Warning Book (linked in the <strong>mod-special</strong> channel).</li>
-      <li>Direct link: <a href="https://github.com/users/lolmaxz/projects/3" target="_blank" rel="noopener noreferrer">GitHub Warning Book</a></li>
-      <li>Make sure you are signed in with the correct account.</li>
-    </ul>
-  </Card>
-
   <Card title="After Closing a Ticket" status="success" icon="✅">
     <ul>
-      <li>The <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> on call records the outcome in GitHub.</li>
-      <li>Include a brief summary of what happened.</li>
-    </ul>
-  </Card>
-
-  <Card title="New Issue Naming" status="warning" icon="🆕">
-    <ul>
-      <li>If the member has no prior record, create a new issue with:</li>
-      <li><strong>Discord Tag</strong> + <strong>[Discord ID]</strong> in the title</li>
-      <li>Profile screenshot in the body</li>
-      <li><em>Example:</em> <code>FictionalUser [123456789012345678]</code></li>
+      <li>The <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> records the outcome in Orion Board.</li>
+      <li>Link the ticket to the moderation action when applicable.</li>
+      <li>Include a brief summary in the reason and notes fields.</li>
     </ul>
   </Card>
 
@@ -60,58 +51,29 @@ Clear records help us make fair decisions, see patterns, and coordinate as a tea
       <li>Date/time of the incident</li>
       <li>Which rule was broken</li>
       <li>Punishment applied</li>
-      <li>Screenshot(s) of the ticket or evidence</li>
+      <li>Screenshot(s) or evidence links</li>
     </ul>
   </Card>
 
-  <Card title="Labels" status="info" icon="🏷️">
+  <Card title="Watchlist" status="info" icon="👁️">
     <ul>
-      <li>Use labels to track number of <strong>active warnings</strong>.</li>
-      <li>Warnings are active for <strong>1 week</strong> and stack during that period.</li>
+      <li>Use <code>/watchlist</code> in Discord to add members who need continued visibility.</li>
+      <li>View and manage entries in Mod Logs → Server → Watchlist.</li>
     </ul>
   </Card>
 
-  <Card title="Update Levels" status="warning" icon="📈">
+  <Card title="Labels and Levels" status="warning" icon="📈">
     <ul>
-      <li>Move member to the appropriate warning/ban level per Server Guidelines.</li>
+      <li>Use labels/status in Orion Board to track active warnings.</li>
       <li>Keep entries concise, factual, and neutral.</li>
     </ul>
   </Card>
 </CardGrid>
 
-## Logging Template
-
-Copy and paste this into the GitHub issue body, then replace the bracketed fields:
-
-```
-When: [YYYY-MM-DD HH:mm TZ]
-Why: [Short reason / rule broken]
-Result: [Warning issued / Ticket closed with reason / Timeout Xh / Ban vote opened]
-Logged By: [Your Mod Name]
-
-Evidence:
-- [Link to ticket screenshot]
-- [Second link if applicable]
-
-Notes:
-- [Optional notes]
-```
-
-:::tip Watchlist
-If this member needs continued visibility, add a brief summary in the **watchlist** channel/thread after logging the incident. Keep it factual and short.
-:::
-
-## Visual Example
-
-<GitHubLogCard
-  title="FictionalUser [123456789012345678]"
-  when="When: 2024-06-16"
-  why="Why: Oversharing/Negativity in public channels."
-  result="Result: No acknowledgement from user, informal warning issued."
-  loggedBy="Logged By: Moderator 1"
-  avatarUrl="https://cdn.discordapp.com/embed/avatars/4.png"
-  note="Profile screenshot placed here to match GitHub entry."
-/>
+<div style={{ maxWidth: "900px" }}>
+  <img src={require("@site/static/img/orion-server-moderation-logs.png").default} alt="Server Moderation Logs on Orion Board" style={{ width: "100%", display: "block" }} />
+  <p style={{ fontSize: "0.75rem", color: "var(--ifm-color-emphasis-600)", margin: "0.15rem 0 0", padding: "0.35rem 0.5rem", backgroundColor: "var(--ifm-color-emphasis-200)", textAlign: "center" }}>Server moderation logs in Orion Board.</p>
+</div>
 
 :::warning Keep it accurate
 Accurate record‑keeping is essential for consistency and fairness across cases.
@@ -121,4 +83,4 @@ Accurate record‑keeping is essential for consistency and fairness across cases
 
 - [Server Rule Violations](/docs/server-staff-handbook/server-rule-violations)
 - [Ban Types Overview](/docs/server-staff-handbook/ban-votes/ban-types-overview)
-- [Mod on Call](/docs/server-staff-handbook/moderator/mod-on-call)
+- [Orion Board: Moderation and Warnings](/docs/general-handbook/orion-board/orion-board-moderation-and-warnings)
