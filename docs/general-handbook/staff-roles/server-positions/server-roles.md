@@ -116,7 +116,7 @@ Being anonymous helps Chat Moderators observe the server chat without having any
 The following channel changes have been implemented:
 
 - **helper-chat** → **verification-chat** - Dedicated channel for discussing **verification tickets only**
-- **moderators** - Now opened up for Cutie Helpers as soon as they get onboarded for transparency and easier training. Use this channel for all questions, issues, and discussions not related to verification tickets.
+- **cutie-helper** - Cutie Helpers use <ChannelBadge label="📗cutie-helper" link="https://discord.com/channels/734595073920204940/1481566791569248286"/> for questions, moderation help, and general duty discussions. Use <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/737215117049069610"/> for verification ticket discussions only.
 :::
 
 ---

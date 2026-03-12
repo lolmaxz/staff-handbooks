@@ -28,7 +28,7 @@ When a member breaks a server rule, follow these steps to ensure proper handling
 
 <CardGrid columns={2}>
   <Card title={<><RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> (Trainee)</>} status="info">
-    <p><strong>📍 Report to:</strong> <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/></p>
+    <p><strong>📍 Report to:</strong> <ChannelBadge label="📗cutie-helper" link="https://discord.com/channels/734595073920204940/1481566791569248286"/></p>
     <p><strong>Responsibilities:</strong></p>
     <ul>
       <li>Document violations (screenshot, delete, report)</li>
