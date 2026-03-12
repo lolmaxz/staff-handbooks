@@ -16,9 +16,9 @@ import { Settings } from 'lucide-react';
 Welcome to the Eden Apis staff team! This comprehensive guide will help you understand your role, responsibilities, and the tools available to you.
 
 ::::info Getting Started
-Take your time to familiarize yourself with all sections. Don't hesitate to ask questions in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
+Take your time to familiarize yourself with all sections. Don't hesitate to ask questions—<RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> use <ChannelBadge label="📗cutie-helper" link="https://discord.com/channels/734595073920204940/1481566791569248286"/>, <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> use <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>.
 
-**Note:** As a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />, you will have access to <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> for transparency and easier training. Use <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> **only** for verification ticket discussions.
+**Note:** As a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />, you have access to <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/737215117049069610"/> for verification ticket discussions, and <ChannelBadge label="📗cutie-helper" link="https://discord.com/channels/734595073920204940/1481566791569248286"/> for moderation help and general questions.
 ::::
 
 ## First-Day Quick Start
@@ -40,7 +40,7 @@ Take your time to familiarize yourself with all sections. Don't hesitate to ask 
 
 <CardGrid columns={2}>
   <Card title="Cutie Helper (Trainee)" icon={<RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" />} status="info" href="/docs/general-handbook/server-positions/#cutie-helpers">
-    <p><strong>Entry-level trainee position (2 months)</strong></p>
+    <p><strong>Entry-level trainee position (~2 months)</strong></p>
     <ul>
       <li>Handle verification tickets (under supervision or independently)</li>
       <li>Chat moderation (simple rule reminders, small disruptions)</li>
@@ -92,8 +92,9 @@ For detailed information about the training process, requirements, and promotion
 <CardGrid columns={3}>
   <Card title="Communication" status="info">
     <ul>
-      <li><ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> - Verification tickets <strong>only</strong></li>
-      <li><ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> - All questions, discussions, and issues</li>
+      <li><ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/737215117049069610"/> - Verification tickets <strong>only</strong></li>
+      <li><ChannelBadge label="📗cutie-helper" link="https://discord.com/channels/734595073920204940/1481566791569248286"/> - Cutie Helper: questions, moderation help</li>
+      <li><ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/> - Moderators: discussions, questions</li>
       <li><ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/></li>
     </ul>
   </Card>
@@ -226,7 +227,7 @@ Three types of ban votes based on severity:
   <p><strong>Notes:</strong></p>
   <ul>
     <li><code>/rename</code> has a brief cooldown. If it fails, you can edit the ticket thread title manually.</li>
-    <li><RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> may ask a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474" /> to assist with renaming.</li>
+    <li><RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> may ask in <ChannelBadge label="📗cutie-helper" link="https://discord.com/channels/734595073920204940/1481566791569248286" /> for a Moderator to assist with renaming.</li>
   </ul>
 </Card>
 
@@ -253,8 +254,8 @@ Three types of ban votes based on severity:
 
 ### When You Need Assistance
 
-1. **Verification Ticket Discussions**: Ask in <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/1234567890123456789"/> _(verification only)_
-2. **All Other Questions & Issues**: Consult in <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
+1. **Verification Ticket Discussions**: Ask in <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/737215117049069610"/> _(verification only)_
+2. **All Other Questions & Issues**: Cutie Helpers use <ChannelBadge label="📗cutie-helper" link="https://discord.com/channels/734595073920204940/1481566791569248286"/>; Moderators use <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
 3. **Technical Problems**: Ping <RoleBadge role="lolmaxz" color="#ff6b6b" /> for bot/linking issues
 4. **Staff-Talk Tickets**: Use <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> → <DiscordButton type="link" emoji="☎️" href="../moderator/staff-talk-tickets">Talk to a Staff</DiscordButton> _(Moderators only)_
 

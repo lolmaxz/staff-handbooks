@@ -16,9 +16,11 @@ Once your application to be part of the server staff has been accepted, you will
 
 ## Text Channels
 
-- <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/737215117049069610" />: This channel is where new server staff begins and where they report things they see on the server or any issues with a verification ticket. It's the main channel for moderators to become.
+- <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/737215117049069610" />: For discussing verification tickets only. Cutie Helpers and Moderators both use this channel for verification-related topics.
 
-- <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474" />: This channel is where moderators (those who got promoted from cutie helper to moderator) discuss any issues on the server, from trouble makers, rule violation handlings to helping out with verification as well and some discussions about bans and other moderative actions.
+- <ChannelBadge label="📗cutie-helper" link="https://discord.com/channels/734595073920204940/1481566791569248286" />: Cutie Helpers use this channel for questions about moderation, cutie helper duties, and general help. Moderators assist here.
+
+- <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474" />: Moderators discuss issues on the server—rule violations, verification, bans, and other moderation matters.
 
 - <ChannelBadge label="🟩-kicks-bans-logs" link="https://discord.com/channels/734595073920204940/781628317925244978" />: This is where most of the ban and kick commands are executed, so we can keep a clean channel only for the kicks and bans. It's easier to find back a ban or a kick. Both helpers and moderators can access this channel.
 
@@ -29,8 +31,6 @@ Once your application to be part of the server staff has been accepted, you will
 - <ChannelBadge label="🔗-vrchat-age-logs" link="https://discord.com/channels/734595073920204940/1319750107859779725" />: Perfect channel to know when someone gets age cross verified using their VRChat account linked! This is the best place to look if you wanna make sure that someone got properly age verified and acts as a log for us to know who used our system.
 
 - <ChannelBadge label="⏹️-role-changes" link="https://discord.com/channels/734595073920204940/1424116477727866920" />: This one is like the staff-logs, except it logs only the role changes on members. Whenever they receive a role or a role is removed, we will know about it. We even know who gives a role to who.
-
-- <ChannelBadge label="📜watchlist" link="https://discord.com/channels/734595073920204940/1400585278875369553" />: A relatively new channel only moderators can see (no helper can see it), in which detailed information is written and kept track of about individuals likely to cause issues in the community or whom have maybe crossed some lines even if no rules breaking were done, properly speaking. You get access to this channel once you become a moderator.
 
 ## Voice Channels
 
