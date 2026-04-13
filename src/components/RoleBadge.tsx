@@ -35,10 +35,8 @@ const roleToColorMap: Record<string, string> = {
   // -- Separate Staff Members --
   lolmaxz: "#00B9ff",
   krenki: "#00B9ff",
-  deldepth: "#00B9ff",
   "s4.ryn": "#00B9ff",
   Solii: "#00B9ff",
-  cdkinetic: "#00B9ff",
   verbaldrop: "#00B9ff",
   nightmarediztydoo: "#00B9ff",
   defovr: "#00B9ff",

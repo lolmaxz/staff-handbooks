@@ -62,7 +62,7 @@ The **Horny Resources** department handles internal staff matters.
 :::info Why an HR?
 HR is essential for maintaining a positive and professional environment among staff members.
 
-Currently, <RoleBadge role="s4.ryn" color="#00B9ff" /> serves as HR member.
+Currently, <RoleBadge role="s4.ryn" color="#00B9ff" />, <RoleBadge role="solii" color="#00B9ff" /> and <RoleBadge role="zerohour1998" color="#00B9ff" /> serves as HR members.
 :::
 
 ---
