@@ -51,8 +51,8 @@ After enabling Developer Mode:
 
 Example:
 
-- **Discord Username**: `Cdkinetic`
-- **Discord User ID**: `184687352394809345`
+- **Discord Username**: `lolmaxz`
+- **Discord User ID**: `229734830932361216`
 
 :::warning
 Ensure you are copying the correct ID, especially when dealing with reports or moderation actions.
