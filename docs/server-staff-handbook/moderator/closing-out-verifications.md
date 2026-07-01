@@ -21,7 +21,8 @@ A second check of the verification ticket is required:
 
 ### Role Selection
 
-- Ensure the <RoleBadge role="Unverified" badgeIcon="unverified_role_icon.png" color="#de0000" /> is <Tooltip tip="Hephia will automatically remove the unverified role when a member is granted the verified role." bubbleColor="#d255ec" width="20rem" labelColor="#e68027"> removed </Tooltip> from the member and <RoleBadge role="Verified" color="#008800" /> has been given to the member.
+- Ensure the <RoleBadge role="Unverified" badgeIcon="unverified_role_icon.png" color="#de0000" /> is <Tooltip tip="Orion will automatically remove the unverified role when a member is granted the Eden Verified role." bubbleColor="#d255ec" width="20rem" labelColor="#e68027"> removed </Tooltip> from the member and <RoleBadge role="Eden Verified" color="#008800" /> has been given to the member.
+- If a member needs to fix their verification on the second review, Orion now removes the <RoleBadge role="Unverified" badgeIcon="unverified_role_icon.png" color="#de0000" /> role automatically when <RoleBadge role="Eden Verified" color="#008800" /> is still present—no manual Unverified removal needed.
 - Ensure the member has selected appropriate roles.
 - Verify the age role/tag they selected matches the age of the member to prevent members from faking their age. (When possible, we don't enforce this)
 

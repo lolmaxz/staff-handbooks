@@ -12,6 +12,7 @@ import CardGrid, { Card } from '@site/src/components/CardGrid';
 
 import { IdCard } from 'lucide-react';
 import { RectangleGoggles } from 'lucide-react';
+import { BadgeCheck } from 'lucide-react';
 
 # Age Verification Process Guide 💜
 
@@ -23,6 +24,10 @@ import { RectangleGoggles } from 'lucide-react';
 This guide outlines the verification process for staff members to follow when verifying new members' ages. It's crucial to maintain consistency and security throughout this process.
 :::
 
+:::warning VRChat Cross Verification Retired — July 1, 2026
+As of **July 1, 2026 at 2:00 PM EST**, VRChat age cross verification **no longer grants server access**. Cross-verifying assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> instead of unlocking the server. Full access requires <RoleBadge role="Eden Verified" color="#00ff00" /> via Regular ID or Fansly cross verification.
+:::
+
 ## Verification Process Overview
 
 The verification process begins when a member requests age verification. This section outlines the initial steps and available verification methods.
@@ -30,8 +35,9 @@ The verification process begins when a member requests age verification. This se
 1. **Initial Contact**:
 
    - Member initiates verification in <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/>
-   - They select from **Regular ID**, **VRChat**, or **Fansly** verification options (VRChat uses Hephia V2 only)
+   - They select from **Regular ID**, **VRChat (Temp Disabled)**, or **Verify Using Fansly**
    - If they see 'No Access', direct them to <ChannelBadge label="💠𝘙ules" link="https://discord.com/channels/734595073920204940/737074569319546921"/>
+   - **VRC Verified and Fansly Verified members can now open verification tickets** to obtain <RoleBadge role="Eden Verified" color="#00ff00" />
 
 2. **Verification Methods**:
 
@@ -43,15 +49,27 @@ The verification process begins when a member requests age verification. This se
       <li>Submit government-issued ID and selfie</li>
       <li>Must show DOB, expiry date, issuing body</li>
       <li>All four corners visible</li>
+      <li>Grants <RoleBadge role="Eden Verified" color="#00ff00" /> when completed by staff</li>
     </ul>
   </Card>
   
-  <Card title="VRChat Age Verification" icon={<RectangleGoggles size={20} />}>
-    <p><strong>Alternative method</strong> - Using VRChat's verification system</p>
+  <Card title="Verify Using Fansly" icon={<BadgeCheck size={20} />}>
+    <p><strong>Alternative cross verification</strong> - Fansly creator verification</p>
+    <ul>
+      <li>Member creates a Fansly account and verifies as a <strong>creator</strong></li>
+      <li>A <strong>blue checkmark</strong> on their profile means they are ready</li>
+      <li>Process typically takes <strong>1 hour to a few hours</strong></li>
+      <li>Button: <DiscordButton type="primary" emoji="✅">Verify Using Fansly</DiscordButton></li>
+    </ul>
+  </Card>
+
+  <Card title="VRChat (Temp Disabled)" icon={<RectangleGoggles size={20} />}>
+    <p><strong>No longer grants server access</strong> — preserved in case we revert this decision</p>
     <ul>
       <li>Requires active <Tooltip tip="VRChat verification requires both age verification on VRChat and an active VRC+ subscription">VRC+ subscription</Tooltip></li>
       <li>Link account: <DiscordButton type="primary" emoji="🔗">Click Here To Link Your VRChat Account</DiscordButton></li>
-      <li>Verify age: <DiscordButton type="success" emoji="✅">Cross Verify Your Age From Your VRChat Account</DiscordButton></li>
+      <li>Cross verify: <DiscordButton type="secondary" emoji="🥽">VRChat (Temp Disabled)</DiscordButton></li>
+      <li>Assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> — does <strong>not</strong> unlock the server</li>
       <li>See <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/> for details</li>
     </ul>
   </Card>
@@ -67,7 +85,7 @@ This checklist ensures all necessary steps are completed during the verification
   <Checklist.Item id="check-note">Confirm handwritten note with date and username</Checklist.Item>
   <Checklist.Item id="check-details">Ensure DOB, expiry date, and issuing body are visible</Checklist.Item>
   <Checklist.Item id="check-corners">Verify all four corners of ID are visible</Checklist.Item>
-  <Checklist.Item id="verify">Use <code>/verify</code> in the ticket or the Verify button on Orion Board to complete verification (staff cannot manually assign Verified)</Checklist.Item>
+  <Checklist.Item id="verify">Use <code>/verify</code> in the ticket or the Verify button on Orion Board to complete verification (staff cannot manually assign Eden Verified)</Checklist.Item>
   <Checklist.Item id="welcome">Send welcome message with important channel information</Checklist.Item>
 </Checklist>
 
@@ -143,7 +161,7 @@ For security-related questions, create a staff-talk ticket in <ChannelBadge labe
 
 ## Access Granted After Verification
 
-This section outlines the channels and features that become available to members after successful verification.
+This section outlines the channels and features that become available to members after successful verification with <RoleBadge role="Eden Verified" color="#00ff00" />.
 
 ### Exclusive Channels
 

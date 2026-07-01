@@ -25,7 +25,7 @@ Orion Board is our in-house ticket and moderation system. It replaces GitHub War
 
 <CardGrid columns={2}>
   <Card title="/verify is the ONLY way to verify" status="warning" icon="✅">
-    Staff cannot manually assign the Verified role. Use <code>/verify</code> in the ticket thread or the Verify button on the Orion Board. Hephia removes the Unverified role when verification completes.
+    Staff cannot manually assign the Eden Verified role. Use <code>/verify</code> in the ticket thread or the Verify button on the Orion Board. Orion removes the Unverified role when verification completes.
   </Card>
   <Card title="Reply from the dashboard" status="success" icon="💬">
     Staff can send messages to Discord tickets directly from Orion Board without being in Discord. This is a new, highly useful feature—you can respond to tickets from anywhere.
