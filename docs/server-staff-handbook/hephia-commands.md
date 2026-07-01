@@ -424,9 +424,11 @@ All logs include **who made the change** or **who performed the action** for bet
 </details>
 
 :::warning Role Protection
-Hephia v1.2 now **refuses to let anyone** (besides Administrators) manually remove the unverified role if the verified role isn't present. If someone attempts to remove it manually, Hephia will revert it back immediately. Verification is only supposed to be done by **giving the verified role**, and Hephia ensures this!
+Hephia v1.2 now **refuses to let anyone** (besides Administrators) manually remove the unverified role if the Eden Verified role isn't present. If someone attempts to remove it manually, Hephia will revert it back immediately. Verification is only supposed to be done by **giving the Eden Verified role**, and Hephia ensures this!
 
-Additionally, Hephia will **prevent both Verified and VRC Verified roles from being present at the same time**. If someone tries to add one when the other is already present, Hephia will automatically roll back the change and inform the Administrators. Members should only have **one form of verification** at a time.
+When staff complete ID verification for a member with <RoleBadge role="VRC Verified" color="#00ff00" /> or <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" />, **Orion automatically** removes those roles and grants <RoleBadge role="Eden Verified" color="#00ff00" />. Staff should not manually swap verification roles.
+
+Additionally, Hephia will **prevent both Eden Verified and VRC Verified roles from being present at the same time**. If someone tries to add one when the other is already present, Hephia will automatically roll back the change and inform the Administrators.
 :::
 
 ---

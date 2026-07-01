@@ -15,14 +15,23 @@ import DiscordConversation, { DiscordMessage } from "@site/src/components/Discor
 This guide helps staff troubleshoot VRChat account linking and cross age verification issues. Understanding these systems is crucial for providing effective member support.
 :::
 
+:::warning VRChat Cross Verification Retired — July 1, 2026
+As of **July 1, 2026 at 2:00 PM EST**, VRChat age cross verification **no longer grants server access**. The button is labeled **VRChat (Temp Disabled)**. Cross-verifying assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> instead of unlocking the server. Existing VRC Verified members and returning members also receive this role automatically on that date.
+
+Members who cross-verify or have the VRC Verified role must complete **Regular ID verification** in Eden or **Fansly cross verification** from the ticket panel to obtain <RoleBadge role="Eden Verified" color="#00ff00" />.
+:::
+
 ## Understanding VRChat Linking
 
 VRChat linking is required for several important features:
 
-- **Cross Age Verification** - Using VRChat's age verification system
 - **NSFW World Access** - Access to adult content in our VRChat worlds
 - **After Party Participation** - Joining exclusive VRChat events
 - **Group Instance Creation** - Creating your own instances in our VRChat group
+
+:::note Cross Age Verification
+Cross age verification via VRChat is **temporarily disabled for server access**. Members can still use **VRChat (Temp Disabled)** to cross-verify, but this only assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> and does not unlock verified Discord channels.
+:::
 
 ### Linking Rules
 
@@ -99,11 +108,18 @@ This tool is **essential** for troubleshooting - always check this first when me
 - Go to <ChannelBadge label="🪄events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781"/>
 - Click <DiscordButton type="primary" emoji="🔃">Click Here To Update VRC Group Roles</DiscordButton>
 
-**Missing verified role after linking?**
+**Member cross-verified but doesn't have server access?**
 
-- User claims they linked and verified but no role assigned
-- Check <ChannelBadge label="🔗-vrchat-age-logs" link="https://discord.com/channels/734595073920204940/1319750107859779725"/>
-- If user is listed as verified, manually assign <RoleBadge role="VRC Verified" color="#00ff00" />
+- **Expected behavior** since July 1, 2026 — VRChat cross verification no longer grants server access
+- Check <ChannelBadge label="🔗-vrchat-age-logs" link="https://discord.com/channels/734595073920204940/1319750107859779725"/> to confirm they cross-verified
+- They should have <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" />
+- Direct them to open a verification ticket in <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> for **Regular ID verification**, or use **Verify Using Fansly** from the ticket panel
+- **Do not manually assign** <RoleBadge role="VRC Verified" color="#00ff00" /> — this role no longer grants access
+
+**Member has VRC Verified role but no access?**
+
+- Existing VRC Verified members received <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> automatically on July 1, 2026
+- They need to complete Regular ID verification or Fansly cross verification to obtain <RoleBadge role="Eden Verified" color="#00ff00" />
 
 **Patreon supporter not showing in VRChat World?**
 
@@ -162,7 +178,8 @@ If none of the above solutions resolve the issue:
 - **VRChat Linking Channel**: <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/>
 - **Events Attendees**: <ChannelBadge label="🪄events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781"/>
 - **VRChat Age Logs**: <ChannelBadge label="🔗-vrchat-age-logs" link="https://discord.com/channels/734595073920204940/1319750107859779725"/>
+- **Ticket Panel**: <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/>
 
 :::info
-For more detailed information about the VRChat verification process, see the [Verification Requirements](/docs/server-staff-handbook/verification-process/verification-requirements) page.
+For more detailed information about the verification process, see the [Verification Requirements](/docs/server-staff-handbook/verification-process/verification-requirements) page.
 :::

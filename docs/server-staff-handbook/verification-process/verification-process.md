@@ -13,14 +13,19 @@ import DiscordConversation, { DiscordMessage } from "@site/src/components/Discor
 
 import { IdCard } from 'lucide-react';
 import { RectangleGoggles } from 'lucide-react';
+import { BadgeCheck } from 'lucide-react';
 
 # Verification Process
 
 ## Overview
 
-The verification process is how we confirm members are 18+ to access our adult content and features. Members initiate verification through <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> by selecting one of the verification options: **Regular ID** (government ID + selfie), **VRChat Age Verification** (uses Hephia V2 only), or **Fansly Age Verification** (if/when enabled).
+The verification process is how we confirm members are 18+ to access our adult content and features. Members initiate verification through <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> by selecting one of the verification options: **Regular ID** (government ID + selfie), **VRChat (Temp Disabled)**, or **Verify Using Fansly**.
 
-Verification is completed using the <code>/verify</code> command in the ticket or the <DiscordButton type="success" emoji="✅">Verify</DiscordButton> button on the Orion Board. See [Orion Board: Verification](/docs/general-handbook/orion-board/orion-board-verification).
+Full server access is granted by the <RoleBadge role="Eden Verified" color="#00ff00" /> role (formerly called "Verified"). Verification is completed using the <code>/verify</code> command in the ticket or the <DiscordButton type="success" emoji="✅">Verify</DiscordButton> button on the Orion Board. See [Orion Board: Verification](/docs/general-handbook/orion-board/orion-board-verification).
+
+:::warning VRChat Cross Verification Retired — July 1, 2026
+As of **July 1, 2026 at 2:00 PM EST**, VRChat age cross verification **no longer grants server access**. Members can still cross-verify (button: **VRChat (Temp Disabled)**), but they receive <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> instead. Existing VRC Verified members are also assigned this role automatically on that date. Members must complete **Regular ID verification** or **Fansly cross verification** to obtain <RoleBadge role="Eden Verified" color="#00ff00" />.
+:::
 
 ### Example: Initial Verification Request
 
@@ -42,7 +47,7 @@ Here's how a typical verification ticket starts:
     - <strong>Image 1:</strong> Your government ID (clear, all 4 corners, DOB visible)
     - <strong>Image 2:</strong> A selfie holding the same ID (face clearly visible, matches the ID photo)
 
-    If you have any questions, let me know and I’ll assist.
+    If you have any questions, let me know and I'll assist.
 
   </DiscordMessage>
   <DiscordMessage
@@ -74,14 +79,28 @@ This process ensures only verified adults can access <Tooltip tip="Channels like
     <ul>
       <li>Must show: date of birth, expiry date, issuing body, all four corners</li>
       <li>Sunglasses allowed in selfie, eyes on ID can be censored</li>
+      <li>Grants <RoleBadge role="Eden Verified" color="#00ff00" /> when completed by staff</li>
     </ul>
   </Card>
   
-  <Card title="VRChat Age Verification" icon={<RectangleGoggles size={20} />}>
-    <p><strong>Alternative method</strong> - Using VRChat's age verification system</p>
+  <Card title="Verify Using Fansly" icon={<BadgeCheck size={20} />}>
+    <p><strong>Alternative cross verification</strong> - Fansly creator verification</p>
     <ul>
+      <li>Member must create a Fansly account and verify as a <strong>creator</strong></li>
+      <li>A <strong>blue checkmark</strong> on their Fansly profile means they are ready</li>
+      <li>Creator verification typically takes <strong>1 hour to a few hours</strong></li>
+      <li>Available from the ticket panel: <DiscordButton type="primary" emoji="✅">Verify Using Fansly</DiscordButton></li>
+      <li>Does not grant full access on its own — member may still need a verification ticket for <RoleBadge role="Eden Verified" color="#00ff00" /></li>
+    </ul>
+  </Card>
+
+  <Card title="VRChat (Temp Disabled)" icon={<RectangleGoggles size={20} />}>
+    <p><strong>No longer grants server access</strong> — preserved in case we revert this decision</p>
+    <ul>
+      <li>Button label: <DiscordButton type="secondary" emoji="🥽">VRChat (Temp Disabled)</DiscordButton></li>
       <li>Requires active <Tooltip tip="VRC+ is VRChat's paid subscription service that provides additional features. Generally costs $10 per month">VRC+ subscription</Tooltip></li>
-      <li>See <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/> for details</li>
+      <li>Assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> — does <strong>not</strong> unlock the server</li>
+      <li>See <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/> for linking details</li>
     </ul>
   </Card>
 </CardGrid>

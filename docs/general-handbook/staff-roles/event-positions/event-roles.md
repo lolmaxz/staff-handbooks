@@ -85,7 +85,7 @@ A group that assists the Event Team Head in leading the event team and planning 
 :::info
 The Event Committee plays a crucial role in maintaining event quality and team cohesion.
 
-Currently, the Event Committee is comprised of: <RoleBadge role="vervacious_" color="#00B9ff" />, <RoleBadge role="nightmarediztydoo" color="#00B9ff" />, <RoleBadge role="defovr" color="#00B9ff" /> and <RoleBadge role="zerohour1998" color="#00B9ff" />.
+Currently, the Event Committee is comprised of: <RoleBadge role="vervacious_" color="#00B9ff" />, <RoleBadge role="nightmarediztydoo" color="#00B9ff" />, <RoleBadge role="defovr" color="#00B9ff" />, <RoleBadge role="zerohour1998" color="#00B9ff" />, <RoleBadge role="ChaosUnleashed69" color="#00B9ff" /> and <RoleBadge role="VerdeFrappé" color="#00B9ff" />.
 :::
 
 ---
@@ -105,7 +105,7 @@ Experienced members of the Event Team with additional responsibilities.
 :::info
 Senior Event Team members are mentors and leaders within the Event Team.
 
-Currently, the Senior Event Team is comprised of: <RoleBadge role="speedfreek16" color="#00B9ff" />, <RoleBadge role="msangelcakes." color="#00B9ff" />, <RoleBadge role="blakes6" color="#00B9ff" />, <RoleBadge role="bloodtooth" color="#00B9ff" /> and <RoleBadge role="alicendromee" color="#00B9ff" />.
+Currently, the Senior Event Team is comprised of: <RoleBadge role="speedfreek16" color="#00B9ff" />, <RoleBadge role="msangelcakes." color="#00B9ff" />, <RoleBadge role="bloodtooth" color="#00B9ff" />, <RoleBadge role="alicendromee" color="#00B9ff" />, <RoleBadge role="grimm" color="#00B9ff" />, <RoleBadge role="naturesshadow" color="#00B9ff" />, <RoleBadge role="kether" color="#00B9ff" />, <RoleBadge role="rwbystar" color="#00B9ff" />, <RoleBadge role="solii" color="#00B9ff" />, <RoleBadge role="tomaae" color="#00B9ff" />, <RoleBadge role="tunetopia" color="#00B9ff" /> and <RoleBadge role="jerryberry" color="#00B9ff" />.
 :::
 
 ---

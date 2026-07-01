@@ -10,11 +10,14 @@ import DiscordConversation, { DiscordMessage } from "@site/src/components/Discor
 
 # Initial Verification Process Complete
 
-:::warning MUTUAL EXCLUSIVITY
+:::info VRC Verified Members Upgrading to Eden Verified
 
-No member should ever have both the <RoleBadge role="VRC Verified" color="#00ff00" /> role and the regular <RoleBadge role="Verified" color="#00ff00" /> role at the same time. If someone tries to do go through the ID verification process while having the <RoleBadge role="VRC Verified" color="#00ff00" /> role, you may inform them that only one form of verification is needed. If they want to go through the ID verification process, please remove the <RoleBadge role="VRC Verified" color="#00ff00" /> role when you give them the <RoleBadge role="Verified" color="#00ff00" /> role.
+Members with <RoleBadge role="VRC Verified" color="#00ff00" /> or <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> who complete regular ID verification will receive <RoleBadge role="Eden Verified" color="#00ff00" />. **No manual role changes are needed** — Orion automatically removes the VRC Verified and Blocked VRC Verified roles when you use <code>/verify</code> or the Verify button on Orion Board.
+
+The verification process for Cutie Helpers and Moderators is unchanged: use <code>/verify</code> in the ticket thread or the green **Verify** button on the Orion web dashboard.
 
 :::
+
 Once initial verification meets all required criteria:
 
 1. **Welcome Message**:
@@ -22,13 +25,13 @@ Once initial verification meets all required criteria:
    - Include important channels and information (see template below).
 
 2. **Complete Verification**:
-   - Use **<code>/verify</code>** in the ticket thread or the <DiscordButton type="success" emoji="✅">Verify</DiscordButton> button on the Orion Board. Staff cannot manually assign the Verified role—Hephia removes Unverified when verification completes.
+   - Use **<code>/verify</code>** in the ticket thread or the <DiscordButton type="success" emoji="✅">Verify</DiscordButton> button on the Orion Board. Staff cannot manually assign the Eden Verified role—Orion removes Unverified when verification completes.
    - The Unverified role can be removed manually **only** when the user already has a verification role. It cannot be removed otherwise (protection measure). Only admins can bypass.
 
 :::danger Verification Image Deletion
 If the member deletes their verification images after the initial verification is completed, please ask them to repost the images in order for a moderator to double check the verification. If they do not comply in a timely manner, you are allowed to give back their <RoleBadge role="Unverified" color="#ff0000" /> role and inform them that their verification has been temporarily revoked.
 
-**DO NOT** attempt to manually remove the <RoleBadge role="Verified" color="#00ff00" /> role. The <RoleBadge role="Unverified" color="#ff0000" /> role is all that's needed to prevent them from accessing verified channels.
+**DO NOT** attempt to manually remove the <RoleBadge role="Eden Verified" color="#00ff00" /> role. The <RoleBadge role="Unverified" color="#ff0000" /> role is all that's needed to prevent them from accessing verified channels.
 :::
 
 ## Example: Completion Conversation

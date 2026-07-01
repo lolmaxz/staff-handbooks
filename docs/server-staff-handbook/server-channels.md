@@ -28,7 +28,7 @@ Once your application to be part of the server staff has been accepted, you will
 
 - <ChannelBadge label="🟩-staff-logs" link="https://discord.com/channels/734595073920204940/741167289813958718" />: Is the most important channel when it comes to user joining, leaving, deleting messages or editing messages. Any channel modification also gets logged in there. This is only for the channel at the level which helpers can see. There are other undisclosed staff-logs channels for higher level of logs, which are essentially the same logs but for events happening in higher level of staff. To avoid leakage of information from higher staff channels!
 
-- <ChannelBadge label="🔗-vrchat-age-logs" link="https://discord.com/channels/734595073920204940/1319750107859779725" />: Perfect channel to know when someone gets age cross verified using their VRChat account linked! This is the best place to look if you wanna make sure that someone got properly age verified and acts as a log for us to know who used our system.
+- <ChannelBadge label="🔗-vrchat-age-logs" link="https://discord.com/channels/734595073920204940/1319750107859779725" />: Logs when someone cross-verifies using their linked VRChat account. Since July 1, 2026, VRChat cross verification no longer grants server access — it assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> instead. Use this channel to confirm cross-verification activity.
 
 - <ChannelBadge label="⏹️-role-changes" link="https://discord.com/channels/734595073920204940/1424116477727866920" />: This one is like the staff-logs, except it logs only the role changes on members. Whenever they receive a role or a role is removed, we will know about it. We even know who gives a role to who.
 

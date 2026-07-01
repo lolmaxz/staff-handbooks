@@ -23,7 +23,7 @@ The **Lewd Governors** are the owners and co-owners of the server.
 - Oversee the overall server operations.
 
 :::info
-Currently, <RoleBadge role="lolmaxz" color="#00B9ff" /> and <RoleBadge role="krenki" color="#00B9ff" /> serves as Lewd Governors, overseeing the server's operations.
+Currently, <RoleBadge role="lolmaxz" color="#00B9ff" />, <RoleBadge role="krenki" color="#00B9ff" /> and <RoleBadge role="verbaldrop" color="#00B9ff" /> serve as Lewd Governors, overseeing the server's operations.
 :::
 
 ---
@@ -62,7 +62,7 @@ The **Horny Resources** department handles internal staff matters.
 :::info Why an HR?
 HR is essential for maintaining a positive and professional environment among staff members.
 
-Currently, <RoleBadge role="s4.ryn" color="#00B9ff" />, <RoleBadge role="solii" color="#00B9ff" /> and <RoleBadge role="zerohour1998" color="#00B9ff" /> serves as HR members.
+Currently, <RoleBadge role="solii" color="#00B9ff" /> and <RoleBadge role="zerohour1998" color="#00B9ff" /> serve as HR members.
 :::
 
 ---

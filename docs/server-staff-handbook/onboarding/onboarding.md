@@ -119,7 +119,11 @@ For detailed information about the training process, requirements, and promotion
 
 ### Verification System
 
-The verification process ensures only adults can access our community:
+The verification process ensures only adults can access our community. Full server access requires the <RoleBadge role="Eden Verified" color="#00ff00" /> role.
+
+:::warning VRChat Cross Verification Retired — July 1, 2026
+VRChat age cross verification no longer grants server access. Cross-verifying assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> instead. See the verification pages for full details.
+:::
 
 <CardGrid columns={2}>
   <Card title="Standard ID Verification" status="success" href="../verification-process/verification-requirements">
@@ -127,16 +131,24 @@ The verification process ensures only adults can access our community:
       <li>Government-issued ID with selfie</li>
       <li>Must show DOB, expiry date, issuing body</li>
       <li>All four corners visible</li>
-      <li><strong>Preferred method</strong></li>
+      <li><strong>Preferred method</strong> — grants <RoleBadge role="Eden Verified" color="#00ff00" /></li>
     </ul>
   </Card>
   
-  <Card title="VRChat Age Verification" status="info" href="../verification-process/vrchat-linking-troubleshooting">
+  <Card title="Verify Using Fansly" status="info" href="../verification-process/verification-requirements">
     <ul>
+      <li>Fansly creator verification required (blue checkmark on profile)</li>
+      <li>Typically takes 1 hour to a few hours</li>
+      <li>Alternative cross verification method</li>
+    </ul>
+  </Card>
+
+  <Card title="VRChat (Temp Disabled)" status="warning" href="../verification-process/vrchat-linking-troubleshooting">
+    <ul>
+      <li><strong>No longer grants server access</strong></li>
       <li>Requires active <Tooltip tip="VRC+ subscription costs ~$10/month">VRC+ subscription</Tooltip></li>
-      <li>Alternative verification method</li>
-      <li>Account linking required</li>
-      <li>Cross-verification process</li>
+      <li>Account linking still required for VRChat features</li>
+      <li>Assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /></li>
     </ul>
   </Card>
 </CardGrid>
