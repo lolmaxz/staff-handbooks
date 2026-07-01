@@ -119,9 +119,9 @@ For detailed information about the training process, requirements, and promotion
 
 ### Verification System
 
-The verification process ensures only adults can access our community. Full server access requires the <RoleBadge role="Eden Verified" color="#00ff00" /> role.
+The verification process ensures only adults can access our community. Full server access requires the <RoleBadge role="Eden Verified" color="#00ff00" /> role or the <RoleBadge role="Fansly Verified" color="#00ff00" /> role.
 
-:::warning VRChat Cross Verification Retired — July 1, 2026
+:::warning VRChat Cross Verification Temporarilly removed — July 1, 2026
 VRChat age cross verification no longer grants server access. Cross-verifying assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> instead. See the verification pages for full details.
 :::
 
@@ -140,6 +140,7 @@ VRChat age cross verification no longer grants server access. Cross-verifying as
       <li>Fansly creator verification required (blue checkmark on profile)</li>
       <li>Typically takes 1 hour to a few hours</li>
       <li>Alternative cross verification method</li>
+      <li><strong>Grants <RoleBadge role="Fansly Verified" color="#00ff00" /></strong></li>
     </ul>
   </Card>
 
@@ -148,7 +149,7 @@ VRChat age cross verification no longer grants server access. Cross-verifying as
       <li><strong>No longer grants server access</strong></li>
       <li>Requires active <Tooltip tip="VRC+ subscription costs ~$10/month">VRC+ subscription</Tooltip></li>
       <li>Account linking still required for VRChat features</li>
-      <li>Assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /></li>
+      <li>Grants <RoleBadge role="VRC Verified" color="#00ff00" /> and <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> if the member is not verified</li>
     </ul>
   </Card>
 </CardGrid>

@@ -34,8 +34,8 @@ import CardGrid, { Card } from "@site/src/components/CardGrid";
 ## Requirements & Restrictions
 
 <CardGrid columns={2}>
-  <Card title="Eden Verified Role Requirement" status="warning" icon="✅">
-    <p>All Group instances must be limited to the <strong>Eden Verified group role minimum</strong>.</p>
+  <Card title="Verified Role Requirement" status="warning" icon="✅">
+    <p>All Group instances must be limited to the <strong>Verified group role minimum</strong>.</p>
   </Card>
 
   <Card title="Not Official Events" status="info" icon="⚠️">

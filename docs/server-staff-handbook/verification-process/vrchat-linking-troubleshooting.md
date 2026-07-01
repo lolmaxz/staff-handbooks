@@ -15,7 +15,7 @@ import DiscordConversation, { DiscordMessage } from "@site/src/components/Discor
 This guide helps staff troubleshoot VRChat account linking and cross age verification issues. Understanding these systems is crucial for providing effective member support.
 :::
 
-:::warning VRChat Cross Verification Retired — July 1, 2026
+:::warning VRChat Cross Verification Temporarilly removed — July 1, 2026
 As of **July 1, 2026 at 2:00 PM EST**, VRChat age cross verification **no longer grants server access**. The button is labeled **VRChat (Temp Disabled)**. Cross-verifying assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> instead of unlocking the server. Existing VRC Verified members and returning members also receive this role automatically on that date.
 
 Members who cross-verify or have the VRC Verified role must complete **Regular ID verification** in Eden or **Fansly cross verification** from the ticket panel to obtain <RoleBadge role="Eden Verified" color="#00ff00" />.
