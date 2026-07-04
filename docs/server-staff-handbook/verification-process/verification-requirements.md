@@ -33,7 +33,6 @@ As of **July 1, 2026 at 2:00 PM EST**, VRChat age cross verification **no longer
 The verification process begins when a member requests age verification. This section outlines the initial steps and available verification methods.
 
 1. **Initial Contact**:
-
    - Member initiates verification in <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/>
    - They select from **Regular ID**, **VRChat (Temp Disabled)**, or **Verify Using Fansly**
    - If they see 'No Access', direct them to <ChannelBadge label="💠𝘙ules" link="https://discord.com/channels/734595073920204940/737074569319546921"/>
@@ -63,16 +62,16 @@ The verification process begins when a member requests age verification. This se
     </ul>
   </Card>
 
-  <Card title="VRChat (Temp Disabled)" icon={<RectangleGoggles size={20} />}>
-    <p><strong>No longer grants server access</strong> — preserved in case we revert this decision</p>
-    <ul>
-      <li>Requires active <Tooltip tip="VRChat verification requires both age verification on VRChat and an active VRC+ subscription">VRC+ subscription</Tooltip></li>
-      <li>Link account: <DiscordButton type="primary" emoji="🔗">Click Here To Link Your VRChat Account</DiscordButton></li>
-      <li>Cross verify: <DiscordButton type="secondary" emoji="🥽">VRChat (Temp Disabled)</DiscordButton></li>
-      <li>Assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> — does <strong>not</strong> unlock the server</li>
-      <li>See <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/> for details</li>
-    </ul>
-  </Card>
+<Card title="VRChat (Temp Disabled)" icon={<RectangleGoggles size={20} />}>
+<p><strong>No longer grants server access</strong> — preserved in case we revert this decision</p>
+<ul>
+<li>Requires active <Tooltip tip="VRChat verification requires both age verification on VRChat and an active VRC+ subscription">VRC+ subscription</Tooltip></li>
+<li>Link account: <DiscordButton type="primary" emoji="🔗">Click Here To Link Your VRChat Account</DiscordButton></li>
+<li>Cross verify: <DiscordButton type="secondary" emoji="🥽">VRChat (Temp Disabled)</DiscordButton></li>
+<li>Assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> — does <strong>not</strong> unlock the server</li>
+<li>See <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/> for details</li>
+</ul>
+</Card>
 </CardGrid>
 
 ## Verification Checklist
@@ -82,7 +81,7 @@ This checklist ensures all necessary steps are completed during the verification
 <Checklist checklistId="verification-process" title="Verification Process Steps" borderColor="#800080">
   <Checklist.Item id="check-id">Review submitted ID for validity and required information</Checklist.Item>
   <Checklist.Item id="check-selfie">Verify selfie matches ID and shows required information</Checklist.Item>
-  <Checklist.Item id="check-note">Confirm handwritten note with date and username</Checklist.Item>
+  <Checklist.Item id="check-note">Confirm handwritten note with date and username (Usernames are not case sensitive)</Checklist.Item>
   <Checklist.Item id="check-details">Ensure DOB, expiry date, and issuing body are visible</Checklist.Item>
   <Checklist.Item id="check-corners">Verify all four corners of ID are visible</Checklist.Item>
   <Checklist.Item id="verify">Use <code>/verify</code> in the ticket or the Verify button on Orion Board to complete verification (staff cannot manually assign Eden Verified)</Checklist.Item>
@@ -145,7 +144,6 @@ Your privacy and security are our top priorities
 :::
 
 1. **Verification Process**:
-
    - Initial verification by a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> or a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" />
    - Second review by <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only
    - Ticket closure after verification by <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only
