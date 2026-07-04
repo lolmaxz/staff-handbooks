@@ -39,7 +39,7 @@ Member will submit their application for their respective teams to discuss and v
     <p>Describes the following capabilities of a person: Ability to read room's vibe, read body language of others, communicate themselves well, not create discomfort in how they approach and hold themselves in front of others. <Tooltip tip="This does not mean they are nice, easy to talk with, and havent caused any problems!" bubbleColor="#e94242" labelColor="#e94242"> Bad Examples </Tooltip></p>
 </details>
 
-Following vote of application to be accepted by staff an interview will be setup be Respective Team Heads and HR.
+Following vote of application to be accepted by staff an interview will be setup by Respective Team Heads and HR.
 
 ---
 
