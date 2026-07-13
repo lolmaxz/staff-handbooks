@@ -12,11 +12,11 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
  */
 const sidebars: SidebarsConfig = {
   handbookSidebar: [
-    // {
-    //   type: "doc",
-    //   id: "new-component",
-    //   label: "New Component!",
-    // },
+    {
+      type: "doc",
+      id: "new-component",
+      label: "New Component!",
+    },
     {
       type: "doc",
       id: "intro",
