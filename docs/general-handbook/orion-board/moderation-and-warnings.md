@@ -4,6 +4,8 @@ title: Moderation and Warnings
 ---
 
 import CommandCard from "@site/src/components/CommandCard";
+import DiscordButton from "@site/src/components/DiscordButton";
+import Tooltip from "@site/src/components/Tooltip";
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 
 # Moderation and Warnings
@@ -21,15 +23,19 @@ Discord slash commands allow **only 1 attachment at a time** for warnings, watch
 <CardGrid columns={2}>
   <Card title="Formal Warning" status="warning" icon="⚠️">
     <CommandCard cmd="/warn" perms="Moderator" cardColor="orange">
-      user, reason, ticket (autocomplete), notes, evidence. Can link to ticket. "Open Ticket" button if no ticket exists.
+      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket (autocomplete), notes, evidence. Can link to ticket.
     </CommandCard>
   </Card>
   <Card title="Informal Warning" status="info" icon="💬">
     <CommandCard cmd="/warn-informal" perms="Moderator" cardColor="blue">
-      user, reason, ticket, evidence. Informal server warning.
+      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, evidence. Informal server warning.
     </CommandCard>
   </Card>
 </CardGrid>
+
+:::tip Warning a member who left
+Both <code>user</code> and <code>user_id</code> are optional. Use <code>user_id</code> when the member is no longer in the server—for example, if a warning was supposed to be given but they left before it could be issued.
+:::
 
 ---
 
@@ -38,15 +44,48 @@ Discord slash commands allow **only 1 attachment at a time** for warnings, watch
 <CardGrid columns={2}>
   <Card title="Formal Event Warning" status="warning" icon="⚠️">
     <CommandCard cmd="/warn-event" perms="Senior Event Team" cardColor="purple">
-      user, reason, ticket, notes, evidence, punishment (24h, 2d, 3d, 5d, 1w, 2w, 3w, 1m, 3m, 6m, 1y, indefinite). Optional punishment creates event ban automatically.
+      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, notes, evidence, punishment (24h, 2d, 3d, 5d, 1w, 2w, 3w, 1m, 3m, 6m, 1y, indefinite). Optional punishment creates event ban automatically.
     </CommandCard>
   </Card>
   <Card title="Informal Event Warning" status="info" icon="💬">
     <CommandCard cmd="/warn-informal-event" perms="Senior Event Team" cardColor="purple">
-      user, reason, ticket, evidence. Informal event warning.
+      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, evidence. Informal event warning.
     </CommandCard>
   </Card>
 </CardGrid>
+
+---
+
+## Opening a Ticket from a Warning
+
+When you run **any** warning command without linking a ticket, the confirmation message includes an optional button:
+
+<p>
+  <DiscordButton type="primary" emoji="🎫">Open Ticket</DiscordButton>
+</p>
+
+Clicking it will:
+
+<CardGrid columns={2}>
+  <Card title="Create the ticket" status="success" icon="🎫">
+    Opens a new ticket right away from the warning confirmation.
+  </Card>
+  <Card title="Pull the member" status="info" icon="👤">
+    Automatically adds the warned member to the ticket.
+  </Card>
+  <Card title="Pre-fill the reason" status="info" icon="📝">
+    Writes the warning reason into the ticket automatically.
+  </Card>
+  <Card title="Link automatically" status="success" icon="🔗">
+    Links the new ticket to the warning so the records stay connected.
+  </Card>
+</CardGrid>
+
+This applies to all warning types: <code>/warn</code>, <code>/warn-informal</code>, <code>/warn-event</code>, and <code>/warn-informal-event</code>.
+
+:::warning Exception — member not in the server
+If the member was **not currently in the server** when the warning was issued (for example, you used <code>user_id</code>), the <DiscordButton type="primary" emoji="🎫">Open Ticket</DiscordButton> button will **not** appear. Discord cannot open a ticket for someone who is not in the server.
+:::
 
 ---
 

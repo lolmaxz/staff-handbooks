@@ -4,7 +4,9 @@ title: Slash Commands Reference
 ---
 
 import CommandCard from "@site/src/components/CommandCard";
+import DiscordButton from "@site/src/components/DiscordButton";
 import RoleBadge from "@site/src/components/RoleBadge";
+import Tooltip from "@site/src/components/Tooltip";
 
 # Slash Commands Reference
 
@@ -23,20 +25,24 @@ Quick reference for all ticket and moderation slash commands used with Orion Boa
 ## Warnings
 
 <CommandCard cmd="/warn" perms="Moderator" cardColor="orange">
-  Formal server warning. <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only. user, reason, ticket (autocomplete), notes, evidence. "Open Ticket" button if no ticket exists.
+  Formal server warning. <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only. user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket (autocomplete), notes, evidence.
 </CommandCard>
 
 <CommandCard cmd="/warn-informal" perms="Moderator" cardColor="orange">
-  Informal server warning. <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only. user, reason, ticket, evidence.
+  Informal server warning. <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> only. user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, evidence.
 </CommandCard>
 
 <CommandCard cmd="/warn-event" perms="Senior Event Team" cardColor="purple">
-  Event warning. <RoleBadge role="Senior Event Team" color="#ffc857" /> only. user, reason, ticket, notes, evidence, punishment (optional—24h, 2d, 3d, 5d, 1w, 2w, 3w, 1m, 3m, 6m, 1y, indefinite). Optional punishment creates event ban.
+  Event warning. <RoleBadge role="Senior Event Team" color="#ffc857" /> only. user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, notes, evidence, punishment (optional—24h, 2d, 3d, 5d, 1w, 2w, 3w, 1m, 3m, 6m, 1y, indefinite). Optional punishment creates event ban.
 </CommandCard>
 
 <CommandCard cmd="/warn-informal-event" perms="Senior Event Team" cardColor="purple">
-  Informal event warning. <RoleBadge role="Senior Event Team" color="#ffc857" /> only. user, reason, ticket, evidence.
+  Informal event warning. <RoleBadge role="Senior Event Team" color="#ffc857" /> only. user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, evidence.
 </CommandCard>
+
+:::info No ticket linked?
+If you warn without linking a ticket, the confirmation message shows <DiscordButton type="primary" emoji="🎫">Open Ticket</DiscordButton> — creates a ticket, pulls the member, pre-fills the warning reason, and links it automatically. Not shown if the member is not in the server. Full details: [Moderation and Warnings](/docs/general-handbook/orion-board/orion-board-moderation-and-warnings#opening-a-ticket-from-a-warning).
+:::
 
 ---
 
