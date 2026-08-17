@@ -14,7 +14,7 @@ import Link from "@docusaurus/Link";
 Free-Use events are special planning events where volunteer members (staff or regular members) act as "Free-Use," allowing attendees to come and pick a room with a Free-Use volunteer for fun time together.
 
 :::info Event Type
-These events aren't restricted to Patreon events; they also happen as regular events. Free-Use volunteers roleplay as restaurant staff, club staff, or similar, checking on customers while allowing free use in public areas or unlocked private rooms.
+These events aren't restricted to Patreon events; they also happen as regular events. Free-Use volunteers roleplay as restaurant staff, club staff, or similar, checking on customers while allowing free use in public areas or private rooms.
 :::
 
 ## Event Overview
@@ -127,7 +127,7 @@ Copy this template and fill it out for your Free-Use event planning thread:
 Free-Use events are an event type where we have some volunteered members (staff or regular members) that act as "Free-Use" and attendees are free to come and pick a room of a Free-Use to have fun time with them.
 
 **Volunteer Preference:** [e.g., "Femboys preferred but not absolutely required" or specify any preferences]
-**Volunteer Roleplay:** [Describe the roleplay theme, e.g., "Volunteers will roleplay as restaurant staff checking on customers. Free use will be allowed in public areas or in private rooms (unlocked)"]
+**Volunteer Roleplay:** [Describe the roleplay theme, e.g., "Volunteers will roleplay as restaurant staff checking on customers. Free use will be allowed in public areas or in private rooms"]
 
 **SFW/Aftercare Areas:**
 - [List designated safe areas]
@@ -166,7 +166,7 @@ To recruit Free-Use volunteers:
 4. Include a list of potential volunteers in your planning thread
 
 :::info Private Room Rules
-Free-Use rooms may be locked so long as they are in VC with staff, ensuring security can monitor and respond to any issues.
+Private rooms may be locked or left unlocked (same as other events). Free-Use volunteers should still stay in <strong>VC with staff</strong> so security can monitor and respond quickly if something goes wrong.
 :::
 
 ---

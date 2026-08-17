@@ -204,7 +204,7 @@ Follow this flowchart to determine when and how to request security based on you
   <DiscordMessage
     name="Event Host 1"
     color="#f75edb"
-    message="Thank you! Don't forget to add `(security)` in the signup thread next to your name. 😊"
+    message="Thank you! Don't forget to add `(security)` in the signup thread next to your name — and I'll add you on the public event post (or update TBD). 😊"
   />
 </DiscordConversation>
 

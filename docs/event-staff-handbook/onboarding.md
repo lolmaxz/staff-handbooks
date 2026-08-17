@@ -127,19 +127,16 @@ Staff are the face of Eden. You're expected to not only uphold the rules but fol
 Your first step is to get scheduled for training!
 
 1. **Wait for the weekly scheduling post**
-
    - Go to <ChannelBadge variant="post" label="📆event-scheduling" link="https://discord.com/channels/734595073920204940/1024399192300454029" />
    - Wait until the next week's post is open (typically posted on Wednesday/Thursday)
    - If it's already open, you're good to go!
 
 2. **Submit your availability template**
-
    - As a trial, you need to let the team know your availabilities to be trained
    - **You will also be responsible to reach out to trainers** to train you unless they do it first
    - When the scheduling thread is open, reply with your availability using the Trial Host Template below
 
    **Template Instructions:**
-
    - For each day, specify the **times** or **time ranges** you are available to potentially get trained
    - Times must be in **EST** (Eastern Standard Time) or using HammerTime format (See website: https://hammertime.cyou/)
    - You can provide a time range like `8pm->11pm` (available during that range)
@@ -181,7 +178,6 @@ Your first step is to get scheduled for training!
    ```
 
    **Example format for a day:**
-
    - `• 8pm + 10pm - Classic Event (?Event Type Preference)` - Available at 8pm EST and 10pm EST, prefers Classic Event type
    - `• 9pm->11pm - Special Event` - Available between 9pm and 11pm EST for any event type
 
@@ -193,7 +189,7 @@ Your first step is to get scheduled for training!
    - This way you can give many availabilities, but scheduling will try to limit your hosting/training to the amount you specified! 💖
 
 :::tip Finding Senior Staff
-Check the schedule in <ChannelBadge variant="post" label="📆event-scheduling" link="https://discord.com/channels/734595073920204940/1024399192300454029" />. Look for the <RoleBadge role="Senior Event Team" color="#3fa7ff" /> or <RoleBadge role="Event Committee" color="#db1cb8" /> icons next to people's names, or check server profiles to see who's in these groups.
+Check the schedule in <ChannelBadge variant="post" label="📆event-scheduling" link="https://discord.com/channels/734595073920204940/1024399192300454029" />. Look for the <RoleBadge role="Senior Event Team" color="#3fa7ff" /> <img src={require("../../static/img/senior_event_team_role_icon.png").default} alt="Senior Event Team Role Icon" width="20" /> or <RoleBadge role="Event Committee" color="#db1cb8" /> <img src={require("../../static/img/event_committee_role_icon.png").default} alt="Event Committee Role Icon" width="20" /> icons next to people's names, or check server profiles to see who's in these groups.
 
 Once you find an event hosted by a Senior Event Staff or Committee Member, ask them in <ChannelBadge label="📘events-organization" link="https://discord.com/channels/734595073920204940/741166096421486645" /> if they can train you during their scheduled event.
 :::

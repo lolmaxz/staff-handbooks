@@ -36,11 +36,10 @@
   box-shadow: 0 0 0 1px var(--ifm-background-color);
 }
 
+/* Portaled to document.body — fixed so tables/overflow can't clip it */
 .bubble {
-  position: absolute;
-  bottom: 135%;
-  left: 50%;
-  transform: translateX(-50%) scale(0.85);
+  position: fixed;
+  z-index: 10000;
   width: var(--bubble-w, auto);
   min-width: var(--bubble-min, auto);
   max-width: 420px;
@@ -54,48 +53,32 @@
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.18s ease, transform 0.18s ease;
-  z-index: 60;
+  transform: translate(-50%, calc(-100% - 0.45rem)) scale(0.85);
 }
 
-/* default = centred bubble */
-.wrapper[data-align="center"] .bubble {
-  left: 50%;
-  transform: translateX(-50%) scale(0.85);
-}
-.wrapper[data-align="center"]:hover .bubble,
-.wrapper[data-align="center"]:focus-within .bubble {
-  transform: translateX(-50%) scale(1);
+.bubble[data-align="left"] {
+  transform: translate(0, calc(-100% - 0.45rem)) scale(0.85);
 }
 
-/* stick to the left edge of the word */
-.wrapper[data-align="left"] .bubble {
-  left: 0;
-  transform: translateY(0) scale(0.85);
-}
-.wrapper[data-align="left"]:hover .bubble,
-.wrapper[data-align="left"]:focus-within .bubble {
-  transform: translateY(0) scale(1);
-}
-/* caret for left‑edge */
-.wrapper[data-align="left"] .bubble::after {
-  left: 1.25rem;
-  transform: translateX(0);
+.bubble[data-align="right"] {
+  transform: translate(-100%, calc(-100% - 0.45rem)) scale(0.85);
 }
 
-/* stick to the right edge */
-.wrapper[data-align="right"] .bubble {
-  right: 0;
-  left: auto;
-  transform: translateY(0) scale(0.85);
+.bubbleVisible {
+  opacity: 1;
 }
-.wrapper[data-align="right"]:hover .bubble,
-.wrapper[data-align="right"]:focus-within .bubble {
-  transform: translateY(0) scale(1);
+
+.bubbleVisible[data-align="center"],
+.bubbleVisible:not([data-align]) {
+  transform: translate(-50%, calc(-100% - 0.45rem)) scale(1);
 }
-.wrapper[data-align="right"] .bubble::after {
-  right: 1.25rem;
-  left: auto;
-  transform: translateX(0);
+
+.bubbleVisible[data-align="left"] {
+  transform: translate(0, calc(-100% - 0.45rem)) scale(1);
+}
+
+.bubbleVisible[data-align="right"] {
+  transform: translate(-100%, calc(-100% - 0.45rem)) scale(1);
 }
 
 :root {
@@ -112,8 +95,13 @@
   border-top-color: var(--bubble-bg);
 }
 
-.wrapper:hover .bubble,
-.wrapper:focus-within .bubble {
-  opacity: 1;
-  transform: translateX(-50%) scale(1);
+.bubble[data-align="left"]::after {
+  left: 1.25rem;
+  transform: translateX(0);
+}
+
+.bubble[data-align="right"]::after {
+  left: auto;
+  right: 1.25rem;
+  transform: translateX(0);
 }

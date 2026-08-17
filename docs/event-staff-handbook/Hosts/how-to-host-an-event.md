@@ -15,7 +15,7 @@ import { Megaphone } from 'lucide-react';
   </Card>
 </div>
 
-## Hosting Instructions (Revamped)
+## Hosting Instructions
 
 <Checklist checklistId="host-instructions" title="Quick Checklist">
   <Checklist.Item id="announce">Announce 2–6 hours before start; avoid overlapping events; include time, hammertime link, and role ping (in <ChannelBadge variant="post" label="🎉events" link="https://discord.com/channels/734595073920204940/870369777980436520" />).</Checklist.Item>
@@ -38,7 +38,8 @@ Before posting your event announcement, make sure your post includes all require
   <Checklist.Item id="date-time">Date and time (hammertime code format)</Checklist.Item>
   <Checklist.Item id="world-info">World information: Quest/PC compatibility emojis, world name + author, event capacity</Checklist.Item>
   <Checklist.Item id="cohost">Co-host mention (if applicable)</Checklist.Item>
-  <Checklist.Item id="event-description">Event description, game rules if needed, and flairs</Checklist.Item>
+  <Checklist.Item id="security">Security for the event (required when applicable — see below)</Checklist.Item>
+  <Checklist.Item id="event-description">Event description, flairs, and any <strong>event-specific rules</strong> that apply only to this event</Checklist.Item>
   <Checklist.Item id="signup-link">Signup thread link</Checklist.Item>
   <Checklist.Item id="rules-link">Event Rules link</Checklist.Item>
   <Checklist.Item id="join-link">How to Join link</Checklist.Item>
@@ -46,6 +47,17 @@ Before posting your event announcement, make sure your post includes all require
   <Checklist.Item id="vrchat-link">VRChat Linking channel link</Checklist.Item>
   <Checklist.Item id="host-vr">Host's VRC account link</Checklist.Item>
 </Checklist>
+
+:::warning Security line on the public event post
+Name who is working <strong>security</strong> for that event on the public announcement (so members know who to go to).
+
+- If security is not confirmed yet when you post, write <strong>TBD</strong> and <strong>edit the post</strong> once you know.
+- If you are <RoleBadge role="Senior Event Team" color="#3fa7ff" /> hosting <strong>without</strong> dedicated security (you are covering security yourself), a separate security line is not required — you are the security contact.
+:::
+
+:::info Event-specific rules belong in the post
+Put any rules that apply <strong>only to this event</strong> in the Discord announcement — including avatar / theme expectations when they matter (e.g. no goofy avis for orgy, hunt, or free-use). Staff no longer re-announce the full rule set to late joiners — members are expected to read the event post and the rules channel. Your initial start-of-event VR announcement is still expected; repeating it for every late arrival is not.
+:::
 
 <details>
   <summary>Announcement Template (copy/paste)</summary>
@@ -56,8 +68,9 @@ Before posting your event announcement, make sure your post includes all require
 [date and time hammertime code]
 WORLD: [ <:PCQuest_part1:1182072615301558364><:PCQuest_part2:1182072618166259892> or <:PC_Only_part1:1182072623975387216><:PC_Only_part2:1182072628492632064> ] - [World name + author] - Capacity of [EVENT CAPACITY (max amount of people)]
 COHOST: [@cohost] (if applicable)
+SECURITY: [@security] (or TBD — edit the post when confirmed; Senior solo covering security may omit)
 
-[add information about the event, game rules if needed, some flairs]
+[add information about the event, any event-specific rules, game rules if needed, some flairs]
 
 ### Sign up here > [add event signup thread link]
 > [Event Rules](https://discord.com/channels/734595073920204940/737074569319546921/1294366927111716914) · [How to Join](https://discord.com/channels/734595073920204940/980342448712724560) · [Any Questions Here](https://discord.com/channels/734595073920204940/894726709272793169) · [VRChat Linking](https://discord.com/channels/734595073920204940/1228159292306362368)
@@ -119,10 +132,13 @@ Follow specific guidance for your event type; see [Event Types](/docs/event-staf
 
 ## VR Announcement Talking Points
 
+Do this **once at the start** of the event. You are **not** required to repeat the full rules announcement for members who join late — they are expected to know the rules and to have read your Discord event post (including any event-specific rules and who security is).
+
 - Consent is key (ask before touch; OSC goes brr reminder)
 - Name active staff (hosts, security)
 - If issues, contact staff or open an event ticket in the server
-- Event/world‑specific rules (no locked private rooms, collars, game rules, etc.)
+- Any event/world‑specific rules that matter in-world (collars, game rules, event-appropriate avatars / theme, etc.)
+- Private rooms may be locked or unlocked — ring the bell once; leave them alone if there is no answer or a “no”
 - [Optional] Open applications for staff/hosts/security
 
 ## Post‑Event Wrap‑up
