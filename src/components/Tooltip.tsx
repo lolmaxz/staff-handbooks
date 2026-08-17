@@ -1,4 +1,5 @@
-import React, { useCallback, useLayoutEffect, useRef, useState } from "react";
+import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import styles from "./Tooltip.module.css";
 
 interface Props {
@@ -15,6 +16,12 @@ interface Props {
 
 type Align = "center" | "left" | "right";
 
+interface BubblePos {
+  top: number;
+  left: number;
+  align: Align;
+}
+
 export default function Tooltip({
   tip,
   children,
@@ -28,65 +35,106 @@ export default function Tooltip({
 }: Props) {
   const wrapperRef = useRef<HTMLSpanElement>(null);
   const bubbleRef = useRef<HTMLSpanElement>(null);
-  const [align, setAlign] = useState<Align>("center");
+  const [open, setOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
+  const [pos, setPos] = useState<BubblePos>({ top: 0, left: 0, align: "center" });
 
-  const computeAlign = useCallback(() => {
-    const wrap = wrapperRef.current;
-    const bub = bubbleRef.current;
-    if (!wrap || !bub) return;
-
-    const vw = window.innerWidth;
-    const rect = wrap.getBoundingClientRect();
-    const bw = bub.offsetWidth;
-
-    if (rect.left < bw * 0.5) setAlign("left");
-    else if (vw - rect.right < bw * 0.5) setAlign("right");
-    else setAlign("center");
+  useEffect(() => {
+    setMounted(true);
   }, []);
 
-  /* re‑evaluate on mount, hover, focus, and resize */
+  const updatePosition = useCallback(() => {
+    const wrap = wrapperRef.current;
+    if (!wrap) return;
+
+    const rect = wrap.getBoundingClientRect();
+    const bw = bubbleRef.current?.offsetWidth || 0;
+    const vw = window.innerWidth;
+
+    let align: Align = "center";
+    if (bw > 0) {
+      if (rect.left < bw * 0.5) align = "left";
+      else if (vw - rect.right < bw * 0.5) align = "right";
+    }
+
+    let left = rect.left + rect.width / 2;
+    if (align === "left") left = rect.left;
+    if (align === "right") left = rect.right;
+
+    setPos({
+      top: rect.top,
+      left,
+      align,
+    });
+  }, []);
+
   useLayoutEffect(() => {
-    computeAlign();
-    window.addEventListener("resize", computeAlign);
-    return () => window.removeEventListener("resize", computeAlign);
-  }, [computeAlign]);
+    if (!open) return;
+    updatePosition();
+    // Re-measure after paint once bubble width is known
+    const id = requestAnimationFrame(updatePosition);
+    window.addEventListener("resize", updatePosition);
+    window.addEventListener("scroll", updatePosition, true);
+    return () => {
+      cancelAnimationFrame(id);
+      window.removeEventListener("resize", updatePosition);
+      window.removeEventListener("scroll", updatePosition, true);
+    };
+  }, [open, updatePosition]);
 
   const cssVars: React.CSSProperties = {
     "--bubble-bg": color || bubbleColor || "rgba(88,101,242,.85)",
     "--label-clr": color || labelColor || "#8e9bff",
   } as React.CSSProperties;
 
-  const cssVars2: React.CSSProperties = {
-    "--border-bottom": "1px dotted CurrentColor",
+  const labelStyle: React.CSSProperties = {
+    "--border-bottom": noDecoration ? "none" : "1px dotted CurrentColor",
   } as React.CSSProperties;
-
-  if (noDecoration) cssVars2["--border-bottom"] = "none";
 
   if (width) cssVars["--bubble-w"] = typeof width === "number" ? `${width}px` : width;
   if (minWidth) cssVars["--bubble-min"] = typeof minWidth === "number" ? `${minWidth}px` : minWidth;
 
-  const bubbleStyle: React.CSSProperties = useLineBreaks
-    ? {
-        whiteSpace: "pre-line",
-      }
-    : {};
+  const bubbleStyle: React.CSSProperties = {
+    top: pos.top,
+    left: pos.left,
+    ...(useLineBreaks ? { whiteSpace: "pre-line" as const } : {}),
+  };
+
+  const show = () => {
+    setOpen(true);
+  };
+  const hide = () => setOpen(false);
+
+  const bubble =
+    mounted &&
+    createPortal(
+      <span
+        ref={bubbleRef}
+        className={`${styles.bubble} ${open ? styles.bubbleVisible : ""}`}
+        data-align={pos.align}
+        style={{ ...cssVars, ...bubbleStyle }}
+        role="tooltip"
+      >
+        {tip}
+      </span>,
+      document.body,
+    );
 
   return (
     <span
       ref={wrapperRef}
       className={styles.wrapper}
-      data-align={align} /* ← CSS hook */
       style={cssVars}
-      onMouseEnter={computeAlign}
-      onFocus={computeAlign}
+      onMouseEnter={show}
+      onMouseLeave={hide}
+      onFocus={show}
+      onBlur={hide}
     >
-      <span className={styles.label} style={cssVars2}>
+      <span className={styles.label} style={labelStyle}>
         {children}
       </span>
       {!noDecoration && <span className={styles.badge}>i</span>}
-      <span ref={bubbleRef} className={styles.bubble} style={bubbleStyle}>
-        {tip}
-      </span>
+      {bubble}
     </span>
   );
 }

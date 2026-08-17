@@ -39,9 +39,18 @@ Inactivity may result in a discussion with the <RoleBadge role="Head of Security
       <li>Assist the <RoleBadge role="Event Host" color="#f75edb" /> to ensure the event runs smoothly</li>
       <li>Help other <RoleBadge role="Event Security" color="#3fa7ff" /> members if incidents occur</li>
       <li>Welcome joining players during the event to make them feel included</li>
+      <li>Do <strong>not</strong> re-announce the full rules to late joiners (point them to the event post / rules if needed)</li>
+      <li>Do <strong>not</strong> force private rooms unlocked — handle issues when members report them</li>
     </ul>
   </Card>
 </CardGrid>
+
+{/*
+Hephia event signup system (commented out until launch):
+- Click Security Signup on the event's staff listing in events-attendees — see Hephia Event System.
+- During shadow phase, still use Security Signup and coordinate with your mentor.
+- Do not use the public member Sign Up button.
+*/}
 
 ## 🚨 Incident Reporting
 

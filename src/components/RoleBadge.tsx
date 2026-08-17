@@ -10,6 +10,13 @@ const iconMap: Record<string, IconFile> = {
   Admin: "admin_role_icon.png",
   "Lewd Governor": "admin_role_icon.png",
   Helper: "Cutie_helper_role_icon.png",
+  "Senior Event Team": "senior_event_team_role_icon.png",
+  "Event Committee": "event_committee_role_icon.png",
+  "Patreon Supporter": "Test_Patreon_Tier_3_v2.png",
+  "Event Host": "event_host_role_icon.png",
+  "Event Security": "event_security_role_icon.png",
+  "Server Moderator": "moderator_role_icon.png",
+  "Event Team Head": "event_head_role_icon.png",
   // add more role→file pairs as you grow
 };
 
@@ -45,7 +52,7 @@ const roleToColorMap: Record<string, string> = {
   vervacious_: "#00B9ff",
   zerohour1998: "#00B9ff",
   ChaosUnleashed69: "#00B9ff",
-  "VerdeFrappé": "#00B9ff",
+  VerdeFrappé: "#00B9ff",
   grimm: "#00B9ff",
   naturesshadow: "#00B9ff",
   kether: "#00B9ff",

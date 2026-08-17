@@ -54,11 +54,11 @@ We encourage you to add your own flair and personality to events while adhering 
   </Card>
   
   <Card title="Event Invites" icon="✅">
-    <p>Accepting friend requests and managing invite requests, ensuring only <Tooltip tip="Members who have signed up in the event's signup thread" bubbleColor="#d255ec" labelColor="#e68027">signed-up members</Tooltip> are admitted.</p>
+    <p>Accepting friend requests and managing invite requests, ensuring only <Tooltip tip="Coming soon" bubbleColor="#d255ec" labelColor="#e68027">signed-up members</Tooltip> are admitted.</p>
   </Card>
   
   <Card title="Start-of-Event Announcements" icon="🎤">
-    <p>Getting everyone's attention and making concise announcements, including introductions and event rules.</p>
+    <p>Getting everyone's attention for a concise <strong>initial</strong> announcement (introductions and key rules). Late joiners are expected to already know the rules and to have read the Discord event post — you do not re-announce the full rules for every late arrival.</p>
   </Card>
   
   <Card title="Event Hosting" icon="🎉">

@@ -72,7 +72,7 @@ The Badge is available to everyone in the server here: <ChannelBadge label="🎀
       <li>Staff DM policies must be respected</li>
       <li>Don't pull staff aside for issues <em>unrelated</em> to the event</li>
       <li>Spawn area must remain <strong>SFW</strong></li>
-      <li>Private rooms must remain <strong>unlocked</strong> during events</li>
+      <li>Private rooms may be <strong>locked or left unlocked</strong>, attendees choose. Want to join a room? Ring the bell <strong>once</strong>; if there is no answer or a clear “no,” leave them alone</li>
       <li>OSC/automation on avatars requires <strong>mutual consent</strong></li>
       <li>Collar usage requires <strong>consent</strong></li>
       <li>Staff will uphold consent <strong>color codes</strong> when the badge is worn (<ChannelBadge label="🎀｜eden-consent-badge" link="https://discord.com/channels/734595073920204940/1234948469886816418" />)</li>
@@ -80,7 +80,9 @@ The Badge is available to everyone in the server here: <ChannelBadge label="🎀
   </Card>
   <Card title="Avatar & Access" status="info">
     <ul>
-      <li>Min height: <strong>0.5m</strong>; Max: <strong>~3m</strong> <Tooltip tip="Height visible in VRChat avatar menu under the 3D model" bubbleColor="#d255ec" labelColor="#e68027"/></li>
+      <li>Wear <strong>event-appropriate</strong> avatars, what fits is <strong>host discretion</strong> for that event (e.g. goofy avis may be fine for a game night or photo tour, but not for orgy, hunt, or free-use)</li>
+      <li>Respect the host’s avatar / theme choices for their event</li>
+      <li>Min height: <strong>0.5m</strong>; Max: <strong>~3m</strong> <Tooltip tip="Height visible in VRChat avatar menu under the 3D model" bubbleColor="#d255ec" labelColor="#e68027">[info]</Tooltip></li>
       <li>Avoid <strong>rapid avatar swapping</strong></li>
       <li>Default cuddle area is <strong>non‑lewd</strong> unless a host states otherwise</li>
       <li>Bring water for drinking events; follow local laws <em>at all times</em></li>
@@ -107,9 +109,14 @@ The Badge is available to everyone in the server here: <ChannelBadge label="🎀
     <ul>
       <li>Non‑compliance may lead to warnings or removal from the event</li>
       <li>Hosts/Security may remove rule‑breakers and must log incidents</li>
+      <li>Do <strong>not</strong> force private rooms unlocked, members report issues to event security or via an Event‑Talk ticket</li>
     </ul>
   </Card>
 </CardGrid>
+
+:::info Late joiners & knowing the rules
+Staff are **not** required to re-announce event rules to members who join after the initial start-of-event announcement. Members are expected to know the rules in <ChannelBadge variant="post" label="💠｜rules" link="https://discord.com/channels/734595073920204940/737074569319546921" /> (and any event-specific rules on the Discord event post) before joining. Hosts must put any **event-specific** rules in the public event announcement.
+:::
 
 ---
 
@@ -121,7 +128,9 @@ Open <ChannelBadge label="🎫｜open-a-ticket" link="https://discord.com/channe
 
 ## Host Discretion
 
-Hosts may request certain members be restricted from their events when reasons are substantial. See the <a href="./Hosts/host-discretion-list">Host Discretion List</a> for process details.
+Hosts decide what is appropriate for **their** event — including avatar / theme expectations — and may ask members to switch avis or leave if they do not fit. Members are expected to respect that call.
+
+Hosts may also request certain members be restricted from their events when reasons are substantial. See the <a href="./Hosts/host-discretion-list">Host Discretion List</a> for process details.
 
 ---
 
