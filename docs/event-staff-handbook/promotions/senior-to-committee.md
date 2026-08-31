@@ -5,10 +5,40 @@ title: "Promotion: Senior Event Team ➜ Event Committee"
 
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import RoleBadge from "@site/src/components/RoleBadge";
+import StepTimeline from "@site/src/components/StepTimeline";
 
 # Senior ➜ Event Committee 🌟
 
 Committee members help set standards, guide scheduling policy, review tricky incidents, and mentor the team. Here’s a simple view of how you get there and what it means.
+
+<StepTimeline
+  title="How selection works"
+  direction="vertical"
+  size="sm"
+  accentColor="#db1cb8"
+  steps={[
+    {
+      label: "Nomination",
+      detail: "Event Head or Committee",
+      recap: "A current Event Head or Committee member nominates you when they think you are ready for Committee responsibilities.",
+    },
+    {
+      label: "Portfolio review",
+      detail: "Events · tickets · mentoring",
+      recap: "Review covers your events, incident/ticket handling, mentoring, and contributions to docs or team process.",
+    },
+    {
+      label: "Conversation",
+      detail: "Fit · boundaries · availability",
+      recap: "A candid talk about expectations, availability, boundaries, and whether Committee work fits you right now.",
+    },
+    {
+      label: "Committee vote",
+      detail: "Simple majority",
+      recap: "Existing Committee members vote — simple majority decides promotion to Event Committee.",
+    },
+  ]}
+/>
 
 ## Quick Snapshot
 
@@ -33,7 +63,7 @@ Committee members help set standards, guide scheduling policy, review tricky inc
   
   <Card title="What You'll Do" status="warning" icon="🎯">
     <ul>
-      <li>Ensure the weekly schedule is posted every week</li>
+      <li>Ensure the weekly schedule is **Push**ed / published via the [Eden Scheduler](/docs/general-handbook/eden-scheduler/eden-scheduler-schedule-builder) each week</li>
       <li>Help answer event team's questions and provide support</li>
       <li>Shape how the event team works in the future</li>
       <li>Ensure event incidents are handled fairly and consistently</li>

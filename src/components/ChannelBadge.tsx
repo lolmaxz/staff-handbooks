@@ -3,14 +3,14 @@ import clsx from "clsx";
 import React from "react";
 import styles from "./ChannelBadge.module.css";
 
-type Variant = "channel" | "thread" | "post" | "vc";
+type Variant = "channel" | "text" | "thread" | "post" | "vc";
 
 interface Props {
   /** Visible name — e.g. "staff-applications" or "ticket‑1234" */
   label: string;
   /** Destination URL / path */
   link: string;
-  /** "channel" (default), "thread", or "post" */
+  /** "channel" or "text" (default hash icon), "thread", "post", or "vc" */
   variant?: Variant;
   /** Optional tint (HEX or CSS var). Default = Discord blurple */
   color?: string;

@@ -67,7 +67,7 @@ Don't do any serious events using our group instances please. (ie; no Orgy event
 <CardGrid columns={2}>
   <Card title="Event Schedule Check" status="info" icon="📆">
     <p>Please check to make sure that any group instances <strong>do not</strong> overlap with any upcoming scheduled events.</p>
-    <p>See <ChannelBadge variant="post" label="📆｜events-schedule" link="https://discord.com/channels/734595073920204940/820927836411002890" /> for the schedule.</p>
+    <p>See <ChannelBadge variant="text" label="📆｜events-schedule" link="https://discord.com/channels/734595073920204940/820927836411002890" /> for the schedule.</p>
   </Card>
 
   <Card title="Promotion Restrictions" status="warning" icon="📢">

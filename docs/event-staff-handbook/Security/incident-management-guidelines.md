@@ -7,8 +7,37 @@ import RoleBadge from "@site/src/components/RoleBadge";
 import ChannelBadge from "@site/src/components/ChannelBadge";
 import Tooltip from "@site/src/components/Tooltip";
 import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
+import StepTimeline from "@site/src/components/StepTimeline";
 
 # Incident Management Guidelines
+
+<StepTimeline
+  title="Incident response (at a glance)"
+  size="sm"
+  accentColor="#3fa7ff"
+  steps={[
+    {
+      label: "Warn",
+      detail: "Clear verbal warning",
+      recap: "Give a clear verbal warning when possible — firm, respectful tone. Hosts may warn if no security is available.",
+    },
+    {
+      label: "Separate",
+      detail: "Move away privately",
+      recap: "Move the member(s) away from the group so the conversation is private and does not disrupt the event.",
+    },
+    {
+      label: "Document",
+      detail: "Details & witnesses",
+      recap: "Note rules broken, who was involved, notable quotes, and witnesses while the situation is fresh.",
+    },
+    {
+      label: "Log",
+      detail: "events-incidents channel",
+      recap: "After handling it, post a full report in #events-incidents (and use Orion /warn-event commands when formal warnings apply).",
+    },
+  ]}
+/>
 
 ## 1. Primary Responsibility
 
@@ -33,10 +62,34 @@ Our staff should always be trying to maintain a stern but respectful tone in ord
 :::tip Staff Unity & Coordination
 If there is a disagreement between host and security staff, or if different directives were given from both staff to members, both staff members need to:
 
-1. Move away from the group/attendee
-2. Discuss the situation privately in the event VC
-3. Reach a point of agreement
-4. Return with a unified decision
+<StepTimeline
+  title="Align before returning to attendees"
+  direction="vertical"
+  size="sm"
+  accentColor="#3fa7ff"
+  steps={[
+    {
+      label: "Step away",
+      detail: "Move from the group",
+      recap: "Both staff step away from attendees so you are not debating in front of the room.",
+    },
+    {
+      label: "Discuss",
+      detail: "Privately in event VC",
+      recap: "Talk privately in the event VC (or another staff-only space) until you agree on one plan.",
+    },
+    {
+      label: "Agree",
+      detail: "Unified decision",
+      recap: "Decide the single message and action you will both stand behind — no split directions to members.",
+    },
+    {
+      label: "Return",
+      detail: "Present one front",
+      recap: "Go back together and communicate the agreed decision so attendees see one united staff voice.",
+    },
+  ]}
+/>
 
 This approach helps maintain team coherence and presents a united front to event attendees, which is crucial for effective incident management.
 :::

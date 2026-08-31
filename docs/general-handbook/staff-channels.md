@@ -37,7 +37,7 @@ Now, here's all the Channels you need to Familiarize yourself with
 
 - <ChannelBadge label="🐸staff-bites-meetings" link="https://discord.com/channels/734595073920204940/1398456755452776630" />: Weekly staff meetings channel where all staff members can participate in discussions and votes to shape the future of the server. This ensures everyone has a voice in important decisions!
 
-- <ChannelBadge variant="post" label="📆event-scheduling" link="https://discord.com/channels/734595073920204940/1024399192300454029" />: Channel where a weekly post is made to show the schedule for the week.
+- <ChannelBadge variant="post" label="📆event-scheduling" link="https://discord.com/channels/734595073920204940/1024399192300454029" />: Staff channel where the **published** weekly schedule is announced after Committee **Push** on the [Eden Scheduler](/docs/general-handbook/eden-scheduler). Inside it, the <ChannelBadge variant="thread" label="📋CURRENT WEEK'S SCHEDULE" link="https://discord.com/channels/734595073920204940/1208883577643597834" /> thread is the staff-only week view with hammertime ready to copy for event posts. Submit availability on the portal — not in this channel.
 
 - <ChannelBadge label="⭕server-chat-reports" link="https://discord.com/channels/734595073920204940/996504897476366497" />: This channel is used to report anything you may see in chat that may or could violate our server's rules.
 <details>

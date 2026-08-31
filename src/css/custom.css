@@ -667,6 +667,13 @@ main {
   background: var(--ifm-background-color);
 }
 
+/* Anchor targets sit below the fixed navbar when jumped to from in-page links. */
+.theme-doc-markdown h2[id],
+.theme-doc-markdown h3[id],
+.theme-doc-markdown h4[id] {
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 0.75rem);
+}
+
 /* Ensure sidebar stays sticky and doesn't scroll with page */
 .theme-doc-sidebar-container {
   position: sticky !important;
