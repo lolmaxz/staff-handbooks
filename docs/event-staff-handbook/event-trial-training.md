@@ -5,19 +5,146 @@ title: Event Trial Training
 
 import RoleBadge from "@site/src/components/RoleBadge";
 import ChannelBadge from "@site/src/components/ChannelBadge";
+import SegmentToggle from "@site/src/components/SegmentToggle";
+import StepTimeline from "@site/src/components/StepTimeline";
 import Tooltip from "@site/src/components/Tooltip";
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import Link from "@docusaurus/Link";
 
 # Event Trial Training 🎓
 
-After acceptance as an Event Team member, you will receive the <RoleBadge role="Event Trial" color="#f75edb" /> role and access to event channels.
+After acceptance as an Event Team member, you will receive the <RoleBadge role="Event Trial" color="#f75edb" /> role and access to event channels. **This page is the main guide for new event staff** — training stages, scheduling, and what to expect at each event.
+
+**On this page**
+
+- [Getting scheduled](#getting-scheduled) — Eden Scheduler, availability, trainers
+- [Training path](#training-path) — 6 events across 5 stages
+- [Feedback](#feedback) — how seniors evaluate you each event
+- [Feedback areas](#feedback-areas) — pings, invites, announcements, hosting, worlds
+- [Completion](#completion) — earning Host and/or Security roles
 
 :::note 📝 Trial Requirements
 Your trial period requires you to actively staff a minimum of **6 events** in total.
 :::
 
-They consist of both security and host training, including:
+## 📅 Getting Scheduled for Training {#getting-scheduled}
+
+Your first practical step is to get on the weekly schedule so the <RoleBadge role="Event Committee" color="#db1cb8" /> can pair you with a <RoleBadge role="Senior Event Team" color="#3fa7ff" /> trainer. **You are also responsible for reaching out to trainers** unless they contact you first.
+
+<StepTimeline
+  title="Getting scheduled"
+  size="sm"
+  accentColor="#a259f7"
+  steps={[
+    {
+      label: "Log in",
+      detail: "Eden Scheduler",
+      recap: "Open schedule.theedenapis.com and choose Log in with Discord. Trials use the same Host pages as full hosts.",
+    },
+    {
+      label: "Add availability",
+      detail: "Quota + slots",
+      recap: "Set your weekly quota first, then add day/time slots with event mode and optional notes (training preferences go in notes).",
+    },
+    {
+      label: "Get paired",
+      detail: "Committee + trainer",
+      recap: "After Committee Push, Committee pairs you with a Senior whose schedule matches yours. Reach out in #events-organization if you need to coordinate.",
+    },
+    {
+      label: "Train",
+      detail: "6 events below",
+      recap: "Work through the 5 training stages below — 6 events total from security shadowing through solo host observed.",
+    },
+  ]}
+/>
+
+### 1. Open the Eden Scheduler
+
+- Go to [schedule.theedenapis.com](https://schedule.theedenapis.com) and click **Log in with Discord**
+- Click **Host** in the navigation, or use **Add Availabilities** on **Home**
+- Full form walkthrough with screenshots: [Host Availability](/docs/general-handbook/eden-scheduler/eden-scheduler-host-availability)
+
+### 2. Submit your availability
+
+- Click **Add Availabilities** (or **Edit Availabilities**) on the week card
+- Set your **quota** — max training sessions you want that week
+- Add **slots**: days, start/end times, **event mode**, and optional **notes**
+
+On each slot, use the time and timezone toggles:
+
+<SegmentToggle
+  left={{ label: "12h", activeBackground: "#a259f7", activeColor: "#ffffff" }}
+  right={{ label: "24h", activeBackground: "#a259f7", activeColor: "#ffffff" }}
+  value="left"
+  size="sm"
+/>
+
+<SegmentToggle
+  left={{ label: "Local", activeBackground: "#a259f7", activeColor: "#ffffff" }}
+  right={{ label: "EST/EDT", activeBackground: "#a259f7", activeColor: "#ffffff" }}
+  value="left"
+  size="sm"
+/>
+
+- In your **solo-host phase**, put your preferred event type in **notes** or use **Specific** event mode
+- Training preference (if any) goes in **notes** or Discord — there is no separate training toggle on the form
+
+:::tip 💖 Quota
+You can list many slots, but scheduling tries to limit you to the **quota** you set. That helps manage your workload and keeps distribution fair.
+:::
+
+### 3. Get paired and coordinate
+
+- The <RoleBadge role="Event Committee" color="#db1cb8" /> pairs you with a <RoleBadge role="Senior Event Team" color="#3fa7ff" /> member whose schedule matches yours
+- Training sessions are coordinated from both availabilities — confirm times in Discord when needed
+
+:::tip Finding senior staff
+After Committee **Push**es the week, check the <ChannelBadge variant="thread" label="📋CURRENT WEEK'S SCHEDULE" link="https://discord.com/channels/734595073920204940/1208883577643597834" /> thread in <ChannelBadge variant="post" label="📆event-scheduling" link="https://discord.com/channels/734595073920204940/1024399192300454029" />, or **Calendar** in the scheduler ([Shared Calendar](/docs/general-handbook/eden-scheduler/eden-scheduler-shared-calendar)). Look for <RoleBadge role="Senior Event Team" color="#3fa7ff" /> <img src={require("../../static/img/senior_event_team_role_icon.png").default} alt="Senior Event Team Role Icon" width="20" /> or <RoleBadge role="Event Committee" color="#db1cb8" /> <img src={require("../../static/img/event_committee_role_icon.png").default} alt="Event Committee Role Icon" width="20" /> next to names on the schedule.
+
+Once you find an event hosted by Senior staff or Committee, ask in <ChannelBadge label="📘events-organization" link="https://discord.com/channels/734595073920204940/741166096421486645" /> if they can train you during that slot.
+:::
+
+Weekly workflow for hosts (including trials): [Scheduling Procedures](../Hosts/scheduling-procedures). Portal overview: [Eden Scheduler](/docs/general-handbook/eden-scheduler).
+
+---
+
+## 🛤️ Training Path {#training-path}
+
+<StepTimeline
+  title="Training path (6 events)"
+  size="sm"
+  accentColor="#f75edb"
+  steps={[
+    {
+      label: "Security shadow",
+      detail: "2 events",
+      recap: "Follow a Senior through security duties for two events — watch how they welcome members, handle rounds, and de-escalate.",
+    },
+    {
+      label: "Security observed",
+      detail: "1 event",
+      recap: "You are the main security while a Senior observes. They step in only if you need help or something escalates.",
+    },
+    {
+      label: "Co-host",
+      detail: "1 event",
+      recap: "Share hosting with a Senior — you practice announcements and flow while they support and coach in real time.",
+    },
+    {
+      label: "Host + co-host",
+      detail: "1 event",
+      recap: "You lead the event; the Senior acts as co-host backup. This is your first solo-host phase with safety net.",
+    },
+    {
+      label: "Host observed",
+      detail: "1 event",
+      recap: "Run the event independently while a Senior Host shadows. They evaluate whether you are ready for full Host/Security roles.",
+    },
+  ]}
+/>
+
+Each stage in detail:
 
 1. **🛡️ Security Shadowing (2 Events)**: Observe a <RoleBadge role="Senior Event Team" color="#3fa7ff" /> member performing security duties and learn from their experience.
 
@@ -29,7 +156,7 @@ They consist of both security and host training, including:
 
 5. **✨ Solo Hosting with Shadowing Host (1 Event)**: Conduct an event independently while a Senior Host observes, demonstrating your full capability in managing an event.
 
-## 📊 Feedback and Evaluation
+## 📊 Feedback and Evaluation {#feedback}
 
 For each event:
 
@@ -41,7 +168,7 @@ For each event:
 We encourage you to add your own flair and personality to events while adhering to standard hosting practices.
 :::
 
-## 🎯 Key Areas for Feedback
+## 🎯 Key Areas for Feedback {#feedback-areas}
 
 <CardGrid columns={2}>
   <Card title="Event Pings" icon="📢">
@@ -72,73 +199,9 @@ We encourage you to add your own flair and personality to events while adhering 
 
 <div style={{ marginTop: "1.5rem" }} />
 
-## 🎊 Completion & Promotion
+## 🎊 Completion & Promotion {#completion}
 
 After completing your trial, you will receive the <RoleBadge role="Event Host" color="#f75edb" /> and/or <RoleBadge role="Event Security" color="#3fa7ff" /> role(s), depending on your comfort level and trainer feedback.
-
-<div style={{ marginTop: "1.5rem" }} />
-
-## 📅 Submitting Your Availability
-
-As a trial, you need to let the team know your availabilities to be trained. **You will also be responsible to reach out to trainers** to train you unless they do it first.
-
-### How to Fill Out the Template
-
-- In your schedule template, specify for each day what **times** or **time ranges** you are available to potentially get trained
-- Times must be in **EST** (Eastern Standard Time)
-- If you are on your **second phase for Solo event**, you can also specify your **preferred event type** if you have a preference
-- Include how many events you're willing to be trained on that week
-
-### Time Format Examples
-
-- **Single time:** `8pm`
-- **Time range:** `8pm->11pm` (available during that entire range)
-- **Either/or (not in between):** `8pm+11pm` (available at 8pm OR 11pm, not in between)
-
-### Trial Host Template
-
-Copy this template when submitting your availability in the weekly scheduling thread (remove the code block markers when posting):
-
-<details>
-<summary>📋 Trial Host Availability Template (Click to expand)</summary>
-
-```
-## --- My Schedule [TRIAL] ---
-### Max Event Willing to Host/Be Trained this Week: [Number]
-
-** --- Monday --- **
--
-
-** --- Tuesday --- **
--
-
-** --- Wednesday --- **
--
-
-** --- Thursday --- **
--
-
-** --- Friday --- **
--
-
-** --- Saturday --- **
--
-
-** --- Sunday --- **
--
-
-### --- END SCHEDULE ---
-```
-
-**Example for a day:**
-
-- `• 8pm + Classic Event (?Event Type Preference)` - Available at 8pm EST, prefers Classic Event type
-
-</details>
-
-:::tip 💖 Helpful Note
-This way you can give many availabilities, but scheduling will try to limit your hosting/training to the amount you specified! This helps manage your workload and ensures fair distribution.
-:::
 
 <div style={{ marginTop: "1.5rem" }} />
 

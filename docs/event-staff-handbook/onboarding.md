@@ -6,7 +6,8 @@ title: Event Onboarding
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import ChannelBadge from "@site/src/components/ChannelBadge";
 import RoleBadge from "@site/src/components/RoleBadge";
-import Link from "@docusaurus/Link";
+import StepTimeline from "@site/src/components/StepTimeline";
+import TextWithButton from "@site/src/components/TextWithButton";
 import { Dumbbell } from 'lucide-react';
 
 # Event Onboarding 🎯
@@ -18,44 +19,65 @@ All training will be the same regardless if you applied for Host or Security, co
 
 1. Understand how the team works together better
 2. Test you in both roles to see if you're a better fit for one or both
-   :::
+:::
 
-## <Dumbbell size={30} style={{display: 'inline', verticalAlign: 'middle', marginRight: '0.5rem'}} /> Training Stages
+## <Dumbbell size={30} style={{display: 'inline', verticalAlign: 'middle', marginRight: '0.5rem'}} /> Event Trial Training
 
-Your training consists of **6 events** total across **5 stages**, which include both security and host training:
+Once you're accepted, you'll get the <RoleBadge role="Event Trial" color="#f75edb" /> role. **Event Trial Training** is the main handbook page for new event staff — training stages, Eden Scheduler setup, and what seniors look for at each event.
 
-<CardGrid columns={3}>
-  <Card title="1. Security Shadowing" status="info" icon="🛡️">
-    <p><strong>2 Events</strong></p>
-    <p>Follow around a member of the <RoleBadge role="Senior Event Team" color="#3fa7ff" /> or <RoleBadge role="Event Committee" color="#db1cb8" /> and learn how to do security.</p>
-  </Card>
-
-  <Card title="2. Security Observed" status="info" icon="👁️">
-    <p><strong>1 Event</strong></p>
-    <p>Be Security for an event while observed by a member of the Senior team or above.</p>
-  </Card>
-
-  <Card title="3. Co-Host with a Host" status="success" icon="🤝">
-    <p><strong>1 Event</strong></p>
-    <p>Co-host an event with a <RoleBadge role="Senior Event Team" color="#3fa7ff" /> member or above.</p>
+<CardGrid columns={1}>
+  <Card title="What's on Event Trial Training" status="success" icon="🎓">
+    <ul>
+      <li><strong>Getting scheduled</strong> — log in, submit availability, find a trainer</li>
+      <li><strong>6-event training path</strong> — security and host stages in order</li>
+      <li><strong>Feedback areas</strong> — pings, invites, hosting, worlds, and more</li>
+      <li><strong>After trial</strong> — promotion to <RoleBadge role="Event Host" color="#f75edb" /> and/or <RoleBadge role="Event Security" color="#3fa7ff" /></li>
+    </ul>
   </Card>
 </CardGrid>
 
-<CardGrid columns={2}>
-  <Card title="4. Host with a Co-Host" status="success" icon="🎯">
-    <p><strong>1 Event</strong></p>
-    <p>You'll act as the acting host with a <RoleBadge role="Senior Event Team" color="#3fa7ff" /> member or above there to guide and co-host.</p>
-  </Card>
+<TextWithButton
+  text="Start here once you're on the team — full trial guide, scheduling steps, and trainer coordination:"
+  buttonLabel="Open Event Trial Training"
+  buttonHref="../event-trial-training"
+/>
 
-  <Card title="5. Host Observed" status="warning" icon="✨">
-    <p><strong>1 Event</strong></p>
-    <p>A Senior host or above will observe you, but you'll mostly be acting as the sole host.</p>
-  </Card>
-</CardGrid>
+At a glance — **6 events** across **5 stages**:
 
-<div style={{ marginTop: "1.5rem" }} />
+<StepTimeline
+  title="Training path (6 events)"
+  size="sm"
+  accentColor="#f75edb"
+  steps={[
+    {
+      label: "Security shadow",
+      detail: "2 events",
+      recap: "Follow a Senior through security duties for two events — watch how they welcome members, handle rounds, and de-escalate.",
+    },
+    {
+      label: "Security observed",
+      detail: "1 event",
+      recap: "You are the main security while a Senior observes. They step in only if you need help or something escalates.",
+    },
+    {
+      label: "Co-host",
+      detail: "1 event",
+      recap: "Share hosting with a Senior — you practice announcements and flow while they support and coach in real time.",
+    },
+    {
+      label: "Host + co-host",
+      detail: "1 event",
+      recap: "You lead the event; the Senior acts as co-host backup. This is your first solo-host phase with safety net.",
+    },
+    {
+      label: "Host observed",
+      detail: "1 event",
+      recap: "Run the event independently while a Senior Host shadows. They evaluate whether you are ready for full Host/Security roles.",
+    },
+  ]}
+/>
 
-For more detailed information about each stage, feedback areas, and what to expect, see the **[Event Trial Training](../event-trial-training)** page.
+Stage-by-stage detail and scheduling steps are on **Event Trial Training** — use the button above when you're ready.
 
 ## Staff Expectations
 
@@ -90,14 +112,39 @@ For more detailed information about each stage, feedback areas, and what to expe
 
 ## 📚 Essential Resources
 
-- **[Event Rules](../event-rules)** - Rules specific to events
-- **[Event Team Channels](../event-team-channels)** - Important channels for the team
-- **[How to Host an Event](../Hosts/how-to-host-an-event)** - Complete hosting guide
-- **[How to be Security](../Security/how-to-be-security)** - Security responsibilities
-- **[Incident Management Guidelines](../Security/incident-management-guidelines)** - How to handle incidents
-- **[Scheduling Procedures](../Hosts/scheduling-procedures)** - How the weekly schedule works
+- **[Event Trial Training](../event-trial-training)** — main guide for new staff (scheduling + training)
+- **[Event Rules](../event-rules)** — rules specific to events
+- **[Event Team Channels](../event-team-channels)** — important channels for the team
+- **[How to Host an Event](../Hosts/how-to-host-an-event)** — complete hosting guide
+- **[How to be Security](../Security/how-to-be-security)** — security responsibilities
+- **[Incident Management Guidelines](../Security/incident-management-guidelines)** — how to handle incidents
+- **[Scheduling Procedures](../Hosts/scheduling-procedures)** — weekly schedule workflow (reference after trial setup)
 
 ## ⌛ Probation Period
+
+<StepTimeline
+  title="Probation overview"
+  direction="vertical"
+  size="sm"
+  accentColor="#f75edb"
+  steps={[
+    {
+      label: "6 weeks",
+      detail: "~1 event per week",
+      recap: "You have about six weeks to finish all six training events — roughly one event per week on average.",
+    },
+    {
+      label: "Review",
+      detail: "Performance + senior vote",
+      recap: "When training is done (or the period ends), Seniors review your performance notes from each event.",
+    },
+    {
+      label: "Outcome",
+      detail: "Staff · extension · or removal",
+      recap: "Seniors vote on promotion to Host and/or Security, a short extension if you are progressing slowly, or removal from trial.",
+    },
+  ]}
+/>
 
 :::warning ⏰ Important Timeline
 You will have a **6-week probation period** to finish this training (Average of 1 event per week).
@@ -122,88 +169,15 @@ You will have a **6-week probation period** to finish this training (Average of 
 Staff are the face of Eden. You're expected to not only uphold the rules but follow them to the letter yourselves. As such, be aware how you conduct yourself, as any issues that could arise could result in consequences.
 :::
 
-## Getting Started: Event Scheduling
-
-Your first step is to get scheduled for training!
-
-1. **Wait for the weekly scheduling post**
-   - Go to <ChannelBadge variant="post" label="📆event-scheduling" link="https://discord.com/channels/734595073920204940/1024399192300454029" />
-   - Wait until the next week's post is open (typically posted on Wednesday/Thursday)
-   - If it's already open, you're good to go!
-
-2. **Submit your availability template**
-   - As a trial, you need to let the team know your availabilities to be trained
-   - **You will also be responsible to reach out to trainers** to train you unless they do it first
-   - When the scheduling thread is open, reply with your availability using the Trial Host Template below
-
-   **Template Instructions:**
-   - For each day, specify the **times** or **time ranges** you are available to potentially get trained
-   - Times must be in **EST** (Eastern Standard Time) or using HammerTime format (See website: https://hammertime.cyou/)
-   - You can provide a time range like `8pm->11pm` (available during that range)
-   - Use `+` for either time but not in between, like `8pm+11pm` (available at 8pm OR 11pm, not in between)
-   - If you are on your **second phase for Solo event**, you can also specify your **preferred event type** if you have a preference
-   - Include how many events you're willing to be trained on that week
-
-   **Copy this template**:
-
-   <details>
-   <summary>📋 Trial Host Availability Template (Click to expand)</summary>
-
-   ```
-   ## --- My Schedule [TRIAL] ---
-   ### Max Event Willing to Host/Be Trained this Week: [Number]
-
-   ** --- Monday --- **
-   -
-
-   ** --- Tuesday --- **
-   -
-
-   ** --- Wednesday --- **
-   -
-
-   ** --- Thursday --- **
-   -
-
-   ** --- Friday --- **
-   -
-
-   ** --- Saturday --- **
-   -
-
-   ** --- Sunday --- **
-   -
-
-   ### --- END SCHEDULE ---
-   ```
-
-   **Example format for a day:**
-   - `• 8pm + 10pm - Classic Event (?Event Type Preference)` - Available at 8pm EST and 10pm EST, prefers Classic Event type
-   - `• 9pm->11pm - Special Event` - Available between 9pm and 11pm EST for any event type
-
-   </details>
-
-3. **You'll be paired with a trainer**
-   - The <RoleBadge role="Event Committee" color="#db1cb8" /> will pair you with a <RoleBadge role="Senior Event Team" color="#3fa7ff" /> member that matches your schedule for getting trained
-   - Training sessions will be coordinated based on both your availabilities
-   - This way you can give many availabilities, but scheduling will try to limit your hosting/training to the amount you specified! 💖
-
-:::tip Finding Senior Staff
-Check the schedule in <ChannelBadge variant="post" label="📆event-scheduling" link="https://discord.com/channels/734595073920204940/1024399192300454029" />. Look for the <RoleBadge role="Senior Event Team" color="#3fa7ff" /> <img src={require("../../static/img/senior_event_team_role_icon.png").default} alt="Senior Event Team Role Icon" width="20" /> or <RoleBadge role="Event Committee" color="#db1cb8" /> <img src={require("../../static/img/event_committee_role_icon.png").default} alt="Event Committee Role Icon" width="20" /> icons next to people's names, or check server profiles to see who's in these groups.
-
-Once you find an event hosted by a Senior Event Staff or Committee Member, ask them in <ChannelBadge label="📘events-organization" link="https://discord.com/channels/734595073920204940/741166096421486645" /> if they can train you during their scheduled event.
-:::
-
 ---
 
 :::tip TLDR
 **Quick Summary:**
 
-- Complete 6 training events: 2 Security Shadows, 1 Security Observed, 1 Co-Host, 1 Host with Co-Host, 1 Host Observed
-- 6-week probation period (1 event/week), can get 2-3 week extension if progressing slowly
+- Complete **6 training events** across **5 stages** — see **[Event Trial Training](../event-trial-training)** for the full path and **how to get on the schedule**
+- **6-week probation** (~1 event/week); extension possible if progressing slowly
 - Be sociable (Hosts), keep events safe (Security), communicate with the team (Both)
-- Submit your availability in the weekly scheduling thread to get paired with a trainer
-- Read all the linked resources to help you succeed!
+- Read the linked resources — start with **Event Trial Training** once you're accepted
 
 For questions, reach out in <ChannelBadge label="📘events-organization" link="https://discord.com/channels/734595073920204940/741166096421486645" /> or ping the <RoleBadge role="Event Committee" color="#db1cb8" /> or <RoleBadge role="Event Team Head" color="#f75edb" />.
 :::

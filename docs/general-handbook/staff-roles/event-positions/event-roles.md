@@ -119,7 +119,7 @@ Individuals in charge of hosting events and ensuring they run smoothly.
 - Manage event participants.
 - Create/Hype up event announcements.
 - Create general good vibes during events.
-- Required to submit their availability template by Friday each week (see [Scheduling Procedures](../event-staff-handbook/Hosts/scheduling-procedures) for more details).
+- Required to submit availability on the [Eden Scheduler](/docs/general-handbook/eden-scheduler/eden-scheduler-host-availability) each week before lock (see [Scheduling Procedures](/docs/event-staff-handbook/Hosts/scheduling-procedures) and [lock rules](/docs/general-handbook/eden-scheduler#weekly-lock-rules)).
 - Responsible for pairing up with security for events.
 - Enforce rules during events if security is unavailable.
 
@@ -155,7 +155,7 @@ More information about the Trial period can be found in [Event Trial](/docs/even
 
 - Learn how to host and provide security for events within probation training period.
 - Learn how to enforce rules during events within probation training period.
-- Required to submit their availability template for the next week's schedule (see "Scheduling Procedures" in the Event Staff Handbook for more details).
+- Required to submit availability for the next week on the [Eden Scheduler](/docs/general-handbook/eden-scheduler/eden-scheduler-host-availability) (see [Scheduling Procedures](/docs/event-staff-handbook/Hosts/scheduling-procedures)).
 
 :::warning
 Event Trials are in training and should be proactive in learning and asking questions. Event Committee may demote based on not completing training in a timely manner.

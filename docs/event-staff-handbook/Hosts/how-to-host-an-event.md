@@ -7,6 +7,7 @@ import CardGrid, { Card } from "@site/src/components/CardGrid";
 import ChannelBadge from "@site/src/components/ChannelBadge";
 import RoleBadge from "@site/src/components/RoleBadge";
 import Checklist from "@site/src/components/Checklist";
+import StepTimeline from "@site/src/components/StepTimeline";
 import { Megaphone } from 'lucide-react';
 
 <div style={{ marginBottom: "1rem" }}>
@@ -15,18 +16,42 @@ import { Megaphone } from 'lucide-react';
   </Card>
 </div>
 
+<StepTimeline
+  title="Hosting phases"
+  size="sm"
+  accentColor="#f75edb"
+  steps={[
+    {
+      label: "Prep",
+      detail: "Announce · signup · reminders",
+      recap: "Confirm your slot, post in 🎭｜events 2–6 hours ahead, open the signup thread, and send the 1-hour reminder.",
+    },
+    {
+      label: "Live",
+      detail: "Pings · invites · run event",
+      recap: "Patreon doors, general invites, VR announcement once at start, manage the signup thread and capacity during the event.",
+    },
+    {
+      label: "Wrap-up",
+      detail: "Incidents · thread · afterparty",
+      recap: "Log incidents in #events-incidents, close out the signup thread, and optionally open a group instance for afterparty.",
+    },
+  ]}
+/>
+
 ## Hosting Instructions
 
 <Checklist checklistId="host-instructions" title="Quick Checklist">
-  <Checklist.Item id="announce">Announce 2–6 hours before start; avoid overlapping events; include time, hammertime link, and role ping (in <ChannelBadge variant="post" label="🎉events" link="https://discord.com/channels/734595073920204940/870369777980436520" />).</Checklist.Item>
+  <Checklist.Item id="announce">Announce 2–6 hours before start; avoid overlapping events; include time, hammertime link, and role ping (in <ChannelBadge variant="text" label="🎭｜events" link="https://discord.com/channels/734595073920204940/870369777980436520" />).</Checklist.Item>
+  <Checklist.Item id="duration-not-2h">If the event is <strong>not 2 hours</strong>, state the duration in the announcement post <strong>and</strong> tell your security.</Checklist.Item>
   <Checklist.Item id="signup">Create signup thread (in <ChannelBadge variant="post" label="🧵events-signups" link="https://discord.com/channels/734595073920204940/996823116477124608" />).</Checklist.Item>
-  <Checklist.Item id="reminder">Post a 1‑hour reminder (in <ChannelBadge variant="post" label="🎉events" link="https://discord.com/channels/734595073920204940/870369777980436520" />).</Checklist.Item>
+  <Checklist.Item id="reminder">Post a 1‑hour reminder (in <ChannelBadge variant="text" label="🎭｜events" link="https://discord.com/channels/734595073920204940/870369777980436520" />).</Checklist.Item>
   <Checklist.Item id="go-live">When live, post a start notice (in <ChannelBadge variant="post" label="🧵events-signups" link="https://discord.com/channels/734595073920204940/996823116477124608" />); begin accepting requests (prioritize patrons first 10 min).</Checklist.Item>
   <Checklist.Item id="manage">Manage the signup thread; announce when capacity is full, note tech issues/world changes/event start/event end in the thread.</Checklist.Item>
   <Checklist.Item id="conclude">Conclude (in <ChannelBadge variant="post" label="🧵events-signups" link="https://discord.com/channels/734595073920204940/996823116477124608" />); close the thread (team will lock it later).</Checklist.Item>
 </Checklist>
 
-Related references: <ChannelBadge variant="post" label="💠｜rules" link="https://discord.com/channels/734595073920204940/737074569319546921" /> · <ChannelBadge variant="post" label="📘how-to-join-events" link="https://discord.com/channels/734595073920204940/980342448712724560" /> · <ChannelBadge variant="post" label="📆events-schedule" link="https://discord.com/channels/734595073920204940/820927836411002890" />
+Related references: <ChannelBadge variant="post" label="💠｜rules" link="https://discord.com/channels/734595073920204940/737074569319546921" /> · <ChannelBadge variant="post" label="📘how-to-join-events" link="https://discord.com/channels/734595073920204940/980342448712724560" /> · <ChannelBadge variant="text" label="📆｜events-schedule" link="https://discord.com/channels/734595073920204940/820927836411002890" />
 
 ## Event Post Checklist
 
@@ -36,6 +61,7 @@ Before posting your event announcement, make sure your post includes all require
   <Checklist.Item id="role-ping">General Event Ping role (<code> \<@&790399512116068375> </code>)</Checklist.Item>
   <Checklist.Item id="event-title">Event title with time in hours (using hammertime code)</Checklist.Item>
   <Checklist.Item id="date-time">Date and time (hammertime code format)</Checklist.Item>
+  <Checklist.Item id="duration-not-2h">Duration — required in the post if the event is <strong>not 2 hours</strong> (also tell your security)</Checklist.Item>
   <Checklist.Item id="world-info">World information: Quest/PC compatibility emojis, world name + author, event capacity</Checklist.Item>
   <Checklist.Item id="cohost">Co-host mention (if applicable)</Checklist.Item>
   <Checklist.Item id="security">Security for the event (required when applicable — see below)</Checklist.Item>
@@ -55,6 +81,10 @@ Name who is working <strong>security</strong> for that event on the public annou
 - If you are <RoleBadge role="Senior Event Team" color="#3fa7ff" /> hosting <strong>without</strong> dedicated security (you are covering security yourself), a separate security line is not required — you are the security contact.
 :::
 
+:::info Default duration is 2 hours
+If the event is <strong>not 2 hours</strong>, put the duration in the public event post <strong>and</strong> tell your security.
+:::
+
 :::info Event-specific rules belong in the post
 Put any rules that apply <strong>only to this event</strong> in the Discord announcement — including avatar / theme expectations when they matter (e.g. no goofy avis for orgy, hunt, or free-use). Staff no longer re-announce the full rule set to late joiners — members are expected to read the event post and the rules channel. Your initial start-of-event VR announcement is still expected; repeating it for every late arrival is not.
 :::
@@ -66,6 +96,7 @@ Put any rules that apply <strong>only to this event</strong> in the Discord anno
 <@&790399512116068375>
 # EVENT TITLE [in X hours (using hammertime code)]
 [date and time hammertime code]
+DURATION: [only if not 2 hours — e.g. 90 min / 3 hours] (also tell security)
 WORLD: [ <:PCQuest_part1:1182072615301558364><:PCQuest_part2:1182072618166259892> or <:PC_Only_part1:1182072623975387216><:PC_Only_part2:1182072628492632064> ] - [World name + author] - Capacity of [EVENT CAPACITY (max amount of people)]
 COHOST: [@cohost] (if applicable)
 SECURITY: [@security] (or TBD — edit the post when confirmed; Senior solo covering security may omit)
@@ -84,20 +115,57 @@ SECURITY: [@security] (or TBD — edit the post when confirmed; Senior solo cove
 
 ## Pre‑Event Prep
 
+<StepTimeline
+  title="Day-of timing (typical classic event)"
+  direction="vertical"
+  size="sm"
+  accentColor="#f75edb"
+  ariaLabel="Day-of event ping timeline"
+  steps={[
+    {
+      label: "2–6 hours before",
+      detail: "Announcement in 🎭｜events",
+      recap: "Post the full event announcement with role ping, hammertime, world info, security line, and signup thread link. If the event is not 2 hours, include duration and tell security.",
+    },
+    {
+      label: "1 hour before",
+      detail: "Reminder ping",
+      recap: "Send a reminder in 🎭｜events. If overlapping another event, wait until 1 hour after their doors open.",
+    },
+    {
+      label: "15 min before",
+      detail: "Patreon doors (see capacity rules)",
+      recap: "Open Patreon request doors about 15 minutes before start — invite Patreon members first even after general doors open.",
+    },
+    {
+      label: "Start time",
+      detail: "General invites · VR announcement",
+      recap: "Send general invite notice on time, do your one VR announcement at start (rules + staff names — not repeated for every late joiner).",
+    },
+    {
+      label: "After event",
+      detail: "Thread wrap-up · incident reports",
+      recap: "Announce end in the signup thread, report any incidents, and note if spots reopen during wrap-up.",
+    },
+  ]}
+/>
+
 - Confirm you are scheduled
 - <Megaphone /> Publish the event
-- Announcement in <ChannelBadge variant="post" label="🎉events" link="https://discord.com/channels/734595073920204940/870369777980436520" />
+- Announcement in <ChannelBadge variant="text" label="🎭｜events" link="https://discord.com/channels/734595073920204940/870369777980436520" />
 - Post <strong>2–6 hours</strong> before start
 
 :::info Hammertime & Schedule
-Hosts can always find their hammertime text in the <ChannelBadge variant="thread" label="📋CURRENT WEEK'S SCHEDULE" link="https://discord.com/channels/734595073920204940/1208883577643597834" /> forum post. This is also where the most recent schedule for all hosts to look at behind the scenes is posted.
+For event posts, copy hammertime from the staff-only <ChannelBadge variant="thread" label="📋CURRENT WEEK'S SCHEDULE" link="https://discord.com/channels/734595073920204940/1208883577643597834" /> thread in <ChannelBadge variant="post" label="📆event-scheduling" link="https://discord.com/channels/734595073920204940/1024399192300454029" /> — quick access to the week, with timestamps ready to paste.
+
+The same published week is also on the [Eden Scheduler](/docs/general-handbook/eden-scheduler) after Committee **Push**, and in the public <ChannelBadge variant="text" label="📆｜events-schedule" link="https://discord.com/channels/734595073920204940/820927836411002890" />.
 :::
 
 :::warning Overlapping Events
 If overlapping another event, post <strong>1h after</strong> their doors open.
 :::
 
-- Reminder ping 1h before in <ChannelBadge variant="post" label="🎉events" link="https://discord.com/channels/734595073920204940/870369777980436520" />
+- Reminder ping 1h before in <ChannelBadge variant="text" label="🎭｜events" link="https://discord.com/channels/734595073920204940/870369777980436520" />
 
 ## Live Pings
 

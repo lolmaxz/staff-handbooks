@@ -37,6 +37,8 @@ Please refer to specific event guidelines for each classic event type. This sect
 
 :::warning ⏰ Planning Thread Requirement
 All special planning events (Orgy Night, Free Use Events, Role Play Events, Horror Map Events, Lewd Class, etc.) require a planning thread in <ChannelBadge variant="post" label="📘special-event-planning" link="https://discord.com/channels/734595073920204940/741166096421486645" /> to be opened **at least 24 hours in advance** of the event start time (2-3 days preferred, or as soon as the schedule comes out). Events with threads opened less than 24 hours before will be canceled and changed to a regular event.
+
+**Duration must be specified in the planning post.** Default event length is 2 hours — if it is not 2 hours, say so here (and later in the public event post and to security).
 :::
 
 <details>

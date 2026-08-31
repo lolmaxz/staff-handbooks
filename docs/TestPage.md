@@ -18,6 +18,10 @@ import CardGrid, { Card } from '@site/src/components/CardGrid';
 import Spoiler from '@site/src/components/Spoiler';
 import DiscordConversation, { DiscordMessage } from '@site/src/components/DiscordConversation';
 import ContentWithThumbnail from '@site/src/components/ContentWithThumbnail';
+import ResponsiveScreenshot from '@site/src/components/ResponsiveScreenshot';
+import SegmentToggle from '@site/src/components/SegmentToggle';
+import MultiSegmentToggle from '@site/src/components/MultiSegmentToggle';
+import StepTimeline from '@site/src/components/StepTimeline';
 
 # New Components Explained
 
@@ -920,3 +924,472 @@ import ContentWithThumbnail from "@site/src/components/ContentWithThumbnail";
 - **Desktop**: Content on the left, thumbnail on the right (200px width)
 - **Mobile**: Stacks vertically with thumbnail on top, content below
 - **Image**: Automatically maintains aspect ratio and includes border styling
+
+---
+
+## Responsive Screenshot
+
+**Component:** `ResponsiveScreenshot`  
+**Description:** Displays handbook screenshots with a **Desktop | Mobile** toggle. Paths are relative to `static/img/` (use slashes for subfolders). On page load, the initial view follows the visitor's viewport (`max-width: 768px` → mobile when a mobile image exists).
+
+**Required Import:**
+
+```jsx
+import ResponsiveScreenshot from "@site/src/components/ResponsiveScreenshot";
+```
+
+**Live Example:**
+
+<ResponsiveScreenshot
+  src="scheduler/11-host-availability-add-slot"
+  alt="Host availability form with days and time range"
+  caption="Example screenshot with viewport toggle. Mobile view renders smaller."
+/>
+
+```jsx title="ResponsiveScreenshot Usage Code Example:"
+// Desktop + auto-detected mobile (`{src}_mobile.webp`)
+<ResponsiveScreenshot
+  src="scheduler/11-host-availability-add-slot"
+  alt="Host availability form with days and time range"
+  caption="Optional caption below the image."
+/>
+
+// Explicit desktop and mobile paths (any folder under static/img/)
+<ResponsiveScreenshot
+  src="orion/dashboard-overview"
+  mobileSrc="orion/dashboard-overview-phone"
+  alt="Orion dashboard overview"
+/>
+```
+
+**Available Props:**
+
+| Prop | Required | Description |
+| --- | --- | --- |
+| `src` | Yes | Desktop image path relative to `static/img/` without extension (e.g. `scheduler/11-host-availability-add-slot`) |
+| `mobileSrc` | No | Explicit mobile path (same rules). If omitted, `{src}_mobile.webp` is used when present |
+| `alt` | Yes | Accessible alt text for the active image |
+| `caption` | No | Optional figcaption below the image |
+| `className` | No | Extra CSS class on the figure wrapper |
+| `forceView` | No | `"desktop"` or `"mobile"` — TestPage demos only; hides toggle and skips auto-detect |
+
+**Notes:**
+
+- Images must be `.webp` under `static/img/` (any subfolder). Run `npm run convert-scheduler-images` after adding scheduler PNG pairs.
+- If only desktop exists, **Mobile** appears in red and is not clickable; the desktop image is shown.
+- If only mobile exists, **Desktop** appears in red and is not clickable; the mobile image is shown.
+- Mobile images render at a smaller max width (320px) than desktop (full width).
+- A one-frame swap on load is expected to avoid SSR hydration issues.
+
+---
+
+## Segment Toggle (Two-Way Switch)
+
+**Component:** `SegmentToggle`  
+**Description:** A compact two-option segmented switch for handbook docs. Each side can use its own active background and text color — useful to mirror in-app toggles (e.g. Host Calendar **Events** / **Availability**). Use `interactive` to allow clicking, `semiInteractive` for hover-only demos with no default selection, or leave both off for fully static examples.
+
+**Required Import:**
+
+```jsx
+import SegmentToggle from "@site/src/components/SegmentToggle";
+```
+
+**Live Example (static — Host Calendar style with visual box):**
+
+<SegmentToggle
+  left={{ label: "Events", activeBackground: "#a259f7", activeColor: "#ffffff" }}
+  right={{ label: "Availability", activeBackground: "#22d3ee", activeColor: "#071018" }}
+  value="left"
+  size="sm"
+  visualBox={{
+    label: "Visual only — not a working toggle on this handbook page",
+    background: "#f4f0fa",
+    labelColor: "#6b5b7a",
+  }}
+/>
+
+**Live Example (semi-interactive — hover only, no selection):**
+
+<SegmentToggle
+  left={{
+    label: "My Events",
+    icon: "calendar-days",
+    iconColor: "#a259f7",
+    activeBackground: "var(--ifm-color-emphasis-200)",
+    activeColor: "var(--ifm-font-color-base)",
+  }}
+  right={{
+    label: "My Availabilities",
+    icon: "calendar-clock",
+    iconColor: "#22d3ee",
+    activeBackground: "var(--ifm-color-emphasis-200)",
+    activeColor: "var(--ifm-font-color-base)",
+  }}
+  semiInteractive
+  fullWidth
+  size="sm"
+  visualBox={{
+    label: "Semi-interactive — hover works, nothing stays selected",
+    labelColor: "var(--ifm-color-emphasis-700)",
+  }}
+/>
+
+**Live Example (interactive — click to select):**
+
+export function LiveSegmentToggleDemo() {
+  const [side, setSide] = useState("left");
+  return (
+    <SegmentToggle
+      left={{ label: "On", activeBackground: "#22c55e", activeColor: "#ffffff" }}
+      right={{ label: "Off", activeBackground: "#64748b", activeColor: "#ffffff" }}
+      value={side}
+      interactive
+      onChange={setSide}
+      ariaLabel="Demo two-way switch"
+    />
+  );
+}
+
+<LiveSegmentToggleDemo />
+
+```jsx title="SegmentToggle Usage Code Example:"
+// Semi-interactive (hover only — no side selected, clicks do not stick)
+<SegmentToggle
+  left={{ label: "My Events", icon: "calendar-days", iconColor: "#a259f7" }}
+  right={{ label: "My Availabilities", icon: "calendar-clock", iconColor: "#22d3ee" }}
+  semiInteractive
+  fullWidth
+  size="sm"
+/>
+
+// Interactive (click to select a side)
+<SegmentToggle
+  left={{ label: "Events", activeBackground: "#a259f7", activeColor: "#ffffff" }}
+  right={{ label: "Availability", activeBackground: "#22d3ee", activeColor: "#071018" }}
+  value="right"
+  size="sm"
+  visualBox={{
+    label: "Visual only — Availability tab selected in the scheduler app",
+    background: "#ecfeff",
+    labelColor: "#0e7490",
+  }}
+/>
+
+// Interactive switch
+<SegmentToggle
+  left={{ label: "Draft", activeBackground: "#f59e0b", activeColor: "#1c1917" }}
+  right={{ label: "Published", activeBackground: "#10b981", activeColor: "#ffffff" }}
+  defaultValue="left"
+  interactive
+  onChange={(side) => console.log(side)}
+  inactiveColor="#94a3b8"
+  trackBackground="#1e293b"
+  trackBorder="#334155"
+/>
+```
+
+**Available Props:**
+
+| Prop | Required | Description |
+| --- | --- | --- |
+| `left` | Yes | `{ label, activeBackground?, activeColor?, inactiveColor?, icon?, iconColor? }` |
+| `right` | Yes | Same shape as `left` |
+| `value` | No | `"left"` or `"right"` — selected side (controlled) |
+| `defaultValue` | No | Initial side when uncontrolled (default `"left"`) |
+| `interactive` | No | When `true`, click to select a side (default `false`) |
+| `semiInteractive` | No | Hover brighten only — no default selection, clicks do not stick |
+| `onChange` | No | `(side) => void` when the user picks a side (`interactive` only) |
+| `inactiveColor` | No | Text color for the inactive segment |
+| `trackBackground` | No | Background of the outer track |
+| `trackBorder` | No | Border color of the outer track |
+| `visualBox` | No | `{ label, background?, labelColor?, borderColor? }` — tinted box + small caption for static UI references |
+| `fullWidth` | No | Equal-width segments (matches Home shortcut bar) |
+| `size` | No | `"sm"` or `"md"` (default `"md"`) |
+| `className` | No | Extra CSS class on the wrapper |
+| `ariaLabel` | No | Accessible label when `interactive` (default `"Two-way toggle"`) |
+
+**Side object fields:**
+
+| Field | Description |
+| --- | --- |
+| `label` | Button text |
+| `icon` | `"calendar-days"` or `"calendar-clock"` (Lucide icon before label) |
+| `iconColor` | Icon color only — label stays muted unless active or hovered |
+| `inactiveColor` | Label color when this side is not selected (default: muted) |
+| `activeBackground` | Background when this side is selected |
+| `activeColor` | Label color when this side is selected |
+
+**Notes:**
+
+- Default styling uses handbook theme colors when active colors are omitted.
+- Use `interactive={false}` (default) on procedure pages for fully static visuals (`value` pins which side looks selected).
+- Use `semiInteractive` when both options should look equal (e.g. Home shortcuts) — hover works, nothing stays selected.
+- When `interactive` is true, inactive segments brighten on hover; the active segment gets a subtle brightness bump.
+- Use `iconColor` for accent icons; keep labels muted via default styling unless `activeColor` / hover applies.
+- `size="sm"` matches the compact Host Calendar control in the scheduler app.
+
+---
+
+## Multi Segment Toggle (Three-or-More Switch)
+
+**Component:** `MultiSegmentToggle`  
+**Description:** Same look as `SegmentToggle`, but for **three or more** options. Use it for in-app view switches (e.g. Calendar **Day / Week / Month**) or to jump between screenshot examples on a page. Each segment can be a clickable selection, hover-only, or an in-page `#anchor` link.
+
+**Required Import:**
+
+```jsx
+import MultiSegmentToggle from "@site/src/components/MultiSegmentToggle";
+```
+
+**Live Example (static — Calendar view style with visual box):**
+
+<MultiSegmentToggle
+  segments={[
+    { label: "Day", icon: "layout-list", iconColor: "#a259f7", activeBackground: "#a259f7", activeColor: "#ffffff" },
+    { label: "Week", icon: "calendar-days", iconColor: "#a259f7", activeBackground: "#a259f7", activeColor: "#ffffff" },
+    { label: "Month", icon: "layout-grid", iconColor: "#a259f7", activeBackground: "#a259f7", activeColor: "#ffffff" },
+  ]}
+  value={1}
+  size="sm"
+  visualBox={{
+    label: "Visual only — Week selected in the scheduler app",
+    labelColor: "var(--ifm-color-emphasis-700)",
+  }}
+/>
+
+**Live Example (interactive — click to select):**
+
+export function LiveMultiSegmentToggleDemo() {
+  const [index, setIndex] = useState(0);
+  return (
+    <MultiSegmentToggle
+      segments={[
+        { label: "Needs availability", activeBackground: "#a259f7", activeColor: "#ffffff" },
+        { label: "Submitted", activeBackground: "#a259f7", activeColor: "#ffffff" },
+        { label: "Upcoming events", activeBackground: "#a259f7", activeColor: "#ffffff" },
+      ]}
+      value={index}
+      interactive
+      fullWidth
+      size="sm"
+      onChange={setIndex}
+      ariaLabel="Demo three-way switch"
+    />
+  );
+}
+
+<LiveMultiSegmentToggleDemo />
+
+**Live Example (anchor links — jump to a heading):**
+
+<MultiSegmentToggle
+  segments={[
+    { label: "Day", icon: "layout-list", iconColor: "#a259f7", href: "#day-view-demo" },
+    { label: "Week", icon: "calendar-days", iconColor: "#a259f7", href: "#week-view-demo" },
+    { label: "Month", icon: "layout-grid", iconColor: "#a259f7", href: "#month-view-demo" },
+  ]}
+  fullWidth
+  wide
+  size="sm"
+  visualBox={{
+    label: "View — jump to an example",
+    labelColor: "var(--ifm-color-emphasis-700)",
+  }}
+/>
+
+#### Day view {#day-view-demo}
+
+Anchor target for the **Day** segment.
+
+#### Week view {#week-view-demo}
+
+Anchor target for the **Week** segment.
+
+#### Month view {#month-view-demo}
+
+Anchor target for the **Month** segment.
+
+```jsx title="MultiSegmentToggle Usage Code Example:"
+// Static (pins which segment looks selected)
+<MultiSegmentToggle
+  segments={[
+    { label: "Day", icon: "layout-list", iconColor: "#a259f7", activeBackground: "#a259f7", activeColor: "#ffffff" },
+    { label: "Week", icon: "calendar-days", iconColor: "#a259f7", activeBackground: "#a259f7", activeColor: "#ffffff" },
+    { label: "Month", icon: "layout-grid", iconColor: "#a259f7", activeBackground: "#a259f7", activeColor: "#ffffff" },
+  ]}
+  value={1}
+  size="sm"
+/>
+
+// Interactive (click to select)
+<MultiSegmentToggle
+  segments={[
+    { label: "Needs availability", activeBackground: "#a259f7", activeColor: "#ffffff" },
+    { label: "Submitted", activeBackground: "#a259f7", activeColor: "#ffffff" },
+    { label: "Upcoming events", activeBackground: "#a259f7", activeColor: "#ffffff" },
+  ]}
+  defaultValue={0}
+  interactive
+  fullWidth
+  size="sm"
+  onChange={(index) => console.log(index)}
+/>
+
+// In-page jump links (used on Shared Calendar / Host dashboard examples)
+<MultiSegmentToggle
+  segments={[
+    { label: "Day", icon: "layout-list", iconColor: "#a259f7", href: "#day-view" },
+    { label: "Week", icon: "calendar-days", iconColor: "#a259f7", href: "#week-view" },
+    { label: "Month", icon: "layout-grid", iconColor: "#a259f7", href: "#month-view" },
+  ]}
+  fullWidth
+  wide
+  size="sm"
+  visualBox={{
+    label: "View — jump to an example",
+    labelColor: "var(--ifm-color-emphasis-700)",
+  }}
+/>
+```
+
+**Available Props:**
+
+| Prop | Required | Description |
+| --- | --- | --- |
+| `segments` | Yes | Array of `{ label, activeBackground?, activeColor?, inactiveColor?, icon?, iconColor?, href? }` |
+| `value` | No | Selected index (controlled). Ignored when segments use `href` unless you pass `value` yourself |
+| `defaultValue` | No | Initial index when uncontrolled (default `0`) |
+| `interactive` | No | When `true`, click to select an index (default `false`). Ignored if any segment has `href` |
+| `semiInteractive` | No | Hover brighten only — no default selection, clicks do not stick |
+| `onChange` | No | `(index) => void` when the user picks a segment (`interactive` only) |
+| `inactiveColor` | No | Fallback text color for inactive segments |
+| `trackBackground` | No | Background of the outer track |
+| `trackBorder` | No | Border color of the outer track |
+| `visualBox` | No | `{ label, background?, labelColor?, borderColor? }` — tinted box + small caption |
+| `fullWidth` | No | Equal-width segments |
+| `wide` | No | Wider visual box and track (use with `fullWidth` for Calendar view switches) |
+| `size` | No | `"sm"` or `"md"` (default `"md"`) |
+| `className` | No | Extra CSS class on the wrapper |
+| `ariaLabel` | No | Accessible label when interactive (default `"Multi-way toggle"`) |
+
+**Segment object fields:**
+
+| Field | Description |
+| --- | --- |
+| `label` | Button text |
+| `icon` | `"calendar-days"`, `"calendar-clock"`, `"layout-list"`, or `"layout-grid"` |
+| `iconColor` | Icon color only — label stays muted unless active or hovered |
+| `inactiveColor` | Label color when this segment is not selected |
+| `activeBackground` | Background when this segment is selected |
+| `activeColor` | Label color when this segment is selected |
+| `href` | In-page anchor (e.g. `#day-view`) — renders as a link instead of a button |
+
+**Notes:**
+
+- Prefer `SegmentToggle` for exactly two options; use this for three or more.
+- If any segment has `href`, the control becomes a jump bar (no sticky selection) and `interactive` is ignored.
+- `wide` + `fullWidth` matches the Shared Calendar **Day / Week / Month** control.
+- Same hover / visual-box behavior as `SegmentToggle`.
+
+---
+
+## Step Timeline (Workflow Bubbles)
+
+**Component:** `StepTimeline`  
+**Description:** Numbered bubbles connected by lines — good for short workflows (e.g. Schedule Builder **Add Event** steps). Horizontal by default; stacks vertically on narrow screens.
+
+**Required Import:**
+
+```jsx
+import StepTimeline from "@site/src/components/StepTimeline";
+```
+
+**Live Example (horizontal — Schedule Builder add slot):**
+
+<StepTimeline
+  title="Add an event"
+  size="sm"
+  steps={[
+    {
+      label: "Day + region",
+      detail: "Tab → Add AU, EU, or NA slot",
+      recap: "Tap or click any step that has a recap to open a short popover. Steps without recap stay plain text.",
+    },
+    {
+      label: "Host",
+      detail: "From that day's availability",
+      recap: "Choose a host who submitted availability for that day. Missing someone? Check the Manager dashboard.",
+    },
+    { label: "Time", detail: "30-min steps · conflicts disabled" },
+    { label: "Event type", detail: "Chips or free text" },
+    { label: "Add Event", detail: "Save to the grid" },
+  ]}
+/>
+
+**Live Example (vertical — compact publish flow):**
+
+<StepTimeline
+  direction="vertical"
+  size="sm"
+  accentColor="#db1cb8"
+  steps={[
+    {
+      label: "Build grid",
+      detail: "Assign hosts on the builder",
+      recap: "Place every event on the Schedule Builder grid before you publish — same recap popover works on vertical timelines.",
+    },
+    {
+      label: "Fix warnings",
+      detail: "Resolve conflicts before Push",
+      recap: "Clear builder warnings and time conflicts first. Push should not go out with unresolved problems.",
+    },
+    {
+      label: "Push",
+      detail: "Discord + listings",
+      recap: "Push publishes to Discord schedule channels and listings. On mobile the popover spans the screen width between margins.",
+    },
+  ]}
+/>
+
+```jsx title="StepTimeline Usage Code Example:"
+<StepTimeline
+  title="Workflow"
+  size="sm"
+  accentColor="#a259f7"
+  steps={[
+    { label: "Step one", detail: "Optional short detail", recap: "Longer recap in the popover" },
+    { label: "Step two" },
+    { label: "Step three", detail: "Another detail line" },
+  ]}
+/>
+
+// Vertical stack (always top-to-bottom) — recap works the same way
+<StepTimeline
+  direction="vertical"
+  steps={[
+    { label: "First", recap: "Click or tap to open recap" },
+    { label: "Second", detail: "Optional detail" },
+    { label: "Third" },
+  ]}
+/>
+```
+
+**Props:**
+
+| Prop | Required | Description |
+| --- | --- | --- |
+| `steps` | Yes | `{ label, detail?, recap? }[]` — one bubble per step. Add `recap` to make a step clickable (popover on tap/click) |
+| `title` | No | Small uppercase caption above the timeline |
+| `direction` | No | `"horizontal"` (default) or `"vertical"` |
+| `size` | No | `"sm"` or `"md"` (default `"md"`) |
+| `accentColor` | No | Bubble border/fill accent (default Eden purple `#a259f7`) |
+| `className` | No | Extra CSS class on the wrapper |
+| `ariaLabel` | No | Accessible name for the step list (default `"Workflow steps"`) |
+
+**Notes:**
+
+- Horizontal timelines **wrap to the next line** on narrow screens (~two steps per row on phones). Each step keeps its → arrow; no forced vertical stack.
+- Vertical timelines stay a single column with ↓ arrows under each bubble. **`recap` works on vertical and horizontal** — only steps with `recap` are clickable.
+- Keep `detail` lines short — they sit under each step label.
+- Optional **`recap`** on a step: desktop shows a light hover hint; mobile shows a faint corner mark. Tap/click opens a popover with the recap text (only steps with `recap` are interactive).
+

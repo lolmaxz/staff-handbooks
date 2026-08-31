@@ -7,28 +7,57 @@ import RoleBadge from "@site/src/components/RoleBadge";
 import ChannelBadge from "@site/src/components/ChannelBadge";
 import Tooltip from "@site/src/components/Tooltip";
 import CardGrid, { Card } from "@site/src/components/CardGrid";
+import StepTimeline from "@site/src/components/StepTimeline";
 import Link from "@docusaurus/Link";
 
 # How to be Security 🛡️
 
 Volunteering at an event as <RoleBadge role="Event Security" color="#3fa7ff" /> involves several key steps:
 
+<StepTimeline
+  title="Security at an event"
+  size="sm"
+  accentColor="#3fa7ff"
+  steps={[
+    {
+      label: "Sign up",
+      detail: "(Security) in thread",
+      recap: "Add (Security) next to your name in the event signup thread — e.g. username (Security). Do not use the public member Sign Up button.",
+    },
+    {
+      label: "Starting",
+      detail: "Introduced by the host",
+      recap: "Introduce yourself to new members so they know who to go to. The host should name active security in the VR announcement.",
+    },
+    {
+      label: "During event",
+      detail: "Support host · rounds",
+      recap: "Help the host keep flow, welcome late joiners, and make rounds — you do not re-announce full rules to every late arrival.",
+    },
+    {
+      label: "If needed",
+      detail: "Incidents → guidelines",
+      recap: "If something breaks rules, warn, move people aside privately, document, and log in #events-incidents per the incident guidelines.",
+    },
+  ]}
+/>
+
 ## 📝 Sign Up for the Event
 
-When volunteering for an event, you'll be helping the <RoleBadge role="Event Host" color="#f75edb" /> for the event's duration.
+When volunteering for an event, you'll be helping the <RoleBadge role="Event Host" color="#f75edb" /> for the event's duration. Default length is **2 hours** — if the host says otherwise, plan for that length.
 
 <Card title="Signup Format" status="info">
   <p>Add <code>Security</code> or <code>(Security)</code> to your signup message in the event's signup thread.</p>
   <p><strong>Example:</strong> <code>lolmaxz (Security)</code></p>
 </Card>
 
-{/*
+<!-- Hephia signup (re-enable when launched):
 <Card title="Signup via Hephia" status="info">
-  <p>Find the event's <strong>staff attendee listing</strong> in <ChannelBadge label="🪄｜events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781" /> and click <strong>Security Signup</strong>.</p>
-  <p>Do <strong>not</strong> use the public <strong>Sign Up</strong> button on the member-facing signup message — that is for attendees only.</p>
-  <p>Full details: <Link to="/docs/event-staff-handbook/hephia-event-system">Hephia Event System</Link></p>
+  <p>Find the event's staff attendee listing in events-attendees and click Security Signup.</p>
+  <p>Do not use the public Sign Up button on the member-facing signup message — that is for attendees only.</p>
+  <p>Full details: Hephia Event System</p>
 </Card>
-*/}
+-->
 
 ## 👋 Introduce Yourself to New Members
 
@@ -51,17 +80,12 @@ When volunteering for an event, you'll be helping the <RoleBadge role="Event Hos
   </Card>
 </CardGrid>
 
-{/*
+<!-- Hephia announce-your-role cards (re-enable when launched):
 <CardGrid columns={2}>
-  <Card title="Regular Security" icon="🛡️">
-    <p>When an event is announced, click <strong>Security Signup</strong> on its staff listing in <ChannelBadge label="🪄｜events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781" />.</p>
-  </Card>
-  
-  <Card title="Shadowing/Training" icon="👁️">
-    <p>If you are shadowing another security member, still use <strong>Security Signup</strong> on the staff listing. Let the host and your mentor know you are shadowing in <ChannelBadge label="📘events-organization" link="https://discord.com/channels/734595073920204940/741166096421486645" /> or event VC if needed.</p>
-  </Card>
+  Regular Security — Security Signup on staff listing in events-attendees
+  Shadowing/Training — Security Signup + coordinate in events-organization or event VC
 </CardGrid>
-*/}
+-->
 
 ## 🎉 Keep the Party Going!
 
@@ -100,7 +124,7 @@ Attendees may lock or leave private rooms unlocked. Do <strong>not</strong> forc
 
 ## Related
 
-{/* - [Hephia Event System](/docs/event-staff-handbook/hephia-event-system) */}
+<!-- - [Hephia Event System](/docs/event-staff-handbook/hephia-event-system) -->
 - [Security Requirements](/docs/event-staff-handbook/Security/security-requirements)
 - [Incident Management Guidelines](/docs/event-staff-handbook/Security/incident-management-guidelines)
 - [Security Introduction](/docs/event-staff-handbook/Security/Introduction)

@@ -1,0 +1,151 @@
+.wrapper {
+  display: inline-flex;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+}
+
+.wrapperFullWidth {
+  width: 100%;
+}
+
+.segment {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1;
+  cursor: default;
+  transition: background-color 0.15s ease, color 0.15s ease, filter 0.15s ease;
+  --segment-label-color: var(--ifm-color-emphasis-600);
+}
+
+.segmentFullWidth {
+  flex: 1;
+}
+
+.segmentInner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+  line-height: 1;
+}
+
+.segmentIcon {
+  flex-shrink: 0;
+  display: block;
+}
+
+.segmentLabel {
+  color: var(--segment-label-color);
+  line-height: 1;
+}
+
+.segmentSm {
+  padding: 0.375rem 0.65rem;
+  font-size: 0.6875rem;
+}
+
+.segmentRight {
+  border-left: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.segmentStatic:disabled {
+  opacity: 1;
+  cursor: default;
+}
+
+.segmentInteractive {
+  cursor: pointer;
+}
+
+.segmentInteractive:not(.segmentActive):hover,
+.segmentSemiInteractive:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  --segment-label-color: var(--ifm-font-color-base);
+}
+
+.segmentInteractive.segmentActive:hover {
+  filter: brightness(1.08);
+}
+
+.segmentInteractive:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: -2px;
+  z-index: 1;
+}
+
+.visualBox {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.45rem;
+  margin: 0.75rem 0;
+  padding: 0.55rem 0.65rem;
+  border-radius: 0.5rem;
+  border: 1px dashed var(--ifm-color-emphasis-400);
+  background: var(--ifm-color-emphasis-100);
+  max-width: 100%;
+}
+
+.visualBoxLabel {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+  color: var(--ifm-color-emphasis-700);
+  text-transform: none;
+}
+
+.visualBoxToggle {
+  display: inline-flex;
+  align-items: stretch;
+}
+
+.visualBoxToggleFullWidth {
+  width: 100%;
+}
+
+.visualBoxFullWidth {
+  width: 100%;
+  max-width: 28rem;
+}
+
+.segmentLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.segmentLink:hover,
+.segmentLink:focus-visible {
+  text-decoration: none;
+  color: inherit;
+}
+
+.segmentLink:not(.segmentActive):hover {
+  background-color: var(--ifm-color-emphasis-200);
+  --segment-label-color: var(--ifm-font-color-base);
+}
+
+.visualBoxWide {
+  width: 100%;
+  max-width: 36rem;
+}
+
+.visualBoxWide .visualBoxToggleFullWidth,
+.visualBoxWide .visualBoxToggle {
+  width: 100%;
+}
+
+.visualBoxWide .wrapperFullWidth,
+.visualBoxWide .wrapper {
+  width: 100%;
+}

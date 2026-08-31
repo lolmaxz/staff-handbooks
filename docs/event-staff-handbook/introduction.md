@@ -13,6 +13,7 @@ Welcome aboard the Event Team! You play a vital role in keeping events fun, incl
 ## Quick Start
 
 - Learn the flow: [Event Onboarding](./onboarding)
+- **New:** [Hephia Event System](./hephia-event-system) — signups, staff rosters, and feedback
 - Learn the event rules: [Event Rules](./event-rules)
 - Host an event: [How to Host](./Hosts/how-to-host-an-event)
 - Get scheduled: [Scheduling Procedures](./Hosts/scheduling-procedures)
@@ -27,6 +28,9 @@ Welcome aboard the Event Team! You play a vital role in keeping events fun, incl
   <Card title="Event Team Channels" href="./event-team-channels" status="success">
     <p>Find where planning, incidents, and active VC coordination happen.</p>
   </Card>
+  <Card title="Hephia Event System" href="./hephia-event-system" status="success">
+    <p>Signups, staff rosters in events-attendees, ending events, and member feedback.</p>
+  </Card>
   <Card title="How to Host" href="./Hosts/how-to-host-an-event" status="warning">
     <p>Announcements, pings, running the event, and post-event wrap-up.</p>
   </Card>
@@ -34,7 +38,7 @@ Welcome aboard the Event Team! You play a vital role in keeping events fun, incl
     <p>Responsibilities, coordination with hosts, and incident basics.</p>
   </Card>
   <Card title="Scheduling" href="./Hosts/scheduling-procedures" status="success">
-    <p>Weekly cadence, day-of expectations, and staying active.</p>
+    <p>Weekly availability on the Eden Scheduler portal, day-of expectations, and security requests.</p>
   </Card>
   <Card title="Incident Management" href="./Security/incident-management-guidelines" status="error">
     <p>Warnings, handling offenders, and logging in #events-incidents.</p>

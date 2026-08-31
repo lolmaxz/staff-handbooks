@@ -42,6 +42,7 @@ As a Host, you’re one of the most visible faces of our community. You set the 
     <ul>
       <li>Read: <a href="./how-to-host-an-event">How to Host an Event</a></li>
       <li>Read: <a href="./scheduling-procedures">Scheduling Procedures</a></li>
+      <li>Portal walkthrough: <a href="/docs/general-handbook/eden-scheduler">Eden Scheduler</a></li>
       <li>Read: <a href="./hosting-requirements">Hosting Requirements</a></li>
     </ul>
   </Card>
