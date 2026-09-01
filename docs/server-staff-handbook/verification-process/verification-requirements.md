@@ -46,7 +46,7 @@ The verification process begins when a member requests age verification. This se
     <ul>
       <li>Most common verification method</li>
       <li>Submit government-issued ID and selfie</li>
-      <li>Must show DOB, expiry date, issuing body</li>
+      <li>Must show DOB, expiry date, <Tooltip tip="Text">issuing body</Tooltip></li>
       <li>All four corners visible</li>
       <li>Grants <RoleBadge role="Eden Verified" color="#00ff00" /> when completed by staff</li>
     </ul>
