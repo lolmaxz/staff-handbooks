@@ -49,6 +49,7 @@ The verification process begins when a member requests age verification. This se
       <li>Must show DOB, expiry date, <Tooltip tip="Country/State and ID type (Driver License, passport etc)">issuing body</Tooltip> </li>
       <li>All four corners visible</li>
       <li>Grants <RoleBadge role="Eden Verified" color="#00ff00" /> when completed by staff</li>
+      <li>Hiii Moon ! :D</li>
     </ul>
   </Card>
   
