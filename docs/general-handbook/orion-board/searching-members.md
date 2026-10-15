@@ -56,7 +56,9 @@ The member profile page has tabs: **Overview**, **Tickets**, **Moderation**, **W
 
 It shows: avatar, username, ID (copy), account created, tickets opened/closed, and related moderation data.
 
+On desktop, a **notes** column sits on the right of the profile header. It shows the latest notes with a small date. **See more** opens the full list. **Add** opens compose. Clicking a note opens that note. Clicking the backdrop closes the list; a written draft asks before it is discarded. Empty notes still close on the backdrop. The same discard prompt is covered under [Dashboard Overview](/docs/general-handbook/orion-board/orion-board-dashboard-overview).
+
 <div style={{ maxWidth: "900px" }}>
-  <img src={require("@site/static/img/orion-member-profile-page.png").default} alt="Member profile page with Overview, Tickets, Moderation tabs" style={{ width: "100%", display: "block" }} />
-  <p style={{ fontSize: "0.75rem", color: "var(--ifm-color-emphasis-600)", margin: "0.15rem 0 0", padding: "0.35rem 0.5rem", backgroundColor: "var(--ifm-color-emphasis-200)", textAlign: "center" }}>Member profile with Overview, Tickets, Moderation, and Watchlist tabs.</p>
+  <img src={require("@site/static/img/orion-member-profile-page.png").default} alt="Member profile page with the notes column on the right of the header" style={{ width: "100%", display: "block" }} />
+  <p style={{ fontSize: "0.75rem", color: "var(--ifm-color-emphasis-600)", margin: "0.15rem 0 0", padding: "0.35rem 0.5rem", backgroundColor: "var(--ifm-color-emphasis-200)", textAlign: "center" }}>Member profile with the notes column beside the header.</p>
 </div>

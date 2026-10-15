@@ -30,7 +30,7 @@ Seniors are recognized for their reliability, good judgment, excellent communica
 
   <Card title="Event Incident Management" status="warning" icon="🚨">
     <ul>
-      <li>Handle event report tickets in <ChannelBadge label="🎫｜open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070" /> (Event‑Talk)</li>
+      <li>Handle event report tickets in <ChannelBadge label="🎫｜open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070" /> (Event‑Talk). Names show <strong>📘</strong> when the ticket opens, <strong>📙</strong> after a staff reply, and <strong>📗</strong> when closed. Full list: <Link to="/docs/general-handbook/orion-board/orion-board-dashboard-overview#ticket-status-emojis">Ticket status emojis</Link>.</li>
       <li>Update actions taken in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" /> threads</li>
       <li>Work together with other <RoleBadge role="Senior Event Team" color="#3fa7ff" /> members to ensure incidents are properly documented and followed up</li>
     </ul>

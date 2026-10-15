@@ -40,6 +40,7 @@ const roleToColorMap: Record<string, string> = {
   Moderator: "#e68027",
   Helper: "#38c8e8",
   "Eden Verified": "#00ff00",
+  "Restricted Access": "#e87878",
   "Blocked VRC Verified ❌": "#d61717",
   // -- Separate Staff Members --
   lolmaxz: "#00B9ff",

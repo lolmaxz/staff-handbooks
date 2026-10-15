@@ -36,6 +36,8 @@ Take your time to familiarize yourself with all sections. Don't hesitate to ask 
 - Review ban process: [Ban Types Overview](../ban-votes/ban-types-overview)
 - Mod on Call: [Mod on Call](../moderator/mod-on-call)
 
+Server ticket names show a status emoji: **🟦** new, **🟨** after a staff reply, **🟩** closed. The full list is on [Ticket status emojis](/docs/general-handbook/orion-board/orion-board-dashboard-overview#ticket-status-emojis).
+
 ## Your Role & Responsibilities
 
 <CardGrid columns={2}>

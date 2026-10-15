@@ -30,7 +30,7 @@ A second check of the verification ticket is required:
 
 ### Reminder Pings
 
-- Send up to <Tooltip tip="Reminders can only be sent 24h apart and at least 12h after the ticket was opened." bubbleColor="#d255ec" width="20rem" labelColor="#e68027"> **2 reminder pings** </Tooltip> after the welcome message. Use <code>/reminder</code> in the ticket—optional custom message, or use the default.
+- Send up to <Tooltip tip="Cooldown and who gets pinged: Slash Commands — /reminder." bubbleColor="#d255ec" width="18rem" labelColor="#e68027"> **2 reminder pings** </Tooltip> after the welcome message. Use <code>/reminder</code> in the ticket. See [Slash Commands — /reminder](/docs/general-handbook/orion-board/orion-board-commands).
 - If no roles are selected after **48 hours**, you may proceed to close the ticket if verification is satisfactory. (optional)
 
 ---

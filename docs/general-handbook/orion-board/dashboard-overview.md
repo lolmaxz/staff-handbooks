@@ -30,6 +30,7 @@ The sidebar gives you access to:
 </div>
 
 **Mobile:** On mobile, double-tap items at the bottom to switch between Server and Event views when you have permission for both (a small arrow icon appears):
+
 - **Tickets** — Switch between Server and Event tickets
 - **Mod Logs** (Server Mod / Event Mod) — Switch between server and event moderation
 - **Watchlist** — Switch between server and event watchlist
@@ -40,6 +41,48 @@ The mobile experience is smooth and easy to navigate.
   <img src={require("@site/static/img/orion-mobile-view-example.png").default} alt="Orion Board mobile view example" style={{ width: "100%", display: "block" }} />
   <p style={{ fontSize: "0.75rem", color: "var(--ifm-color-emphasis-600)", margin: "0.15rem 0 0", padding: "0.35rem 0.5rem", backgroundColor: "var(--ifm-color-emphasis-200)", textAlign: "center" }}>Mobile bottom navigation with Tickets, Mod Logs, and Watchlist. Double-tap to switch between Server and Event views when permitted.</p>
 </div>
+
+---
+
+## Ticket status emojis {#ticket-status-emojis}
+
+Discord thread names can show a status emoji. The website title, and any rename log, stay the plain name. A rename that only changes the emoji is not logged. The toggle is **Ticket status emojis in Discord** in bot settings (on by default).
+
+| Ticket                                                    | Emoji |
+| --------------------------------------------------------- | ----- |
+| Verification — new                                        | 🔵    |
+| Verification — ID received                                | 🟡    |
+| Verification — initial check                              | 🟣    |
+| Verification — final check                                | 🟢    |
+| Server — new                                              | 🟦    |
+| Server — a staff member who is not the opener has replied | 🟨    |
+| Server — closed or archived                               | 🟩    |
+| Event — new                                               | 📘    |
+| Event — a staff member who is not the opener has replied  | 📙    |
+| Event — closed or archived                                | 📗    |
+| Warning — open                                            | 🟠❌  |
+| Warning — acknowledged                                    | 🟠✅  |
+
+Event reports, consent breaches, and rule-breaking tickets open with 📘 already in the name. It becomes 📙 after a staff reply, and 📗 when the ticket is closed. A warning ticket, including an event warning, keeps the orange marks. A warning ticket opened from server mail is created with the warning emoji already on the name.
+
+---
+
+## Automatic reminders {#automatic-reminders}
+
+Experimental, in the same **Reminder Settings** area as the ignored-warning restrict ([Server Mail](/docs/general-handbook/orion-board/orion-board-server-mail#ignored-warning)).
+
+<CardGrid columns={2}>
+  <Card title="When it pings" status="info" icon="⏰">
+    <p>Whole hours, and only the ticket types you turn on. Optional: ignore tickets staff opened.</p>
+    <p>Default clock starts at open. The other option waits until someone else speaks, then resets when the person being reminded speaks.</p>
+  </Card>
+  <Card title="When it stops" status="warning" icon="🛑">
+    <p>Maximum <strong>3</strong> reminders per ticket. Completed verification is never reminded again.</p>
+    <p>Tickets opened more than <strong>7 days</strong> ago are not picked up. Turning the option on applies on the next sweep (about once a minute), including tickets already open that week. The transcript says the system sent it.</p>
+  </Card>
+</CardGrid>
+
+Staff-sent <code>/reminder</code> is separate. Options and cooldown: [Slash Commands](/docs/general-handbook/orion-board/orion-board-commands).
 
 ---
 
@@ -91,22 +134,22 @@ In **Settings**, you can configure:
 
 When members open a ticket from the open-a-ticket channel, they choose from a dropdown. Here's what each option means:
 
-| Option | Description |
-|--------|-------------|
-| **Unsolicited DM** | Report someone who DMed them without consent |
-| **Friend Request** | Report an unsolicited friend request |
-| **Scammer Report** | Report a scammer |
-| **Server Problem** | Technical or server-related issue |
-| **Inquiries** | General questions |
-| **Staff Problem** | Report an issue with a staff member or event host — directs to HR. Does **not** create a ticket. |
-| **Other** | Anything else. Staff use this option when opening Staff-Talk tickets. |
+| Option             | Description                                                                                      |
+| ------------------ | ------------------------------------------------------------------------------------------------ |
+| **Unsolicited DM** | Report someone who DMed them without consent                                                     |
+| **Friend Request** | Report an unsolicited friend request                                                             |
+| **Scammer Report** | Report a scammer                                                                                 |
+| **Server Problem** | Technical or server-related issue                                                                |
+| **Inquiries**      | General questions                                                                                |
+| **Staff Problem**  | Report an issue with a staff member or event host — directs to HR. Does **not** create a ticket. |
+| **Other**          | Anything else. Staff use this option when opening Staff-Talk tickets.                            |
 
 ### Event Ticket Options
 
 When members or staff open a ticket under the **Event** category, they choose from these types:
 
-| Type | Description | Who can view |
-|------|-------------|--------------|
-| **Event-Talk** | Members report event-related issues (rule breaks, concerns, feedback). | Senior event staff and event management |
-| **Event Incident** | Staff-created tickets for incident follow-up and documentation. | Senior event staff and event management |
-| **Other** (Event) | Other event-related matters. | Senior event staff and event management |
+| Type               | Description                                                            | Who can view                            |
+| ------------------ | ---------------------------------------------------------------------- | --------------------------------------- |
+| **Event-Talk**     | Members report event-related issues (rule breaks, concerns, feedback). | Senior event staff and event management |
+| **Event Incident** | Staff-created tickets for incident follow-up and documentation.        | Senior event staff and event management |
+| **Other** (Event)  | Other event-related matters.                                           | Senior event staff and event management |

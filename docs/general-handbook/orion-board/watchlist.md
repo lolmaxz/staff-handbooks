@@ -21,13 +21,13 @@ Server and event watchlist entries are created via slash commands. The dashboard
 
 **Context options** — Attach message history to the entry so staff can see what was said:
 
-| Option | What it does |
-|--------|--------------|
+| Option            | What it does                                                                                                                |
+| ----------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | **use_last_hour** | Fetches the last 100 messages in the channel where the command is run. Use when the relevant context is in recent messages. |
-| **message_link** | Fetches 25 messages before and 25 after the linked message. Use when you have a specific message to point to. |
+| **message_link**  | Fetches 25 messages before and 25 after the linked message. Use when you have a specific message to point to.               |
 
 :::info Where the command is denied
-The command is **denied** when a context option is used *and* run from a verification ticket, staff channel, or thread under a staff channel (e.g. to avoid attaching sensitive content). Use a different ticket or non-staff channel for context-based entries.
+The command is **denied** when a context option is used _and_ run from a verification ticket, staff channel, or thread under a staff channel (e.g. to avoid attaching sensitive content). Use a different ticket or non-staff channel for context-based entries.
 :::
 
 :::info Attachments: Discord vs dashboard
@@ -42,9 +42,27 @@ Discord slash commands allow **only 1 attachment at a time**. For warnings, watc
   user, reason, evidence, message_link. Event watchlist entry.
 </CommandCard>
 
-| Option | What it does |
-|--------|--------------|
+| Option           | What it does                                                                                                                                                               |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **message_link** | Fetches 25 messages before and 25 after the linked message. Same restriction: denied when used from a verification ticket, staff channel, or thread under a staff channel. |
+
+---
+
+## Watchlist notification 🆕
+
+When a watchlist entry is created or added, staff receive a ping in a staff channel. Who is pinged, and which channel, follows the bot’s configuration.
+
+---
+
+## Presence column 🆕
+
+The table has a **Presence** column between the member and the staff pictures. It can be hidden like the other columns.
+
+- **Banned** — only if you have that side’s ban access. Ban wins over left. Anyone without ban access is not told they are banned.
+- **Left** — they left the server, and they are not shown as banned to you.
+- **—** — neither applies.
+
+On mobile that same label is a small pill after the entry count.
 
 ---
 
@@ -55,6 +73,8 @@ Navigate: **Mod Logs** → switch to **Server** or **Event** → **Watchlist** t
 Use the **+ Create Entry** button to add entries from the dashboard (when permitted).
 
 **Quick access from Discord:** Right-click a user → **Apps** → **Watchlist Data** → "View Full Details" opens the dashboard.
+
+On the home page, a watchlist row opens that member’s watchlist page.
 
 <div style={{ maxWidth: "900px", marginBottom: "2rem" }}>
   <img src={require("@site/static/img/orion-watchlist-entries-page.png").default} alt="Watchlist Entries page with Create Entry button" style={{ width: "100%", display: "block" }} />
