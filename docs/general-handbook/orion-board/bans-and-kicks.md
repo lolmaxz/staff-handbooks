@@ -4,6 +4,7 @@ title: Bans and Kicks
 ---
 
 import CommandCard from "@site/src/components/CommandCard";
+import Tooltip from "@site/src/components/Tooltip";
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 
 # Bans and Kicks
@@ -17,8 +18,22 @@ Kicks and bans are viewed and managed on the **Kicks and Bans** page in Orion Bo
 | Type | How it's created |
 |------|------------------|
 | **Kicks** (server only) | Auto-detected when a user is kicked—via Discord UI or Hephia's <code>/kick</code> command |
-| **Server bans** | Auto-detected when a user is banned—via Discord UI or Hephia's <code>/ban</code> command |
+| **Server bans** | Auto-detected when a user is banned—via Discord UI or Hephia's <code>/ban</code> command (including temporary bans and duration changes) |
 | **Event bans** | Created when <code>/event-ban</code> is used, or when a punishment is added with an event warning (<code>/warn-event</code>) |
+
+---
+
+## Server Bans (Hephia Temp Bans)
+
+Hephia V1.2 supports **temporary server bans** via an optional duration on <code>/ban</code>. Orion Board auto-detects these bans and any duration changes when staff re-run <code>/ban</code> with a different duration.
+
+<CommandCard cmd="/ban" perms="Moderator" cardColor="orange">
+  user, <Tooltip tip="Optional — weeks (w), months (m), and years (y) only; up to two parts; supports decimal/comma. Examples: 2w, 1m, 3m2w, 1.5y. Leave empty for a permanent ban." width="20rem">duration</Tooltip>, reason. Temporary bans auto-unban when they expire. Full command details: [Hephia V1.2 — Temporary Bans](/docs/general-handbook/hephia-bot/hephia-bot-v1-2#temporary-bans).
+</CommandCard>
+
+:::info What Orion tracks
+Orion keeps server ban records in sync with Hephia—including when a ban is temporary, when its duration is updated, and when it expires (Active / Expired filters on the Kicks and Bans page).
+:::
 
 ---
 
@@ -27,6 +42,10 @@ Kicks and bans are viewed and managed on the **Kicks and Bans** page in Orion Bo
 <CommandCard cmd="/event-ban" perms="Senior Event Team" cardColor="purple">
   user, reason, duration (required), ticket, evidence. Duration options: 24h, 2d, 3d, 5d, 1w, 2w, 3w, 1m, 3m, 6m, 1y, indefinite.
 </CommandCard>
+
+:::tip Enforced by Hephia at signup
+Active event bans are checked by Hephia when someone tries to join an event (attendee, co-host, or security). Banned members are blocked automatically and see a private message — hosts do **not** need to manually watch for them on the roster. Temporary bans allow signup again once they expire; permanent bans have no end date. See [Hephia Event System](/docs/event-staff-handbook/hephia-event-system#during-signups-members).
+:::
 
 ---
 
@@ -45,6 +64,7 @@ The **Ban Details** modal shows:
 - Evidence
 - Related ticket
 - Active status
+- Duration / expiration (for temporary bans)
 - Appeal information
 
 <div style={{ maxWidth: "300px", marginBottom: "2rem" }}>

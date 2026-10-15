@@ -125,6 +125,7 @@ const sidebars: SidebarsConfig = {
             "general-handbook/orion-board/orion-board-commands",
             "general-handbook/orion-board/orion-board-verification",
             "general-handbook/orion-board/orion-board-moderation-and-warnings",
+            "general-handbook/orion-board/orion-board-server-mail",
             "general-handbook/orion-board/orion-board-bans-and-kicks",
             "general-handbook/orion-board/orion-board-watchlist",
             "general-handbook/orion-board/orion-board-host-discretion",

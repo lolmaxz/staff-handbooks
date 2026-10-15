@@ -4,6 +4,7 @@ title: Moderation and Warnings
 ---
 
 import CommandCard from "@site/src/components/CommandCard";
+import RoleBadge from "@site/src/components/RoleBadge";
 import DiscordButton from "@site/src/components/DiscordButton";
 import Tooltip from "@site/src/components/Tooltip";
 import CardGrid, { Card } from "@site/src/components/CardGrid";
@@ -23,12 +24,12 @@ Discord slash commands allow **only 1 attachment at a time** for warnings, watch
 <CardGrid columns={2}>
   <Card title="Formal Warning" status="warning" icon="⚠️">
     <CommandCard cmd="/warn" perms="Moderator" cardColor="orange">
-      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket (autocomplete), notes, evidence. Can link to ticket.
+      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket (autocomplete), notes, evidence, server_mail (optional). Can link to ticket.
     </CommandCard>
   </Card>
   <Card title="Informal Warning" status="info" icon="💬">
     <CommandCard cmd="/warn-informal" perms="Moderator" cardColor="blue">
-      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, evidence. Informal server warning.
+      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, evidence, server_mail (optional). Informal server warning.
     </CommandCard>
   </Card>
 </CardGrid>
@@ -44,15 +45,17 @@ Both <code>user</code> and <code>user_id</code> are optional. Use <code>user_id<
 <CardGrid columns={2}>
   <Card title="Formal Event Warning" status="warning" icon="⚠️">
     <CommandCard cmd="/warn-event" perms="Senior Event Team" cardColor="purple">
-      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, notes, evidence, punishment (24h, 2d, 3d, 5d, 1w, 2w, 3w, 1m, 3m, 6m, 1y, indefinite). Optional punishment creates event ban automatically.
+      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, notes, evidence, punishment (24h, 2d, 3d, 5d, 1w, 2w, 3w, 1m, 3m, 6m, 1y, indefinite), server_mail (optional). Optional punishment creates event ban automatically.
     </CommandCard>
   </Card>
   <Card title="Informal Event Warning" status="info" icon="💬">
     <CommandCard cmd="/warn-informal-event" perms="Senior Event Team" cardColor="purple">
-      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, evidence. Informal event warning.
+      user (optional), <Tooltip tip="Optional — use when the member is no longer in the server" width="18rem">user_id</Tooltip>, reason, ticket, evidence, server_mail (optional). Informal event warning.
     </CommandCard>
   </Card>
 </CardGrid>
+
+Sending a warning as mail, and how the member responds, is on [Server Mail](/docs/general-handbook/orion-board/orion-board-server-mail).
 
 ---
 
@@ -84,8 +87,16 @@ Clicking it will:
 This applies to all warning types: <code>/warn</code>, <code>/warn-informal</code>, <code>/warn-event</code>, and <code>/warn-informal-event</code>.
 
 :::warning Exception — member not in the server
-If the member was **not currently in the server** when the warning was issued (for example, you used <code>user_id</code>), the <DiscordButton type="primary" emoji="🎫">Open Ticket</DiscordButton> button will **not** appear. Discord cannot open a ticket for someone who is not in the server.
+If the member was **not currently in the server** when the warning was issued (for example, you used <code>user_id</code>), the <DiscordButton type="primary" emoji="🎫">Open Ticket</DiscordButton> button will **not** appear. Discord cannot open a ticket for someone who is not in the server. Server mail can still be posted for them. How mail is sent and how the member responds: [Server Mail](/docs/general-handbook/orion-board/orion-board-server-mail).
 :::
+
+---
+
+## Restricted Access {#restricted-access}
+
+<CommandCard cmd="/server-access" perms="Staff" cardColor="red">
+  action: Restrict or Granted. user, reason optional. Uses <RoleBadge role="Restricted Access" color="#e87878" />, not Unverified.
+</CommandCard>
 
 ---
 
