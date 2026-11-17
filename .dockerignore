@@ -1,0 +1,12 @@
+node_modules
+build
+.docusaurus
+.cache-loader
+.git
+.github
+.vercel
+src/Original_docs
+Original_docs
+mod-team-rework
+mod-team-rework.zip
+KRENKINOTESDONOTUSE.md
