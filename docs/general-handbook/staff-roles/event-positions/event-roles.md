@@ -38,6 +38,7 @@ The person in charge of the **Event Team**, overseeing all actions, moderation, 
 - Plan event team meetings.
 - Make staff announcements.
 - Train Senior Events Team.
+- Train New Event Committee.
 
 :::info
 The Event Team Head ensures that events run smoothly and that the team is well-coordinated.

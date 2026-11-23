@@ -243,7 +243,7 @@ Only accept official government-issued identification documents.
 **The images must show:**
 
 - A **selfie holding the ID**, with the face matching the ID photo
-- The **date of birth**, **expiry date**, and **issuing body**
+- The **date of birth**, **expiry date**, and <Tooltip tip="Country or state, and the ID type (driver license, passport, and so on)">issuing body</Tooltip>
 - **All four corners** of the ID
 - Sunglasses, or censoring the eyes, are allowed in the **selfie**. The eyes on the **ID** may also be censored.
 

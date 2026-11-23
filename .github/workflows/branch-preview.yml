@@ -1,0 +1,54 @@
+# Every branch pushed to this repository gets a preview on the Eden server.
+#
+# Coolify builds previews only for pull requests. When a branch has no open pull request,
+# this workflow opens a draft pull request for it. Coolify then builds the preview at
+#   https://pr-<number>.handbooks.theedenapis.com/staff-handbooks/
+# Later pushes to the branch update the same preview. Closing or merging the pull request removes it.
+# Branches from forks never get a preview.
+
+name: Branch preview
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: branch-preview-${{ github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  open-preview-pr:
+    if: github.event.deleted == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open a draft pull request if the branch has none
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set -euo pipefail
+          existing="$(gh pr list --repo "$REPO" --head "$BRANCH" --state open --json number --jq '.[0].number // empty')"
+          if [ -n "$existing" ]; then
+            echo "Pull request #$existing already exists. Coolify updates its preview: https://pr-$existing.handbooks.theedenapis.com/staff-handbooks/"
+            exit 0
+          fi
+          ahead="$(gh api "repos/$REPO/compare/main...$BRANCH" --jq '.ahead_by')"
+          if [ "$ahead" = "0" ]; then
+            echo "Branch $BRANCH has no commits that main lacks. No preview needed."
+            exit 0
+          fi
+          url="$(gh pr create --repo "$REPO" --draft --base main --head "$BRANCH" \
+            --title "Preview: $BRANCH" \
+            --body "Opened automatically so this branch gets a preview. The preview link is added below once the pull request number is known.")"
+          number="${url##*/}"
+          gh pr edit "$number" --repo "$REPO" --body "$(printf '%s\n\n%s\n\n%s' \
+            "Opened automatically so this branch gets a preview." \
+            "Preview: https://pr-$number.handbooks.theedenapis.com/staff-handbooks/" \
+            "The first build takes a few minutes. Every push to \`$BRANCH\` updates it. Mark this ready for review when you want it merged; closing it removes the preview.")"
+          echo "Opened #$number. Preview: https://pr-$number.handbooks.theedenapis.com/staff-handbooks/"
