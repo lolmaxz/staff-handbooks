@@ -64,7 +64,7 @@ Members with <RoleBadge role="VRC Verified" color="#00ff00" /> or Fansly verific
 </CommandCard>
 
 <CommandCard cmd="/unverify" perms="Staff" cardColor="orange">
-  Send the ID check back to the first review. Run in the verification ticket. reason optional. The transcript card names who unverified them, which status the ticket moved to, and the reason.
+  Send the ID check back to the first review. Also removes the member's <RoleBadge role="Eden Verified" color="#00ff00" />. Run in the verification ticket. reason optional. The transcript card names who unverified them, which status the ticket moved to, and the reason.
 </CommandCard>
 
 ### What the member is told

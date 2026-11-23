@@ -59,7 +59,7 @@ When a member breaks a server rule, follow these steps to ensure proper handling
 
 <Card title={<><RoleBadge role="Chat Moderator" color="#ff6b6b" /> / <RoleBadge role="Event Breed" badgeIcon="event_host_role_icon.png" color="#f75edb" /></>} status="warning">
 
-  <p><strong>📍 Report to:</strong> <ChannelBadge label="⭕server-chat-reports" link="https://discord.com/channels/734595073920204940/1234567890123456789"/></p>
+  <p><strong>📍 Report to:</strong> <ChannelBadge label="⭕server-chat-reports" link="https://discord.com/channels/734595073920204940/996504897476366497"/></p>
   <p><strong>Responsibilities:</strong></p>
   <ul>
     <li>Document violations (screenshot, delete, report)</li>

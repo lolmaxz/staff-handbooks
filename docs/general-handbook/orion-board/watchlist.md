@@ -50,7 +50,7 @@ Discord slash commands allow **only 1 attachment at a time**. For warnings, watc
 
 ## Watchlist notification 🆕
 
-When a watchlist entry is created or added, staff receive a ping in a staff channel. Who is pinged, and which channel, follows the bot’s configuration.
+When a watchlist entry is created or added, staff receive a ping in a staff channel. Who is pinged, and which channel, follows the bot’s settings.
 
 ---
 

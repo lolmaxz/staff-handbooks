@@ -1,0 +1,598 @@
+.message {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  box-sizing: border-box;
+  max-width: 720px;
+  margin: 0.85rem 0 1.15rem;
+  padding: 16px;
+  border-radius: 8px;
+  background: #313338;
+  color: #dbdee1;
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+}
+
+.message *,
+.message *::before,
+.message *::after {
+  box-sizing: border-box;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+.body {
+  min-width: 0;
+  flex: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 22px;
+  line-height: 1.375;
+}
+
+.username {
+  color: #f2f3f5;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 4px;
+}
+
+.appBadge {
+  display: inline-flex;
+  align-items: center;
+  height: 16px;
+  margin-right: 4px;
+  padding: 0 4px;
+  border-radius: 3px;
+  background: #5865f2;
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 16px;
+}
+
+.timestamp {
+  color: #949ba4;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.375;
+}
+
+/* Like Discord, the embed stays ~520px wide; buttons under it may use the full message width. */
+.embed {
+  max-width: 520px;
+  margin-top: 4px;
+  border-radius: 4px;
+  background: #2b2d31;
+  border-left: 4px solid var(--embed-accent, #5865f2);
+}
+
+.message:has(.medium-zoom-image--opened) {
+  position: relative;
+  z-index: 1000;
+}
+
+.embedPlain {
+  border-left-width: 0;
+}
+
+.embedPad {
+  padding: 14px 16px 16px 12px;
+}
+
+.embedMain {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.embedText {
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+  line-height: 1.375;
+}
+
+.embedAuthor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  color: #f2f3f5;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.375;
+}
+
+.embedAuthorIcon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+.embedTitle {
+  margin: 0 0 8px;
+  color: #f2f3f5;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.375;
+}
+
+.embedTitle:last-child,
+.embedAuthor:last-child {
+  margin-bottom: 0;
+}
+
+.embed a,
+.embedTitle a {
+  color: #8db6f7;
+  text-decoration: none;
+}
+
+.embed a:hover,
+.embedTitle a:hover {
+  color: #a9c8fa;
+  text-decoration: underline;
+}
+
+.embedAuthor a {
+  color: #f2f3f5;
+  text-decoration: none;
+}
+
+.embedAuthor a:hover {
+  color: #f2f3f5;
+  text-decoration: underline;
+}
+
+.thumbnail {
+  width: auto;
+  height: auto;
+  max-width: 112px;
+  max-height: 112px;
+  border-radius: 4px;
+  object-fit: contain;
+  flex: none;
+}
+
+.embedImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  border-radius: 4px;
+}
+
+.embedImageOnly {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.line {
+  min-height: 1.375em;
+  line-height: 1.375;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.embedText strong {
+  color: #f2f3f5;
+  font-weight: 700;
+}
+
+.mention {
+  padding: 0 2px;
+  border-radius: 3px;
+  background: rgba(88, 101, 242, 0.3);
+  color: #c9cdfb;
+  font-weight: 500;
+}
+
+.code {
+  padding: 0.1em 0.25em;
+  border-radius: 3px;
+  background: #1e1f22;
+  font-family: Consolas, "Andale Mono WT", "Lucida Console", monospace;
+  font-size: 0.875em;
+  white-space: pre-wrap;
+}
+
+.pre {
+  margin: 4px 0;
+  padding: 8px;
+  overflow-x: auto;
+  border-radius: 4px;
+  background: #1e1f22;
+  color: #dbdee1;
+  font-family: Consolas, "Andale Mono WT", "Lucida Console", monospace;
+  font-size: 14px;
+  line-height: 1.375;
+  white-space: pre-wrap;
+}
+
+.quote {
+  margin: 2px 0;
+  padding: 0 8px 0 12px;
+  border-left: 4px solid #4e5058;
+}
+
+.list {
+  margin: 2px 0;
+}
+
+.listItem {
+  display: flex;
+  gap: 8px;
+}
+
+.listItem + .listItem {
+  margin-top: 6px;
+}
+
+.h1,
+.h2,
+.h3 {
+  margin: 12px 0 6px;
+  color: #f2f3f5;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.h1:first-child,
+.h2:first-child,
+.h3:first-child {
+  margin-top: 0;
+}
+
+.h1 {
+  font-size: 24px;
+}
+
+.h2 {
+  font-size: 20px;
+}
+
+.h3 {
+  font-size: 16px;
+}
+
+.subtext {
+  color: #949ba4;
+  font-size: 13px;
+  line-height: 1.375;
+}
+
+.discordTime {
+  padding: 0 2px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.spoiler {
+  border-radius: 3px;
+  background: #4e5058;
+  color: transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+.spoilerOpen {
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  color: inherit;
+}
+
+.fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.embedText > .fields:first-child {
+  margin-top: 0;
+}
+
+.fieldBlock {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+
+.fieldInline {
+  min-width: 0;
+}
+
+.fieldName {
+  margin-bottom: 1px;
+  color: #f2f3f5;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.375;
+}
+
+.fieldValue {
+  color: #dbdee1;
+  font-size: 14px;
+  line-height: 1.375;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.embedComponents {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.embedComponents .actionRow {
+  margin-top: 0;
+}
+
+.actionRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 32px;
+  min-width: 60px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn:has(.btnEmoji) {
+  gap: 2px;
+  padding-left: 8px;
+}
+
+.btnEmoji {
+  display: inline-flex;
+  font-size: 19px;
+  line-height: 1;
+}
+
+.linkIcon {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+
+.primary {
+  background: #5865f2;
+}
+
+.primary:hover:not(:disabled) {
+  background: #4752c4;
+}
+
+.secondary,
+.link {
+  background: #4e5058;
+}
+
+.secondary:hover:not(:disabled),
+.link:hover {
+  background: #6d6f78;
+}
+
+.success {
+  background: #248046;
+}
+
+.success:hover:not(:disabled) {
+  background: #1a6334;
+}
+
+.danger {
+  background: #da373c;
+}
+
+.danger:hover:not(:disabled) {
+  background: #a12828;
+}
+
+.btn:disabled,
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  min-height: 40px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background: #1e1f22;
+  color: #949ba4;
+  font-size: 16px;
+  line-height: 20px;
+  user-select: none;
+}
+
+.placeholder {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chevron {
+  width: 20px;
+  height: 20px;
+  color: #b5bac1;
+  flex: none;
+}
+
+@media (max-width: 640px) {
+  .message {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .btn {
+    white-space: normal;
+  }
+}
+
+/* Custom server emoji, e.g. <:name:id> */
+.customEmoji {
+  width: 1.375em;
+  height: 1.375em;
+  object-fit: contain;
+  vertical-align: bottom;
+}
+
+/* Optional channel header above a message (`channel` prop). */
+.frame {
+  box-sizing: border-box;
+  max-width: 720px;
+  margin: 0.85rem 0 1.15rem;
+  border-radius: 8px;
+  background: #313338;
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.channelBar {
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 48px;
+  padding: 0 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.28);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+  color: #f2f3f5;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.channelHash {
+  width: 22px;
+  height: 22px;
+  flex: none;
+  color: #80848e;
+}
+
+.channelName {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.messageInFrame {
+  max-width: none;
+  margin: 0;
+  border-radius: 0 0 8px 8px;
+}
+
+/* Clickable select (DiscordSelect with options): display-only dropdown. */
+.selectRoot {
+  position: relative;
+  width: 100%;
+}
+
+.selectClickable {
+  border: none;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.selectClickable:hover {
+  box-shadow: inset 0 0 0 1px #000;
+}
+
+.selectOpen {
+  border-radius: 4px 4px 0 0;
+}
+
+.selectMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  max-height: 280px;
+  overflow-y: auto;
+  border-radius: 0 0 4px 4px;
+  background: #2b2d31;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
+}
+
+.selectOption {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  color: #dbdee1;
+  cursor: default;
+}
+
+.selectOption:hover {
+  background: #36373d;
+}
+
+.selectEmoji {
+  flex: none;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.selectText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.selectLabel {
+  color: #f2f3f5;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.selectDesc {
+  color: #949ba4;
+  font-size: 13px;
+}

@@ -26,7 +26,7 @@ Night of making a hot sticky mess on some poor world creator's world.
 ## Special Event Planning Thread Requirement
 
 :::danger ⏰ Critical Timing Requirement
-**Orgy events are special planning events** and require a planning thread in <ChannelBadge variant="post" label="📘special-event-planning" link="https://discord.com/channels/734595073920204940/741166096421486645" /> to be opened **at least 24 hours in advance** of the event start time.
+**Orgy events are special planning events** and require a planning thread in <ChannelBadge variant="post" label="📘special-event-planning" /> to be opened **at least 24 hours in advance** of the event start time.
 
 - **Minimum:** 24 hours in advance (required)
 - **Preferred:** 2-3 days in advance

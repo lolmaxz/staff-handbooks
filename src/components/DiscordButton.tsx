@@ -1,3 +1,4 @@
+import useBrokenLinks from "@docusaurus/useBrokenLinks";
 import clsx from "clsx";
 import React from "react";
 import styles from "./DiscordButton.module.css";
@@ -35,7 +36,16 @@ const LINK_ICON = (
   </svg>
 );
 
+function isSiteLink(href: string) {
+  return !/^(https?:|mailto:|\/\/)/.test(href);
+}
+
 export default function DiscordButton({ type = "primary", color, emoji, href, disabled = false, children }: DiscordButtonProps) {
+  const brokenLinks = useBrokenLinks();
+  if (type === "link" && href && isSiteLink(href)) {
+    brokenLinks.collectLink(href);
+  }
+
   const style: React.CSSProperties = color ? ({ "--discord-btn-custom-bg": color } as React.CSSProperties) : {};
 
   const className = clsx(styles.discordButton, styles[type], color && styles.colorOverride, disabled && styles.disabled);

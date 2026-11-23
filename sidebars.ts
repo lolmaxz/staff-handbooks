@@ -24,6 +24,16 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: "category",
+      label: "Joining-Staff",
+      link: {
+        type: "doc",
+        id: "general-handbook/joining-staff/staff-applications",
+      },
+      collapsed: true,
+      items: ["general-handbook/joining-staff/headhunting"],
+    },
+    {
+      type: "category",
       label: "General Handbook",
       link: {
         type: "doc",
@@ -94,16 +104,6 @@ const sidebars: SidebarsConfig = {
         "general-handbook/staff-hiatus",
         {
           type: "category",
-          label: "Joining-Staff",
-          link: {
-            type: "doc",
-            id: "general-handbook/joining-staff/staff-applications",
-          },
-          collapsed: true,
-          items: ["general-handbook/joining-staff/headhunting"],
-        },
-        {
-          type: "category",
           label: "Staff-Perks",
           link: {
             type: "doc",
@@ -111,6 +111,16 @@ const sidebars: SidebarsConfig = {
           },
           collapsed: true,
           items: ["general-handbook/staff-perks/staff-emeritus", "general-handbook/staff-perks/staff-pictures"],
+        },
+        {
+          type: "category",
+          label: "Hephia Bot",
+          link: {
+            type: "doc",
+            id: "general-handbook/hephia-bot/hephia-bot-introduction",
+          },
+          collapsed: true,
+          items: ["general-handbook/hephia-bot/hephia-bot-v1-2", "general-handbook/hephia-bot/hephia-bot-v2"],
         },
         {
           type: "category",
@@ -178,7 +188,6 @@ const sidebars: SidebarsConfig = {
         },
         "server-staff-handbook/server-channels",
         "server-staff-handbook/server-rules",
-        "server-staff-handbook/hephia-commands",
         // {
         //   type: "category",
         //   label: "Training",
@@ -202,11 +211,11 @@ const sidebars: SidebarsConfig = {
           items: [
             // "server-staff-handbook/verification-process/timeframe-for-verification",
             "server-staff-handbook/verification-process/verification-requirements",
+            "server-staff-handbook/verification-process/completion-of-verification",
             "server-staff-handbook/verification-process/vrchat-linking-troubleshooting",
             // "server-staff-handbook/verification-process/acceptable-forms-of-id",
             // "server-staff-handbook/verification-check",
             "server-staff-handbook/verification-process/camera-verification",
-            "server-staff-handbook/verification-process/completion-of-verification",
           ],
         },
         {
@@ -234,7 +243,6 @@ const sidebars: SidebarsConfig = {
             "server-staff-handbook/moderator/staff-talk-tickets",
             "server-staff-handbook/moderator/mod-on-call",
             "server-staff-handbook/moderator/github-records",
-            "server-staff-handbook/moderator/closing-out-verifications",
           ],
         },
         {
@@ -265,6 +273,7 @@ const sidebars: SidebarsConfig = {
         "event-staff-handbook/onboarding",
         "event-staff-handbook/event-rules",
         "event-staff-handbook/event-team-channels",
+        "event-staff-handbook/hephia-event-system",
 
         {
           type: "category",

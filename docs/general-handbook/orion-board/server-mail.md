@@ -7,10 +7,32 @@ import CommandCard from "@site/src/components/CommandCard";
 import DiscordButton from "@site/src/components/DiscordButton";
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import StepTimeline from "@site/src/components/StepTimeline";
+import ContextMenuChain, { ContextMenuItem } from "@site/src/components/ContextMenuItem";
+import DiscordMessage, { DiscordEmbed, DiscordActionRow, DiscordRowButton } from "@site/src/components/DiscordMessage";
+import SlashCommand from "@site/src/components/SlashCommand";
 
 # Server Mail
 
-Server mail is a post in the mail channel that pings one member. The post does not contain the message. They press <DiscordButton type="primary" emoji="📬">Open Mail</DiscordButton> and read it in a private reply. Only that member can open it. Anyone else who clicks is told the mail is not for them.
+Server mail is a post in the mail channel that pings one member. The post does not contain the message. They press <DiscordButton type="primary" emoji="📬">Open Mail</DiscordButton> and read it in a private reply. Only that member can open it. Anyone else who clicks is told the mail is not for them. After they open it, the ping comes off and the post says a user received mail.
+
+The channel post looks like this:
+
+<DiscordMessage
+  username="Orion Board"
+  avatar={require("@site/static/img/orion-board-message-avatar.png").default}
+  timestamp="2026-10-15 11:24 AM"
+  app
+>
+  <DiscordEmbed
+    color="#a955f7"
+    thumbnail={require("@site/static/img/you-got-mail.png").default}
+    description={"<@Maxie The Bunni>\n📬 **You have mail.**\nOpen it to read the message. Only you can open it."}
+  >
+    <DiscordActionRow>
+      <DiscordRowButton type="primary" emoji="📬">Open Mail</DiscordRowButton>
+    </DiscordActionRow>
+  </DiscordEmbed>
+</DiscordMessage>
 
 <CardGrid columns={2}>
   <Card title="Warning mail" status="warning" icon="⚠️">
@@ -88,9 +110,11 @@ In Orion, the warning shows **Never Acknowledged**, or **Yes** and the date. A m
 
 `/reminder` in a warning ticket pings the **warned member** when you do not pick a user. Options and cooldown: [Slash Commands — /reminder](/docs/general-handbook/orion-board/orion-board-commands).
 
+---
+
 ### If they never acknowledge {#ignored-warning}
 
-Bot settings → **Reminder Settings** can restrict access when a warning ticket sits unacknowledged.
+A warning ticket that sits unacknowledged can lead to Restricted Access. When that happens follows the bot’s settings.
 
 <StepTimeline
 direction="vertical"
@@ -114,11 +138,44 @@ detail: "They get Restricted Access, and the ticket is pinged with Acknowledge",
 
 Manual restrict and grant: [Restricted Access](/docs/general-handbook/orion-board/orion-board-moderation-and-warnings#restricted-access).
 
+If the warning was sent as server mail and they never acknowledge that mail, they can also get Restricted Access after the set time, even when no ticket is open. They can still open the mail.
+
+---
+
+## If the mail goes unanswered 🆕 {#unanswered-mail}
+
+When mail stays unanswered, staff are pinged in a staff channel. Who is pinged, and how long they wait, follow the bot’s settings.
+
+The notice can include:
+
+<p>
+  <DiscordButton type="primary">Resend server mail</DiscordButton>{" "}
+  <DiscordButton type="secondary">Send DM</DiscordButton>{" "}
+  <DiscordButton type="secondary">Create warning ticket</DiscordButton>{" "}
+  <DiscordButton type="secondary">Remind in a week</DiscordButton>
+</p>
+
+- <DiscordButton type="primary">Resend server mail</DiscordButton> deletes the old channel post and sends the same mail again. The warning record and its date stay the same.
+- <DiscordButton type="secondary">Send DM</DiscordButton> is for warnings. It sends the warning itself: title, text, when it was issued, and the files, with <DiscordButton type="success">Acknowledge</DiscordButton> and <DiscordButton type="primary">Open ticket</DiscordButton>. The button hides after a DM has been tried. If they are no longer in the server, opening a ticket from that DM tells them they cannot, because they are not in the server.
+- <DiscordButton type="secondary">Create warning ticket</DiscordButton> opens a warning ticket with <DiscordButton type="success">Acknowledge warning</DiscordButton> inside.
+- <DiscordButton type="secondary">Remind in a week</DiscordButton> snoozes the follow-up.
+- <DiscordButton type="secondary">Check content</DiscordButton> shows what was sent. Warnings also have <DiscordButton type="link">Open warning details on dashboard</DiscordButton>.
+
 ---
 
 ## Custom server mail {#server-mail}
 
 Staff only, until further notice.
+
+The command looks like this:
+
+<SlashCommand
+  command="server-mail"
+  description="Send server mail. The member and message are added in the next step."
+  bot="Orion Board"
+  avatar={require("@site/static/img/orion-board-message-avatar.png").default}
+  plus
+/>
 
 <CommandCard cmd="/server-mail" perms="Staff" cardColor="purple">
   Custom mail, not a warning. No slash options. The modal asks for the member, title, message, up to 10 files, and a checkbox to show your name. Leave it unchecked to send it anonymously.
@@ -126,11 +183,19 @@ Staff only, until further notice.
 
 <CardGrid columns={2}>
   <Card title="What they see" status="info" icon="📬">
-    The channel post says they have mail, pings them, and has <DiscordButton type="primary" emoji="📬">Open Mail</DiscordButton>. After they open it, their name comes off that post. If you showed your name, the private reply ends with who sent it.
+    The channel post pings them and has <DiscordButton type="primary" emoji="📬">Open Mail</DiscordButton>. If you showed your name, the private reply ends with who sent it.
   </Card>
   <Card title="What you can check" status="success" icon="🗂️">
-    Right-click the channel post for <strong>Mail Details</strong>. Server admins can check server mail in Orion.
+    Server admins can check server mail in Orion. Mail Details is on the mail message.
   </Card>
 </CardGrid>
 
-An acknowledged **warning** mail leaves the channel after 6 hours. Custom mail stays unless bot settings are set to delete mail after a number of hours.
+Right-click the mail message, then:
+
+<ContextMenuChain>
+  <ContextMenuItem label="Apps" />
+  <ContextMenuItem label="Orion Board" image={require("@site/static/img/orion-board-profile.png").default} />
+  <ContextMenuItem label="Mail Details" />
+</ContextMenuChain>
+
+An acknowledged **warning** mail leaves the channel after 6 hours. Custom mail stays unless deletion follows the bot’s settings.

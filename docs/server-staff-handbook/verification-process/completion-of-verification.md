@@ -1,100 +1,108 @@
 ---
 id: completion-of-verification
-title: Completion Of Verification
+title: Second Verification
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
-import ChannelBadge from "@site/src/components/ChannelBadge";
 import DiscordButton from "@site/src/components/DiscordButton";
-import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
+import Tooltip from "@site/src/components/Tooltip";
+import SlashCommand from "@site/src/components/SlashCommand";
+import StepTimeline from "@site/src/components/StepTimeline";
+import DiscordMessage, { DiscordEmbed, DiscordActionRow, DiscordRowButton } from "@site/src/components/DiscordMessage";
+import Link from "@docusaurus/Link";
 
-# Initial Verification Process Complete
+# Second Verification
 
-:::info VRC Verified Members Upgrading to Eden Verified
-
-Members with <RoleBadge role="VRC Verified" color="#00ff00" /> or <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> who complete regular ID verification will receive <RoleBadge role="Eden Verified" color="#00ff00" />. **No manual role changes are needed** — Orion automatically removes the VRC Verified and Blocked VRC Verified roles when you use <code>/verify</code> or the Verify button on Orion Board.
-
-The verification process for Cutie Helpers and Moderators is unchanged: use <code>/verify</code> in the ticket thread or the green **Verify** button on the Orion web dashboard.
-
+:::info Moderators only
+The second verification is done by a <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.png" color="#e68027" /> who did **not** do the first check. If a Moderator did the first check, a **different** Moderator does the second one — Orion refuses <code>/verify</code> from the same person.
 :::
 
-Once initial verification meets all required criteria:
+The first check (by a <RoleBadge role="Cutie Helper" badgeIcon="cutie_helper_role_icon.png" color="#38c8e8" /> or Moderator) is covered in <Link to="/docs/server-staff-handbook/verification-process/verification-requirements">How To Verify Members</Link>. By the time you arrive, the member already has <RoleBadge role="Eden Verified" color="#00ff00" /> and Orion's welcome message is in the ticket.
 
-1. **Welcome Message**:
-   - Send a welcome message to the member.
-   - Include important channels and information (see template below).
+<StepTimeline
+  title="Second verification"
+  size="sm"
+  accentColor="#e68027"
+  steps={[
+    { label: "Review", detail: "Images + roles", recap: "Re-check the images with the checklist, and the member's roles." },
+    { label: "Remind", detail: "Up to 2 pings", recap: "If roles aren't picked yet, ping with /reminder (max 2)." },
+    { label: "/verify", detail: "Final check", recap: "Run /verify again. Orion posts the final message." },
+    { label: "Auto-close", detail: "1 hour", recap: "The ticket closes itself after 1 hour and the images are deleted." },
+  ]}
+/>
 
-2. **Complete Verification**:
-   - Use **<code>/verify</code>** in the ticket thread or the <DiscordButton type="success" emoji="✅">Verify</DiscordButton> button on the Orion Board. Staff cannot manually assign the Eden Verified role—Orion removes Unverified when verification completes.
-   - The Unverified role can be removed manually **only** when the user already has a verification role. It cannot be removed otherwise (protection measure). Only admins can bypass.
+---
 
-:::danger Verification Image Deletion
-If the member deletes their verification images after the initial verification is completed, please ask them to repost the images in order for a moderator to double check the verification. If they do not comply in a timely manner, you are allowed to give back their <RoleBadge role="Unverified" color="#ff0000" /> role and inform them that their verification has been temporarily revoked.
+## 1. Review the Ticket
 
-**DO NOT** attempt to manually remove the <RoleBadge role="Eden Verified" color="#00ff00" /> role. The <RoleBadge role="Unverified" color="#ff0000" /> role is all that's needed to prevent them from accessing verified channels.
+- Re-check the images with the <Link to="/docs/server-staff-handbook/verification-process/verification-requirements#verification-checklist">verification checklist</Link>.
+- The member has <RoleBadge role="Eden Verified" color="#00ff00" />, and <RoleBadge role="Unverified" badgeIcon="unverified_role_icon.png" color="#de0000" /> is <Tooltip tip="Orion removes the Unverified role on its own when the member has Eden Verified." bubbleColor="#d255ec" width="20rem" labelColor="#e68027">gone</Tooltip>.
+- The member picked their roles, and the age role/tag they picked matches their age (to prevent faking ages — check it when possible, we don't enforce it).
+
+:::danger The member deleted their images
+Ask them to repost the images so you can double-check. If they don't comply in a timely manner, give back their <RoleBadge role="Unverified" color="#ff0000" /> role and tell them their verification is temporarily revoked.
+
+**Do not** remove <RoleBadge role="Eden Verified" color="#00ff00" /> by hand. <RoleBadge role="Unverified" color="#ff0000" /> alone is enough to block verified channels. Unverified can only be removed by hand when the member already has a verification role (a protection; only admins can bypass it).
 :::
 
-## Example: Completion Conversation
+## 2. Remind the Member (if needed)
 
-Here's an example of how to handle verification completion:
+- Send up to <Tooltip tip="Cooldown and who gets pinged: Slash Commands — /reminder." bubbleColor="#d255ec" width="18rem" labelColor="#e68027">**2 reminder pings**</Tooltip> with <code>/reminder</code> in the ticket. See [Slash Commands — /reminder](/docs/general-handbook/orion-board/orion-board-commands).
+- If no roles are picked after **48 hours**, you may finish the verification anyway when everything else is good (optional).
 
-<DiscordConversation id="verification-completion" title="Verification Completion">
-  <DiscordMessage
-    name="Cutie Helper 1"
-    color="#38c8e8"
-  >
-    <span style={{ fontSize: "1.4rem", fontWeight: 600 }}>
-      🎉 Thank you @Member for getting verified — we appreciate your patience! ❤️
-    </span>
-    <br />
-    You now have access to all verified channels! Here are some helpful resources:
-    - 📜 Read the Rules
-    - 🎭 Customize Your Roles (including DM Status Role)
-    - 📅 Check Upcoming Events
-    
-    ⚠️ Please do not delete any images - they will be automatically removed when the ticket is closed.
-  </DiscordMessage>
-  <DiscordMessage
-    name="Member 1"
-    color="#5865f2"
-    message="Thank you! I'm excited to be part of the community!"
+## 3. Run `/verify` Again
+
+<SlashCommand
+  command="verify"
+  description="Verify a member's ID verification ticket"
+  bot="Orion Board"
+  avatar={require("@site/static/img/orion-board-profile.png").default}
+  plus
+/>
+
+Or press <DiscordButton type="success" emoji="✅">Verify</DiscordButton> on the ticket in the Orion Board (Verifications → click the ticket).
+
+<div style={{ maxWidth: "600px" }}>
+  <img src={require("@site/static/img/orion-verify-button-ticket.png").default} alt="Verify button on verification ticket page" style={{ width: "100%", display: "block" }} />
+  <p style={{ fontSize: "0.75rem", color: "var(--ifm-color-emphasis-600)", margin: "0.15rem 0 0", padding: "0.35rem 0.5rem", backgroundColor: "var(--ifm-color-emphasis-200)", textAlign: "center" }}>Verify button on the verification ticket page.</p>
+</div>
+
+Orion replies to you privately with **✅ Final verification completed successfully!** and posts this in the ticket:
+
+<DiscordMessage
+  username="Orion Board"
+  avatar={require("@site/static/img/orion-board-profile.png").default}
+  timestamp="Today at 4:05 PM"
+  app
+>
+  <DiscordEmbed
+    accent={false}
+    description={"✅ Second verification completed by <@Moderator>. This ticket will automatically close in 1 hour, and all attachments will be deleted."}
   />
-  <DiscordMessage
-    name="Cutie Helper 1"
-    color="#38c8e8"
-    message="You're welcome! Enjoy your time here. The ticket will be closed shortly after a moderator reviews everything."
-  />
-</DiscordConversation>
+  <DiscordActionRow>
+    <DiscordRowButton type="danger">Close Ticket Now</DiscordRowButton>
+  </DiscordActionRow>
+</DiscordMessage>
 
-## Welcome Message Template
+- The ticket **closes itself after 1 hour**. The member can close it sooner with **Close Ticket Now**.
+- **No closing reason is needed** anymore (the old "Verification Complete - [Name] Closed By- [Name]"). Orion Board tracks who did what.
 
-You can customize the welcome message, but it should include the following:
+:::warning Orion says "This looks like a first-check fix"
+Orion refuses the final <code>/verify</code> when the member still has <RoleBadge role="Unverified" color="#ff0000" />, or posted new pictures after the first check. Send the ticket back to the first check with <code>/unverify</code> (reason optional). It also removes the member's <RoleBadge role="Eden Verified" color="#00ff00" />. The next <code>/verify</code> is then a first check again.
+:::
 
-```markdown
-## 🎉 Thank you XXXXXX for getting verified — we appreciate your patience! <:Hephi_heart_love:1220157976103485531>
+---
 
-### 📝 Helpful Info While You're in **Server**:
+## No Response Cases
 
-- 📜 **[Read the Rules](https://discord.com/channels/734595073920204940/737074569319546921)**  
-  Make sure you're familiar with the server guidelines.
-- 🎭 **[Customize Your Roles](https://discord.com/channels/734595073920204940/750616586578034688)**  
-  Set up your roles — including your **[DM Status Role](https://discord.com/channels/734595073920204940/750616586578034688/920152665256783903)**!
-- 📩 **Respect DM Boundaries**  
-  If someone has a “DM Ask First” role, be courteous and **[ask here before DMing](https://discord.com/channels/734595073920204940/770397726101471272)**.
+Close the ticket with these reasons:
 
-### 📅 Server Events:
-
-- 🗓️ **[Check Upcoming Events](https://discord.com/channels/734595073920204940/820927836411002890)**  
-  Stay updated on all scheduled events.
-- ❓ **[How to Join Events](https://discord.com/channels/734595073920204940/980342448712724560)**  
-  Step-by-step guide to getting involved.
-
-### ⚠️ **Note:**
-
-**Please do not delete any images.**  
-They will be automatically removed when the ticket is closed.
-```
+| Situation | Reason |
+| --- | --- |
+| No reply or no ID after **72 hours** | `No Response >72hrs` |
+| No post at all for verification after **48 hours** | `No Verification in >48hrs` |
 
 ## Related
 
+- [How To Verify Members](/docs/server-staff-handbook/verification-process/verification-requirements)
 - [Orion Board: Verification](/docs/general-handbook/orion-board/orion-board-verification)

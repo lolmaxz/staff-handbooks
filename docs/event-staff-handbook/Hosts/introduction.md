@@ -5,6 +5,7 @@ slug: /event-staff-handbook/event-host
 ---
 
 import { Card } from "@site/src/components/CardGrid";
+import Link from "@docusaurus/Link";
 
 # Introduction (Hosts)
 
@@ -40,10 +41,10 @@ As a Host, you’re one of the most visible faces of our community. You set the 
 <div style={{ marginBottom: "1rem" }}>
   <Card title="Useful Pages" status="success">
     <ul>
-      <li>Read: <a href="./how-to-host-an-event">How to Host an Event</a></li>
-      <li>Read: <a href="./scheduling-procedures">Scheduling Procedures</a></li>
-      <li>Portal walkthrough: <a href="/docs/general-handbook/eden-scheduler">Eden Scheduler</a></li>
-      <li>Read: <a href="./hosting-requirements">Hosting Requirements</a></li>
+      <li>Read: <Link to="/docs/event-staff-handbook/Hosts/how-to-host-an-event">How to Host an Event</Link></li>
+      <li>Read: <Link to="/docs/event-staff-handbook/Hosts/scheduling-procedures">Scheduling Procedures</Link></li>
+      <li>Portal walkthrough: <Link to="/docs/general-handbook/eden-scheduler">Eden Scheduler</Link></li>
+      <li>Read: <Link to="/docs/event-staff-handbook/Hosts/hosting-requirements">Hosting Requirements</Link></li>
     </ul>
   </Card>
 </div>

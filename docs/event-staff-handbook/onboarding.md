@@ -96,7 +96,7 @@ Stage-by-stage detail and scheduling steps are on **Event Trial Training** — u
       <li>Keep our events safe, happy, and drama-free</li>
       <li>Uphold the Event and Server rules</li>
       <li>Remain calm and collected</li>
-      <li>Report in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" /> when rules are broken</li>
+      <li>Report in <ChannelBadge variant="post" label="🔺events-incidents" /> when rules are broken</li>
     </ul>
   </Card>
 </CardGrid>

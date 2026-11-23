@@ -41,14 +41,13 @@ These are the **most important** sections every server staff member should know:
     <p><Link to="./verification-process">Start Verification Guide →</Link></p>
   </Card>
 
-  <Card title="Hephia Commands" status="warning" icon="🤖" href="./hephia-commands">
-    <p><strong>Master the essential:</strong></p>
+  <Card title="Hephia Commands" status="warning" icon="🤖" href="/docs/general-handbook/hephia-bot">
+    <p><strong>Two bots, split by job:</strong></p>
     <ul>
-      <li>Member information (<code>/info</code>)</li>
-      <li>Moderation commands</li>
-      <li>Server utilities</li>
+      <li>V1.2 — <code>/info</code>, bans, kicks, timeouts</li>
+      <li>V2 — VRChat linking, <code>/say</code>, XP</li>
     </ul>
-    <p><Link to="./hephia-commands">View All Commands →</Link></p>
+    <p><Link to="/docs/general-handbook/hephia-bot">Open Hephia Bot →</Link></p>
   </Card>
 </CardGrid>
 

@@ -30,7 +30,7 @@ Not everything in chat requires escalating to a ticket. As a <RoleBadge role="Cu
 
   - Remind members to use provided templates where applicable.
     - Do this by replying to the wrongful message with pinging on (make sure the popup over your textbox says <RoleBadge role=" ON" color="#3b82f6" />, and not <RoleBadge role=" OFF" color="#6b7280" />) and then delete the wrongful message. This way the person who made mistake will get a ping telling them what they did wrong, but nobody else will be able to see who made the mistake.
-    - The channels that have templates are the ones under the **︵‿୨ 🔍 LOOKING FOR 🔎୧‿︵⋆** category, as well as <ChannelBadge label="📄𝘕𝘚𝘍𝘞-𝘉ios" link="https://discord.com/channels/734595073920204940/737074569319546921"/>, and the templates can be found by going to the pinned message in those channels.
+    - The channels that have templates are the ones under the **︵‿୨ 🔍 LOOKING FOR 🔎୧‿︵⋆** category, as well as <ChannelBadge label="📄𝘕𝘚𝘍𝘞-𝘉ios"/>, and the templates can be found by going to the pinned message in those channels.
 
 - **Handling Simple Disruptions**:
 

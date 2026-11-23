@@ -31,9 +31,9 @@ These pages are for <RoleBadge role="Moderator" badgeIcon="moderator_role_icon.p
 </CardGrid>
 
 <CardGrid columns={2}>
-  <Card title="Closing Out Verifications" status="success" icon="✅" href="/docs/server-staff-handbook/moderator/closing-out-verifications">
-    <p>Finalize verification processes and complete member verification tickets.</p>
-    <p><Link to="/docs/server-staff-handbook/moderator/closing-out-verifications">Learn More →</Link></p>
+  <Card title="Second Verification" status="success" icon="✅" href="/docs/server-staff-handbook/verification-process/completion-of-verification">
+    <p>Do the second check and close member verification tickets.</p>
+    <p><Link to="/docs/server-staff-handbook/verification-process/completion-of-verification">Learn More →</Link></p>
   </Card>
 
   <Card title="Moderation Records (Orion Board)" status="info" icon="📝" href="/docs/server-staff-handbook/moderator/github-records">

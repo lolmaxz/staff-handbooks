@@ -44,7 +44,7 @@ Orion keeps server ban records in sync with Hephia—including when a ban is tem
 </CommandCard>
 
 :::tip Enforced by Hephia at signup
-Active event bans are checked by Hephia when someone tries to join an event (attendee, co-host, or security). Banned members are blocked automatically and see a private message — hosts do **not** need to manually watch for them on the roster. Temporary bans allow signup again once they expire; permanent bans have no end date. See [Hephia Event System](/docs/event-staff-handbook/hephia-event-system#during-signups-members).
+Active event bans are checked by Hephia when someone tries to join an event (attendee, co-host, or security). Banned members are blocked automatically and see a private message — hosts do **not** need to manually watch for them on the roster. Temporary bans allow signup again once they expire; permanent bans have no end date. See [Hephia Event System](/docs/event-staff-handbook/hephia-event-system#the-public-signup-card-members).
 :::
 
 ---

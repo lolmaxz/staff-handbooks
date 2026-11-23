@@ -23,14 +23,14 @@ Take your time to familiarize yourself with all sections. Don't hesitate to ask 
 
 ## First-Day Quick Start
 
-- Verify a member: [Verification Process](../verification-process) → [Requirements](../verification-process/verification-requirements) → [Welcome Template](../verification-process/completion-of-verification)
+- Verify a member: [Verification Process](../verification-process) → [How To Verify Members](../verification-process/verification-requirements)
 - Moderate chat: [Chat Moderation Overview](../chat-moderation)
 - Handle violations: [Server Rule Violations](../server-rule-violations)
 - Enable Developer Mode: [Getting Discord User ID](./getting-discord-user-id)
 
 ### For Later (When You Become a Moderator)
 
-- Close a verification: [Closing Out Verifications](../moderator/closing-out-verifications)
+- Do the second check and close a verification: [Second Verification](../verification-process/completion-of-verification)
 - Open a staff-talk ticket: [Staff-Talk Tickets](../moderator/staff-talk-tickets)
 - Record actions: [GitHub Records](../moderator/github-records)
 - Review ban process: [Ban Types Overview](../ban-votes/ban-types-overview)
@@ -103,7 +103,7 @@ For detailed information about the training process, requirements, and promotion
   
   <Card title="Reporting" status="warning">
     <ul>
-      <li><ChannelBadge label="⭕server-chat-reports" link="https://discord.com/channels/734595073920204940/1234567890123456789"/></li>
+      <li><ChannelBadge label="⭕server-chat-reports" link="https://discord.com/channels/734595073920204940/996504897476366497"/></li>
       <li><ChannelBadge label="🪄events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781"/></li>
       <li><ChannelBadge label="🔗-vrchat-age-logs" link="https://discord.com/channels/734595073920204940/1319750107859779725"/></li>
     </ul>

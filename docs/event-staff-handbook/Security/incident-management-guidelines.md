@@ -122,7 +122,7 @@ Remember: Every attendee deserves the same level of professional treatment, rega
 
 ## Logging Incidents
 
-- After dealing with the situation, log the incident in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" />.
+- After dealing with the situation, log the incident in <ChannelBadge variant="post" label="🔺events-incidents" />.
 - Include:
 
 ### Example: Incident Report in Events Incidents
@@ -166,7 +166,7 @@ Here's how an incident report should be structured:
 
 - Disciplinary actions taken.
   :::note Record Keeping and Consequences
-- Make sure **all** incidents are recorded in <ChannelBadge variant="post" label="🔺events-incidents" link="https://discord.com/channels/734595073920204940/741166096421486645" /> and the Eden Apis Host Quick References.
+- Make sure **all** incidents are recorded in <ChannelBadge variant="post" label="🔺events-incidents" /> and the Eden Apis Host Quick References.
 - Multiple reports against a user within a certain time frame can lead to a ban from events.
   :::
 

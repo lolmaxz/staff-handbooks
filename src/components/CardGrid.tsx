@@ -1,3 +1,4 @@
+import Link from "@docusaurus/Link";
 import React from "react";
 import styles from "./CardGrid.module.css";
 
@@ -67,10 +68,18 @@ export function Card({ title, icon, status, href, children, className = "" }: Ca
   );
 
   if (href) {
+    const classNames = `${styles.card} ${styles.cardLink} ${className}`;
+    if (/^(https?:|mailto:|\/\/)/.test(href)) {
+      return (
+        <a href={href} className={classNames}>
+          {cardContent}
+        </a>
+      );
+    }
     return (
-      <a href={href} className={`${styles.card} ${styles.cardLink} ${className}`}>
+      <Link href={href} className={classNames}>
         {cardContent}
-      </a>
+      </Link>
     );
   }
 

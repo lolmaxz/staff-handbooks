@@ -32,7 +32,7 @@ These events aren't restricted to Patreon events; they also happen as regular ev
 ## Special Event Planning Thread Requirement
 
 :::danger ⏰ Critical Timing Requirement
-**Free-Use events are special planning events** and require a planning thread in <ChannelBadge variant="post" label="📘special-event-planning" link="https://discord.com/channels/734595073920204940/741166096421486645" /> to be opened **at least 24 hours in advance** of the event start time.
+**Free-Use events are special planning events** and require a planning thread in <ChannelBadge variant="post" label="📘special-event-planning" /> to be opened **at least 24 hours in advance** of the event start time.
 
 - **Minimum:** 24 hours in advance (required)
 - **Preferred:** 2-3 days in advance
@@ -83,7 +83,7 @@ Before the event, Free-Use volunteers must provide the host with:
 
 <CardGrid columns={2}>
   <Card title="Active Event VC Required" status="error" icon="🎤">
-    <p><strong>All Free-Use participants, hosts, and general participants</strong> are required to be in the Discord <ChannelBadge variant="vc" label="📘Active Event VC" link="https://discord.com/channels/734595073920204940/741166096421486645" /> channel for the <strong>entire duration</strong> of the event.</p>
+    <p><strong>All Free-Use participants, hosts, and general participants</strong> are required to be in the Discord <ChannelBadge variant="vc" label="📘Active Event VC" /> channel for the <strong>entire duration</strong> of the event.</p>
     <p>This ensures security can be contacted quickly and discreetly if any issues arise.</p>
   </Card>
 
@@ -112,7 +112,7 @@ Ensure there is proper rotation between Free-Use sessions so as many people as p
 
 ## Event Organization Template
 
-When creating a planning thread for a Free-Use event in <ChannelBadge variant="post" label="📘special-event-planning" link="https://discord.com/channels/734595073920204940/741166096421486645" />, include the following information:
+When creating a planning thread for a Free-Use event in <ChannelBadge variant="post" label="📘special-event-planning" />, include the following information:
 
 <details>
 <summary>📋 Free-Use Event Planning Template (Click to expand)</summary>

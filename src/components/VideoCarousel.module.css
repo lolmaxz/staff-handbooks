@@ -1,0 +1,261 @@
+.card {
+  --vc-accent: var(--ifm-color-primary, #a259f7);
+  box-sizing: border-box;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  background: var(--ifm-background-surface-color);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card *,
+.card *::before,
+.card *::after {
+  box-sizing: border-box;
+}
+
+.heading {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* Tabs ------------------------------------------------------------ */
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.tab,
+.tabOn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.75rem 0.3rem 0.35rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ifm-font-color-base);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.tab:hover {
+  border-color: var(--vc-accent);
+}
+
+.tabOn {
+  border-color: var(--vc-accent);
+  background: var(--vc-accent);
+  color: #fff;
+}
+
+.tabNumber {
+  display: inline-grid;
+  place-items: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  padding: 0 0.3rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-font-color-base);
+  font-size: 0.72rem;
+}
+
+.tabOn .tabNumber {
+  background: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+/* Title ----------------------------------------------------------- */
+
+.titleRow {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.counter {
+  flex: none;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/* Player ---------------------------------------------------------- */
+
+.stage {
+  position: relative;
+}
+
+.viewport {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #000;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+}
+
+.video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  object-fit: contain;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: none;
+  border-radius: 50%;
+  background: rgba(20, 20, 24, 0.72);
+  color: #fff;
+  cursor: pointer;
+  transform: translateY(-50%);
+  transition: background-color 0.15s ease, opacity 0.15s ease;
+}
+
+.arrow:hover:not(:disabled) {
+  background: var(--vc-accent);
+}
+
+.arrow:disabled {
+  opacity: 0.25;
+  cursor: default;
+}
+
+.arrowPrev {
+  left: 0.6rem;
+}
+
+.arrowNext {
+  right: 0.6rem;
+}
+
+.arrowNext .arrowIcon {
+  transform: rotate(180deg);
+}
+
+.arrowIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Slide animation ------------------------------------------------- */
+
+.enterFromRight {
+  animation: vcEnterRight 0.36s ease both;
+}
+
+.enterFromLeft {
+  animation: vcEnterLeft 0.36s ease both;
+}
+
+.leaveToLeft {
+  animation: vcLeaveLeft 0.36s ease both;
+  pointer-events: none;
+}
+
+.leaveToRight {
+  animation: vcLeaveRight 0.36s ease both;
+  pointer-events: none;
+}
+
+@keyframes vcEnterRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes vcEnterLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes vcLeaveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes vcLeaveRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .enterFromRight,
+  .enterFromLeft,
+  .leaveToLeft,
+  .leaveToRight {
+    animation: none;
+  }
+
+  .leaveToLeft,
+  .leaveToRight {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 0.75rem;
+  }
+
+  .tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+    scrollbar-width: thin;
+  }
+
+  .tab,
+  .tabOn {
+    flex: none;
+  }
+
+  .arrow {
+    width: 2.1rem;
+    height: 2.1rem;
+  }
+}

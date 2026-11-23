@@ -1,14 +1,20 @@
 ---
 id: hephia-commands
 title: Hephia V1.2 Info and Commands
+unlisted: true
 ---
 
 import RoleBadge from "@site/src/components/RoleBadge";
 import ChannelBadge from "@site/src/components/ChannelBadge";
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import Tooltip from "@site/src/components/Tooltip";
+import Link from "@docusaurus/Link";
 
 # Hephia V1.2 Slash Commands 🤖
+
+:::warning This page has moved
+Hephia commands are split across two bots. Use the [Hephia Bot overview](/docs/general-handbook/hephia-bot): [Hephia V1.2](/docs/general-handbook/hephia-bot/hephia-bot-v1-2) for moderation and server utilities, and [Hephia V2](/docs/general-handbook/hephia-bot/hephia-bot-v2) for VRChat linking, `/say`, and XP. Event signups are in the [Hephia Event System](/docs/event-staff-handbook/hephia-event-system).
+:::
 
 :::warning ⚠️ Important: Command Changes
 **Hephia V1.2 uses slash commands!** The old `>old` command system is **no longer available**. All commands must now be used as slash commands (e.g., `/info` instead of `>old`).
@@ -84,7 +90,7 @@ import Tooltip from "@site/src/components/Tooltip";
       <li><code>true</code> - Mute the member</li>
       <li><code>false</code> - Unmute the member</li>
     </ul>
-    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>If the member is not currently in a voice channel, the action will be scheduled. <a href="#voice-channel-vc-actions">Learn more about scheduled events</a>.</p>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>If the member is not currently in a voice channel, the action will be scheduled. <Link to="#voice-channel-vc-actions">Learn more about scheduled events</Link>.</p>
   </Card>
 
   <Card title="/deafen" status="info" icon="🔇">
@@ -94,7 +100,7 @@ import Tooltip from "@site/src/components/Tooltip";
       <li><code>true</code> - Deafen the member</li>
       <li><code>false</code> - Undeafen the member</li>
     </ul>
-    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>If the member is not currently in a voice channel, the action will be scheduled. <a href="#voice-channel-vc-actions">Learn more about scheduled events</a>.</p>
+    <p style={{fontSize: '0.9em', color: '#888', marginTop: '0.5em'}}>If the member is not currently in a voice channel, the action will be scheduled. <Link to="#voice-channel-vc-actions">Learn more about scheduled events</Link>.</p>
   </Card>
 </CardGrid>
 
@@ -312,8 +318,8 @@ Role changes specifically are logged in <ChannelBadge label="⏹️-role-changes
 - User joins and leaves
 - Threads creation/update/deletion/archival
 - VC creation/editing/deletion
-- **Nickname changes** (logged in <ChannelBadge label="⏹️-role-changes" link="https://discord.com/channels/734595073920204940/944749246584872980" />)
-- **Username changes** (logged in <ChannelBadge label="⏹️-role-changes" link="https://discord.com/channels/734595073920204940/944749246584872980" />)
+- **Nickname changes** (logged in <ChannelBadge label="⏹️-role-changes" link="https://discord.com/channels/734595073920204940/1424116477727866920" />)
+- **Username changes** (logged in <ChannelBadge label="⏹️-role-changes" link="https://discord.com/channels/734595073920204940/1424116477727866920" />)
 
 All logs now include **who made the change** for better tracking!
 :::

@@ -1,0 +1,67 @@
+.chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0.35rem 0 1.1rem;
+}
+
+.menu {
+  background: #111214;
+  border-radius: 8px;
+  padding: 6px;
+  flex: none;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.55),
+    0 0 0 1px rgba(255, 255, 255, 0.07);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 34px;
+  padding: 6px 8px 6px 10px;
+  border-radius: 4px;
+  background: #373d46;
+  color: #c9cdd3;
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+.label {
+  flex: 1;
+}
+
+.chevron,
+.chevronSpacer {
+  width: 16px;
+  height: 16px;
+  margin-left: 16px;
+  flex: none;
+}
+
+.chevronThick {
+  width: 18px;
+  height: 18px;
+  margin-left: 14px;
+}
+
+.stepArrow {
+  width: 14px;
+  height: 14px;
+  color: #b5bac1;
+  flex: none;
+}

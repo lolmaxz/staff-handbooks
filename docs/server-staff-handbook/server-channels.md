@@ -35,6 +35,7 @@ Once your application to be part of the server staff has been accepted, you will
 ## Voice Channels
 
 - <ChannelBadge variant="vc" label="📙 Moderators VC" link="https://discord.com/channels/734595073920204940/1024395419276542064" />: This is the VC in which Moderators might talk to discuss either ongoing problems or to host moderators only meetings.
+- <ChannelBadge variant="vc" label="📗 Server Staff VC" link="https://discord.com/channels/734595073920204940/1572561130738417836" />: Voice channel for the whole server staff team.
 
 :::tip
 Don't forget to familiarize yourself with all server rules and procedures.
