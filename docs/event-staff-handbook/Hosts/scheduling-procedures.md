@@ -298,7 +298,7 @@ Follow this flowchart to determine when and how to request security based on you
   <DiscordMessage
     name="Event Host 1"
     color="#f75edb"
-    message="Thank you! Sign up with Security Signup on the staff listing in events-attendees — and I'll add you on the public event post (or update TBD). 😊"
+    message="Thank you! Sign up with Security Signup on the Staff Attendees Panel in events-attendees — and I'll add you on the public event post (or update TBD). 😊"
   />
 </DiscordConversation>
 

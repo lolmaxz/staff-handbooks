@@ -21,6 +21,19 @@ function Spoiler({ children }: { children: React.ReactNode }) {
   );
 }
 
+/** Server roles that are always shown in their Discord color, so examples don't have to repeat it. */
+const KNOWN_ROLE_COLORS: Record<string, string> = {
+  "Event Participant Group #1": "#1abc9c",
+  "Event Participant Group #2": "#3498db",
+  "General Event Ping": "#9b59b6",
+};
+
+function roleMentionStyle(hex: string): React.CSSProperties {
+  const value = parseInt(hex.slice(1), 16);
+  const rgb = `${(value >> 16) & 255}, ${(value >> 8) & 255}, ${value & 255}`;
+  return { color: hex, background: `rgba(${rgb}, 0.1)` };
+}
+
 function isWordChar(char: string | undefined) {
   return !!char && /[\p{L}\p{N}]/u.test(char);
 }
@@ -32,7 +45,8 @@ function findClosing(text: string, from: number, marker: string) {
       index += 1;
       continue;
     }
-    if (marker === "_" && (isWordChar(text[index - 1]) || isWordChar(text[index + 1]))) continue;
+    // A closing underscore must not be followed by a letter (snake_case stays literal).
+    if (marker === "_" && isWordChar(text[index + 1])) continue;
     return index;
   }
   return -1;
@@ -177,9 +191,13 @@ function parseInline(text: string, keys: KeyCounter): React.ReactNode[] {
 
     const role = /^<@&([^>\n]+)>/.exec(rest);
     if (role) {
+      // `<@&Role Name|#1abc9c>` colors the mention like Discord does for colored roles.
+      const [, rawName, rawColor] = /^(.*?)(?:\|(#[0-9a-fA-F]{6}))?$/.exec(role[1]) ?? [];
+      const name = (rawName ?? role[1]).trim();
+      const color = rawColor ?? KNOWN_ROLE_COLORS[name];
       nodes.push(
-        <span key={keys.n++} className={styles.mention}>
-          @{role[1]}
+        <span key={keys.n++} className={styles.mention} style={color ? roleMentionStyle(color) : undefined}>
+          @{name}
         </span>,
       );
       index += role[0].length;

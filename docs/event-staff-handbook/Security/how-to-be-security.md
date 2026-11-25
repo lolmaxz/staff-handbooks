@@ -23,7 +23,7 @@ Volunteering at an event as <RoleBadge role="Event Security" color="#3fa7ff" /> 
     {
       label: "Sign up",
       detail: "Security Signup",
-      recap: "Press Security Signup on the staff listing. Trials use that same button. Do not use the public Sign Up button.",
+      recap: "Press Security Signup on the Staff Attendees Panel. Trials use that same button. Do not use the public Sign Up button.",
     },
     {
       label: "Starting",
@@ -45,9 +45,9 @@ Volunteering at an event as <RoleBadge role="Event Security" color="#3fa7ff" /> 
 
 ## 📝 Sign Up for the Event
 
-You cover the event with the <RoleBadge role="Event Host" color="#f75edb" />. Default length is **2 hours**. The exact length is on the staff listing (**Duration:** line), so check it there.
+You cover the event with the <RoleBadge role="Event Host" color="#f75edb" />. Default length is **2 hours**. The exact length is on the Staff Attendees Panel (**Duration:** line), so check it there.
 
-On the staff listing in <ChannelBadge label="🪄｜events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781" />, press:
+On the Staff Attendees Panel in <ChannelBadge label="🪄｜events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781" />, press:
 
 <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", margin: "0.75rem 0" }}>
   <DiscordButton type="secondary" emoji="🛡️">Security Signup</DiscordButton>
@@ -59,16 +59,16 @@ Do not press the public <DiscordButton type="success" emoji="📩">Sign Up</Disc
 
 - If the event has a **roleplay** vote, Hephia asks you to pick a role before you are added. You may skip the world and basic votes.
 - Pressing <DiscordButton type="secondary" emoji="🛡️">Security Signup</DiscordButton> again removes you.
-- Once signed up, the public signup card shows you on its 🛡️ **Security** line, and **List of Attendees** shows you every attendee's VRChat name.
-- If nobody signs up as security, the card lists the host as **Host &amp; Security** once the event starts.
+- Once signed up, the Public Sign-Up Post shows you on its 🛡️ **Security** line, and **List of Attendees** shows you every attendee's VRChat name.
+- If nobody signs up as security, the Public Sign-Up Post lists the host as **Host &amp; Security** once the event starts.
 
-| On the staff listing | Can security use it? |
+| On the Staff Attendees Panel | Can security use it? |
 | --- | --- |
 | <DiscordButton type="secondary" emoji="⏱️">Delay start</DiscordButton> | Yes |
 | **Update event status…** and <DiscordButton type="secondary" emoji="📣">1h reminder</DiscordButton> | No — host, signed-up co-host, or admin |
 | <DiscordButton type="error" emoji="🛑">Cancel Event</DiscordButton> / <DiscordButton type="error" emoji="🛑">End Event Now</DiscordButton> | No — the host who created it, or an admin |
 
-More on the listing: <Link to="/docs/event-staff-handbook/hephia-event-system#the-staff-listing-co-hosts--security">Hephia Event System</Link>.
+More on the Staff Attendees Panel: <Link to="/docs/event-staff-handbook/hephia-event-system#the-staff-attendees-panel-co-hosts--security">Hephia Event System</Link>.
 
 ## 👋 Introduce Yourself to New Members
 

@@ -54,9 +54,9 @@ export const ROLES: SandboxRole[] = [
     color: "#2ea9e6",
     description: "VRChat account linked through Hephia. Without it, Sign Up asks the member to link first.",
   },
-  { id: ROLE.ping, name: "General Event Ping", color: "#5865f2", description: "Pinged by event announcements and the 1h reminder." },
-  { id: ROLE.group1, name: "Event Attendees 1", color: "#2ecc71", managed: true, description: "Given by Hephia to the attendees of one event so they can be pinged." },
-  { id: ROLE.group2, name: "Event Attendees 2", color: "#1abc9c", managed: true, description: "Second attendee group, used when two events run at once." },
+  { id: ROLE.ping, name: "General Event Ping", color: "#9b59b6", description: "Pinged by event announcements and the 1h reminder." },
+  { id: ROLE.group1, name: "Event Participant Group #1", color: "#1abc9c", managed: true, description: "Given by Hephia to the attendees of one event so they can be pinged." },
+  { id: ROLE.group2, name: "Event Participant Group #2", color: "#3498db", managed: true, description: "Second attendee group, used when two events run at once." },
 ];
 
 export const STAFF_ROLES = [ROLE.breed, ROLE.host, ROLE.security];

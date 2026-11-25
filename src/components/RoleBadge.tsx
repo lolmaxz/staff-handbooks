@@ -35,6 +35,7 @@ const roleToColorMap: Record<string, string> = {
   // -- Event Team Positions --
   "Senior Event Team": "#ffc857",
   "Event Host": "#a259f7",
+  "General Event Ping": "#9b59b6",
   "Event Security": "#ff5e5b",
   "Event Team Trial": "#3fa7ff",
   Moderator: "#e68027",

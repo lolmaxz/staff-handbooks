@@ -1,5 +1,6 @@
 import clsx from "clsx";
 import React from "react";
+import { createPortal } from "react-dom";
 import { parseDiscordMarkdown } from "./discordMarkdown";
 import styles from "./DiscordMessage.module.css";
 
@@ -223,13 +224,49 @@ export function DiscordRowButton({ type = "primary", emoji, href, disabled = fal
 
 export function DiscordSelect({ placeholder = "Make a selection", disabled = false, options }: DiscordSelectProps) {
   const [open, setOpen] = React.useState(false);
+  const [openUp, setOpenUp] = React.useState(false);
+  const [menuStyle, setMenuStyle] = React.useState<React.CSSProperties>({ visibility: "hidden" });
   const rootRef = React.useRef<HTMLDivElement>(null);
+  const menuRef = React.useRef<HTMLDivElement>(null);
   const hasOptions = Boolean(options?.length) && !disabled;
+
+  // The menu is rendered on <body> with fixed positioning, so tables and other scroll boxes cannot clip it.
+  // It opens downward by default and flips upward when the viewport has more room above than below.
+  const place = React.useCallback(() => {
+    if (!rootRef.current || !menuRef.current) return;
+    const rect = rootRef.current.getBoundingClientRect();
+    const menuHeight = menuRef.current.offsetHeight;
+    const below = window.innerHeight - rect.bottom;
+    const above = rect.top;
+    const up = below < menuHeight + 8 && above > below;
+    setOpenUp(up);
+    setMenuStyle({
+      left: rect.left,
+      width: rect.width,
+      ...(up ? { bottom: window.innerHeight - rect.top } : { top: rect.bottom }),
+    });
+  }, []);
+
+  React.useLayoutEffect(() => {
+    if (!open) {
+      setMenuStyle({ visibility: "hidden" });
+      return undefined;
+    }
+    place();
+    window.addEventListener("scroll", place, true);
+    window.addEventListener("resize", place);
+    return () => {
+      window.removeEventListener("scroll", place, true);
+      window.removeEventListener("resize", place);
+    };
+  }, [open, place]);
 
   React.useEffect(() => {
     if (!open) return undefined;
     const close = (event: MouseEvent) => {
-      if (rootRef.current && !rootRef.current.contains(event.target as Node)) setOpen(false);
+      const target = event.target as Node;
+      if (rootRef.current?.contains(target) || menuRef.current?.contains(target)) return;
+      setOpen(false);
     };
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") setOpen(false);
@@ -251,11 +288,25 @@ export function DiscordSelect({ placeholder = "Make a selection", disabled = fal
     );
   }
 
+  const menu = open ? (
+    <div ref={menuRef} className={clsx(styles.selectMenu, openUp && styles.selectMenuUp)} style={menuStyle} role="listbox">
+      {options!.map((option) => (
+        <div key={option.label} className={styles.selectOption} role="option" aria-selected={false}>
+          {option.emoji ? <span className={styles.selectEmoji}>{option.emoji}</span> : null}
+          <span className={styles.selectText}>
+            <span className={styles.selectLabel}>{option.label}</span>
+            {option.description ? <span className={styles.selectDesc}>{option.description}</span> : null}
+          </span>
+        </div>
+      ))}
+    </div>
+  ) : null;
+
   return (
     <div className={styles.selectRoot} ref={rootRef}>
       <button
         type="button"
-        className={clsx(styles.select, styles.selectClickable, open && styles.selectOpen)}
+        className={clsx(styles.select, styles.selectClickable, open && (openUp ? styles.selectOpenUp : styles.selectOpen))}
         aria-haspopup="listbox"
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
@@ -263,19 +314,7 @@ export function DiscordSelect({ placeholder = "Make a selection", disabled = fal
         <span className={styles.placeholder}>{placeholder}</span>
         {CHEVRON}
       </button>
-      {open ? (
-        <div className={styles.selectMenu} role="listbox">
-          {options!.map((option) => (
-            <div key={option.label} className={styles.selectOption} role="option" aria-selected={false}>
-              {option.emoji ? <span className={styles.selectEmoji}>{option.emoji}</span> : null}
-              <span className={styles.selectText}>
-                <span className={styles.selectLabel}>{option.label}</span>
-                {option.description ? <span className={styles.selectDesc}>{option.description}</span> : null}
-              </span>
-            </div>
-          ))}
-        </div>
-      ) : null}
+      {menu && typeof document !== "undefined" ? createPortal(menu, document.body) : null}
     </div>
   );
 }

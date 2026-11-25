@@ -70,9 +70,9 @@
   line-height: 1.375;
 }
 
-/* Like Discord, the embed stays ~520px wide; buttons under it may use the full message width. */
+/* A bit wider than Discord's ~520px so examples read comfortably; buttons may use the full message width. */
 .embed {
-  max-width: 520px;
+  max-width: 600px;
   margin-top: 4px;
   border-radius: 4px;
   background: #2b2d31;
@@ -549,16 +549,26 @@
 }
 
 .selectMenu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 20;
+  position: fixed;
+  z-index: 400;
+  box-sizing: border-box;
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.375;
   max-height: 280px;
   overflow-y: auto;
   border-radius: 0 0 4px 4px;
   background: #2b2d31;
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
+}
+
+.selectOpenUp {
+  border-radius: 0 0 4px 4px;
+}
+
+/* Flipped above the control when there is not enough room below it. */
+.selectMenuUp {
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 -8px 18px rgba(0, 0, 0, 0.45);
 }
 
 .selectOption {

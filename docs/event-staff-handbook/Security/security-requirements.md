@@ -27,7 +27,7 @@ Inactivity may result in a discussion with the <RoleBadge role="Head of Security
 <CardGrid columns={2}>
   <Card title="Signing Up" icon="✍️" status="info">
     <ul>
-      <li>Press <strong>Security Signup</strong> on the staff listing in <ChannelBadge label="🪄｜events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781" />. Shadowing uses that same button — Hephia marks Event Trial as *(Training)*. See <Link to="/docs/event-staff-handbook/hephia-event-system">Hephia Event System</Link>.</li>
+      <li>Press <strong>Security Signup</strong> on the Staff Attendees Panel in <ChannelBadge label="🪄｜events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781" />. Shadowing uses that same button — Hephia marks Event Trial as *(Training)*. See <Link to="/docs/event-staff-handbook/hephia-event-system">Hephia Event System</Link>.</li>
       <li>Do <strong>not</strong> use the public member <strong>Sign Up</strong> button.</li>
     </ul>
   </Card>

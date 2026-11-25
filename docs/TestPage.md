@@ -2120,7 +2120,7 @@ import DiscordMessage, {
 
 **Notes:**
 
-- Put Discord markdown in the `description` string or a field `value` string. Write a mention as `` `<@Name>` ``, a role as `` `<@&Role>` ``, a channel as `` `<#channel>` ``, plus `@everyone` and `@here`. A raw mention in the page would be read as a component.
+- Put Discord markdown in the `description` string or a field `value` string. Write a mention as `` `<@Name>` ``, a role as `` `<@&Role>` `` (add a color with `` `<@&Role|#1abc9c>` ``; Event Participant Group #1/#2 and General Event Ping are colored automatically), a channel as `` `<#channel>` ``, plus `@everyone` and `@here`. A raw mention in the page would be read as a component.
 - Markdown that works in those strings: bold, italic, underline, strike, inline code, code blocks, quotes, lists, headings, links, and spoilers. A spoiler reveals on click.
 - A row placed inside `DiscordEmbed` renders inside the embed, under the text and image. A row placed as a child of `DiscordMessage` renders under the embed.
 - At most 5 action rows are drawn, and at most 5 buttons per row.
