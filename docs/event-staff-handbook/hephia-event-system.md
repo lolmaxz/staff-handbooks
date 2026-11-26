@@ -72,7 +72,7 @@ Running <code>/start-event</code> makes Hephia post two messages:
     <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginTop: "0.5rem" }}>
       <DiscordButton type="secondary" emoji="🔔" />
       <DiscordButton type="success" emoji="📩">Sign Up</DiscordButton>
-      <DiscordButton type="primary" emoji="📃">List of Attendees</DiscordButton>
+      <DiscordButton type="primary" emoji="📃">List of Attendees (5)</DiscordButton>
     </div>
   </Card>
   <Card title="Staff Attendees Panel" status="success" icon="🪄">
@@ -218,7 +218,7 @@ If roleplay voting is on, Hephia first asks you to pick **your own** role. The P
     <DiscordActionRow>
       <DiscordRowButton type="secondary" emoji="🔔" />
       <DiscordRowButton type="success" emoji="📩">Sign Up</DiscordRowButton>
-      <DiscordRowButton type="primary" emoji="📃">List of Attendees</DiscordRowButton>
+      <DiscordRowButton type="primary" emoji="📃">List of Attendees (5)</DiscordRowButton>
     </DiscordActionRow>
   </DiscordEmbed>
 </DiscordMessage>
@@ -227,7 +227,7 @@ If roleplay voting is on, Hephia first asks you to pick **your own** role. The P
 | --- | --- |
 | <DiscordButton type="success" emoji="📩">Sign Up</DiscordButton> | Signs the member up. Pressing it again removes them (and their +1). Opens the vote first if voting is on. |
 | <DiscordButton type="secondary" emoji="🔔" /> | Get the event pings **without** signing up. Press again to stop. |
-| <DiscordButton type="primary" emoji="📃">List of Attendees</DiscordButton> | Private list of who signed up. |
+| <DiscordButton type="primary" emoji="📃">List of Attendees (5)</DiscordButton> | Private list of who signed up. The number is how many people are signed up right now. Once the event ends or is cancelled, the button reads **Participants (5)**. |
 | <DiscordButton type="secondary" emoji="🗳️">Change Role</DiscordButton> / <DiscordButton type="secondary" emoji="🗳️">Change My Vote(s)</DiscordButton> | Only shown while a vote can still be changed. |
 
 Signing up (or pressing the bell) gives the member the event's attendee ping role, like <RoleBadge role="Event Participant Group #1" color="#1abc9c" />. Status updates, like doors opening, ping that role.
@@ -298,6 +298,7 @@ Co-hosts and <RoleBadge role="Event Security" /> sign up on the Staff Attendees 
 - Pressing your button again removes you. Pressing the other one moves you (an attendee who moves to staff keeps their vote).
 - Trials use **Security Signup** too. Hephia adds *(Training)* next to members with the Event Trial role.
 - Once the event has started with nobody signed up as security, the host is listed as **Host & Security**.
+- 🆕 **Security reminder:** if the event starts and nobody has signed up with **Security Signup**, Hephia pings the host once, as a reply to the Staff Attendees Panel: "⚠️ @Host **Event name** has started and no security is signed up. Please make sure a security signs up for your event." Hosts with the <RoleBadge role="Senior Event Team" color="#3fa7ff" /> role are not pinged. It is only a reminder; nothing is blocked.
 
 This is what the Staff Attendees Panel looks like (example names):
 
@@ -599,6 +600,16 @@ Each line is the volunteer's portal name, then their VRChat name when it differs
 | **Staff Attendees Panel** | Every volunteer on the roster, signed up or not: ✅ signed up, ☐ not yet, and a partner on the line under them as ❤️ [PARTNER]. |
 
 The volunteer lists disappear from the Public Sign-Up Post once the event ends or is cancelled.
+
+### No-list warnings 🆕 {#no-list-warnings}
+
+On volunteer events, Hephia checks every attendee against the no-lists of the confirmed volunteers. If someone signed up is on a volunteer's no-list, the Staff Attendees Panel shows a warning next to their name:
+
+> 🙋 @Member — **VRC Name** *(⚠️ @Willow has this member on their no-list)*
+
+- Only staff see it. The Public Sign-Up Post and **List of Attendees** never show no-list information.
+- Use it to brief security before the event, as described in <Link to="/docs/event-staff-handbook/event-types/freeuse-event-types#host-and-security-responsibilities">Free-Use host and security responsibilities</Link>.
+- No-list entries that are linked to a person are matched by their Discord account, so a name change does not hide them. Older entries tagged **Legacy · re-link** only match on an exact name and can be missed. Volunteers re-link them in the volunteer portal (see <Link to="/docs/event-staff-handbook/event-types/freeuse-event-types#keeping-your-no-list-linked">Keeping your no-list linked</Link>).
 
 ---
 

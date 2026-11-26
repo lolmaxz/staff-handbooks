@@ -235,6 +235,7 @@ The portal also has a read-only **Schedule History** view (icon top-left on shar
 
 - The main <RoleBadge role="Event Host" color="#f75edb" /> is responsible for pinging the <RoleBadge role="Event Security" color="#3fa7ff" /> role to request security before the event starts.
 - <RoleBadge role="Senior Event Team" color="#3fa7ff" /> can host without security (excluding big events).
+- 🆕 If an event starts with nobody signed up as security, Hephia pings the host once on the Staff Attendees Panel as a reminder. <RoleBadge role="Senior Event Team" color="#3fa7ff" /> hosts are not pinged. See [The Staff Attendees Panel](/docs/event-staff-handbook/hephia-event-system#the-staff-attendees-panel-co-hosts--security).
 - <RoleBadge role="Event Host" color="#f75edb" /> without available security may request permission to proceed without one.
 - <RoleBadge role="Senior Event Team" color="#3fa7ff" /> or <RoleBadge role="Server Moderator" color="#e68027" /> can act as security if needed.
 
