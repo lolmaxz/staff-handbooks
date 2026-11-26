@@ -336,7 +336,7 @@ This is what the Staff Attendees Panel looks like (example names):
       "### 💎 Patreon (2)",
       "- 🕐✌️ <@Mochi> — **MochiBun** [Sub]",
       "  ↳➕ <@Sable> — **SableNight** [Switch]",
-      "- <@Pixel> — **PixelPop** [Sub]",
+      "- <@Pixel> — **PixelPop** [Sub] *(⚠️ <@Willow> has this member on their no-list)*",
       "### 🙋 Attendees (1)",
       "- 🛠️ <@Ember> — **EmberGlow** [Sub]",
     ].join("\n")}
@@ -603,13 +603,10 @@ The volunteer lists disappear from the Public Sign-Up Post once the event ends o
 
 ### No-list warnings 🆕 {#no-list-warnings}
 
-On volunteer events, Hephia checks every attendee against the no-lists of the confirmed volunteers. If someone signed up is on a volunteer's no-list, the Staff Attendees Panel shows a warning next to their name:
-
-> 🙋 @Member — **VRC Name** *(⚠️ @Willow has this member on their no-list)*
+On volunteer events, Hephia checks every attendee against the no-lists of the confirmed volunteers. If someone signed up is on a volunteer's no-list, the Staff Attendees Panel shows a warning at the end of their line, for example *(⚠️ @Willow has this member on their no-list)*. See **PixelPop** in the [Staff Attendees Panel example](#the-staff-attendees-panel-co-hosts--security).
 
 - Only staff see it. The Public Sign-Up Post and **List of Attendees** never show no-list information.
 - Use it to brief security before the event, as described in <Link to="/docs/event-staff-handbook/event-types/freeuse-event-types#host-and-security-responsibilities">Free-Use host and security responsibilities</Link>.
-- No-list entries that are linked to a person are matched by their Discord account, so a name change does not hide them. Older entries tagged **Legacy · re-link** only match on an exact name and can be missed. Volunteers re-link them in the volunteer portal (see <Link to="/docs/event-staff-handbook/event-types/freeuse-event-types#keeping-your-no-list-linked">Keeping your no-list linked</Link>).
 
 ---
 

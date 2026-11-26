@@ -59,7 +59,7 @@ Before the event, Free-Use volunteers must provide the host with:
   </Card>
 
   <Card title="No-List" status="error" icon="🚫">
-    <p>A list of anyone specific that they do not want interacting with them during the event. Volunteers keep it in their volunteer portal profile, and Hephia warns staff when someone on it signs up.</p>
+    <p>A list of anyone specific that they do not want interacting with them during the event. Hephia warns staff on the Staff Attendees Panel when someone on it signs up (see [No-list warnings](/docs/event-staff-handbook/hephia-event-system#no-list-warnings)).</p>
   </Card>
 
   <Card title="Self Description" status="success" icon="📝">
@@ -78,15 +78,6 @@ Before the event, Free-Use volunteers must provide the host with:
 <Card title="Security Enforcement" status="warning" icon="🛡️">
   <p>Beyond security's normal responsibilities, they are specifically in charge of enforcing the <strong>"No-List"</strong> in a polite and discrete manner during the event. Security should be aware of who is on each volunteer's No-List and ensure those individuals do not interact with those volunteers.</p>
 </Card>
-
-### Keeping your no-list linked 🆕 {#keeping-your-no-list-linked}
-
-No-list entries are now linked to the actual person, so Hephia can flag them on the Staff Attendees Panel when they sign up for your event (see <Link to="/docs/event-staff-handbook/hephia-event-system#no-list-warnings">No-list warnings</Link>). Older entries show a red **Legacy · re-link** tag. They only match on an exact name, so please re-link them:
-
-1. Open the volunteer portal (Eden Volunteer System) and press **Edit profile**.
-2. In the **No-list** section, edit each entry tagged **Legacy · re-link**.
-3. Under **Find the person**, search their Eden or VRChat name and pick them. Someone found only on VRChat is tagged **VRChat only**; Hephia matches them automatically once they link their accounts in Eden.
-4. Press **Save**.
 
 ## General Rules and Guidelines
 
