@@ -97,7 +97,7 @@ import RoleBadge from "@site/src/components/RoleBadge";
 <RoleBadge role="Helper" />
 <RoleBadge role="Admin" />
 <RoleBadge role="Event Host" />
-<RoleBadge role="lolmaxz" />
+<RoleBadge role="maxbunni" />
 
 <details>
 <summary>Show code</summary>
@@ -107,7 +107,7 @@ import RoleBadge from "@site/src/components/RoleBadge";
 <RoleBadge role="Helper" />
 <RoleBadge role="Admin" />
 <RoleBadge role="Event Host" />
-<RoleBadge role="lolmaxz" />
+<RoleBadge role="maxbunni" />
 ```
 
 </details>
@@ -118,7 +118,7 @@ import RoleBadge from "@site/src/components/RoleBadge";
 - **Event Team Heads**: Event Team Head (#f75edb), Head Moderator (#db1cb8), Head of Security (#3fa7ff)
 - **Event Team**: Senior Event Team (#ffc857), Event Host (#a259f7), Event Security (#ff5e5b), Event Team Trial (#3fa7ff)
 - **Staff Roles**: Moderator (#e68027), Helper (#38c8e8)
-- **Staff Members**: lolmaxz, krenki, s4.ryn, Solii, verbaldrop, nightmarediztydoo, defovr, zerohour1998, cobramaia, vervacious\_ (#00B9ff)
+- **Staff Members**: maxbunni, krenki, s4.ryn, Solii, verbaldrop, nightmarediztydoo, defovr, zerohour1998, cobramaia, vervacious\_ (#00B9ff)
 
 A preset color can still be overridden:
 

@@ -36,7 +36,7 @@ VRChat cross verification no longer grants server access. For members asking abo
 :::warning Linking Rules
 - **One-to-one**: each Discord account can link to only **one** VRChat account, and each VRChat account to only **one** Discord account.
 - **No sharing**: once a VRChat account is linked, no other Discord account can link to it.
-- **New accounts**: if someone has a new Discord or VRChat account and wants to link it to their existing counterpart, **pinging <RoleBadge role="lolmaxz" color="#ff6b6b" /> is 100% required**.
+- **New accounts**: if someone has a new Discord or VRChat account and wants to link it to their existing counterpart, **pinging <RoleBadge role="maxbunni" color="#ff6b6b" /> is 100% required**.
 :::
 
 ---
@@ -109,7 +109,7 @@ They are linked as Patreon, but their name doesn't appear in the world.
 1. **Ask:** did they recently change their VRChat username?
 2. **If yes:** have them click <DiscordButton type="success" emoji="💾">Update Display Name</DiscordButton> in <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/>.
 3. **Wait** about 5 minutes, then rejoin the world.
-4. **Still not working?** Ping <RoleBadge role="lolmaxz" color="#ff6b6b" />.
+4. **Still not working?** Ping <RoleBadge role="maxbunni" color="#ff6b6b" />.
 
 </details>
 
@@ -136,7 +136,7 @@ They are linked as Patreon, but their name doesn't appear in the world.
 ## Still Stuck? Escalate
 
 1. **Document the problem** with specific details.
-2. **Ping <RoleBadge role="lolmaxz" color="#ff6b6b" />** for technical help, and include:
+2. **Ping <RoleBadge role="maxbunni" color="#ff6b6b" />** for technical help, and include:
    - The member's Discord username
    - What they're trying to do
    - Any error messages they see
