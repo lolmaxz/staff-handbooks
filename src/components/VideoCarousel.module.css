@@ -16,10 +16,37 @@
   box-sizing: border-box;
 }
 
-.heading {
+.headingRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
   margin-bottom: 0.75rem;
+}
+
+.heading {
   font-size: 1.1rem;
   font-weight: 700;
+}
+
+.totalPill {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.1rem 0.55rem;
+  border-radius: 999px;
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-800);
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.5;
+}
+
+.totalIcon {
+  width: 0.85rem;
+  height: 0.85rem;
 }
 
 /* Tabs ------------------------------------------------------------ */
