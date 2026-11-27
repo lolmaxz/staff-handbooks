@@ -40,7 +40,7 @@ The person in charge of the **Server Team**, overseeing all actions, moderations
 
 :::note
 The Head Moderator ensures the server runs smoothly and that the moderation team is effective.
-Currently, this position is occupied by <RoleBadge role="Krenki" color="#00B9ff" badgeIcon="" />.
+Currently, this position is occupied by <RoleBadge role="moonpennybunny" color="#00B9ff" badgeIcon="" />.
 :::
 
 ---

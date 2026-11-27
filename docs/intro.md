@@ -87,5 +87,5 @@ For more information, see the post: **["IMPORTANT CONCERNING THIS CHANNEL"](http
 - **Staff World Pictures** - As staff, we love to showcase you in our world with a nice picture! These pictures are also used for our yearly New Year big group staff picture. Learn how to submit your picture: **<Link to="/docs/general-handbook/staff-perks/staff-pictures">How to Take Staff Pictures</Link>** | Submit in thread: **[Staff World Picture Selection](https://discord.com/channels/734595073920204940/1205298011450638357)**
 
 :::warning Work in Progress ⚠️
-This documentation will be updated regularly. If you have any questions or suggestions, please reach out to **lolmaxz** on Discord, or propose changes directly through **[GitHub!](https://github.com/lolmaxz/staff-handbooks)**
+This documentation will be updated regularly. If you have any questions or suggestions, please reach out to **maxbunni** on Discord, or propose changes directly through **[GitHub!](https://github.com/lolmaxz/staff-handbooks)**
 :::

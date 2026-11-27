@@ -89,4 +89,4 @@ Participate actively in votes relevant to your role to contribute to the server'
 - For <RoleBadge role="Lewd Governors" badgeIcon="admin_role_icon.png" color="#db1cb8" /> to discuss Safety of Server Ban Votes and Demotion of any Commitee Member.
 - Lewd Governor votes may include an available <Tooltip tip="HR, Head Moderator, Event Team Head, or Head of Security" bubbleColor="#d255ec" labelColor="#db1cb8"> Committee Team Head </Tooltip> in absence of a Lewd Governor.
 - 2/3 Lewd Governors or their substitutes must be in agreement for vote to pass.
-- <RoleBadge role="lolmaxz" color="#00B9ff" /> will finalize all votes.
+- <RoleBadge role="maxbunni" color="#00B9ff" /> will finalize all votes.
