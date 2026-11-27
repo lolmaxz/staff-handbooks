@@ -48,7 +48,7 @@ When volunteering for an event, you'll be helping the <RoleBadge role="Event Hos
 
 <Card title="Signup Format" status="info">
   <p>Add <code>Security</code> or <code>(Security)</code> to your signup message in the event's signup thread.</p>
-  <p><strong>Example:</strong> <code>lolmaxz (Security)</code></p>
+  <p><strong>Example:</strong> <code>maxbunni (Security)</code></p>
 </Card>
 
 <!-- Hephia signup (re-enable when launched):

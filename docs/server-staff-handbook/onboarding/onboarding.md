@@ -271,7 +271,7 @@ Three types of ban votes based on severity:
 
 1. **Verification Ticket Discussions**: Ask in <ChannelBadge label="💬verification-chat" link="https://discord.com/channels/734595073920204940/737215117049069610"/> _(verification only)_
 2. **All Other Questions & Issues**: Cutie Helpers use <ChannelBadge label="📗cutie-helper" link="https://discord.com/channels/734595073920204940/1481566791569248286"/>; Moderators use <ChannelBadge label="📙moderators" link="https://discord.com/channels/734595073920204940/943466763314663474"/>
-3. **Technical Problems**: Ping <RoleBadge role="lolmaxz" color="#ff6b6b" /> for bot/linking issues
+3. **Technical Problems**: Ping <RoleBadge role="maxbunni" color="#ff6b6b" /> for bot/linking issues
 4. **Staff-Talk Tickets**: Use <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> → <DiscordButton type="link" emoji="☎️" href="../moderator/staff-talk-tickets">Talk to a Staff</DiscordButton> _(Moderators only)_
 
 ### Documentation Resources

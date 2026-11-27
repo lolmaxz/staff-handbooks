@@ -43,7 +43,7 @@ const roleToColorMap: Record<string, string> = {
   "Restricted Access": "#e87878",
   "Blocked VRC Verified ❌": "#d61717",
   // -- Separate Staff Members --
-  lolmaxz: "#00B9ff",
+  maxbunni: "#00B9ff",
   krenki: "#00B9ff",
   solii: "#00B9ff",
   verbaldrop: "#00B9ff",
