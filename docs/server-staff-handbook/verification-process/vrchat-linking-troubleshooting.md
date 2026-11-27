@@ -40,7 +40,7 @@ Cross age verification via VRChat is **temporarily disabled for server access**.
 - **One-to-One Relationship**: Each Discord account can only link to ONE VRChat account
 - **No Sharing**: If a VRChat account is linked to a Discord account, no other Discord account can link to it
 - **Bidirectional**: The same rule applies in reverse - one VRChat account per Discord account
-- **New Discord Accounts**: If someone has a new Discord/VRChat account and wants to link to their existing Discord/VRChat counterpart account, **pinging <RoleBadge role="maxbunni" color="#ff6b6b" /> is 100% required**
+- **New Discord Accounts**: If someone has a new Discord/VRChat account and wants to link to their existing Discord/VRChat counterpart account, **pinging <RoleBadge role="lolmaxz" color="#ff6b6b" /> is 100% required**
   :::
 
 ## Staff Tools
@@ -127,7 +127,7 @@ This tool is **essential** for troubleshooting - always check this first when me
 - **Ask**: Did they recently change their VRChat username?
 - **If yes**: Have them click <DiscordButton type="success" emoji="💾">Update Display Name</DiscordButton> in <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/>
 - **Wait**: ~5 minutes, then rejoin the world
-- **Still not working?** Ping <RoleBadge role="maxbunni" color="#ff6b6b" />
+- **Still not working?** Ping <RoleBadge role="lolmaxz" color="#ff6b6b" />
 
 ### Example: VRChat Linking Troubleshooting
 
@@ -166,7 +166,7 @@ Here's an example of how to help a member troubleshoot linking issues:
 If none of the above solutions resolve the issue:
 
 1. **Document the problem** with specific details
-2. **Ping <RoleBadge role="maxbunni" color="#ff6b6b" />** for technical assistance
+2. **Ping <RoleBadge role="lolmaxz" color="#ff6b6b" />** for technical assistance
 3. **Include**:
    - Member's Discord username
    - What they're trying to do
