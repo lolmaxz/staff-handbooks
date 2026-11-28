@@ -1,0 +1,822 @@
+.root {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.85rem 0 1.15rem;
+  padding-top: 34px;
+  color: #dbdee1;
+  font-family: "gg sans", "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.root *,
+.root *::before,
+.root *::after {
+  box-sizing: border-box;
+}
+
+.panel,
+.optionsPanel,
+.chat {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.24);
+}
+
+.panel,
+.optionsPanel {
+  margin-bottom: 8px;
+  background: #2b2d31;
+  padding-bottom: 8px;
+}
+
+.optionsPanel {
+  width: calc(100% - 16px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.chat {
+  background: #383a40;
+}
+
+.header {
+  padding: 10px 12px 6px;
+  color: #949ba4;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.commandRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 8px;
+  padding: 8px;
+  border-radius: 4px;
+  background: #404249;
+}
+
+.avatar,
+.avatarFallback,
+.composerAvatar {
+  border-radius: 50%;
+  object-fit: cover;
+  flex: none;
+}
+
+.avatar,
+.avatarFallback {
+  width: 32px;
+  height: 32px;
+}
+
+.avatarFallback {
+  background: #5865f2;
+}
+
+.avatarPlaceholder {
+  box-shadow: 0 0 0 1px #6d6f78;
+}
+
+.commandText {
+  min-width: 0;
+  flex: 1;
+}
+
+.commandName,
+.typed,
+.stripName {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.commandName {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.commandDesc {
+  margin-top: 2px;
+  color: #b5bac1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.botName {
+  flex: none;
+  margin-left: 12px;
+  color: #949ba4;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.optionScroll {
+  max-height: 252px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #1a1b1e transparent;
+}
+
+.optionScroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.optionScroll::-webkit-scrollbar-thumb {
+  background: #1a1b1e;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background-clip: padding-box;
+}
+
+.stage {
+  display: grid;
+}
+
+.stageSizer,
+.stageLive {
+  grid-area: 1 / 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.stageLive {
+  align-self: end;
+}
+
+.listSlot {
+  display: grid;
+  align-items: start;
+  margin-bottom: 8px;
+}
+
+.listSlot > * {
+  grid-area: 1 / 1;
+}
+
+.listSlot .panel,
+.listSlot .optionsPanel,
+.listSlot .mCommand,
+.listSlot .mOptionCard {
+  margin-bottom: 0;
+}
+
+.liveList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 18rem;
+}
+
+.sizer {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.option,
+.optionSelected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 36px;
+  margin: 0 8px;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.optionSelected {
+  background: #404249;
+}
+
+.optionName {
+  flex: none;
+  color: #f2f3f5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.optionLead {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+}
+
+.demoLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: #111214;
+  color: #dbdee1;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.viewToggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: inline-flex;
+  padding: 2px;
+  border-radius: 999px;
+  background: #1e1f22;
+  border: 1px solid #3f4147;
+}
+
+.viewToggleBtn,
+.viewToggleOn {
+  border: none;
+  background: transparent;
+  color: #b5bac1;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.viewToggleOn {
+  background: #5865f2;
+  color: #ffffff;
+}
+
+.mobileFrame {
+  width: min(100%, 380px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mStack {
+  display: flex;
+  flex-direction: column;
+}
+
+.mCommand,
+.mChoices,
+.mOptionCard,
+.mChat {
+  border-radius: 12px;
+  background: #2b2d31;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+.mCommand {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding: 10px;
+}
+
+.mCommandBody {
+  min-width: 0;
+  flex: 1;
+}
+
+.mCommandTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mCommandName {
+  min-width: 0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.mBot {
+  flex: none;
+  margin-left: auto;
+  color: #949ba4;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  white-space: nowrap;
+}
+
+.mCommandDesc {
+  overflow: hidden;
+  margin-top: 2px;
+  color: #b5bac1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mChoices {
+  margin-bottom: 8px;
+  padding: 6px 0;
+}
+
+.mChoiceScroll {
+  max-height: 176px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #1a1b1e transparent;
+}
+
+.mChoice,
+.mChoiceOn {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  margin: 0 8px;
+  padding: 0 10px;
+  border-radius: 8px;
+}
+
+.mChoiceOn {
+  background: #404249;
+}
+
+.mChoiceName {
+  overflow: hidden;
+  color: #f2f3f5;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mOptionCard {
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.mOptionBar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  min-width: 0;
+  padding: 8px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #1a1b1e transparent;
+}
+
+.mOptional {
+  flex: none;
+  color: #6d6f78;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.mPill,
+.mPillOn {
+  flex: none;
+  max-width: 160px;
+  overflow: hidden;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #3a3d44;
+  color: #f2f3f5;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mPillOn {
+  background: #5865f2;
+  color: #ffffff;
+}
+
+.mDesc {
+  padding: 2px 12px 12px;
+  color: #dbdee1;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+.mChat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  padding: 8px 10px 8px 12px;
+  background: #40444b;
+}
+
+.mInput {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 4px;
+  min-width: 0;
+  flex: 1;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.mTyped,
+.mValue,
+.mLabel {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.mToken {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 100%;
+  margin-left: 6px;
+}
+
+.mTyped {
+  flex: none;
+}
+
+.mLabel {
+  flex: none;
+  padding: 0 6px;
+  border-radius: 4px;
+  background: #5e626b;
+  color: #ffffff;
+}
+
+.mLabelWarn {
+  color: #ed4245;
+}
+
+.mValue {
+  min-width: 0;
+  max-width: 100%;
+  margin-left: 2px;
+  color: #ffffff;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.send {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: #5865f2;
+  color: #ffffff;
+  flex: none;
+}
+
+.sendIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.optionDesc {
+  min-width: 0;
+  overflow: hidden;
+  color: #b5bac1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.commandStrip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 8px 12px;
+  background: #1e1f22;
+  color: #dbdee1;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.stripName {
+  flex: none;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.stripDesc {
+  min-width: 0;
+  flex: 1;
+  overflow: hidden;
+  color: #dbdee1;
+  font-weight: 400;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.close {
+  display: inline-flex;
+  flex: none;
+  margin-left: 8px;
+  color: #b5bac1;
+}
+
+.closeIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.composer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 52px;
+  padding: 0 16px;
+  background: #383a40;
+}
+
+.plus {
+  display: inline-flex;
+  flex: none;
+  color: #dbdee1;
+}
+
+.plusIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.composerAvatar {
+  width: 24px;
+  height: 24px;
+}
+
+.inputLine {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 6px;
+  min-width: 0;
+  flex: 1;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.typed {
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.channelPrompt {
+  color: #6d6f78;
+  font-weight: 400;
+}
+
+.restart {
+  width: 12px;
+  height: 12px;
+  margin-left: auto;
+  flex: none;
+}
+
+.restartTrack,
+.restartCircle {
+  fill: none;
+  stroke-width: 2;
+}
+
+.restartTrack {
+  stroke: #4e5058;
+}
+
+.restartCircle {
+  stroke: #949ba4;
+  stroke-linecap: round;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  stroke-dasharray: 25.13;
+  stroke-dashoffset: 25.13;
+  animation: slashCommandRestart 10s linear forwards;
+}
+
+@keyframes slashCommandRestart {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.token {
+  display: inline-flex;
+  align-items: stretch;
+  margin-left: 8px;
+  flex: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #2c2e33;
+}
+
+.tokenFocused {
+  border-color: rgba(88, 101, 242, 0.8);
+}
+
+.tokenWarning {
+  border-color: rgba(237, 66, 69, 0.8);
+}
+
+.tokenName,
+.tokenValue,
+.tokenWait {
+  display: inline-flex;
+  align-items: center;
+  height: 24px;
+  border-radius: 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.tokenName {
+  padding: 0 8px;
+  background: #2c2e33;
+}
+
+.tokenValue,
+.tokenWait {
+  background: #464952;
+}
+
+.tokenValue {
+  padding: 0 6px;
+  gap: 1px;
+}
+
+.tokenWait {
+  justify-content: center;
+  min-width: 22px;
+  padding: 0 6px;
+}
+
+.tokenWait .caret,
+.tokenValue .caret {
+  margin-left: 0;
+}
+
+.caret {
+  width: 1px;
+  height: 16px;
+  margin-left: 1px;
+  background: #f2f3f5;
+  flex: none;
+}
+
+.extra {
+  margin-left: 8px;
+  color: #949ba4;
+  font-weight: 400;
+}
+
+button.commandRow,
+button.option,
+button.optionSelected,
+button.mCommand,
+button.mChoice,
+button.mChoiceOn,
+button.mPill,
+button.mPillOn {
+  border: none;
+  box-shadow: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+button.mCommand {
+  width: 100%;
+  color: inherit;
+}
+
+button.commandRow {
+  width: calc(100% - 16px);
+  color: inherit;
+}
+
+button.option,
+button.optionSelected {
+  width: calc(100% - 16px);
+  background: transparent;
+  color: inherit;
+}
+
+button.option:hover,
+button.optionSelected,
+button.mChoiceOn,
+button.mPillOn {
+  background: #404249;
+}
+
+button.mPillOn {
+  background: #5865f2;
+  color: #ffffff;
+}
+
+button.mChoice,
+button.mChoiceOn,
+button.mPill,
+button.mPillOn {
+  color: inherit;
+}
+
+.person {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  flex: none;
+}
+
+.roleDot {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 50%;
+  flex: none;
+}
+
+.root input.liveInput {
+  width: 1ch;
+  height: 24px;
+  min-height: 0;
+  margin: 0 0 0 2px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 500;
+  line-height: 24px;
+  caret-color: #f2f3f5;
+}
+
+.root input.liveInput:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+.resetBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  margin-left: auto;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: #b5bac1;
+  cursor: pointer;
+  flex: none;
+}
+
+.resetBtn:hover {
+  background: #4e5058;
+  color: #ffffff;
+}
+
+.resetIcon {
+  width: 16px;
+  height: 16px;
+}
+

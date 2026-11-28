@@ -75,7 +75,7 @@ Orion Board is our in-house ticket and moderation system. It replaces GitHub War
 - [Slash Commands Reference](/docs/general-handbook/orion-board/orion-board-commands) — Full list of all commands with quick descriptions
 - [Verification](/docs/general-handbook/orion-board/orion-board-verification) — /verify command, Verify button, verification panel options
 - [Moderation and Warnings](/docs/general-handbook/orion-board/orion-board-moderation-and-warnings) — Warnings and restricted access
-- [Server Mail](/docs/general-handbook/orion-board/orion-board-server-mail) — Sending a warning as mail, and custom mail
+- [Server Mail](/docs/general-handbook/orion-board/orion-board-server-mail) — Sending a warning as mail, unanswered follow-ups, and custom mail
 - [Bans and Kicks](/docs/general-handbook/orion-board/orion-board-bans-and-kicks) — Event bans, Ban Details modal
 - [Watchlist](/docs/general-handbook/orion-board/orion-board-watchlist) — Server and event watchlist
 - [Orion Host Discretion](/docs/general-handbook/orion-board/orion-board-host-discretion) — Host discretion in Orion Board; full policy: [Host Discretion List](/docs/event-staff-handbook/Hosts/host-discretion-list)

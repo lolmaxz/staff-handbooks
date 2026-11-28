@@ -58,7 +58,7 @@ Plan a late night post-event afterparty or fill in an open slot. Pop-up events c
   <Card title="Back-to-Back Events" status="warning" icon="🔗">
     <ul>
       <li>Back-to-back events must be announced at the same time as normal event</li>
-      <li>Use separate signup threads for each event</li>
+      <li>Run separate Hephia event signups for each event (each gets its own Staff Attendees Panel in <ChannelBadge label="🪄｜events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781" />)</li>
       <li>Back-to-back events must be coordinated with other host and security in <ChannelBadge label="📘events-organization" link="https://discord.com/channels/734595073920204940/741166096421486645" /></li>
     </ul>
   </Card>

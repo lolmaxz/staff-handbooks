@@ -22,6 +22,13 @@ function parse(input: string | number, override?: Style): { unix: number; style:
 export default function Timestamp({ value, style }: { value: string | number; style?: Style }) {
   const { unix, style: fmt } = useMemo(() => parse(value, style), [value, style]);
   const [now, setNow] = useState(Date.now());
+  // The text depends on the viewer's time zone and clock, so it is only shown once the page runs
+  // in the browser. Rendering it during the site build caused a React hydration warning.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+    setNow(Date.now());
+  }, []);
 
   /* live‑update every minute if using relative style */
   useEffect(() => {
@@ -65,8 +72,8 @@ export default function Timestamp({ value, style }: { value: string | number; st
   }, [unix, fmt, now]);
 
   return (
-    <time dateTime={new Date(unix * 1000).toISOString()} className={styles.tag} title={rendered} /* browser tooltip */>
-      {rendered}
+    <time dateTime={new Date(unix * 1000).toISOString()} className={styles.tag} title={mounted ? rendered : undefined} /* browser tooltip */>
+      {mounted ? rendered : " "}
     </time>
   );
 }

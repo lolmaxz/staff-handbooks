@@ -22,6 +22,11 @@
   margin: 0.5rem 0 0;
 }
 
+/* MDX wraps text on its own line in a <p>; keep it flush inside the card. */
+.body > p {
+  margin: 0;
+}
+
 .icon {
   width: 0.9em;
   height: 0.9em;

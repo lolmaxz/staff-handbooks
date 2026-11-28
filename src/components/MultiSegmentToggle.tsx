@@ -1,3 +1,4 @@
+import Link from "@docusaurus/Link";
 import React, { useEffect, useState } from "react";
 import clsx from "clsx";
 import styles from "./SegmentToggle.module.css";
@@ -155,7 +156,7 @@ export default function MultiSegmentToggle({
 
         if (config.href) {
           return (
-            <a
+            <Link
               key={`${config.label}-${index}`}
               href={config.href}
               className={segmentClassName}
@@ -164,7 +165,7 @@ export default function MultiSegmentToggle({
               onClick={(event) => handlePageAnchorClick(event, config.href!)}
             >
               {segmentContent}
-            </a>
+            </Link>
           );
         }
 

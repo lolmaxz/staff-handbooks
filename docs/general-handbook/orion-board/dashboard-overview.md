@@ -46,7 +46,7 @@ The mobile experience is smooth and easy to navigate.
 
 ## Ticket status emojis {#ticket-status-emojis}
 
-Discord thread names can show a status emoji. The website title, and any rename log, stay the plain name. A rename that only changes the emoji is not logged. The toggle is **Ticket status emojis in Discord** in bot settings (on by default).
+Discord thread names can show a status emoji. The website title, and any rename log, stay the plain name. A rename that only changes the emoji is not logged. Whether the emoji is shown follows the bot’s settings.
 
 | Ticket                                                    | Emoji |
 | --------------------------------------------------------- | ----- |
@@ -69,7 +69,7 @@ Event reports, consent breaches, and rule-breaking tickets open with 📘 alread
 
 ## Automatic reminders {#automatic-reminders}
 
-Experimental, in the same **Reminder Settings** area as the ignored-warning restrict ([Server Mail](/docs/general-handbook/orion-board/orion-board-server-mail#ignored-warning)).
+Experimental. It follows the bot’s settings, alongside the ignored-warning restrict ([Server Mail](/docs/general-handbook/orion-board/orion-board-server-mail#ignored-warning)).
 
 <CardGrid columns={2}>
   <Card title="When it pings" status="info" icon="⏰">

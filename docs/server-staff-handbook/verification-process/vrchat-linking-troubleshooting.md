@@ -1,159 +1,129 @@
 ---
 id: vrchat-linking-troubleshooting
-title: VRChat Linking & Cross Verification Troubleshooting
+title: VRChat Linking & Troubleshooting
 ---
 
 import ChannelBadge from "@site/src/components/ChannelBadge";
 import RoleBadge from "@site/src/components/RoleBadge";
-import Tooltip from '@site/src/components/Tooltip';
 import DiscordButton from '@site/src/components/DiscordButton';
 import DiscordConversation, { DiscordMessage } from "@site/src/components/DiscordConversation";
+import ContextMenuChain, { ContextMenuItem } from "@site/src/components/ContextMenuItem";
+import CardGrid, { Card } from '@site/src/components/CardGrid';
+import Link from "@docusaurus/Link";
 
-# VRChat Linking & Cross Verification Troubleshooting
+# VRChat Linking & Troubleshooting
 
-:::info Staff Training
-This guide helps staff troubleshoot VRChat account linking and cross age verification issues. Understanding these systems is crucial for providing effective member support.
+Members link their VRChat account to Discord in <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/>. This page helps staff check a member's link and fix the most common problems.
+
+:::note Not a verification method
+VRChat cross verification no longer grants server access. For members asking about access, see <Link to="/docs/server-staff-handbook/verification-process/verification-requirements#troubleshooting">How To Verify Members — Troubleshooting</Link>.
 :::
 
-:::warning VRChat Cross Verification Temporarilly removed — July 1, 2026
-As of **July 1, 2026 at 2:00 PM EST**, VRChat age cross verification **no longer grants server access**. The button is labeled **VRChat (Temp Disabled)**. Cross-verifying assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> instead of unlocking the server. Existing VRC Verified members and returning members also receive this role automatically on that date.
+## What Linking Is For
 
-Members who cross-verify or have the VRC Verified role must complete **Regular ID verification** in Eden or **Fansly cross verification** from the ticket panel to obtain <RoleBadge role="Eden Verified" color="#00ff00" />.
+<CardGrid columns={3}>
+  <Card title="NSFW World Access" icon="🔞">
+    <p>Adult content in our VRChat worlds.</p>
+  </Card>
+  <Card title="After Parties & Events" icon="🎉">
+    <p>Joining events and exclusive VRChat afterparties.</p>
+  </Card>
+  <Card title="Group Instances" icon="🏠">
+    <p>Creating their own instances in our VRChat group.</p>
+  </Card>
+</CardGrid>
+
+:::warning Linking Rules
+- **One-to-one**: each Discord account can link to only **one** VRChat account, and each VRChat account to only **one** Discord account.
+- **No sharing**: once a VRChat account is linked, no other Discord account can link to it.
+- **New accounts**: if someone has a new Discord or VRChat account and wants to link it to their existing counterpart, **pinging <RoleBadge role="maxbunni" color="#ff6b6b" /> is 100% required**.
 :::
 
-## Understanding VRChat Linking
+---
 
-VRChat linking is required for several important features:
+## Check Linking Status
 
-- **NSFW World Access** - Access to adult content in our VRChat worlds
-- **After Party Participation** - Joining exclusive VRChat events
-- **Group Instance Creation** - Creating your own instances in our VRChat group
+Any staff member can check a member's link. **Always start here** when someone reports a linking issue.
 
-:::note Cross Age Verification
-Cross age verification via VRChat is **temporarily disabled for server access**. Members can still use **VRChat (Temp Disabled)** to cross-verify, but this only assigns <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> and does not unlock verified Discord channels.
-:::
+**Desktop:** right-click the member's profile picture or username, then:
 
-### Linking Rules
+<ContextMenuChain>
+  <ContextMenuItem label="Apps" />
+  <ContextMenuItem label="Hephia V2" image={require("@site/static/img/sandbox/hephia-v2-avatar.png").default} />
+  <ContextMenuItem label="Check Linking Status" />
+</ContextMenuChain>
 
-:::warning Important
+**Mobile:** tap the member's profile, tap the **3 dots** in the corner, then the same path: **Apps** → **Hephia V2** → **Check Linking Status**.
 
-- **One-to-One Relationship**: Each Discord account can only link to ONE VRChat account
-- **No Sharing**: If a VRChat account is linked to a Discord account, no other Discord account can link to it
-- **Bidirectional**: The same rule applies in reverse - one VRChat account per Discord account
-- **New Discord Accounts**: If someone has a new Discord/VRChat account and wants to link to their existing Discord/VRChat counterpart account, **pinging <RoleBadge role="lolmaxz" color="#ff6b6b" /> is 100% required**
-  :::
-
-## Staff Tools
-
-### Check Linking Status
-
-All staff members can check a member's linking status:
-
-<div style={{ display: 'flex', gap: '30px', alignItems: 'flex-start' }}>
-  <div style={{ flex: 1 }}>
-    **Desktop:**
-
-    1. **Right-click** on their profile picture or username
-    2. Go to **Apps** → **Check Linking Status**
-
-    This shows:
-
-    - Whether they're linked
-    - Which VRChat account they're linked to
-    - Verification status on Discord
-    - Patreon status on Discord
-    - VRChat group status
-
+<div style={{ display: 'flex', gap: '30px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
+  <div style={{ flex: 1, minWidth: '14rem' }}>
+    <p>It shows:</p>
+    <ul>
+      <li>Whether they're linked</li>
+      <li>Which VRChat account they're linked to</li>
+      <li>Their verification status on Discord</li>
+      <li>Their Patreon status on Discord</li>
+      <li>Their VRChat group status</li>
+    </ul>
   </div>
-  <div style={{ flex: 1, textAlign: 'center' }}>
+  <div style={{ flex: 1, textAlign: 'center', minWidth: '14rem' }}>
     <img src={require("@site/static/img/vrchat-link-status-demo.png").default} alt="VRChat link status result" width="60%" />
   </div>
 </div>
 
-<div style={{ textAlign: 'center' }}>
-  <img src={require("@site/static/img/Apps-check-linking-status-demo.png").default} alt="How to access Check Linking Status on desktop" width="40%" />
-</div>
-
 <details>
-<summary><strong>📱 Mobile Instructions</strong></summary>
-
-**Mobile:**
-
-1. **Click** on someone's profile
-2. Tap the **3 dots** in the corner
-3. Select **Apps** → **Check Linking Status**
+<summary><strong>📱 Mobile screenshots</strong></summary>
 
 <div style={{ textAlign: 'center', display: 'flex', justifyContent: 'center', gap: '10px', flexWrap: 'wrap' }}>
-  <img src={require("@site/static/img/mobile-check-linking-status-1.jpg").default} alt="Mobile step 1 - Click profile and 3 dots" width="30%" />
-  <img src={require("@site/static/img/mobile-check-linking-status-2.jpg").default} alt="Mobile step 2 - Select Apps and Check Linking Status" width="30%" />
+  <img src={require("@site/static/img/mobile-check-linking-status-1.jpg").default} alt="Mobile step 1 - Tap the profile and the 3 dots" width="30%" />
+  <img src={require("@site/static/img/mobile-check-linking-status-2.jpg").default} alt="Mobile step 2 - Apps then Check Linking Status" width="30%" />
 </div>
 
 </details>
 
-:::tip Pro Tip
-This tool is **essential** for troubleshooting - always check this first when members report linking issues!
-:::
+---
 
-## Quick Troubleshooting
+## Common Problems
 
-**Bot not accepting friend requests?**
+<details>
+<summary><strong>The bot isn't accepting the friend request</strong></summary>
 
-- Our bot only **detects** requests, doesn't accept them
-- Common causes: request sent too late, already linked, or old pending request exists
-- **Fix**: Cancel any pending requests and wait for "Send Friend Request" button to reappear
+- The bot only **detects** friend requests; it never accepts them.
+- Common causes: the request was sent too late, the account is already linked, or an old request is still pending.
+- **Fix:** cancel any pending requests, wait for the **Send Friend Request** button to reappear, then send a fresh request.
 
-**Can't join after parties?**
+</details>
 
-- Member is linked but missing VRChat group permissions
-- Go to <ChannelBadge label="🪄events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781"/>
-- Click <DiscordButton type="primary" emoji="🔃">Click Here To Update VRC Group Roles</DiscordButton>
+<details>
+<summary><strong>Can't join afterparties</strong></summary>
 
-**Member cross-verified but doesn't have server access?**
+The member is linked but missing their VRChat group permissions. In <ChannelBadge label="🪄events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781"/>, have them click <DiscordButton type="primary" emoji="🔃">Click Here To Update VRC Group Roles</DiscordButton>.
 
-- **Expected behavior** since July 1, 2026 — VRChat cross verification no longer grants server access
-- Check <ChannelBadge label="🔗-vrchat-age-logs" link="https://discord.com/channels/734595073920204940/1319750107859779725"/> to confirm they cross-verified
-- They should have <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" />
-- Direct them to open a verification ticket in <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/> for **Regular ID verification**, or use **Verify Using Fansly** from the ticket panel
-- **Do not manually assign** <RoleBadge role="VRC Verified" color="#00ff00" /> — this role no longer grants access
+</details>
 
-**Member has VRC Verified role but no access?**
+<details>
+<summary><strong>A Patreon supporter doesn't show in the VRChat world</strong></summary>
 
-- Existing VRC Verified members received <RoleBadge role="Blocked VRC Verified ❌" color="#d61717" /> automatically on July 1, 2026
-- They need to complete Regular ID verification or Fansly cross verification to obtain <RoleBadge role="Eden Verified" color="#00ff00" />
+They are linked as Patreon, but their name doesn't appear in the world.
 
-**Patreon supporter not showing in VRChat World?**
+1. **Ask:** did they recently change their VRChat username?
+2. **If yes:** have them click <DiscordButton type="success" emoji="💾">Update Display Name</DiscordButton> in <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/>.
+3. **Wait** about 5 minutes, then rejoin the world.
+4. **Still not working?** Ping <RoleBadge role="maxbunni" color="#ff6b6b" />.
 
-- User is correctly linked as Patreon but name doesn't appear in VRChat World
-- **Ask**: Did they recently change their VRChat username?
-- **If yes**: Have them click <DiscordButton type="success" emoji="💾">Update Display Name</DiscordButton> in <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/>
-- **Wait**: ~5 minutes, then rejoin the world
-- **Still not working?** Ping <RoleBadge role="lolmaxz" color="#ff6b6b" />
+</details>
 
-### Example: VRChat Linking Troubleshooting
-
-Here's an example of how to help a member troubleshoot linking issues:
+### Example
 
 <DiscordConversation id="vrchat-linking-ticket" title="VRChat Linking Ticket">
-  <DiscordMessage
-    name="Member 1"
-    color="#5865f2"
-    message="Hi! I'm trying to link my VRChat account but the bot isn't accepting my friend request."
-  />
-  <DiscordMessage
-    name="Cutie Helper 1"
-    color="#38c8e8"
-    message="I can help with that! Let me check your linking status first. [Checking status...]"
-  />
+  <DiscordMessage name="Member 1" color="#5865f2" message="Hi! I'm trying to link my VRChat account but the bot isn't accepting my friend request." />
+  <DiscordMessage name="Cutie Helper 1" color="#38c8e8" message="I can help with that! Let me check your linking status first. [Checking status...]" />
   <DiscordMessage
     name="Cutie Helper 1"
     color="#38c8e8"
     message="I see you already have a pending friend request. The bot only detects requests, it doesn't accept them. Please cancel any pending requests and wait for the 'Send Friend Request' button to reappear in the linking channel."
   />
-  <DiscordMessage
-    name="Member 1"
-    color="#5865f2"
-    message="Oh I see! I cancelled it. Now I'll wait for the button to come back."
-  />
+  <DiscordMessage name="Member 1" color="#5865f2" message="Oh I see! I cancelled it. Now I'll wait for the button to come back." />
   <DiscordMessage
     name="Cutie Helper 1"
     color="#38c8e8"
@@ -161,25 +131,15 @@ Here's an example of how to help a member troubleshoot linking issues:
   />
 </DiscordConversation>
 
-## Escalation Process
+---
 
-If none of the above solutions resolve the issue:
+## Still Stuck? Escalate
 
-1. **Document the problem** with specific details
-2. **Ping <RoleBadge role="lolmaxz" color="#ff6b6b" />** for technical assistance
-3. **Include**:
-   - Member's Discord username
+1. **Document the problem** with specific details.
+2. **Ping <RoleBadge role="maxbunni" color="#ff6b6b" />** for technical help, and include:
+   - The member's Discord username
    - What they're trying to do
-   - What error messages they're seeing
-   - Results from "Check Linking Status"
+   - Any error messages they see
+   - The result of **Check Linking Status**
 
-## Additional Resources
-
-- **VRChat Linking Channel**: <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/>
-- **Events Attendees**: <ChannelBadge label="🪄events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781"/>
-- **VRChat Age Logs**: <ChannelBadge label="🔗-vrchat-age-logs" link="https://discord.com/channels/734595073920204940/1319750107859779725"/>
-- **Ticket Panel**: <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/>
-
-:::info
-For more detailed information about the verification process, see the [Verification Requirements](/docs/server-staff-handbook/verification-process/verification-requirements) page.
-:::
+**Useful channels:** <ChannelBadge label="📱｜linking-with-vrchat" link="https://discord.com/channels/734595073920204940/1228159292306362368"/> <ChannelBadge label="🪄events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781"/> <ChannelBadge label="🔗-vrchat-age-logs" link="https://discord.com/channels/734595073920204940/1319750107859779725"/> <ChannelBadge label="🎫open-a-ticket" link="https://discord.com/channels/734595073920204940/1106413750975746070"/>

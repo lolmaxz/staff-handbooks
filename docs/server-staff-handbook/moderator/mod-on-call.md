@@ -4,7 +4,7 @@ title: Mod on Call
 ---
 
 :::danger Deprecated
-**Mod-on-call is no longer used.** Tickets and warnings are now in one place in Orion Board, automatically organized. This page is kept for reference only. See [Orion Board Introduction](/docs/general-handbook/orion-board/orion-board-introduction).
+**Mod-on-call is no longer used.** Tickets and warnings are now in one place in Orion Board, automatically organized. This page is kept for reference only. See [Orion Board Introduction](/docs/general-handbook/orion-board).
 :::
 
 import ChannelBadge from "@site/src/components/ChannelBadge";

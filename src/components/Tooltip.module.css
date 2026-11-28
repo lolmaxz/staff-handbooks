@@ -64,20 +64,26 @@
   transform: translate(-100%, calc(-100% - 0.45rem)) scale(0.85);
 }
 
-.bubbleVisible {
+.bubble.bubbleVisible {
   opacity: 1;
 }
 
-.bubbleVisible[data-align="center"],
-.bubbleVisible:not([data-align]) {
+/*
+ * Visible rules use `.bubble.bubbleVisible` on purpose. The production CSS minifier merges and
+ * reorders rules, which put `.bubbleVisible { opacity: 1 }` before `.bubble { opacity: 0 }`.
+ * With equal specificity the hidden rule won, so tooltips never appeared on the deployed site.
+ * The extra class makes the visible state win no matter the order.
+ */
+.bubble.bubbleVisible[data-align="center"],
+.bubble.bubbleVisible:not([data-align]) {
   transform: translate(-50%, calc(-100% - 0.45rem)) scale(1);
 }
 
-.bubbleVisible[data-align="left"] {
+.bubble.bubbleVisible[data-align="left"] {
   transform: translate(0, calc(-100% - 0.45rem)) scale(1);
 }
 
-.bubbleVisible[data-align="right"] {
+.bubble.bubbleVisible[data-align="right"] {
   transform: translate(-100%, calc(-100% - 0.45rem)) scale(1);
 }
 

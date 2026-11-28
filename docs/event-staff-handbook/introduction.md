@@ -34,7 +34,7 @@ Welcome aboard the Event Team! You play a vital role in keeping events fun, incl
   <Card title="How to Host" href="./Hosts/how-to-host-an-event" status="warning">
     <p>Announcements, pings, running the event, and post-event wrap-up.</p>
   </Card>
-  <Card title="Security Intro" href="./event-security" status="info">
+  <Card title="Security Intro" href="/docs/event-staff-handbook/Security/Introduction" status="info">
     <p>Responsibilities, coordination with hosts, and incident basics.</p>
   </Card>
   <Card title="Scheduling" href="./Hosts/scheduling-procedures" status="success">

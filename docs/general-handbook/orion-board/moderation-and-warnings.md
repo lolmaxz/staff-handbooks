@@ -112,6 +112,8 @@ The **Moderation Action Details** modal lets you view and edit:
 - Related ticket
 - Duration (for event warnings)
 
+The list has an **Acknowledged** column for warnings sent as mail: **Yes** if they acknowledged, **Read** if they opened it and have not acknowledged, or **No** if they have not opened it. You can filter by that column. Hover a row for the times. The member’s moderation history shows the same state.
+
 **Timeouts** are also auto-logged when a member receives a server timeout—whether from Hephia V1.2's <code>/timeout</code> command or from the manual timeout option in the Discord client UI.
 
 <div style={{ maxWidth: "350px", marginBottom: "2rem" }}>

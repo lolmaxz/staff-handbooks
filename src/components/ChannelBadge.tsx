@@ -8,8 +8,8 @@ type Variant = "channel" | "text" | "thread" | "post" | "vc";
 interface Props {
   /** Visible name — e.g. "staff-applications" or "ticket‑1234" */
   label: string;
-  /** Destination URL / path */
-  link: string;
+  /** Destination URL / path. Leave it out when the real channel link is unknown: the badge then shows without a link. */
+  link?: string;
   /** "channel" or "text" (default hash icon), "thread", "post", or "vc" */
   variant?: Variant;
   /** Optional tint (HEX or CSS var). Default = Discord blurple */
@@ -70,8 +70,19 @@ export default function ChannelBadge({ label, link, variant = "channel", color =
   else if (variant === "post") Icon = PostIcon;
   else if (variant === "vc") Icon = VCIcon;
 
+  const style = { "--badge-tint": color } as React.CSSProperties;
+
+  if (!link) {
+    return (
+      <span className={clsx(styles.badge, styles.noLink)} style={style}>
+        <Icon className={styles.icon} />
+        {label}
+      </span>
+    );
+  }
+
   return (
-    <Link to={link} className={clsx(styles.badge, "clean-btn")} style={{ "--badge-tint": color } as React.CSSProperties}>
+    <Link to={link} className={clsx(styles.badge, "clean-btn")} style={style}>
       <Icon className={styles.icon} />
       {label}
     </Link>

@@ -52,6 +52,8 @@ The above rules can change at any time and apply for all other rule sections.
     <ul>
       <li>No malicious scripts/codes; no discussing ripping, sharing/trading, or leaking assets</li>
       <li>No depictions of adults acting as minors (ABDL, age‑play, age regression) anywhere</li>
+      <li>No <strong>raceplay</strong></li>
+      <li>No <strong>feral</strong> content</li>
       <li>No graphic links/files; <strong>no dirty deleting</strong></li>
     </ul>
   </Card>

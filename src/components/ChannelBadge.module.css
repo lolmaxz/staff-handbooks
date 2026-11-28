@@ -54,3 +54,8 @@ html[data-theme="light"] .badge:focus-visible {
   background: var(--badge-tint);
   color: #fff; /* restore white text for contrast */
 }
+
+/* Badge without a link (real channel link not known yet). */
+.noLink {
+  cursor: default;
+}

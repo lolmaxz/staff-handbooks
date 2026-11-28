@@ -5,7 +5,6 @@ title: Security Requirements
 
 import RoleBadge from "@site/src/components/RoleBadge";
 import ChannelBadge from "@site/src/components/ChannelBadge";
-import Tooltip from "@site/src/components/Tooltip";
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import Link from "@docusaurus/Link";
 
@@ -28,9 +27,8 @@ Inactivity may result in a discussion with the <RoleBadge role="Head of Security
 <CardGrid columns={2}>
   <Card title="Signing Up" icon="✍️" status="info">
     <ul>
-      <li>When acting as security, add <code>(security)</code> next to your signup name in the event's signup thread (<ChannelBadge variant="post" label="🧵events-signups" link="https://discord.com/channels/734595073920204940/996823116477124608" />).</li>
-      <li>During the <Tooltip tip="Training phase where you observe and learn from experienced security members" bubbleColor="#d255ec" labelColor="#e68027">shadow phase</Tooltip> of training, add <code>(shadow)</code> to indicate your status.</li>
-      <li><strong>Example:</strong> <code>username (security)</code> or <code>username (shadow)</code></li>
+      <li>Press <strong>Security Signup</strong> on the Staff Attendees Panel in <ChannelBadge label="🪄｜events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781" />. Shadowing uses that same button — Hephia marks Event Trial as *(Training)*. See <Link to="/docs/event-staff-handbook/hephia-event-system">Hephia Event System</Link>.</li>
+      <li>Do <strong>not</strong> use the public member <strong>Sign Up</strong> button.</li>
     </ul>
   </Card>
   
@@ -44,13 +42,6 @@ Inactivity may result in a discussion with the <RoleBadge role="Head of Security
     </ul>
   </Card>
 </CardGrid>
-
-{/*
-Hephia event signup system (commented out until launch):
-- Click Security Signup on the event's staff listing in events-attendees — see Hephia Event System.
-- During shadow phase, still use Security Signup and coordinate with your mentor.
-- Do not use the public member Sign Up button.
-*/}
 
 ## 🚨 Incident Reporting
 
@@ -78,6 +69,7 @@ Being part of the security team does <strong>not</strong> grant permission to re
 
 ## Related
 
+- [Hephia Event System](/docs/event-staff-handbook/hephia-event-system)
 - [How to be Security](/docs/event-staff-handbook/Security/how-to-be-security)
 - [Incident Management Guidelines](/docs/event-staff-handbook/Security/incident-management-guidelines)
 - [Security Introduction](/docs/event-staff-handbook/Security/Introduction)

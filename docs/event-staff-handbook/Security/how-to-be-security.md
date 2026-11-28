@@ -9,6 +9,7 @@ import Tooltip from "@site/src/components/Tooltip";
 import CardGrid, { Card } from "@site/src/components/CardGrid";
 import StepTimeline from "@site/src/components/StepTimeline";
 import Link from "@docusaurus/Link";
+import DiscordButton from "@site/src/components/DiscordButton";
 
 # How to be Security 🛡️
 
@@ -21,8 +22,8 @@ Volunteering at an event as <RoleBadge role="Event Security" color="#3fa7ff" /> 
   steps={[
     {
       label: "Sign up",
-      detail: "(Security) in thread",
-      recap: "Add (Security) next to your name in the event signup thread — e.g. username (Security). Do not use the public member Sign Up button.",
+      detail: "Security Signup",
+      recap: "Press Security Signup on the Staff Attendees Panel. Trials use that same button. Do not use the public Sign Up button.",
     },
     {
       label: "Starting",
@@ -44,20 +45,30 @@ Volunteering at an event as <RoleBadge role="Event Security" color="#3fa7ff" /> 
 
 ## 📝 Sign Up for the Event
 
-When volunteering for an event, you'll be helping the <RoleBadge role="Event Host" color="#f75edb" /> for the event's duration. Default length is **2 hours** — if the host says otherwise, plan for that length.
+You cover the event with the <RoleBadge role="Event Host" color="#f75edb" />. Default length is **2 hours**. The exact length is on the Staff Attendees Panel (**Duration:** line), so check it there.
 
-<Card title="Signup Format" status="info">
-  <p>Add <code>Security</code> or <code>(Security)</code> to your signup message in the event's signup thread.</p>
-  <p><strong>Example:</strong> <code>lolmaxz (Security)</code></p>
-</Card>
+On the Staff Attendees Panel in <ChannelBadge label="🪄｜events-attendees" link="https://discord.com/channels/734595073920204940/1233592478909726781" />, press:
 
-<!-- Hephia signup (re-enable when launched):
-<Card title="Signup via Hephia" status="info">
-  <p>Find the event's staff attendee listing in events-attendees and click Security Signup.</p>
-  <p>Do not use the public Sign Up button on the member-facing signup message — that is for attendees only.</p>
-  <p>Full details: Hephia Event System</p>
-</Card>
--->
+<div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", margin: "0.75rem 0" }}>
+  <DiscordButton type="secondary" emoji="🛡️">Security Signup</DiscordButton>
+</div>
+
+Full security and shadowing use that same button. If you have the Event Trial role, Hephia adds *(Training)* next to your name. Stay with your mentor in <ChannelBadge label="📘events-organization" link="https://discord.com/channels/734595073920204940/741166096421486645" /> or the event voice channel.
+
+Do not press the public <DiscordButton type="success" emoji="📩">Sign Up</DiscordButton> button. That one is for attendees.
+
+- If the event has a **roleplay** vote, Hephia asks you to pick a role before you are added. You may skip the world and basic votes.
+- Pressing <DiscordButton type="secondary" emoji="🛡️">Security Signup</DiscordButton> again removes you.
+- Once signed up, the Public Sign-Up Post shows you on its 🛡️ **Security** line, and **List of Attendees** shows you every attendee's VRChat name.
+- If nobody signs up as security, the Public Sign-Up Post lists the host as **Host &amp; Security** once the event starts.
+
+| On the Staff Attendees Panel | Can security use it? |
+| --- | --- |
+| <DiscordButton type="secondary" emoji="⏱️">Delay start</DiscordButton> | Yes |
+| **Update event status…** and <DiscordButton type="secondary" emoji="📣">1h reminder</DiscordButton> | No — host, signed-up co-host, or admin |
+| <DiscordButton type="error" emoji="🛑">Cancel Event</DiscordButton> / <DiscordButton type="error" emoji="🛑">End Event Now</DiscordButton> | No — the host who created it, or an admin |
+
+More on the Staff Attendees Panel: <Link to="/docs/event-staff-handbook/hephia-event-system#the-staff-attendees-panel-co-hosts--security">Hephia Event System</Link>.
 
 ## 👋 Introduce Yourself to New Members
 
@@ -65,27 +76,6 @@ When volunteering for an event, you'll be helping the <RoleBadge role="Event Hos
   <p>You will often meet new people, so it's important that you introduce yourself to help event goers find a <Tooltip tip="A welcoming environment where attendees feel comfortable and safe" bubbleColor="#d255ec" labelColor="#e68027">safe space</Tooltip>.</p>
   <p>Try your best to ensure no one stays in their corner alone and feeling excluded. While the <RoleBadge role="Event Host" color="#f75edb" /> is also encouraged to prevent this while entertaining members, as security you play a crucial role in creating an inclusive atmosphere.</p>
 </Card>
-
-## 📢 Announce Your Role
-
-<CardGrid columns={2}>
-  <Card title="Regular Security" icon="🛡️">
-    <p>When an event is announced, add <code>(security)</code> next to your signup name in the appropriate signup thread.</p>
-    <p><strong>Example:</strong> <code>username (security)</code></p>
-  </Card>
-  
-  <Card title="Shadowing/Training" icon="👁️">
-    <p>If you are shadowing another security, add <code>(shadow)</code> next to your name to indicate you're there for training.</p>
-    <p><strong>Example:</strong> <code>username (shadow)</code></p>
-  </Card>
-</CardGrid>
-
-<!-- Hephia announce-your-role cards (re-enable when launched):
-<CardGrid columns={2}>
-  Regular Security — Security Signup on staff listing in events-attendees
-  Shadowing/Training — Security Signup + coordinate in events-organization or event VC
-</CardGrid>
--->
 
 ## 🎉 Keep the Party Going!
 
@@ -124,7 +114,7 @@ Attendees may lock or leave private rooms unlocked. Do <strong>not</strong> forc
 
 ## Related
 
-<!-- - [Hephia Event System](/docs/event-staff-handbook/hephia-event-system) -->
+- [Hephia Event System](/docs/event-staff-handbook/hephia-event-system)
 - [Security Requirements](/docs/event-staff-handbook/Security/security-requirements)
 - [Incident Management Guidelines](/docs/event-staff-handbook/Security/incident-management-guidelines)
 - [Security Introduction](/docs/event-staff-handbook/Security/Introduction)

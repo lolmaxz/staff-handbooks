@@ -4,6 +4,7 @@ title: Security Introduction
 ---
 
 import { Card } from "@site/src/components/CardGrid";
+import Link from "@docusaurus/Link";
 
 # Introduction
 
@@ -42,9 +43,9 @@ As a staff member, you play a crucial role in maintaining a safe and welcoming e
 <div style={{ marginBottom: "1rem" }}>
   <Card title="Requirements & How‑tos" status="success">
     <ul>
-      <li>Read: <a href="./how-to-be-security">How to be Security</a></li>
-      <li>Read: <a href="./security-requirements">Security Requirements</a></li>
-      <li>Read: <a href="./incident-management-guidelines">Incident Management Guidelines</a></li>
+      <li>Read: <Link to="/docs/event-staff-handbook/Security/how-to-be-security">How to be Security</Link></li>
+      <li>Read: <Link to="/docs/event-staff-handbook/Security/security-requirements">Security Requirements</Link></li>
+      <li>Read: <Link to="/docs/event-staff-handbook/Security/incident-management-guidelines">Incident Management Guidelines</Link></li>
     </ul>
   </Card>
 </div>

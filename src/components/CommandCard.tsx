@@ -47,7 +47,7 @@ export default function CommandCard({ cmd, perms, coolDown, children, cardColor 
         </Tooltip>
       )}
       {coolDown && <span className={styles.cd}>⏳ {coolDown}</span>}
-      {children && <p className={styles.body}>{children}</p>}
+      {children && <div className={styles.body}>{children}</div>}
     </div>
   );
 }
